@@ -1,0 +1,858 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+Start to generate data...
+Insert into EVENT 
+first_add_ev = 1694498817
+EP_EVENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1017	0	0	297	1001	1062	2	2009-05-26	NULL	0
+2	1116	0	0	398	1013	1066	2	2009-09-02	NULL	NULL
+3	1121	0	0	403	1002	1069	2	2009-09-02	NULL	NULL
+4	1137	0	0	419	1012	1069	2	2009-09-02	NULL	NULL
+5	1145	0	0	427	1015	1066	2	2009-09-07	NULL	NULL
+6	1170	0	0	452	1012	1066	2	2009-09-07	NULL	NULL
+7	1178	0	0	460	1015	1064	2	2009-09-08	NULL	NULL
+8	1205	0	0	487	1015	1064	2	2009-09-08	NULL	NULL
+9	1232	0	0	514	1006	1064	2	2009-09-08	NULL	NULL
+10	1258	0	0	540	1014	1064	2	2009-09-08	NULL	NULL
+11	1262	0	0	547	1012	1064	2	2009-09-08	NULL	NULL
+12	1270	0	0	555	1012	1064	2	2009-09-08	NULL	NULL
+13	1277	0	0	562	1006	1064	2	2009-09-08	NULL	NULL
+14	1307	0	0	592	1002	1064	2	2009-09-08	NULL	NULL
+15	1313	0	0	603	1013	1064	2	2009-09-08	2009-09-01	NULL
+16	1317	0	0	607	1015	1064	2	2009-09-08	NULL	NULL
+17	1694498817	404	1	0	1001	1062	2	2000-01-01	2010-01-01	12
+18	1694498818	404	2	0	1002	1063	2	2001-02-02	2011-02-02	12
+19	1694498819	404	3	0	1003	1064	2	2002-03-03	2012-03-03	12
+20	1694498820	404	4	0	1004	1065	2	2003-04-04	2013-04-04	12
+21	1694498821	404	5	0	1005	1066	2	2004-05-05	2014-05-05	12
+22	1694498822	404	6	0	1006	1067	2	2005-06-06	2015-06-06	12
+23	1694498823	404	7	0	1007	1068	2	2006-07-07	2016-07-07	12
+24	1694498824	404	8	0	1008	1069	2	2007-08-08	2017-08-08	12
+25	1694498825	404	9	0	1009	1070	2	2008-09-09	2018-09-09	12
+26	1694498826	404	10	0	1010	1071	2	2009-10-10	2019-10-10	12
+27	1694498827	404	11	0	1011	1072	2	2000-11-11	2010-11-11	12
+28	1694498828	404	12	0	1012	1073	2	2001-12-12	2011-12-12	12
+29	1694498829	404	13	0	1013	1074	2	2002-01-13	2012-01-13	12
+30	1694498830	404	14	0	1014	1062	2	2003-02-14	2013-02-14	12
+31	1694498831	404	15	0	1015	1063	2	2004-03-15	2014-03-15	12
+32	1694498832	404	16	0	1016	1064	2	2005-04-16	2015-04-16	12
+33	1694498833	404	17	0	1001	1065	2	2006-05-17	2016-05-17	12
+34	1694498834	404	18	0	1002	1066	2	2007-06-18	2017-06-18	12
+35	1694498835	404	19	0	1003	1067	2	2008-07-19	2018-07-19	12
+36	1694498836	404	20	0	1004	1068	2	2009-08-20	2019-08-20	12
+reach EndOfFile
+
+Insert into COMMENT 
+first_add_co = 1694498837
+EP_COMMENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	3	0	0	338	NULL
+2	1059	0	0	339	comp1
+3	1060	0	0	340	comp2
+4	1129	0	0	411	Habite \u00E0 20km
+5	1131	0	0	413	rue Raspail
+6	1144	0	0	426	A besoin de visites fr\u00E9quentes.
+7	1149	0	0	431	Alzheimer
+8	1151	0	0	433	Aspirine
+9	1177	0	0	459	oublis
+10	1182	0	0	464	Alzheimer
+11	1184	0	0	466	Aspirine
+12	1204	0	0	486	ygffgyt
+13	1209	0	0	491	Alzheimer
+14	1211	0	0	493	Aspirine
+15	1231	0	0	513	ygffgyt
+16	1261	0	0	545	gres\u00E9
+17	1269	0	0	554	gus
+18	1276	0	0	561	###############################################################################################################################################################################################################################################################
+19	1321	0	0	611	Alzheimer
+20	1323	0	0	613	Aspirine
+21	1325	0	0	615	hjhj
+22	1345	0	0	635	ygffgyt
+23	1694498837	404	21	0	aa
+24	1694498838	404	22	0	bb
+25	1694498839	404	23	0	cc
+26	1694498840	404	24	0	dd
+27	1694498841	404	25	0	ee
+28	1694498842	404	26	0	ff
+29	1694498843	404	27	0	gg
+30	1694498844	404	28	0	hh
+31	1694498845	404	29	0	ii
+32	1694498846	404	30	0	jj
+33	1694498847	404	31	0	kk
+34	1694498848	404	32	0	ll
+35	1694498849	404	33	0	mm
+36	1694498850	404	34	0	nn
+37	1694498851	404	35	0	oo
+38	1694498852	404	36	0	pp
+39	1694498853	404	37	0	qq
+40	1694498854	404	38	0	rr
+41	1694498855	404	39	0	ss
+42	1694498856	404	40	0	tt
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Insert into INFO 
+----------- TEST BEGIN 0 ------------ = Accès à 1 user --> EP_QUERY_NOAC_SELECT_USER_BY_ID
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+EP_QUERY_NOAC_SELECT_USER_BY_ID
+Row	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	CodePost	Ville	Tel	Mobile	Courriel	InfoLegale	IdRole	
+1	MANIP-CH0111	0	NULL	NULL	NULL	PATRICK	NULL	NULL	NULL	NULL	NULL	NULL	0	1075
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 0.1 ------------ = Accès à 1 event (datefin) --> EP_QUERY_AC_SELECT_EVENT_BY_ID
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+EP_QUERY_AC_SELECT_EVENT_BY_ID: fordidden access - event n°1694498821
+Row	DateFin	
+reach EndOfFile
+
+EP_QUERY_AC_SELECT_EVENT_BY_ID: authrorized access - event n°1694498822
+Row	DateFin	
+1	2015-06-06
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 0.2 ------------ = 
+ - Accès à la liste des users --> EP_QUERY_NOAC_SELECT_USER_BY_INFOLEGALE
+ - Liste des users habilités --> EP_QUERY_NOAC_SELECT_HABILITATION  
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+EP_QUERY_NOAC_SELECT_USER_BY_INFOLEGALE :
+Row	IdGlobal	Nom	Type	Identifiant	Civilite	Prenom	Tel	Mobile	IdRole	Ville	
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_HABILITATION :
+Row	IdUser	IdGlobal	
+1	1062	1077
+2	1062	1078
+3	1062	1079
+4	1063	1080
+5	1064	1081
+6	1065	1082
+7	0	1083
+8	1066	1084
+9	1067	1085
+10	1068	1086
+11	1069	1087
+12	1070	1088
+13	1071	1089
+14	1072	1090
+15	1073	1091
+16	1074	1092
+reach EndOfFile
+
+----------- TEST BEGIN 0.3 ------------ = 
+ - Accès à la liste des users (sans test sur infolegale) --> EP_QUERY_NOAC_SELECT_USER
+EP_QUERY_NOAC_SELECT_USER:
+Row	IdGlobal	Nom	Type	Identifiant	Civilite	Prenom	Tel	Mobile	IdRole	Ville	
+1	1062	all	0	NULL	NULL	all	NULL	NULL	1075	NULL
+2	1063	Dupont	0	NULL	NULL	Pierre	NULL	NULL	1075	NULL
+3	1064	Martin	0	NULL	NULL	Roger	NULL	NULL	1075	NULL
+4	1065	Lefebvre	0	NULL	NULL	Julien	NULL	NULL	1076	NULL
+5	0	NumeroUn	0	NULL	NULL	Patient	NULL	NULL	1	NULL
+6	1066	KINE-CH0224	0	NULL	NULL	NORBERT	NULL	NULL	1075	NULL
+7	1067	SAGE-CH0162	0	NULL	NULL	CELINE	NULL	NULL	1075	NULL
+8	1068	MANIP-CH0111	0	NULL	NULL	PATRICK	NULL	NULL	1075	NULL
+9	1069	Vandewalle	0	NULL	NULL	Jean-Jacques	NULL	NULL	1076	NULL
+10	1070	Potonniee	0	NULL	NULL	Olivier	NULL	NULL	1076	NULL
+11	1071	Lagosanto	0	NULL	NULL	Laurent	NULL	NULL	1075	NULL
+12	1072	Gonzalvo	0	NULL	NULL	Beno\u00EEt	NULL	NULL	1075	NULL
+13	1073	Enjolras	0	NULL	NULL	Patrick	NULL	NULL	1076	NULL
+14	1074	Boulard	0	NULL	NULL	Laurent	NULL	NULL	1075	NULL
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 0.5 ------------ = liste des form autorisés --> EP_QUERY_AC_SELECT_AUTHORIZED_INSERT_FORM
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	IdGlobal	
+1	1001
+2	1002
+3	1003
+4	1004
+5	1006
+6	1007
+7	1010
+8	1011
+9	1012
+10	1013
+11	1014
+12	1015
+13	1016
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	IdGlobal	
+1	1001
+2	1002
+3	1003
+4	1004
+5	1005
+6	1007
+7	1008
+8	1009
+9	1010
+10	1011
+11	1012
+12	1016
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 1 ------------ = listes (entourage, etc.) (Info.Filtre=?) --> EP_QUERY_AC_SELECT_INFO_BY_FILTRE
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	Position	ValChar	ValNum	IdEvent	ValDate	IdComment	TSSPT	
+1	3	Vandewalle	NULL	1121	NULL	3	0
+2	4	Jean-Jacques	NULL	1121	NULL	3	0
+3	5	NULL	4	1121	NULL	3	0
+4	3	tui	NULL	1307	NULL	3	0
+5	5	NULL	1	1307	NULL	3	0
+6	0	bb	1	1694498818	2001-02-02	1694498837	42
+7	0	dd	3	1694498819	2003-04-04	1694498838	44
+8	0	ff	5	1694498820	2005-06-06	1694498839	46
+9	0	jj	9	1694498822	2009-10-10	1694498841	50
+10	0	ll	11	1694498823	2001-12-12	1694498842	52
+11	0	rr	17	1694498826	2007-06-18	1694498845	58
+12	0	tt	19	1694498827	2009-08-20	1694498846	60
+13	0	vv	21	1694498828	2001-10-22	1694498847	62
+14	0	xx	23	1694498829	2003-12-24	1694498848	64
+15	0	zz	25	1694498830	2005-02-26	1694498849	66
+16	0	bb	27	1694498831	2007-04-28	1694498850	68
+17	0	dd	29	1694498832	2009-06-30	1694498851	70
+18	0	ff	31	1694498833	2001-08-02	1694498852	72
+19	0	hh	33	1694498834	2003-10-04	1694498853	74
+20	0	jj	35	1694498835	2005-12-06	1694498854	76
+21	0	ll	37	1694498836	2007-02-08	1694498855	78
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	Position	ValChar	ValNum	IdEvent	ValDate	IdComment	TSSPT	
+1	3	Vandewalle	NULL	1121	NULL	3	0
+2	4	Jean-Jacques	NULL	1121	NULL	3	0
+3	5	NULL	4	1121	NULL	3	0
+4	3	tui	NULL	1307	NULL	3	0
+5	5	NULL	1	1307	NULL	3	0
+6	0	bb	1	1694498818	2001-02-02	1694498837	42
+7	0	dd	3	1694498819	2003-04-04	1694498838	44
+8	0	ff	5	1694498820	2005-06-06	1694498839	46
+9	0	hh	7	1694498821	2007-08-08	1694498840	48
+10	0	jj	9	1694498822	2009-10-10	1694498841	50
+11	0	ll	11	1694498823	2001-12-12	1694498842	52
+12	0	nn	13	1694498824	2003-02-14	1694498843	54
+13	0	pp	15	1694498825	2005-04-16	1694498844	56
+14	0	rr	17	1694498826	2007-06-18	1694498845	58
+15	0	tt	19	1694498827	2009-08-20	1694498846	60
+16	0	vv	21	1694498828	2001-10-22	1694498847	62
+17	0	dd	29	1694498832	2009-06-30	1694498851	70
+18	0	ff	31	1694498833	2001-08-02	1694498852	72
+19	0	hh	33	1694498834	2003-10-04	1694498853	74
+20	0	jj	35	1694498835	2005-12-06	1694498854	76
+21	0	ll	37	1694498836	2007-02-08	1694498855	78
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 1.1 ------------ = list of comments to fill in a given cell in a form --> EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT_AND_CONCEPT
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	Position	ValComment	
+1	0	ee
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	Position	ValComment	
+1	0	ee
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 2 ------------ = liste des rendez-vous du calendrier --> EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+FORBIDDEN FORM = 1005 
+Row	IdEvent	Position	ValChar	ValDate	ValNum	ValComment	
+reach EndOfFile
+
+AUTHORIZED FORM = 1006 
+Row	IdEvent	Position	ValChar	ValDate	ValNum	ValComment	
+1	1694498822	0	jj	2009-10-10	9	ee
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+FORBIDDEN FORM = 1015 
+Row	IdEvent	Position	ValChar	ValDate	ValNum	ValComment	
+reach EndOfFile
+
+AUTHORIZED FORM = 1005 
+Row	IdEvent	Position	ValChar	ValDate	ValNum	ValComment	
+1	1694498821	0	hh	2007-08-08	7	dd
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 2.5 ------------ = liste des rendez-vous du calendrier --> EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE_FROM_EVENT
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+FORBIDDEN FORM = 1005 
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+reach EndOfFile
+
+AUTHORIZED FORM = 1006 
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+1	1694498822	0	jj	2009-10-10	9	ee
+2	1694498822	1	kk	2000-11-11	10	NULL
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+FORBIDDEN FORM = 1015 
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+reach EndOfFile
+
+AUTHORIZED FORM = 1005 
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+1	1694498821	0	hh	2007-08-08	7	dd
+2	1694498821	1	ii	2008-09-09	8	NULL
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 3 ------------ = liste des traitements en cours --> EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_DATE
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	ValChar	ValNum	ValDate	Position	TSSPT	DateFin	IdEvent	IdUser	
+1	NULL	NULL	2009-09-02	2	0	2009-09-01	1313	1064
+2	t	NULL	NULL	1	0	2009-09-01	1313	1064
+3	NULL	8	NULL	4	0	2009-09-01	1313	1064
+4	xx	23	2003-12-24	0	64	2012-01-13	1694498829	1074
+5	yy	24	2004-01-25	1	65	2012-01-13	1694498829	1074
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	ValChar	ValNum	ValDate	Position	TSSPT	DateFin	IdEvent	IdUser	
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 4 ------------ = fiche patient [+ plan d'acc.] + liste passages/ev. importants) --> EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+1	1117	2	NULL	2009-09-02	NULL	NULL
+2	1118	1	Aspirine	NULL	NULL	NULL
+3	1119	4	NULL	NULL	1	NULL
+4	1120	6	NULL	NULL	1	NULL
+5	1314	2	NULL	2009-09-02	NULL	NULL
+6	1315	1	t	NULL	NULL	NULL
+7	1316	4	NULL	NULL	8	NULL
+8	1694498880	0	xx	2003-12-24	23	ll
+9	1694498881	1	yy	2004-01-25	24	NULL
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 5 ------------ = ouverture d'un formulaire --> EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+CONNECT USER/ROLE = 1067/1075
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	DateFin	
+1	1694498880	0	xx	2003-12-24	23	ll	2012-01-13
+2	1694498881	1	yy	2004-01-25	24	NULL	2012-01-13
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+CONNECT USER/ROLE = 1065/1076
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	DateFin	
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 6 ------------ UPDATE EVENT/INFO/COMMENT
+--------- MED - FORBIDDEN ACTION : UPDATE Event/Info/comment 
+TRY TO UPDATE (event, info, comment) n° = (1694498821, 1694498864, 1694498840)
+Save DBMS
+Closing DB connection... Done.
+CONNECT USER/ROLE = 1067/1075
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+    ----- EVENT n° 1694498821 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498821	404	5	0	1005	1066	2	2004-05-05	2014-05-05	12
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498821	404	5	0	1005	1066	2	2004-05-05	2014-05-05	12
+reach EndOfFile
+
+    ----- INFO n° 1694498864 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498864	404	48	0	1694498821	1694498840	hh	7	2007-08-08	0	1	7
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498864	404	48	0	1694498821	1694498840	hh	7	2007-08-08	0	1	7
+reach EndOfFile
+
+    ----- COMMENT n° 1694498864 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498840	404	24	0	dd
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498840	404	24	0	dd
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+--------- SOC - FORBIDDEN ACTION : UPDATE Event/Info/comment 
+TRY TO UPDATE (event, info, comment) n° = (1694498822, 1694498866, 1694498841)
+Save DBMS
+Closing DB connection... Done.
+CONNECT USER/ROLE = 1065/1076
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+    ----- EVENT n° 1694498822 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498822	404	6	0	1006	1067	2	2005-06-06	2015-06-06	12
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498822	404	6	0	1006	1067	2	2005-06-06	2015-06-06	12
+reach EndOfFile
+
+    ----- INFO n° 1694498866 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498866	404	50	0	1694498822	1694498841	jj	9	2009-10-10	0	1	9
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498866	404	50	0	1694498822	1694498841	jj	9	2009-10-10	0	1	9
+reach EndOfFile
+
+    ----- COMMENT n° 1694498866 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498841	404	25	0	ee
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 0... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498841	404	25	0	ee
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+--------- MED - AUTHORIZED ACTION : UPDATE Event/Info/comment 
+TRY TO UPDATE (event, info, comment) n° = (1694498822, 1694498866, 1694498841)
+Save DBMS
+Closing DB connection... Done.
+CONNECT USER/ROLE = 1067/1075
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+    ----- EVENT n° 1694498822 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498822	404	6	0	1006	1067	2	2005-06-06	2015-06-06	12
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498822	404	91	0	1006	1067	2	2000-04-04	2030-04-04	888
+reach EndOfFile
+
+    ----- INFO n° 1694498866 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498866	404	50	0	1694498822	1694498841	jj	9	2009-10-10	0	1	9
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498866	404	91	0	1694498822	1694498841	nouveau valchar saisi	1010101	1999-05-19	0	887	9
+reach EndOfFile
+
+    ----- COMMENT n° 1694498866 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498841	404	25	0	ee
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498841	404	91	0	nouveau valcommment saisi ... pour tester l'update
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+--------- SOC - AUTHORIZED ACTION : UPDATE Event/Info/comment 
+TRY TO UPDATE (event, info, comment) n° = (1694498821, 1694498864, 1694498840)
+Save DBMS
+Closing DB connection... Done.
+CONNECT USER/ROLE = 1065/1076
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+    ----- EVENT n° 1694498821 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498821	404	5	0	1005	1066	2	2004-05-05	2014-05-05	12
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498821	404	91	0	1005	1066	2	2000-04-04	2030-04-04	888
+reach EndOfFile
+
+    ----- INFO n° 1694498864 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498864	404	48	0	1694498821	1694498840	hh	7	2007-08-08	0	1	7
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498864	404	91	0	1694498821	1694498840	nouveau valchar saisi	1010101	1999-05-19	0	887	7
+reach EndOfFile
+
+    ----- COMMENT n° 1694498864 BEFORE UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498840	404	24	0	dd
+reach EndOfFile
+
+TRY TO UPDATE.... number of rows udpated 1... AFTER UPDATE : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498840	404	91	0	nouveau valcommment saisi ... pour tester l'update
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 7.0 ------------ INSERT EVENT
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+Insert into EVENT without priviledge:
+Number of rows inserted = 0
+GET GENERATED (EVENT) ID = 0
+TRY TO INSERT.... AFTER INSERT : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1065&role=1076
+Access Granted for UserDMSP = 1065 with the Role = 1076
+Done
+Insert into EVENT with priviledge:
+Number of rows inserted = 1
+GET GENERATED (EVENT) ID = 1694498908
+TRY TO INSERT.... AFTER INSERT : 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498908	404	92	0	1005	1067	2	2000-12-30	2000-12-31	12
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 7.1 ------------ INSERT INFO
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+Insert into INFO without priviledge:
+Number of rows inserted = 0
+GET GENERATED (INFO) ID = 0
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+reach EndOfFile
+
+Insert into INFO with priviledge:
+Number of rows inserted = 1
+GET GENERATED (INFO) ID = 1694498910
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498910	404	94	0	1694498822	3	test insertion	67890	2000-10-20	101	10	100
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+----------- TEST BEGIN 8 ------------ REMOVE HABILITATION
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=0&role=1
+Access Granted for UserDMSP = 0 with the Role = 1
+Done
+All habilitations before delete: 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1077	0	0	359	1075	1062
+2	1078	0	0	360	1076	1062
+3	1079	0	0	361	1	1062
+4	1080	0	0	362	1075	1063
+5	1081	0	0	363	1075	1064
+6	1082	0	0	364	1076	1065
+7	1083	0	0	365	1	0
+8	1084	0	0	366	1075	1066
+9	1085	0	0	367	1075	1067
+10	1086	0	0	368	1075	1068
+11	1087	0	0	369	1076	1069
+12	1088	0	0	370	1076	1070
+13	1089	0	0	371	1075	1071
+14	1090	0	0	372	1075	1072
+15	1091	0	0	373	1076	1073
+16	1092	0	0	374	1075	1074
+reach EndOfFile
+
+Remoove habilitation of user 1067/1075 (a doctor)...
+1 row(s) deleted...
+All habilitations after delete: 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1077	0	0	359	1075	1062
+2	1078	0	0	360	1076	1062
+3	1079	0	0	361	1	1062
+4	1080	0	0	362	1075	1063
+5	1081	0	0	363	1075	1064
+6	1082	0	0	364	1076	1065
+7	1083	0	0	365	1	0
+8	1084	0	0	366	1075	1066
+9	1086	0	0	368	1075	1068
+10	1087	0	0	369	1076	1069
+11	1088	0	0	370	1076	1070
+12	1089	0	0	371	1075	1071
+13	1090	0	0	372	1075	1072
+14	1091	0	0	373	1076	1073
+15	1092	0	0	374	1075	1074
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+Try to connect user 1067/1075 (no more habilited)... 
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Cannot load connection class because of underlying exception: 'java.sql.SQLException: UserDMSP = 1067 with the Role = 1075 has no access at all to this DMSP'
+Connecting to DB: jdbc:inria:smis?user=0&role=1
+Access Granted for UserDMSP = 0 with the Role = 1
+Done
+Re-inert habilitation of user 1067/1075 (a doctor)...
+author = 404
+TSSPT = 95
+Nb of inserted tuples = 1
+GET GENERATED (HABILITATION) ID = 1694498911, ( 404 | 95 )
+TSSPT = 96
+All habilitations after re-insert: 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1077	0	0	359	1075	1062
+2	1078	0	0	360	1076	1062
+3	1079	0	0	361	1	1062
+4	1080	0	0	362	1075	1063
+5	1081	0	0	363	1075	1064
+6	1082	0	0	364	1076	1065
+7	1083	0	0	365	1	0
+8	1084	0	0	366	1075	1066
+9	1086	0	0	368	1075	1068
+10	1087	0	0	369	1076	1069
+11	1088	0	0	370	1076	1070
+12	1089	0	0	371	1075	1071
+13	1090	0	0	372	1075	1072
+14	1091	0	0	373	1076	1073
+15	1092	0	0	374	1075	1074
+16	1694498911	404	95	0	1075	1067
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1067&role=1075
+Access Granted for UserDMSP = 1067 with the Role = 1075
+Done
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

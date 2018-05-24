@@ -1,0 +1,338 @@
+#JAVA package org.inria.dmsp.schema;
+
+#JAVA public class EP_TEST {
+
+
+#JAVA 	/*
+#JAVA 	 * PLANS FOR TEST - NOT USED IN APPLI/SYNCHRO 
+#JAVA 	 * 
+#JAVA 	 * SELECT_STAR:
+#JAVA 	 * 	EP_EPISODE_SELECT_STAR 
+#JAVA 	 *	EP_FORMULAIRE_SELECT_STAR
+#JAVA 	 *	EP_USER_SELECT_STAR
+#JAVA 	 *	EP_EVENT_SELECT_STAR
+#JAVA 	 *	EP_INFO_SELECT_STAR
+#JAVA 	 *	EP_COMMENT_SELECT_STAR
+#JAVA 	 *	EP_ROLE_SELECT_STAR
+#JAVA 	 *	EP_HABILITATION_SELECT_STAR
+#JAVA 	 *	EP_PATIENT_SELECT_STAR 
+#JAVA 	 * INSERT PLANS:
+#JAVA 	 *  EP_*_INSERT (FORMULAIRE, USER, ROLE, EPISODE, EVENT, INFO, COMMENT)
+#JAVA 	 *  EP_PATIENT_INSERT_*_* 
+#JAVA 	 * DELETE PLANS:
+#JAVA 	 *  EP_*_DELETE_ALL (FORMULAIRE, USER, ROLE, EPISODE, EVENT, INFO, COMMENT, HABILITATION)
+#JAVA 	 * MISCELLANEOUS:
+#JAVA 	 *  EP_SELECT_6ATTS_USER_ALL
+#JAVA 	 *  EP_SELECT_6ATTS_USER_LESSTHAN
+#JAVA 	 */
+
+#JAVA 	public static String EP_EVENT_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Event  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 3 # " + /* SCAN, Table Event (3) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 3 1 28 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Event(3), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v13 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 3 r0 # " + /* TABLE DELETE, table Event(3), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_INFO_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Info */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 4 # " + /* SCAN, Table Info (4) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 4 1 36 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Info(4), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v14 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 4 r0 # " + /* TABLE DELETE, table Info(4), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_EPISODE_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Episode */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 0 # " + /* SCAN, Table Episode (0) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 0 1 0 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Episode(0), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v10 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 0 r0 # " + /* TABLE DELETE, table Episode(0), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_FORMULAIRE_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Formulaire  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 1 # " + /* SCAN, Table Formulaire (1) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 1 1 5 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Formulaire(1), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v11 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 1 r0 # " + /* TABLE DELETE, table Formulaire(1), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_USER_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from UserDmsp  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 2 # " + /* SCAN, Table UserDMSP (2) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 2 1 10 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table UserDMSP(2), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v12 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 2 r0 # " + /* TABLE DELETE, table UserDMSP(2), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_COMMENT_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Comment  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 5 # " + /* SCAN, Table Comment (5) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 5 1 47 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Comment(5), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v15 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 5 r0 # " + /* TABLE DELETE, table Comment(5), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_ROLE_DELETE_ALL= 
+#JAVA 		/* SQL : 	Delete from Role  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 6 # " + /* SCAN, Table Role (6) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 6 1 52 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Role(6), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v16 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 6 r0 # " + /* TABLE DELETE, table Role(6), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+
+#JAVA 	public static String EP_HABILITATION_DELETE_ALL = 
+#JAVA 		/* SQL : 	Delete from Habilitation  */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 3 3 8 # " + /* SCAN, Table Habilitation (8) -->R0 */
+#JAVA 		"1 2 2 3 r0 1 8 1 57 # " + /* TABLE_LOOKUP pos:R0, 1 cols, table Habilitation(8), is_table: 1  -->R1 - R1 */
+#JAVA 		"5 1 1 2 3 12 1 85 v18 86 r0 87 v10 # " + /* TABLE_INSERT 3 cols, table LogDeleted(12), is_table: 1, [col_id value] -->R2 - R3*/
+#JAVA 		"9 0 0 1 8 r0 # " + /* TABLE DELETE, table Habilitation(8), tuple pos: R0 */
+#JAVA 		"\u0000*/";
+
+#JAVA public static String EP_EVENT_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE Insert into event values (?,?,?,?,?,?,?,?,?)
+
+#JAVA public static String EP_INFO_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE Insert into info values (?,?,?,?,?, ?,?,?,?,?, ?)
+
+#JAVA public static String EP_COMMENT_INSERT 	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE Insert into comment values (?,?,?,?)
+
+#JAVA public static String EP_EPISODE_SELECT_STAR =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from episode
+
+#JAVA public static String EP_FORMULAIRE_SELECT_STAR =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from formulaire
+
+#JAVA public static String EP_USER_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from userdmsp
+
+#JAVA public static String EP_EVENT_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from event
+
+#JAVA public static String EP_INFO_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from info
+
+#JAVA public static String EP_COMMENT_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from comment
+
+#JAVA public static String EP_ROLE_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from role
+
+#JAVA public static String EP_HABILITATION_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+VERBOSE NO_CI Select * from habilitation 
+
+#JAVA public static String EP_PATIENT_SELECT_STAR = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST ???
+VERBOSE NO_CI Select * from matricepatient
+
+#JAVA public static String EP_FORMULAIRE_INSERT =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+VERBOSE Insert into formulaire values (?,?,?,?,?)
+
+#JAVA public static String EP_USER_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+VERBOSE Insert into userdmsp values (?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?)
+
+#JAVA public static String EP_ROLE_INSERT  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+VERBOSE Insert into role values (?,?,?,?)
+
+#JAVA public static String EP_EPISODE_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+VERBOSE Insert into episode values (?,?,?,?)
+
+#there are multiple insert EPs, selection is done in tupleInsert below
+#---- Multiple INSERTS ----
+#CATEGORIE AUTRE:
+#JAVA 	public static String EP_PATIENT_INSERT_AUTRE_USER	=  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 10 2 4 0 5 v10 52 r11 # " +  // TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0) --> R9
+#JAVA 		"4 10 10 11 10 0 r6 r10 # " +   	// SELECT, Att IdGlobal(10), equal (0), value r6 (IdCat), From Pos r10
+#JAVA 		"1 11 11 12 r11 1 2 1 10 # " +  	// TABLE_LOOKUP, Pos R11, 1 col, Table USERDMSP(2), a TABLE(1) --> R10
+#JAVA 		"0 12 12 2 # \u0000*/"; 					// SCAN, Table USERDMSP(2) -->R11
+
+#JAVA 	public static String EP_PATIENT_INSERT_AUTRE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 10 2 4 0 5 v10 52 r11 # " +  // TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0) --> R9
+#JAVA 		"4 10 10 11 52 0 r6 r10 # " +   	// SELECT, Att IdGlobal(52), equal (0), value r6 (IdCat), From Pos r10
+#JAVA 		"1 11 11 12 r11 1 6 1 52 # " +  	// TABLE_LOOKUP, Pos R11, 1 col, Table ROLE(6), a TABLE(1) --> R10
+#JAVA 		"0 12 12 6 # \u0000*/"; 					// SCAN, Table ROLE(6) -->R11
+
+#CATEGORIE USER:
+#JAVA 	public static String EP_PATIENT_INSERT_USER_USER	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " +   // TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # "+   					// FLOW
+#JAVA 		"4 4 4 5 10 0 r4 r9 # " +   		// SELECT, Att IdGlobal(10), equal (0), value r4 (IdCat), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 2 1 10 # " +  		// TABLE_LOOKUP, Pos R10, 1 col, Table USERDMSP(2), a TABLE(1) --> R9
+#JAVA 		"0 6 6 2 # "+  						// SCAN, Table USERDMSP(2) -->R10
+#JAVA 		"4 10 10 11 10 0 r6 r11 # " +  		// SELECT, Att IdGlobal(10), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 2 1 10 # " +  	// TABLE_LOOKUP, Pos R12, 1 col, Table USER(2), a TABLE(1) --> R11
+#JAVA 		"0 12 12 2 # \u0000*/";					// SCAN, Table USER(2) -->R12
+
+#JAVA 	public static String EP_PATIENT_INSERT_USER_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " +   // TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # " +   				// FLOW
+#JAVA 		"4 4 4 5 10 0 r4 r9 # " +   		// SELECT, Att IdGlobal(10), equal (0), value r4 (IdCat), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 2 1 10 # " +  		// TABLE_LOOKUP, Pos R10, 1 col, Table USERDMSP(2), a TABLE(1) --> R9
+#JAVA 		"0 6 6 2 #" +  						// SCAN, Table USERDMSP(2) -->R10
+#JAVA 		"4 10 10 11 52 0 r6 r11 # " +  		// SELECT, Att IdGlobal(10), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 6 1 52 # " + 		// TABLE_LOOKUP, Pos R12, 1 col, Table ROLE(6), a TABLE(1) --> R11
+#JAVA 		"0 12 12 6 # \u0000*/";					// SCAN, Table ROLE(6) -->R12
+
+#CATEGORIE FORMULAIRE:
+#JAVA 	public static String EP_PATIENT_INSERT_FORMULAIRE_USER	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " +   // TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # " +  					// FLOW
+#JAVA 		"4 4 4 5 5 0 r4 r9 # " +  			// SELECT, Att IdGlobal(5), equal (0), value r4 (IdCat), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 1 1 5 # " + 			// TABLE_LOOKUP, Pos R10, 1 col, Table FORM(1), a TABLE(1) --> R9
+#JAVA 		"0 6 6 1 # " + 						// SCAN, Table FORM(1) -->R10
+#JAVA 		"4 10 10 11 10 0 r6 r11 # " + 		// SELECT, Att IdGlobal(10), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 2 1 10 # " + 		// TABLE_LOOKUP, Pos R12, 1 col, Table USER(2), a TABLE(1) --> R11
+#JAVA 		"0 12 12 2 # \u0000*/";					// SCAN, Table USER(2) -->R12
+
+#JAVA 	public static String EP_PATIENT_INSERT_FORMULAIRE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " + 	// TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # " + 					// FLOW
+#JAVA 		"4 4 4 5 5 0 r4 r9 # " + 			// SELECT, Att IdGlobal(5), equal (0), value r4 (IdCat_Epi), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 1 1 5 # " + 			// TABLE_LOOKUP, Pos R10, 1 col, Table FORM(1), a TABLE(1) --> R9
+#JAVA 		"0 6 6 1 # " + 						// SCAN, Table FORM(1) -->R10
+#JAVA 		"4 10 10 11 52 0 r6 r11 # " + 		// SELECT, Att IdGlobal(52), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 6 1 52 # " + 		// TABLE_LOOKUP, Pos R12, 1 col, Table ROLE(6), a TABLE(1) --> R11
+#JAVA 		"0 12 12 6 # \u0000*/";					// SCAN, Table ROLE(6) -->R12
+
+#CATEGORIE EPISODE:
+#JAVA 	public static String EP_PATIENT_INSERT_EPISODE_USER	=  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " + 	// TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # " + 					// FLOW
+#JAVA 		"4 4 4 5 0 0 r4 r9 # " + 			// SELECT, Att IdGlobal(5), equal (0), value r4 (IdCat_Epi), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 0 1 0 # " + 			// TABLE_LOOKUP, Pos R10, 1 col, Table EPI(0), a TABLE(1) --> R9
+#JAVA 		"0 6 6 0 # "+ 						// SCAN, Table EPI(0) -->R10
+#JAVA 		"4 10 10 11 10 0 r6 r11 # " + 		// SELECT, Att IdGlobal(10), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 2 1 10 # " + 		// TABLE_LOOKUP, Pos R12, 1 col, Table USER(2), a TABLE(1) --> R11
+#JAVA 		"0 12 12 2 # \u0000*/";					// SCAN, Table USER(2) -->R12
+
+#JAVA 	public static String EP_PATIENT_INSERT_EPISODE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+#JAVA 		//Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 		"/*EP \u0008 5 0 0 1 9 10 1 71 v30 72 ?1 73 ?2 74 ?3 75 ?4 76 ?5 77 ?6 78 ?7 79 ?8 # " + 
+#JAVA 		// TABLE_INSERT, 9 colums, Table MPAT(9), a table (1), --> R0 - R8
+#JAVA 		"5 1 1 2 2 4 0 5 r10 52 r12 # " + 	// TABLE_INSERT, 2 colums, Table SKT_MPAT(4), a SKT (0)
+#JAVA 		"7 2 2 10 4 # " + 					// FLOW
+#JAVA 		"4 4 4 5 0 0 r4 r9 # " + 			// SELECT, Att IdGlobal(5), equal (0), value r4 (IdCat_Epi), From Pos r9
+#JAVA 		"1 5 5 6 r10 1 0 1 0 # " + 			// TABLE_LOOKUP, Pos R10, 1 col, Table EPI(0), a TABLE(1) --> R9
+#JAVA 		"0 6 6 0 # " + 						// SCAN, Table EPI(0) -->R10
+#JAVA 		"4 10 10 11 52 0 r6 r11 # " + 		// SELECT, Att IdGlobal(52), equal (0), value r6 (IdActeur), From Pos r11
+#JAVA 		"1 11 11 12 r12 1 6 1 52 # " + 		// TABLE_LOOKUP, Pos R12, 1 col, Table ROLE(6), a TABLE(1) --> R11
+#JAVA 		"0 12 12 6 # \u0000*/";					// SCAN, Table ROLE(6) -->R12
+
+#---- end of INSERTS ----
+
+#JAVA public static  String OEP_EVENT_AC_INSERT = 		 
+AC VERBOSE Insert into event values (?,?,0, ?,?,?,?,?,?)
+
+#JAVA public static String OEP_INFO_AC_INSERT =  
+AC VERBOSE Insert into info values (?,?,0,?,?,?, ?,?,?,?,?)
+
+#JAVA 	// select * from sktinfo
+#JAVA 	public static String EP_SKTINFO_SELECT_STAR = 
+#JAVA 		// Select * from SKTInfo  
+#JAVA 		"/*EP \u0000 0 1 1 4 # " +     // SCAN, Table INFO(4) -->R0
+#JAVA 		"1 0 0 1 r0 5 1 0 0 1 2 3 4 # " +  // TABLE_LOOKUP, Pos R0, 5 cols, Table SKT INFO(4), a SKT(0) --> R1 - R5
+#JAVA 		"\u0000 6 1 0 PosInfo 1 1 PosForm 1 2 PosUser 1 3 PosEpisode 1 4 PosEvent 1 5 PosComment # \u0000*/";  // 5 cols, Type_i(0 String, 1 Num, 2 Date), Ri , Name_i
+
+#JAVA 	// select * from sktevent
+#JAVA 	public static String EP_SKTEVENT_SELECT_STAR = 
+#JAVA 		// Select * from SKTInfo  
+#JAVA 		"/*EP \u0000 0 1 1 3 # " +     // SCAN, Table INFO(4) -->R0
+#JAVA 		"1 0 0 1 r0 3 0 0 0 1 2 # " +  // TABLE_LOOKUP, Pos R0, 5 cols, Table SKT INFO(4), a SKT(0) --> R1 - R5
+#JAVA 		"\u0000 4 1 0 PosEvent 1 1 PosForm 1 2 PosUser 1 3 PosEpisode # \u0000*/";  // 5 cols, Type_i(0 String, 1 Num, 2 Date), Ri , Name_i
+
+#JAVA 	// ouverture d'un formulaire (Event.IdGlobal=?)
+#JAVA 	public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA 		//SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment
+#JAVA 		//  FROM event e, info i, comment c
+#JAVA 		//  WHERE i.Idevent=e.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=?
+#JAVA 		"/*EP \u0001 0 5 5 4 # " +     // scan of table info(4) --> r0
+#JAVA 		"1 4 4 5 r0 6 4 1 40 36 42 43 45 44 # " +
+#JAVA 		// TABLE LOOKUP at pos r0,  retrieving 6 cols, of table info (4), it's a table (1), 40 (IdEvent), 36(IDG), 42 (ValChar), 43 (ValNum), 45    (Pos), 44 (ValDate) -->  r1-r6
+#JAVA 		"4 3 3 4 40 0 ?1 r1 # " +
+#JAVA 		// SELECT Col Info.IdEvent (40), is equal (0), to parameter 1, the value being in r1 --> R7
+#JAVA 		"1 2 2 3 r0 5 1 0 0 1 2 3 4 # " +
+#JAVA 		// TABLE LOOKUP at pos r0,  retrieving 1 cols, of table SKT info (1), it's a SKT (0), 47(IdInternComment)-->  r8 -> r12
+#JAVA 		"1 1 1 2 r12 1 5 1 51 # " +
+#JAVA 		"8 0 0 1 0 r9 r8 r10 # " +	
+#JAVA 		// TABLE LOOKUP at pos r7,  retrieving 1 cols, of table Comment (5), it's a table(1), 51(ValComment)-->  r13
+#JAVA 		"\u0000 6 1 2 IdGlobal 1 5 Position 0 3 Valchar 2 6 ValDate 1 4 Valnum  0 13 ValComment # \u0000*/";
+#JAVA 	// 6 cols, Type_i(0 String, 1 Num, 2 Date), Ri , Name_i
+
+#produced by the moulinette
+#JAVA public static String EP_DELETED_SELECT_STAR =
+VERBOSE	Select * FROM TupleDeleted;
+
+#JAVA public static String EP_NOAC_SELECT_FORM_BY_NAME=
+VERBOSE SELECT i.IdGlobal, i.Position, i.IdEvent, i.IdComment, i.ValChar, i.ValDate, i.ValNum FROM Event e, Info i, Formulaire f WHERE i.IdEvent = e.IdGlobal AND e.IdForm = f.IdGlobal AND f.Nom = ?
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_USER =
+VERBOSE SELECT Nom, Prenom, Ville, Tel, Mobile, Type FROM UserDMSP
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_USER_BETWEEN_NOM =
+VERBOSE SELECT Nom, Prenom, Ville, Tel, Mobile, Type FROM UserDMSP WHERE Nom > ? AND Nom < ?
+
+#JAVA public static String EP_SELECT_FORM_BY_NAME_AND_IDEVENT=
+VERBOSE NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.IdComment, i.ValChar, i.ValDate, i.ValNum FROM Event e, Info i, Formulaire f WHERE i.IdEvent = e.IdGlobal AND e.IdForm = f.IdGlobal AND f.Nom = ? AND i.IdEvent = ?
+
+#JAVA public static String EP_AC_SELECT_FORM_BY_ID_AND_IDEVENT=
+AC VERBOSE NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND e.IdForm = ? AND i.IdEvent = ?
+
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_BY_FORM_BETWEEN_EVENT=
+AC VERBOSE NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.IdConcept, i.ValChar, i.ValDate, i.ValNum, i.IdComment FROM Event e, Info i WHERE i.IdEvent = e.IdGlobal AND e.IdForm = ? AND i.IdEvent > ? AND i.IdEvent < ?
+
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_COMMENT_BY_FORM=
+AC VERBOSE NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm = ?
+
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_COMMENT_BY_FORM_BETWEEN_EVENT=
+AC VERBOSE NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm = ? AND i.IdEvent > ? AND i.IdEvent < ?
+
+#JAVA 	public static String EP_QUERY_AC_SELECT_EVENTnop_INFO_COMMENT_BY_EVENT = 
+#JAVA 		/* SQL : 	SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM event e, info i, comment c WHERE i.Idevent=e.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=? */
+#JAVA 		"/*EP \u0001 0 5 5 4 # 1 4 4 5 r0 2 1 0 4 3 # 1 3 3 4 r2 1 3 1 28 # 4 2 2 3 28 0 ?1 r3 # 1 1 1 2 r0 5 4 1 36 45 42 44 43 # 1 0 0 1 r1 1 5 1 51 # \u0000 6 1 5 IdGlobal 1 6 Position 0 7 ValChar 2 8 ValDate 1 9 ValNum 0 10 ValComment # \u0000*/";
+
+#JAVA 	public static final String EP_QUERY_NOAC_SELECT_USER_DUMMY =
+#JAVA 		/* SQL : 	SELECT Nom, Prenom, Ville, Tel, Mobile, Type FROM UserDMSP */
+#JAVA 		"/*EP \u0000 " + 
+#JAVA 		"0 2 2 2 # " + /* SCAN, Table UserDMSP (2) -->R0 */
+#JAVA 		"1 1 1 2 r0 6 2 1 14 19 21 23 24 15 # " + /* TABLE_LOOKUP pos:R0, 6 cols, table UserDMSP(2), is_table: 1  -->R1 - R6 */
+#JAVA 		"q 0 0 1 # " + /* DUMMY */
+#JAVA 		"\u0000 6 0 1 Nom 0 2 Prenom 0 3 Ville 0 4 Tel 0 5 Mobile 1 6 Type # " + /* META_RESULT, 6 cols, type(0-char 1-num 2-date) [out_result name] */
+#JAVA 		"\u0000*/";
+#JAVA }

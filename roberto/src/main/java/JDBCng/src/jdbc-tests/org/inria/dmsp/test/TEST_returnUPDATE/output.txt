@@ -1,0 +1,38 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+// ---------- TEST : UPDATE INFO ------------ 
+// NON-EXISTING TUPLE IdG=1234567, only rows
+-- TRY TO UPDATE INFO with idG=1234567
+--> update return: row(s) updated = 0.
+// EXISTING TUPLE IdG=1126, only rows
+-- TRY TO UPDATE INFO with idG=1126
+--> update return: row(s) updated = 1.
+// NON-EXISTING TUPLE IdG=1234567, rows + keys
+-- TRY TO UPDATE INFO with idG=1234567
+--> update return: row(s) updated = 0; generated key = 0.
+// EXISTING TUPLE IdG=1126, rows + keys
+-- TRY TO UPDATE INFO with idG=1126
+--> update return: row(s) updated = 1; generated key = 0.
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

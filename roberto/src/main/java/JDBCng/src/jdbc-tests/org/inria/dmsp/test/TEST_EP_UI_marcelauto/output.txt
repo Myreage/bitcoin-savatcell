@@ -1,0 +1,45 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+EP_QUERY_NOAC_SELECT_HABILITATION
+Row	IdUser	IdGlobal	
+1	1062	1077
+2	1062	1078
+3	1062	1079
+4	1063	1080
+5	1064	1081
+6	1065	1082
+7	0	1083
+8	1066	1084
+9	1067	1085
+10	1068	1086
+11	1069	1087
+12	1070	1088
+13	1071	1089
+14	1072	1090
+15	1073	1091
+16	1074	1092
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

@@ -1,0 +1,14 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Fingerprint module de-activated
+Fingerprint module activated
+Please authenticate with your finger
+Fingerprint ID:0 authenticated
+Fingerprint module de-activated
+Closing DB connection... Done.

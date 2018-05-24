@@ -1,0 +1,1234 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+// TS_SPT currently = 1
+// Patient id = 404
+Data generated
+// Insertion dans la table ROLE 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE PAT
+EP_EPISODE_SELECT_BY_ID -> ID=34
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	0	2	0	bb
+reach EndOfFile
+
+EP_EPISODE_SELECT_BY_ID -> ID=35
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	35	0	2	0	cc
+reach EndOfFile
+
+EP_EPISODE_SELECT_BY_ID -> ID=36
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=14
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	0	2	0	bb	0
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=33
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	33	0	2	0	uu	1
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=52
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=4
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=8
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	8	0	2	0	ee	1	ee	ee	1	ee	ee	ee	ee	ee	ee	ee	1	aaaaaaaaaaaaaaaaaaae	2
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=12
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=36
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	0	0	0	14	4	34	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=45
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	45	0	0	0	14	8	34	2009-10-10	2009-10-10	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=54
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=77
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	0	36	46	bb	1	2001-03-02	0	1	1
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=176
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	176	0	0	0	45	46	ff	100	2000-06-01	9	0	100
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=275
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=46
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	46	0	0	0	bb
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=76
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	76	0	0	0	hh
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=106
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=1
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	2	0	bb
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=3
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	3	0	2	0	dd
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=5
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=9
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	1	4
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=13
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	13	0	0	0	2	8
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=17
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+reach EndOfFile
+
+EP_PATIENT_SELECT_BY_ID -> ID=177
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	177	0	2	0	0	0	4	0	85
+reach EndOfFile
+
+EP_PATIENT_SELECT_BY_ID -> ID=184
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	184	0	0	0	34	2	1	1	85
+reach EndOfFile
+
+EP_PATIENT_SELECT_BY_ID -> ID=191
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=77
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	0	36	46	bb	1	2001-03-02	0	1	1
+reach EndOfFile
+
+EP_INFO_UPDATE -> ID=77
+EP_INFO_SELECT_BY_ID -> ID=77
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	298	36	46	updated varchar	25	NULL	50	1	205
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=46
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	46	0	0	0	bb
+reach EndOfFile
+
+EP_INFO_UPDATE -> ID=46
+EP_COMMENT_SELECT_BY_ID -> ID=46
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	46	0	0	299	updated comment
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=1
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	2	0	bb
+reach EndOfFile
+
+EP_INFO_UPDATE -> ID=1
+EP_ROLE_SELECT_BY_ID -> ID=1
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	0	300	updated nom
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_IDUSER -> IDUSER=4
+Row	IdRole	
+1	1
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_IDUSER -> IDUSER=8
+Row	IdRole	
+1	2
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_IDUSER -> IDUSER=12
+Row	IdRole	
+reach EndOfFile
+
+EP_USER_SELECT_BY_CERTIF -> CERTIF=aaaaaaaaaaaaaaaaaaaa
+Row	IdGlobal	IdRole	Nom	Prenom	
+1	4	1	aa	aa
+reach EndOfFile
+
+EP_USER_SELECT_BY_CERTIF -> CERTIF=aaaaaaaaaaaaaaaaaaae
+Row	IdGlobal	IdRole	Nom	Prenom	
+1	8	2	ee	ee
+reach EndOfFile
+
+EP_USER_SELECT_BY_CERTIF -> CERTIF=aaaaaaaaaaaaaaaaaaam
+Row	IdGlobal	IdRole	Nom	Prenom	
+reach EndOfFile
+
+EP_EPISODE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	0	2	0	bb
+2	35	0	2	0	cc
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	0	2	0	bb	0
+2	15	0	2	0	cc	1
+3	16	0	2	0	dd	0
+4	17	0	2	0	ee	1
+5	18	0	2	0	ff	0
+6	19	0	2	0	gg	1
+7	20	0	2	0	hh	0
+8	21	0	2	0	ii	1
+9	22	0	2	0	jj	0
+10	23	0	2	0	kk	1
+11	24	0	2	0	ll	0
+12	25	0	2	0	mm	1
+13	26	0	2	0	nn	0
+14	27	0	2	0	oo	1
+15	28	0	2	0	pp	0
+16	29	0	2	0	qq	1
+17	30	0	2	0	rr	0
+18	31	0	2	0	ss	1
+19	32	0	2	0	tt	0
+20	33	0	2	0	uu	1
+reach EndOfFile
+
+EP_USER_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+2	5	0	2	0	bb	1	bb	bb	1	bb	bb	bb	bb	bb	bb	bb	1	aaaaaaaaaaaaaaaaaaab	2
+3	6	0	2	0	cc	1	cc	cc	1	cc	cc	cc	cc	cc	cc	cc	1	aaaaaaaaaaaaaaaaaaac	3
+4	7	0	2	0	dd	1	dd	dd	1	dd	dd	dd	dd	dd	dd	dd	1	aaaaaaaaaaaaaaaaaaad	1
+5	8	0	2	0	ee	1	ee	ee	1	ee	ee	ee	ee	ee	ee	ee	1	aaaaaaaaaaaaaaaaaaae	2
+reach EndOfFile
+
+EP_EVENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	0	0	0	14	4	34	2000-01-01	2000-01-01	12
+2	37	0	0	0	15	5	34	2001-02-02	2001-02-02	12
+3	38	0	0	0	16	6	34	2002-03-03	2002-03-03	12
+4	39	0	0	0	14	7	34	2003-04-04	2003-04-04	12
+5	40	0	0	0	15	8	34	2004-05-05	2004-05-05	12
+6	41	0	0	0	16	4	34	2005-06-06	2005-06-06	12
+7	42	0	0	0	14	5	34	2006-07-07	2006-07-07	12
+8	43	0	0	0	15	6	34	2007-08-08	2007-08-08	12
+9	44	0	0	0	16	7	34	2008-09-09	2008-09-09	12
+10	45	0	0	0	14	8	34	2009-10-10	2009-10-10	12
+reach EndOfFile
+
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	298	36	46	updated varchar	25	NULL	50	1	205
+2	78	0	0	0	36	46	cc	2	2000-04-03	1	0	2
+3	79	0	0	0	36	46	dd	3	2001-05-04	2	1	3
+4	80	0	0	0	36	46	ee	4	2000-06-05	3	0	4
+5	81	0	0	0	36	47	ff	5	2001-07-06	4	1	5
+6	82	0	0	0	36	46	gg	6	2000-08-07	5	0	6
+7	83	0	0	0	36	46	hh	7	2001-09-08	6	1	7
+8	84	0	0	0	36	48	ii	8	2000-10-09	7	0	8
+9	85	0	0	0	36	46	jj	9	2001-11-10	8	1	9
+10	86	0	0	0	36	46	kk	10	2000-12-11	9	0	10
+11	87	0	0	0	37	49	ll	11	2002-01-12	0	1	11
+12	88	0	0	0	37	46	mm	12	2000-02-13	1	0	12
+13	89	0	0	0	37	46	nn	13	2001-03-14	2	1	13
+14	90	0	0	0	37	50	oo	14	2000-04-15	3	0	14
+15	91	0	0	0	37	46	pp	15	2001-05-16	4	1	15
+16	92	0	0	0	37	46	qq	16	2000-06-17	5	0	16
+17	93	0	0	0	37	51	rr	17	2001-07-18	6	1	17
+18	94	0	0	0	37	46	ss	18	2000-08-19	7	0	18
+19	95	0	0	0	37	46	tt	19	2001-09-20	8	1	19
+20	96	0	0	0	37	52	uu	20	2000-10-01	9	0	20
+21	97	0	0	0	38	46	vv	21	2001-11-02	0	1	21
+22	98	0	0	0	38	46	ww	22	2000-12-03	1	0	22
+23	99	0	0	0	38	53	xx	23	2002-01-04	2	1	23
+24	100	0	0	0	38	46	bb	24	2000-02-05	3	0	24
+25	101	0	0	0	38	46	cc	25	2001-03-06	4	1	25
+26	102	0	0	0	38	54	dd	26	2000-04-07	5	0	26
+27	103	0	0	0	38	46	ee	27	2001-05-08	6	1	27
+28	104	0	0	0	38	46	ff	28	2000-06-09	7	0	28
+29	105	0	0	0	38	55	gg	29	2001-07-10	8	1	29
+30	106	0	0	0	38	46	hh	30	2000-08-11	9	0	30
+31	107	0	0	0	39	46	ii	31	2001-09-12	0	1	31
+32	108	0	0	0	39	56	jj	32	2000-10-13	1	0	32
+33	109	0	0	0	39	46	kk	33	2001-11-14	2	1	33
+34	110	0	0	0	39	46	ll	34	2000-12-15	3	0	34
+35	111	0	0	0	39	57	mm	35	2002-01-16	4	1	35
+36	112	0	0	0	39	46	nn	36	2000-02-17	5	0	36
+37	113	0	0	0	39	46	oo	37	2001-03-18	6	1	37
+38	114	0	0	0	39	58	pp	38	2000-04-19	7	0	38
+39	115	0	0	0	39	46	qq	39	2001-05-20	8	1	39
+40	116	0	0	0	39	46	rr	40	2000-06-01	9	0	40
+41	117	0	0	0	40	59	ss	41	2001-07-02	0	1	41
+42	118	0	0	0	40	46	tt	42	2000-08-03	1	0	42
+43	119	0	0	0	40	46	uu	43	2001-09-04	2	1	43
+44	120	0	0	0	40	60	vv	44	2000-10-05	3	0	44
+45	121	0	0	0	40	46	ww	45	2001-11-06	4	1	45
+46	122	0	0	0	40	46	xx	46	2000-12-07	5	0	46
+47	123	0	0	0	40	61	yy	47	2002-01-08	6	1	47
+48	124	0	0	0	40	46	bb	48	2000-02-09	7	0	48
+49	125	0	0	0	40	46	cc	49	2001-03-10	8	1	49
+50	126	0	0	0	40	62	dd	50	2000-04-11	9	0	50
+51	127	0	0	0	41	46	ee	51	2001-05-12	0	1	51
+52	128	0	0	0	41	46	ff	52	2000-06-13	1	0	52
+53	129	0	0	0	41	63	gg	53	2001-07-14	2	1	53
+54	130	0	0	0	41	46	hh	54	2000-08-15	3	0	54
+55	131	0	0	0	41	46	ii	55	2001-09-16	4	1	55
+56	132	0	0	0	41	64	jj	56	2000-10-17	5	0	56
+57	133	0	0	0	41	46	kk	57	2001-11-18	6	1	57
+58	134	0	0	0	41	46	ll	58	2000-12-19	7	0	58
+59	135	0	0	0	41	65	mm	59	2002-01-20	8	1	59
+60	136	0	0	0	41	46	nn	60	2000-02-01	9	0	60
+61	137	0	0	0	42	46	oo	61	2001-03-02	0	1	61
+62	138	0	0	0	42	66	pp	62	2000-04-03	1	0	62
+63	139	0	0	0	42	46	qq	63	2001-05-04	2	1	63
+64	140	0	0	0	42	46	rr	64	2000-06-05	3	0	64
+65	141	0	0	0	42	67	ss	65	2001-07-06	4	1	65
+66	142	0	0	0	42	46	tt	66	2000-08-07	5	0	66
+67	143	0	0	0	42	46	uu	67	2001-09-08	6	1	67
+68	144	0	0	0	42	68	vv	68	2000-10-09	7	0	68
+69	145	0	0	0	42	46	ww	69	2001-11-10	8	1	69
+70	146	0	0	0	42	46	xx	70	2000-12-11	9	0	70
+71	147	0	0	0	43	69	yy	71	2002-01-12	0	1	71
+72	148	0	0	0	43	46	bb	72	2000-02-13	1	0	72
+73	149	0	0	0	43	46	cc	73	2001-03-14	2	1	73
+74	150	0	0	0	43	70	dd	74	2000-04-15	3	0	74
+75	151	0	0	0	43	46	ee	75	2001-05-16	4	1	75
+76	152	0	0	0	43	46	ff	76	2000-06-17	5	0	76
+77	153	0	0	0	43	71	gg	77	2001-07-18	6	1	77
+78	154	0	0	0	43	46	hh	78	2000-08-19	7	0	78
+79	155	0	0	0	43	46	ii	79	2001-09-20	8	1	79
+80	156	0	0	0	43	72	jj	80	2000-10-01	9	0	80
+81	157	0	0	0	44	46	kk	81	2001-11-02	0	1	81
+82	158	0	0	0	44	46	ll	82	2000-12-03	1	0	82
+83	159	0	0	0	44	73	mm	83	2002-01-04	2	1	83
+84	160	0	0	0	44	46	nn	84	2000-02-05	3	0	84
+85	161	0	0	0	44	46	oo	85	2001-03-06	4	1	85
+86	162	0	0	0	44	74	pp	86	2000-04-07	5	0	86
+87	163	0	0	0	44	46	qq	87	2001-05-08	6	1	87
+88	164	0	0	0	44	46	rr	88	2000-06-09	7	0	88
+89	165	0	0	0	44	75	ss	89	2001-07-10	8	1	89
+90	166	0	0	0	44	46	tt	90	2000-08-11	9	0	90
+91	167	0	0	0	45	46	uu	91	2001-09-12	0	1	91
+92	168	0	0	0	45	46	vv	92	2000-10-13	1	0	92
+93	169	0	0	0	45	46	ww	93	2001-11-14	2	1	93
+94	170	0	0	0	45	46	xx	94	2000-12-15	3	0	94
+95	171	0	0	0	45	47	yy	95	2002-01-16	4	1	95
+96	172	0	0	0	45	46	bb	96	2000-02-17	5	0	96
+97	173	0	0	0	45	46	cc	97	2001-03-18	6	1	97
+98	174	0	0	0	45	48	dd	98	2000-04-19	7	0	98
+99	175	0	0	0	45	46	ee	99	2001-05-20	8	1	99
+100	176	0	0	0	45	46	ff	100	2000-06-01	9	0	100
+reach EndOfFile
+
+EP_COMMENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	46	0	0	299	updated comment
+2	47	0	0	0	cc
+3	48	0	0	0	dd
+4	49	0	0	0	ee
+5	50	0	0	0	ff
+6	51	0	0	0	gg
+7	52	0	0	0	hh
+8	53	0	0	0	ii
+9	54	0	0	0	jj
+10	55	0	0	0	kk
+11	56	0	0	0	ll
+12	57	0	0	0	mm
+13	58	0	0	0	nn
+14	59	0	0	0	oo
+15	60	0	0	0	pp
+16	61	0	0	0	qq
+17	62	0	0	0	rr
+18	63	0	0	0	ss
+19	64	0	0	0	tt
+20	65	0	0	0	uu
+21	66	0	0	0	vv
+22	67	0	0	0	ww
+23	68	0	0	0	xx
+24	69	0	0	0	yy
+25	70	0	0	0	bb
+26	71	0	0	0	cc
+27	72	0	0	0	dd
+28	73	0	0	0	ee
+29	74	0	0	0	ff
+30	75	0	0	0	gg
+31	76	0	0	0	hh
+reach EndOfFile
+
+EP_ROLE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	0	300	updated nom
+2	2	0	2	0	cc
+3	3	0	2	0	dd
+reach EndOfFile
+
+EP_HABILITATION_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	1	4
+2	10	0	0	0	2	5
+3	11	0	0	0	3	6
+4	12	0	0	0	1	7
+5	13	0	0	0	2	8
+reach EndOfFile
+
+EP_PATIENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	177	0	2	0	0	0	4	0	85
+2	178	0	0	0	0	0	1	1	85
+3	179	0	0	0	4	0	5	0	85
+4	180	0	0	0	4	0	1	1	85
+5	181	0	0	0	14	1	4	0	85
+6	182	0	0	0	14	1	1	1	85
+7	183	0	0	0	34	2	4	0	85
+8	184	0	0	0	34	2	1	1	85
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	1	1
+2	2	1	1	1	1	1
+3	3	1	1	1	1	1
+4	4	1	1	1	1	1
+5	5	1	1	1	1	2
+6	6	1	1	1	1	1
+7	7	1	1	1	1	1
+8	8	1	1	1	1	3
+9	9	1	1	1	1	1
+10	10	1	1	1	1	1
+11	11	2	2	1	2	4
+12	12	2	2	1	2	1
+13	13	2	2	1	2	1
+14	14	2	2	1	2	5
+15	15	2	2	1	2	1
+16	16	2	2	1	2	1
+17	17	2	2	1	2	6
+18	18	2	2	1	2	1
+19	19	2	2	1	2	1
+20	20	2	2	1	2	7
+21	21	3	3	1	3	1
+22	22	3	3	1	3	1
+23	23	3	3	1	3	8
+24	24	3	3	1	3	1
+25	25	3	3	1	3	1
+26	26	3	3	1	3	9
+27	27	3	3	1	3	1
+28	28	3	3	1	3	1
+29	29	3	3	1	3	10
+30	30	3	3	1	3	1
+31	31	1	4	1	4	1
+32	32	1	4	1	4	11
+33	33	1	4	1	4	1
+34	34	1	4	1	4	1
+35	35	1	4	1	4	12
+36	36	1	4	1	4	1
+37	37	1	4	1	4	1
+38	38	1	4	1	4	13
+39	39	1	4	1	4	1
+40	40	1	4	1	4	1
+41	41	2	5	1	5	14
+42	42	2	5	1	5	1
+43	43	2	5	1	5	1
+44	44	2	5	1	5	15
+45	45	2	5	1	5	1
+46	46	2	5	1	5	1
+47	47	2	5	1	5	16
+48	48	2	5	1	5	1
+49	49	2	5	1	5	1
+50	50	2	5	1	5	17
+51	51	3	1	1	6	1
+52	52	3	1	1	6	1
+53	53	3	1	1	6	18
+54	54	3	1	1	6	1
+55	55	3	1	1	6	1
+56	56	3	1	1	6	19
+57	57	3	1	1	6	1
+58	58	3	1	1	6	1
+59	59	3	1	1	6	20
+60	60	3	1	1	6	1
+61	61	1	2	1	7	1
+62	62	1	2	1	7	21
+63	63	1	2	1	7	1
+64	64	1	2	1	7	1
+65	65	1	2	1	7	22
+66	66	1	2	1	7	1
+67	67	1	2	1	7	1
+68	68	1	2	1	7	23
+69	69	1	2	1	7	1
+70	70	1	2	1	7	1
+71	71	2	3	1	8	24
+72	72	2	3	1	8	1
+73	73	2	3	1	8	1
+74	74	2	3	1	8	25
+75	75	2	3	1	8	1
+76	76	2	3	1	8	1
+77	77	2	3	1	8	26
+78	78	2	3	1	8	1
+79	79	2	3	1	8	1
+80	80	2	3	1	8	27
+81	81	3	4	1	9	1
+82	82	3	4	1	9	1
+83	83	3	4	1	9	28
+84	84	3	4	1	9	1
+85	85	3	4	1	9	1
+86	86	3	4	1	9	29
+87	87	3	4	1	9	1
+88	88	3	4	1	9	1
+89	89	3	4	1	9	30
+90	90	3	4	1	9	1
+91	91	1	5	1	10	1
+92	92	1	5	1	10	1
+93	93	1	5	1	10	1
+94	94	1	5	1	10	1
+95	95	1	5	1	10	2
+96	96	1	5	1	10	1
+97	97	1	5	1	10	1
+98	98	1	5	1	10	3
+99	99	1	5	1	10	1
+100	100	1	5	1	10	1
+reach EndOfFile
+
+-----/////// EP_SKTEVENT_SELECT_STAR /////////---------
+Row	PosEvent	PosForm	PosUser	PosEpisode	
+1	1	1	1	1
+2	2	2	2	1
+3	3	3	3	1
+4	4	1	4	1
+5	5	2	5	1
+6	6	3	1	1
+7	7	1	2	1
+8	8	2	3	1
+9	9	3	4	1
+10	10	1	5	1
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_EVENT_FORM_USER_BY_FILTRE
+Row	Nom	DateEvent	eIdGlobal	fIdGlobal	uIdGlobal	TSSPT	
+1	bb	2001-02-02	37	15	5	0
+2	ee	2004-05-05	40	15	8	0
+3	cc	2007-08-08	43	15	6	0
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM = 14
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+1	77	50	updated varchar	NULL	25	updated comment
+2	78	1	cc	2000-04-03	2	updated comment
+3	79	2	dd	2001-05-04	3	updated comment
+4	80	3	ee	2000-06-05	4	updated comment
+5	81	4	ff	2001-07-06	5	cc
+6	82	5	gg	2000-08-07	6	updated comment
+7	83	6	hh	2001-09-08	7	updated comment
+8	84	7	ii	2000-10-09	8	dd
+9	85	8	jj	2001-11-10	9	updated comment
+10	86	9	kk	2000-12-11	10	updated comment
+11	107	0	ii	2001-09-12	31	updated comment
+12	108	1	jj	2000-10-13	32	ll
+13	109	2	kk	2001-11-14	33	updated comment
+14	110	3	ll	2000-12-15	34	updated comment
+15	111	4	mm	2002-01-16	35	mm
+16	112	5	nn	2000-02-17	36	updated comment
+17	113	6	oo	2001-03-18	37	updated comment
+18	114	7	pp	2000-04-19	38	nn
+19	115	8	qq	2001-05-20	39	updated comment
+20	116	9	rr	2000-06-01	40	updated comment
+21	137	0	oo	2001-03-02	61	updated comment
+22	138	1	pp	2000-04-03	62	vv
+23	139	2	qq	2001-05-04	63	updated comment
+24	140	3	rr	2000-06-05	64	updated comment
+25	141	4	ss	2001-07-06	65	ww
+26	142	5	tt	2000-08-07	66	updated comment
+27	143	6	uu	2001-09-08	67	updated comment
+28	144	7	vv	2000-10-09	68	xx
+29	145	8	ww	2001-11-10	69	updated comment
+30	146	9	xx	2000-12-11	70	updated comment
+31	167	0	uu	2001-09-12	91	updated comment
+32	168	1	vv	2000-10-13	92	updated comment
+33	169	2	ww	2001-11-14	93	updated comment
+34	170	3	xx	2000-12-15	94	updated comment
+35	171	4	yy	2002-01-16	95	cc
+36	172	5	bb	2000-02-17	96	updated comment
+37	173	6	cc	2001-03-18	97	updated comment
+38	174	7	dd	2000-04-19	98	dd
+39	175	8	ee	2001-05-20	99	updated comment
+40	176	9	ff	2000-06-01	100	updated comment
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_USER_BY_ID
+Row	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	CodePost	Ville	Tel	Mobile	Courriel	InfoLegale	IdRole	
+1	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	1
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_EVENT
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	DateFin	
+1	87	0	ll	2002-01-12	11	ee	2001-02-02
+2	88	1	mm	2000-02-13	12	updated comment	2001-02-02
+3	89	2	nn	2001-03-14	13	updated comment	2001-02-02
+4	90	3	oo	2000-04-15	14	ff	2001-02-02
+5	91	4	pp	2001-05-16	15	updated comment	2001-02-02
+6	92	5	qq	2000-06-17	16	updated comment	2001-02-02
+7	93	6	rr	2001-07-18	17	gg	2001-02-02
+8	94	7	ss	2000-08-19	18	updated comment	2001-02-02
+9	95	8	tt	2001-09-20	19	updated comment	2001-02-02
+10	96	9	uu	2000-10-01	20	hh	2001-02-02
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_INFO_BY_FILTRE
+Row	Position	ValChar	ValNum	IdEvent	ValDate	IdComment	TSSPT	
+1	1	cc	2	36	2000-04-03	46	0
+2	3	ee	4	36	2000-06-05	46	0
+3	5	gg	6	36	2000-08-07	46	0
+4	7	ii	8	36	2000-10-09	48	0
+5	9	kk	10	36	2000-12-11	46	0
+6	1	mm	12	37	2000-02-13	46	0
+7	3	oo	14	37	2000-04-15	50	0
+8	5	qq	16	37	2000-06-17	46	0
+9	7	ss	18	37	2000-08-19	46	0
+10	9	uu	20	37	2000-10-01	52	0
+11	1	ww	22	38	2000-12-03	46	0
+12	3	bb	24	38	2000-02-05	46	0
+13	5	dd	26	38	2000-04-07	54	0
+14	7	ff	28	38	2000-06-09	46	0
+15	9	hh	30	38	2000-08-11	46	0
+16	1	jj	32	39	2000-10-13	56	0
+17	3	ll	34	39	2000-12-15	46	0
+18	5	nn	36	39	2000-02-17	46	0
+19	7	pp	38	39	2000-04-19	58	0
+20	9	rr	40	39	2000-06-01	46	0
+21	1	tt	42	40	2000-08-03	46	0
+22	3	vv	44	40	2000-10-05	60	0
+23	5	xx	46	40	2000-12-07	46	0
+24	7	bb	48	40	2000-02-09	46	0
+25	9	dd	50	40	2000-04-11	62	0
+26	1	ff	52	41	2000-06-13	46	0
+27	3	hh	54	41	2000-08-15	46	0
+28	5	jj	56	41	2000-10-17	64	0
+29	7	ll	58	41	2000-12-19	46	0
+30	9	nn	60	41	2000-02-01	46	0
+31	1	pp	62	42	2000-04-03	66	0
+32	3	rr	64	42	2000-06-05	46	0
+33	5	tt	66	42	2000-08-07	46	0
+34	7	vv	68	42	2000-10-09	68	0
+35	9	xx	70	42	2000-12-11	46	0
+36	1	bb	72	43	2000-02-13	46	0
+37	3	dd	74	43	2000-04-15	70	0
+38	5	ff	76	43	2000-06-17	46	0
+39	7	hh	78	43	2000-08-19	46	0
+40	9	jj	80	43	2000-10-01	72	0
+41	1	ll	82	44	2000-12-03	46	0
+42	3	nn	84	44	2000-02-05	46	0
+43	5	pp	86	44	2000-04-07	74	0
+44	7	rr	88	44	2000-06-09	46	0
+45	9	tt	90	44	2000-08-11	46	0
+46	1	vv	92	45	2000-10-13	46	0
+47	3	xx	94	45	2000-12-15	46	0
+48	5	bb	96	45	2000-02-17	46	0
+49	7	dd	98	45	2000-04-19	48	0
+50	9	ff	100	45	2000-06-01	46	0
+reach EndOfFile
+
+SELECT_NOAC_USER_BY_INFOLEGALE
+Row	IdGlobal	Nom	Type	Identifiant	Civilite	Prenom	Tel	Mobile	IdRole	Ville	
+1	4	aa	1	aa	1	aa	aa	aa	1	aa
+2	5	bb	1	bb	1	bb	bb	bb	2	bb
+3	6	cc	1	cc	1	cc	cc	cc	3	cc
+4	7	dd	1	dd	1	dd	dd	dd	1	dd
+5	8	ee	1	ee	1	ee	ee	ee	2	ee
+reach EndOfFile
+
+EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE
+Row	IdEvent	Position	ValChar	ValDate	ValNum	ValComment	
+1	37	1	mm	2000-02-13	12	updated comment
+2	37	3	oo	2000-04-15	14	ff
+3	37	5	qq	2000-06-17	16	updated comment
+4	37	7	ss	2000-08-19	18	updated comment
+5	37	9	uu	2000-10-01	20	hh
+6	40	1	tt	2000-08-03	42	updated comment
+7	40	3	vv	2000-10-05	44	pp
+8	40	5	xx	2000-12-07	46	updated comment
+9	40	7	bb	2000-02-09	48	updated comment
+10	40	9	dd	2000-04-11	50	rr
+11	43	1	bb	2000-02-13	72	updated comment
+12	43	3	dd	2000-04-15	74	bb
+13	43	5	ff	2000-06-17	76	updated comment
+14	43	7	hh	2000-08-19	78	updated comment
+15	43	9	jj	2000-10-01	80	dd
+reach EndOfFile
+
+EP_QUERY_SELECT_EVENT_INFO_BY_FORM_AND_DATE : fo = 15, dateFin > 2004-05-04
+Row	ValChar	ValNum	ValDate	Position	TSSPT	DateFin	IdEvent	IdUser	
+1	ss	41	2001-07-02	0	0	2004-05-05	40	8
+2	tt	42	2000-08-03	1	0	2004-05-05	40	8
+3	uu	43	2001-09-04	2	0	2004-05-05	40	8
+4	vv	44	2000-10-05	3	0	2004-05-05	40	8
+5	ww	45	2001-11-06	4	0	2004-05-05	40	8
+6	xx	46	2000-12-07	5	0	2004-05-05	40	8
+7	yy	47	2002-01-08	6	0	2004-05-05	40	8
+8	bb	48	2000-02-09	7	0	2004-05-05	40	8
+9	cc	49	2001-03-10	8	0	2004-05-05	40	8
+10	dd	50	2000-04-11	9	0	2004-05-05	40	8
+11	yy	71	2002-01-12	0	0	2007-08-08	43	6
+12	bb	72	2000-02-13	1	0	2007-08-08	43	6
+13	cc	73	2001-03-14	2	0	2007-08-08	43	6
+14	dd	74	2000-04-15	3	0	2007-08-08	43	6
+15	ee	75	2001-05-16	4	0	2007-08-08	43	6
+16	ff	76	2000-06-17	5	0	2007-08-08	43	6
+17	gg	77	2001-07-18	6	0	2007-08-08	43	6
+18	hh	78	2000-08-19	7	0	2007-08-08	43	6
+19	ii	79	2001-09-20	8	0	2007-08-08	43	6
+20	jj	80	2000-10-01	9	0	2007-08-08	43	6
+reach EndOfFile
+
+EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_DATE : fo = 15, dateFin > 2004-05-05
+Row	ValChar	ValNum	ValDate	Position	TSSPT	DateFin	IdEvent	IdUser	
+1	yy	71	2002-01-12	0	0	2007-08-08	43	6
+2	bb	72	2000-02-13	1	0	2007-08-08	43	6
+3	cc	73	2001-03-14	2	0	2007-08-08	43	6
+4	dd	74	2000-04-15	3	0	2007-08-08	43	6
+5	ee	75	2001-05-16	4	0	2007-08-08	43	6
+6	ff	76	2000-06-17	5	0	2007-08-08	43	6
+7	gg	77	2001-07-18	6	0	2007-08-08	43	6
+8	hh	78	2000-08-19	7	0	2007-08-08	43	6
+9	ii	79	2001-09-20	8	0	2007-08-08	43	6
+10	jj	80	2000-10-01	9	0	2007-08-08	43	6
+reach EndOfFile
+
+GET GENERATED (EVENT) ID = 1694498817
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498817	0	2	0	14	4	34	2000-10-20	2000-10-20	25
+reach EndOfFile
+
+GET GENERATED (COMMENT) ID = 1694498818
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498818	0	2	0	comment can be big, but more than 450 bytes can't be written
+reach EndOfFile
+
+GET GENERATED (INFO) ID = 1694498819
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498819	0	2	0	1694498817	1694498818	char value	12345	2000-10-20	13	1	100
+reach EndOfFile
+
+GET GENERATED (EVENT) ID = 1694498820
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498820	2	0	0	14	4	34	2000-10-20	2000-10-30	1212
+reach EndOfFile
+
+GET GENERATED (COMMENT) ID = 1694498821
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498821	2	0	0	comment can be big, but more than 450 bytes can't be written
+reach EndOfFile
+
+GET GENERATED (INFO) ID = 1694498822
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498822	2	0	0	1694498820	1694498821	char value	12345	2000-10-20	13	1	100
+reach EndOfFile
+
+GET GENERATED (HABILITATION) ID = 1694498823
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1694498823	0	2	0	1	4
+reach EndOfFile
+
+EP_EPISODE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	0	2	0	bb
+2	35	0	2	0	cc
+reach EndOfFile
+
+EP_EPISODE_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	0	2	0	bb
+2	35	0	2	0	cc
+reach EndOfFile
+
+-- BEFORE UPDATE EPISODE: IdG=34
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	0	2	0	bb
+reach EndOfFile
+
+-- AFTER UPDATE EPISODE: IdG=34 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	34	10	0	10	aa
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	0	2	0	bb	0
+2	15	0	2	0	cc	1
+3	16	0	2	0	dd	0
+4	17	0	2	0	ee	1
+5	18	0	2	0	ff	0
+6	19	0	2	0	gg	1
+7	20	0	2	0	hh	0
+8	21	0	2	0	ii	1
+9	22	0	2	0	jj	0
+10	23	0	2	0	kk	1
+11	24	0	2	0	ll	0
+12	25	0	2	0	mm	1
+13	26	0	2	0	nn	0
+14	27	0	2	0	oo	1
+15	28	0	2	0	pp	0
+16	29	0	2	0	qq	1
+17	30	0	2	0	rr	0
+18	31	0	2	0	ss	1
+19	32	0	2	0	tt	0
+20	33	0	2	0	uu	1
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	0	2	0	bb	0
+2	15	0	2	0	cc	1
+3	16	0	2	0	dd	0
+4	17	0	2	0	ee	1
+5	18	0	2	0	ff	0
+6	19	0	2	0	gg	1
+7	20	0	2	0	hh	0
+8	21	0	2	0	ii	1
+9	22	0	2	0	jj	0
+10	23	0	2	0	kk	1
+11	24	0	2	0	ll	0
+12	25	0	2	0	mm	1
+13	26	0	2	0	nn	0
+14	27	0	2	0	oo	1
+15	28	0	2	0	pp	0
+16	29	0	2	0	qq	1
+17	30	0	2	0	rr	0
+18	31	0	2	0	ss	1
+19	32	0	2	0	tt	0
+20	33	0	2	0	uu	1
+reach EndOfFile
+
+-- BEFORE UPDATE FORMULAIRE: IdG=14
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	0	2	0	bb	0
+reach EndOfFile
+
+-- AFTER UPDATE FORMULAIRE: IdG=14 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	14	10	0	10	aa	2
+reach EndOfFile
+
+EP_USER_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+2	5	0	2	0	bb	1	bb	bb	1	bb	bb	bb	bb	bb	bb	bb	1	aaaaaaaaaaaaaaaaaaab	2
+3	6	0	2	0	cc	1	cc	cc	1	cc	cc	cc	cc	cc	cc	cc	1	aaaaaaaaaaaaaaaaaaac	3
+4	7	0	2	0	dd	1	dd	dd	1	dd	dd	dd	dd	dd	dd	dd	1	aaaaaaaaaaaaaaaaaaad	1
+5	8	0	2	0	ee	1	ee	ee	1	ee	ee	ee	ee	ee	ee	ee	1	aaaaaaaaaaaaaaaaaaae	2
+reach EndOfFile
+
+EP_USER_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+2	5	0	2	0	bb	1	bb	bb	1	bb	bb	bb	bb	bb	bb	bb	1	aaaaaaaaaaaaaaaaaaab	2
+3	6	0	2	0	cc	1	cc	cc	1	cc	cc	cc	cc	cc	cc	cc	1	aaaaaaaaaaaaaaaaaaac	3
+4	7	0	2	0	dd	1	dd	dd	1	dd	dd	dd	dd	dd	dd	dd	1	aaaaaaaaaaaaaaaaaaad	1
+5	8	0	2	0	ee	1	ee	ee	1	ee	ee	ee	ee	ee	ee	ee	1	aaaaaaaaaaaaaaaaaaae	2
+reach EndOfFile
+
+-- BEFORE UPDATE USER: IdG=4
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+reach EndOfFile
+
+-- AFTER UPDATE USER: IdG=4 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	10	0	10	bb	2	bb	bb	0	bb	bb	bb	bb	bb	bb	bb	0	aaaaaaaaaaaaaaaaaaam	4
+reach EndOfFile
+
+EP_EVENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	0	0	0	14	4	34	2000-01-01	2000-01-01	12
+2	37	0	0	0	15	5	34	2001-02-02	2001-02-02	12
+3	38	0	0	0	16	6	34	2002-03-03	2002-03-03	12
+4	39	0	0	0	14	7	34	2003-04-04	2003-04-04	12
+5	40	0	0	0	15	8	34	2004-05-05	2004-05-05	12
+6	41	0	0	0	16	4	34	2005-06-06	2005-06-06	12
+7	42	0	0	0	14	5	34	2006-07-07	2006-07-07	12
+8	43	0	0	0	15	6	34	2007-08-08	2007-08-08	12
+9	44	0	0	0	16	7	34	2008-09-09	2008-09-09	12
+10	45	0	0	0	14	8	34	2009-10-10	2009-10-10	12
+11	1694498817	0	2	0	14	4	34	2000-10-20	2000-10-20	25
+12	1694498820	2	0	0	14	4	34	2000-10-20	2000-10-30	1212
+reach EndOfFile
+
+EP_EVENT_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498817	0	2	0	14	4	34	2000-10-20	2000-10-20	25
+reach EndOfFile
+
+-- BEFORE UPDATE EVENT: IdG=36
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	0	0	0	14	4	34	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+-- AFTER UPDATE EVENT: IdG=36 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	10	0	10	14	4	34	2009-07-14	2099-01-01	1
+reach EndOfFile
+
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	298	36	46	updated varchar	25	NULL	50	1	205
+2	78	0	0	0	36	46	cc	2	2000-04-03	1	0	2
+3	79	0	0	0	36	46	dd	3	2001-05-04	2	1	3
+4	80	0	0	0	36	46	ee	4	2000-06-05	3	0	4
+5	81	0	0	0	36	47	ff	5	2001-07-06	4	1	5
+6	82	0	0	0	36	46	gg	6	2000-08-07	5	0	6
+7	83	0	0	0	36	46	hh	7	2001-09-08	6	1	7
+8	84	0	0	0	36	48	ii	8	2000-10-09	7	0	8
+9	85	0	0	0	36	46	jj	9	2001-11-10	8	1	9
+10	86	0	0	0	36	46	kk	10	2000-12-11	9	0	10
+11	87	0	0	0	37	49	ll	11	2002-01-12	0	1	11
+12	88	0	0	0	37	46	mm	12	2000-02-13	1	0	12
+13	89	0	0	0	37	46	nn	13	2001-03-14	2	1	13
+14	90	0	0	0	37	50	oo	14	2000-04-15	3	0	14
+15	91	0	0	0	37	46	pp	15	2001-05-16	4	1	15
+16	92	0	0	0	37	46	qq	16	2000-06-17	5	0	16
+17	93	0	0	0	37	51	rr	17	2001-07-18	6	1	17
+18	94	0	0	0	37	46	ss	18	2000-08-19	7	0	18
+19	95	0	0	0	37	46	tt	19	2001-09-20	8	1	19
+20	96	0	0	0	37	52	uu	20	2000-10-01	9	0	20
+21	97	0	0	0	38	46	vv	21	2001-11-02	0	1	21
+22	98	0	0	0	38	46	ww	22	2000-12-03	1	0	22
+23	99	0	0	0	38	53	xx	23	2002-01-04	2	1	23
+24	100	0	0	0	38	46	bb	24	2000-02-05	3	0	24
+25	101	0	0	0	38	46	cc	25	2001-03-06	4	1	25
+26	102	0	0	0	38	54	dd	26	2000-04-07	5	0	26
+27	103	0	0	0	38	46	ee	27	2001-05-08	6	1	27
+28	104	0	0	0	38	46	ff	28	2000-06-09	7	0	28
+29	105	0	0	0	38	55	gg	29	2001-07-10	8	1	29
+30	106	0	0	0	38	46	hh	30	2000-08-11	9	0	30
+31	107	0	0	0	39	46	ii	31	2001-09-12	0	1	31
+32	108	0	0	0	39	56	jj	32	2000-10-13	1	0	32
+33	109	0	0	0	39	46	kk	33	2001-11-14	2	1	33
+34	110	0	0	0	39	46	ll	34	2000-12-15	3	0	34
+35	111	0	0	0	39	57	mm	35	2002-01-16	4	1	35
+36	112	0	0	0	39	46	nn	36	2000-02-17	5	0	36
+37	113	0	0	0	39	46	oo	37	2001-03-18	6	1	37
+38	114	0	0	0	39	58	pp	38	2000-04-19	7	0	38
+39	115	0	0	0	39	46	qq	39	2001-05-20	8	1	39
+40	116	0	0	0	39	46	rr	40	2000-06-01	9	0	40
+41	117	0	0	0	40	59	ss	41	2001-07-02	0	1	41
+42	118	0	0	0	40	46	tt	42	2000-08-03	1	0	42
+43	119	0	0	0	40	46	uu	43	2001-09-04	2	1	43
+44	120	0	0	0	40	60	vv	44	2000-10-05	3	0	44
+45	121	0	0	0	40	46	ww	45	2001-11-06	4	1	45
+46	122	0	0	0	40	46	xx	46	2000-12-07	5	0	46
+47	123	0	0	0	40	61	yy	47	2002-01-08	6	1	47
+48	124	0	0	0	40	46	bb	48	2000-02-09	7	0	48
+49	125	0	0	0	40	46	cc	49	2001-03-10	8	1	49
+50	126	0	0	0	40	62	dd	50	2000-04-11	9	0	50
+51	127	0	0	0	41	46	ee	51	2001-05-12	0	1	51
+52	128	0	0	0	41	46	ff	52	2000-06-13	1	0	52
+53	129	0	0	0	41	63	gg	53	2001-07-14	2	1	53
+54	130	0	0	0	41	46	hh	54	2000-08-15	3	0	54
+55	131	0	0	0	41	46	ii	55	2001-09-16	4	1	55
+56	132	0	0	0	41	64	jj	56	2000-10-17	5	0	56
+57	133	0	0	0	41	46	kk	57	2001-11-18	6	1	57
+58	134	0	0	0	41	46	ll	58	2000-12-19	7	0	58
+59	135	0	0	0	41	65	mm	59	2002-01-20	8	1	59
+60	136	0	0	0	41	46	nn	60	2000-02-01	9	0	60
+61	137	0	0	0	42	46	oo	61	2001-03-02	0	1	61
+62	138	0	0	0	42	66	pp	62	2000-04-03	1	0	62
+63	139	0	0	0	42	46	qq	63	2001-05-04	2	1	63
+64	140	0	0	0	42	46	rr	64	2000-06-05	3	0	64
+65	141	0	0	0	42	67	ss	65	2001-07-06	4	1	65
+66	142	0	0	0	42	46	tt	66	2000-08-07	5	0	66
+67	143	0	0	0	42	46	uu	67	2001-09-08	6	1	67
+68	144	0	0	0	42	68	vv	68	2000-10-09	7	0	68
+69	145	0	0	0	42	46	ww	69	2001-11-10	8	1	69
+70	146	0	0	0	42	46	xx	70	2000-12-11	9	0	70
+71	147	0	0	0	43	69	yy	71	2002-01-12	0	1	71
+72	148	0	0	0	43	46	bb	72	2000-02-13	1	0	72
+73	149	0	0	0	43	46	cc	73	2001-03-14	2	1	73
+74	150	0	0	0	43	70	dd	74	2000-04-15	3	0	74
+75	151	0	0	0	43	46	ee	75	2001-05-16	4	1	75
+76	152	0	0	0	43	46	ff	76	2000-06-17	5	0	76
+77	153	0	0	0	43	71	gg	77	2001-07-18	6	1	77
+78	154	0	0	0	43	46	hh	78	2000-08-19	7	0	78
+79	155	0	0	0	43	46	ii	79	2001-09-20	8	1	79
+80	156	0	0	0	43	72	jj	80	2000-10-01	9	0	80
+81	157	0	0	0	44	46	kk	81	2001-11-02	0	1	81
+82	158	0	0	0	44	46	ll	82	2000-12-03	1	0	82
+83	159	0	0	0	44	73	mm	83	2002-01-04	2	1	83
+84	160	0	0	0	44	46	nn	84	2000-02-05	3	0	84
+85	161	0	0	0	44	46	oo	85	2001-03-06	4	1	85
+86	162	0	0	0	44	74	pp	86	2000-04-07	5	0	86
+87	163	0	0	0	44	46	qq	87	2001-05-08	6	1	87
+88	164	0	0	0	44	46	rr	88	2000-06-09	7	0	88
+89	165	0	0	0	44	75	ss	89	2001-07-10	8	1	89
+90	166	0	0	0	44	46	tt	90	2000-08-11	9	0	90
+91	167	0	0	0	45	46	uu	91	2001-09-12	0	1	91
+92	168	0	0	0	45	46	vv	92	2000-10-13	1	0	92
+93	169	0	0	0	45	46	ww	93	2001-11-14	2	1	93
+94	170	0	0	0	45	46	xx	94	2000-12-15	3	0	94
+95	171	0	0	0	45	47	yy	95	2002-01-16	4	1	95
+96	172	0	0	0	45	46	bb	96	2000-02-17	5	0	96
+97	173	0	0	0	45	46	cc	97	2001-03-18	6	1	97
+98	174	0	0	0	45	48	dd	98	2000-04-19	7	0	98
+99	175	0	0	0	45	46	ee	99	2001-05-20	8	1	99
+100	176	0	0	0	45	46	ff	100	2000-06-01	9	0	100
+101	1694498819	0	2	0	1694498817	1694498818	char value	12345	2000-10-20	13	1	100
+102	1694498822	2	0	0	1694498820	1694498821	char value	12345	2000-10-20	13	1	100
+reach EndOfFile
+
+EP_INFO_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498819	0	2	0	1694498817	1694498818	char value	12345	2000-10-20	13	1	100
+reach EndOfFile
+
+EP_COMMENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	46	0	0	299	updated comment
+2	47	0	0	0	cc
+3	48	0	0	0	dd
+4	49	0	0	0	ee
+5	50	0	0	0	ff
+6	51	0	0	0	gg
+7	52	0	0	0	hh
+8	53	0	0	0	ii
+9	54	0	0	0	jj
+10	55	0	0	0	kk
+11	56	0	0	0	ll
+12	57	0	0	0	mm
+13	58	0	0	0	nn
+14	59	0	0	0	oo
+15	60	0	0	0	pp
+16	61	0	0	0	qq
+17	62	0	0	0	rr
+18	63	0	0	0	ss
+19	64	0	0	0	tt
+20	65	0	0	0	uu
+21	66	0	0	0	vv
+22	67	0	0	0	ww
+23	68	0	0	0	xx
+24	69	0	0	0	yy
+25	70	0	0	0	bb
+26	71	0	0	0	cc
+27	72	0	0	0	dd
+28	73	0	0	0	ee
+29	74	0	0	0	ff
+30	75	0	0	0	gg
+31	76	0	0	0	hh
+32	1694498818	0	2	0	comment can be big, but more than 450 bytes can't be written
+33	1694498821	2	0	0	comment can be big, but more than 450 bytes can't be written
+reach EndOfFile
+
+EP_COMMENT_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1694498818	0	2	0	comment can be big, but more than 450 bytes can't be written
+reach EndOfFile
+
+EP_ROLE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	0	300	updated nom
+2	2	0	2	0	cc
+3	3	0	2	0	dd
+reach EndOfFile
+
+EP_ROLE_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	2	0	2	0	cc
+2	3	0	2	0	dd
+reach EndOfFile
+
+EP_HABILITATION_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	1	4
+2	10	0	0	0	2	5
+3	11	0	0	0	3	6
+4	12	0	0	0	1	7
+5	13	0	0	0	2	8
+6	1694498823	0	2	0	1	4
+reach EndOfFile
+
+EP_HABILITATION_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1694498823	0	2	0	1	4
+reach EndOfFile
+
+EP_PATIENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	177	0	2	0	0	0	4	0	85
+2	178	0	0	0	0	0	1	1	85
+3	179	0	0	0	4	0	5	0	85
+4	180	0	0	0	4	0	1	1	85
+5	181	0	0	0	14	1	4	0	85
+6	182	0	0	0	14	1	1	1	85
+7	183	0	0	0	34	2	4	0	85
+8	184	0	0	0	34	2	1	1	85
+reach EndOfFile
+
+EP_PATIENT_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	177	0	2	0	0	0	4	0	85
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Save DBMS
+Closing DB connection... Done.
+
+
+UserDMSP = 4, with role = 1 connects to the DBMS :
+
+Connecting to DB: jdbc:inria:smis?user=4&role=1
+Access Granted for UserDMSP = 4 with the Role = 1
+Done
+select e.DateEvent, e.IdGlobal, e.IdForm, e.IdUser, f.Nom from event e, formulaire f where f.IdGlobal = e.IdForm with Access Grant
+EP_QUERY_AC_SELECT_EVENT_FORM_USER_BY_FILTRE
+Row	Nom	DateEvent	eIdGlobal	fIdGlobal	uIdGlobal	TSSPT	
+1	bb	2001-02-02	37	15	5	0
+2	ee	2004-05-05	40	15	8	0
+3	cc	2007-08-08	43	15	6	0
+reach EndOfFile
+
+GET GENERATED (EVENT) ID = 1694498824
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1694498824	0	2	0	14	4	34	2000-10-20	2000-10-30	1212
+reach EndOfFile
+
+GET GENERATED (INFO) ID = 1694498825
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1694498825	0	2	0	1694498824	1694498821	char value	12345	2000-10-20	13	1	100
+reach EndOfFile
+
+EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM = 14
+Row	IdGlobal	Position	ValChar	ValDate	ValNum	ValComment	
+1	77	50	updated varchar	NULL	25	updated comment
+2	78	1	cc	2000-04-03	2	updated comment
+3	79	2	dd	2001-05-04	3	updated comment
+4	80	3	ee	2000-06-05	4	updated comment
+5	81	4	ff	2001-07-06	5	cc
+6	82	5	gg	2000-08-07	6	updated comment
+7	83	6	hh	2001-09-08	7	updated comment
+8	84	7	ii	2000-10-09	8	dd
+9	85	8	jj	2001-11-10	9	updated comment
+10	86	9	kk	2000-12-11	10	updated comment
+11	107	0	ii	2001-09-12	31	updated comment
+12	108	1	jj	2000-10-13	32	ll
+13	109	2	kk	2001-11-14	33	updated comment
+14	110	3	ll	2000-12-15	34	updated comment
+15	111	4	mm	2002-01-16	35	mm
+16	112	5	nn	2000-02-17	36	updated comment
+17	113	6	oo	2001-03-18	37	updated comment
+18	114	7	pp	2000-04-19	38	nn
+19	115	8	qq	2001-05-20	39	updated comment
+20	116	9	rr	2000-06-01	40	updated comment
+21	137	0	oo	2001-03-02	61	updated comment
+22	138	1	pp	2000-04-03	62	vv
+23	139	2	qq	2001-05-04	63	updated comment
+24	140	3	rr	2000-06-05	64	updated comment
+25	141	4	ss	2001-07-06	65	ww
+26	142	5	tt	2000-08-07	66	updated comment
+27	143	6	uu	2001-09-08	67	updated comment
+28	144	7	vv	2000-10-09	68	xx
+29	145	8	ww	2001-11-10	69	updated comment
+30	146	9	xx	2000-12-11	70	updated comment
+31	167	0	uu	2001-09-12	91	updated comment
+32	168	1	vv	2000-10-13	92	updated comment
+33	169	2	ww	2001-11-14	93	updated comment
+34	170	3	xx	2000-12-15	94	updated comment
+35	171	4	yy	2002-01-16	95	cc
+36	172	5	bb	2000-02-17	96	updated comment
+37	173	6	cc	2001-03-18	97	updated comment
+38	174	7	dd	2000-04-19	98	dd
+39	175	8	ee	2001-05-20	99	updated comment
+40	176	9	ff	2000-06-01	100	updated comment
+41	1694498819	13	char value	2000-10-20	12345	comment can be big, but more than 450 bytes can't be written
+42	1694498822	13	char value	2000-10-20	12345	comment can be big, but more than 450 bytes can't be written
+43	1694498825	13	char value	2000-10-20	12345	comment can be big, but more than 450 bytes can't be written
+reach EndOfFile
+
+EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT
+Row	IdGlobal	Position	Valchar	ValDate	Valnum	ValComment	
+1	87	0	ll	2002-01-12	11	ee
+2	88	1	mm	2000-02-13	12	updated comment
+3	89	2	nn	2001-03-14	13	updated comment
+4	90	3	oo	2000-04-15	14	ff
+5	91	4	pp	2001-05-16	15	updated comment
+6	92	5	qq	2000-06-17	16	updated comment
+7	93	6	rr	2001-07-18	17	gg
+8	94	7	ss	2000-08-19	18	updated comment
+9	95	8	tt	2001-09-20	19	updated comment
+10	96	9	uu	2000-10-01	20	hh
+reach EndOfFile
+
+-- BEFORE UPDATE EVENT: TS_SPT = 10, IdG=36
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	10	0	10	14	4	34	2009-07-14	2099-01-01	1
+reach EndOfFile
+
+-- AFTER UPDATE EVENT: IdG=36 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	10	10	10	14	4	34	2009-07-14	2099-01-01	1
+reach EndOfFile
+
+-- BEFORE UPDATE INFO: TS_SPT = 10, IdG=77
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	0	298	36	46	updated varchar	25	NULL	50	1	205
+reach EndOfFile
+
+-- AFTER UPDATE INFO: IdG=77 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	77	0	10	298	36	46	updatedchar	555	3000-01-01	50	0	205
+reach EndOfFile
+
+-- BEFORE UPDATE COMMENT: TS_SPT = 10, IdG=47
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	47	0	0	0	cc
+reach EndOfFile
+
+-- AFTER UPDATE COMMENT: IdG=47 - 1 tuple(s) updated 
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	47	0	10	0	comment after update containing something
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

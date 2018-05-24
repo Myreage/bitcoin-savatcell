@@ -1,0 +1,106 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Connecting to DB: jdbc:inria:smis
+Done
+==========> getGlobalTimestamp: tsspt = 1
+==========> set to tsspt : 1000
+==========> get tsspt = 1000
+// ---------- TEST : UPDATE TEST FOR EXSITENCE ------------
+// SHOULD FAIL
+// NON-EXISTING TUPLE IdG=1234567, only rows
+-- TRY TO UPDATE INFO with idG=1234567
+==========> get tsspt = 1001
+--> update return: row(s) updated = 0.
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+reach EndOfFile
+
+// SHOULD SUCCEED
+// EXISTING TUPLE IdG=1126, only rows
+-- TRY TO UPDATE INFO with idG=1126
+==========> get tsspt = 1002
+--> update return: row(s) updated = 1.
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1126	0	1002	1126	1115	3	NEW INFO1	1010101	1111-11-01	3	888	313
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+// ---------- TEST : UPDATE TEST FOR AC ------------
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=1020&role=1030
+Access Granted for UserDMSP = 1020 with the Role = 1030
+Done
+// SHOULD SUCCEED
+// EXISTING TUPLE IdG=1126, only rows
+-- TRY TO UPDATE INFO with idG=1126
+==========> get tsspt = 1003
+--> update return: row(s) updated = 0.
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1126	0	1002	1126	1115	3	NEW INFO1	1010101	1111-11-01	3	888	313
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+==========> getGlobalTimestamp: tsspt = 1004
+==========> set to tsspt : 1100
+==========> get tsspt = 1100
+// ---------- TEST : DELETE INFO ------------
+// NON-EXISTING TUPLE IdG=1234567, only rows
+-- TRY TO DELETE INFO with idG=1234567
+--> delete return: row(s) deleted = 0.
+==========> get tsspt = 1101
+// EXISTING TUPLE IdG=1126, only rows
+-- TRY TO DELETE INFO with idG=1126
+--> delete return: row(s) deleted = 1.
+==========> get tsspt = 1102
+// SEVERAL NON-EXISTING TUPLES IdEvent=3456789, only rows
+-- TRY TO DELETE INFO with idEvent=3456789
+--> delete return: row(s) deleted = 0.
+==========> get tsspt = 1103
+// SEVERAL EXISTING TUPLES IdEvent=1115, only rows
+-- TRY TO DELETE INFO with idEvent=1115
+--> delete return: row(s) deleted = 18.
+==========> get tsspt = 1104
+==========> set to tsspt : 1200
+==========> get tsspt = 1200
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+==========> getGlobalTimestamp: tsspt = 1201
+==========> set to tsspt : 1300
+==========> get tsspt = 1300
+// ---------- TEST : INSERT UI ------------
+// SHOULD FAIL
+-- Insertion in table INFO, only rows
+--> update return: row(s) inserted = 0.
+==========> get tsspt = 1302
+// SHOULD SUCCEED
+-- TRY TO INSERT TUPLEDELETED
+==========> get tsspt = 1303
+// ---------- TEST : INSERT SYNCHRO ------------
+// SHOULD SUCCEED
+-- TRY TO INSERT EVENT, rows + keys
+==========> get tsspt = 1304
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

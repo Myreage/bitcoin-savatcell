@@ -1,0 +1,3230 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Retrieving the total number of NAND packets to backup
+0 NAND packets to backup after erasing the database
+Computing the number of NOR packets to backup
+116 NOR packets to backup after erasing the database
+Computing the number of RamP packets to backup
+2 RamP packets to backup after erasing the database
+Computing the number of FTL packets to backup
+0 FTL packets to backup after inserting data in the database
+FIRST backup -> database is empty (state 0)
+Initializing backup
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next RamP packet
+Backup next RamP packet
+Finalizing backup
+FIRST backup completed
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Save DBMS
+== USERDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+2	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+3	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+4	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+5	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+reach EndOfFile
+
+== ROLE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	6	0	0	0	referentSocial
+2	7	0	0	0	patient
+3	8	0	0	0	medecin
+reach EndOfFile
+
+== HABILITATION NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	6	1
+2	10	0	0	0	7	2
+3	11	0	0	0	8	3
+4	12	0	0	0	6	4
+5	13	0	0	0	7	5
+6	14	0	0	0	8	1
+7	15	0	0	0	6	2
+reach EndOfFile
+
+== CONCEPT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	16	0	0	0	3	escarres	13
+2	17	0	0	0	4	autresSymptGen	14
+3	18	0	0	0	5	examCardVasc	15
+4	19	0	0	0	0	examNeuro	10
+5	20	0	0	0	1	examPsycho	11
+6	21	0	0	0	2	examPneumo	12
+7	22	0	0	0	3	examUro	13
+8	23	0	0	0	4	examGastro	14
+9	24	0	0	0	5	examGyneco	15
+10	25	0	0	0	0	examBucco	10
+11	26	0	0	0	1	examRhumato	11
+12	27	0	0	0	2	freqCardCouche	12
+13	28	0	0	0	3	paSystoAssis	13
+14	29	0	0	0	4	paDiastoAssis	14
+15	30	0	0	0	5	paSystoDebout	15
+16	31	0	0	0	0	paDiastoDebout	10
+17	32	0	0	0	1	paSystoCouche	11
+18	33	0	0	0	2	paDiastoCouche	12
+19	34	0	0	0	3	symptCardVasc	13
+20	35	0	0	0	4	bruitsCoeur	14
+21	36	0	0	0	5	douleurThoracique	15
+22	37	0	0	0	0	dyspnee	10
+23	38	0	0	0	1	signesInsuffCard	11
+24	39	0	0	0	2	oedemeMembresInf	12
+25	40	0	0	0	3	locOedemeMembresInf	13
+26	41	0	0	0	4	poulsMembresInf	14
+27	42	0	0	0	5	poulsFemG	15
+28	43	0	0	0	0	poulsFemD	10
+29	44	0	0	0	1	poulsPopG	11
+30	45	0	0	0	2	poulsPopD	12
+31	46	0	0	0	3	poulsTibPostG	13
+32	47	0	0	0	4	poulsTibPostD	14
+33	48	0	0	0	5	poulsPedG	15
+34	49	0	0	0	0	poulsPedD	10
+35	50	0	0	0	1	signesInsuffVeineuse	11
+36	51	0	0	0	2	sueurs	12
+37	52	0	0	0	3	symptNeuro	13
+38	53	0	0	0	4	etatConscience	14
+39	54	0	0	0	5	motricite	15
+40	55	0	0	0	0	rot	10
+41	56	0	0	0	1	rotAchilG	11
+42	57	0	0	0	2	rotAchilD	12
+43	58	0	0	0	3	rotRotulG	13
+44	59	0	0	0	4	rotRotulD	14
+45	60	0	0	0	5	rotTriG	15
+46	61	0	0	0	0	rotTriD	10
+47	62	0	0	0	1	rotBiG	11
+48	63	0	0	0	2	rotBiD	12
+49	64	0	0	0	3	ideesDelirantes	13
+50	65	0	0	0	4	hallucinations	14
+51	66	0	0	0	5	agitation	15
+52	67	0	0	0	0	agressivite	10
+53	68	0	0	0	1	depression	11
+54	69	0	0	0	2	anxiete	12
+55	70	0	0	0	3	apathie	13
+56	71	0	0	0	4	somnolence	14
+57	72	0	0	0	5	deambulation	15
+58	73	0	0	0	0	insomnie	10
+59	74	0	0	0	1	symptPneumo	11
+60	75	0	0	0	2	encombrement	12
+61	76	0	0	0	3	hemoptysie	13
+62	77	0	0	0	4	toux	14
+63	78	0	0	0	5	symptUro	15
+64	79	0	0	0	0	dysurie	10
+65	80	0	0	0	1	retention	11
+66	81	0	0	0	2	pollakiurie	12
+67	82	0	0	0	3	hematurie	13
+68	83	0	0	0	4	incontinenceUro	14
+69	84	0	0	0	5	precisionsIncontinenceUro	15
+70	85	0	0	0	0	SymptGastro	10
+71	86	0	0	0	1	ascite	11
+72	87	0	0	0	2	constipation	12
+73	88	0	0	0	3	diarrhee	13
+74	89	0	0	0	4	dysphagie	14
+75	90	0	0	0	5	ictere	15
+76	91	0	0	0	0	nausees	10
+77	92	0	0	0	1	vomissements	11
+78	93	0	0	0	2	occlusion	12
+79	94	0	0	0	3	hepatomegalie	13
+80	95	0	0	0	4	splenomegalie	14
+81	96	0	0	0	5	douleursAbdo	15
+82	97	0	0	0	0	incontinenceAnale	10
+83	98	0	0	0	1	fecalome	11
+84	99	0	0	0	2	toucherRectal	12
+85	100	0	0	0	3	alimentation	13
+86	101	0	0	0	4	symptomesGyneco	14
+87	102	0	0	0	5	metrorragies	15
+88	103	0	0	0	0	pertes	10
+89	104	0	0	0	1	examSeins	11
+90	105	0	0	0	2	dateMammographie	12
+91	106	0	0	0	3	preventionOsteoporose	13
+92	107	0	0	0	4	protheses	14
+93	108	0	0	0	5	symptRhumato	15
+94	109	0	0	0	0	douleursRhumato	10
+95	110	0	0	0	1	impotenceFonctionnelle	11
+96	111	0	0	0	2	raideur	12
+97	112	0	0	0	3	dateVisiteDomicile	13
+98	113	0	0	0	4	travailleurSocial	14
+99	114	0	0	0	5	gir	15
+100	115	0	0	0	0	montantMaxPlanAide	10
+101	116	0	0	0	1	servicePrestaAgree	11
+102	117	0	0	0	2	qteParMois	12
+103	118	0	0	0	3	servicePrestaNonAgree	13
+104	119	0	0	0	4	assoMandataire	14
+105	120	0	0	0	5	salarieDirect	15
+106	121	0	0	0	0	forfaitFoyerLogement	10
+107	122	0	0	0	1	forfaitAccueilFamilial	11
+108	123	0	0	0	2	teleassistance	12
+109	124	0	0	0	3	produitsHygiene	13
+110	125	0	0	0	4	divers	14
+111	126	0	0	0	5	autre	15
+112	127	0	0	0	0	montantPlanAide	10
+113	128	0	0	0	1	dateDossierComplet	11
+114	129	0	0	0	2	dateMiseOeuvre	12
+115	130	0	0	0	3	txMaParticipation	13
+116	131	0	0	0	4	modCoherence	14
+117	132	0	0	0	5	modOrientation	15
+118	133	0	0	0	0	modToilette	10
+119	134	0	0	0	1	modHabillage	11
+120	135	0	0	0	2	modAlimentation	12
+121	136	0	0	0	3	modElimination	13
+122	137	0	0	0	4	modTransfert	14
+123	138	0	0	0	5	modDeplacementInt	15
+124	139	0	0	0	0	modDeplacementExt	10
+125	140	0	0	0	1	modCommunicationADistance	11
+126	141	0	0	0	2	incapacitePhy	12
+127	142	0	0	0	3	incapacitePsy	13
+128	143	0	0	0	4	datePlan	14
+129	144	0	0	0	5	origineSignalement	15
+130	145	0	0	0	0	natureIntervention	10
+131	146	0	0	0	1	vision	11
+132	147	0	0	0	2	audition	12
+133	148	0	0	0	3	nutrition	13
+134	149	0	0	0	4	memoire	14
+135	150	0	0	0	5	tristeDeprime	15
+136	151	0	0	0	0	dateDerniereChute	10
+137	152	0	0	0	1	circonstancesDerniereChute	11
+138	153	0	0	0	2	nbChute	12
+139	154	0	0	0	3	dateDerniereAnnee	13
+140	155	0	0	0	4	nbHospitalisationDerniereAnnee	14
+141	156	0	0	0	5	geneRespiratoire	15
+142	157	0	0	0	0	troubleSommeil	10
+143	158	0	0	0	1	score	11
+144	159	0	0	0	2	typeBilan	12
+145	160	0	0	0	3	conditionVie	13
+146	161	0	0	0	4	contactExt	14
+147	162	0	0	0	5	presenceAnimaux	15
+148	163	0	0	0	0	statut	10
+149	164	0	0	0	1	typeLogement	11
+150	165	0	0	0	2	milieu	12
+151	166	0	0	0	3	faciliteAcces	13
+152	167	0	0	0	4	salubriteSanitaire	14
+153	168	0	0	0	5	precisionsSalubriteSanitaire	15
+154	169	0	0	0	0	salubriteChambre	10
+155	170	0	0	0	1	precisionsSalubriteChambre	11
+156	171	0	0	0	2	salubriteSalonSalleAManger	12
+157	172	0	0	0	3	precisionsSalubriteSalonSalleAManger	13
+158	173	0	0	0	4	salubriteCuisine	14
+159	174	0	0	0	5	precisionsSalubriteCuisine	15
+160	175	0	0	0	0	salubriteEscalier	10
+161	176	0	0	0	1	precisionsSalubriteEscalier	11
+162	177	0	0	0	2	salubriteAutre	12
+163	178	0	0	0	3	precisionSalubriteautre	13
+164	179	0	0	0	4	salubriteReseaux	14
+165	180	0	0	0	5	precisionsSalubriteReseaux	15
+166	181	0	0	0	0	dossierReputeCompletLe	10
+167	182	0	0	0	1	txParticipationFinanciere	11
+168	183	0	0	0	2	natureDemande	12
+169	184	0	0	0	3	nomDemandeur	13
+170	185	0	0	0	4	prenomDemandeur	14
+171	186	0	0	0	5	situationFamiliale	15
+172	187	0	0	0	0	numSecu	10
+173	188	0	0	0	1	caisseRetraite	11
+174	189	0	0	0	2	domicileSecours	12
+175	190	0	0	0	3	adresseLieuVie	13
+176	191	0	0	0	4	departementDomicileSecours	14
+177	192	0	0	0	5	nomRepresentant	15
+178	193	0	0	0	0	nomReferent	10
+179	194	0	0	0	1	nomMedecin	11
+180	195	0	0	0	2	aides	12
+181	196	0	0	0	3	ressources	13
+182	197	0	0	0	4	certificatMedical	14
+183	198	0	0	0	5	observations	15
+184	199	0	0	0	0	nom	10
+185	200	0	0	0	1	specialite	11
+186	201	0	0	0	2	recommandations	12
+187	202	0	0	0	3	orientations	13
+188	203	0	0	0	4	precisionsOrientation	14
+189	204	0	0	0	5	nouveauTraitement	15
+190	205	0	0	0	0	date	10
+191	206	0	0	0	1	orientationSpecialisteRef	11
+192	207	0	0	0	2	precisionsSpecialisteRef	12
+193	208	0	0	0	3	mms	13
+194	209	0	0	0	4	comportement	14
+195	210	0	0	0	5	traitement	15
+196	211	0	0	0	0	suiteCadreMaintienDomicile	10
+197	212	0	0	0	1	prochaineConsultMemoire	11
+198	213	0	0	0	2	alerte	12
+199	214	0	0	0	3	crSuiviReseau	13
+200	215	0	0	0	4	bilanInclusion	14
+201	216	0	0	0	5	rapport	15
+202	217	0	0	0	0	drains	10
+203	218	0	0	0	1	urines	11
+204	219	0	0	0	2	transit	12
+205	220	0	0	0	3	glycemieDextro	13
+206	221	0	0	0	4	tpInr	14
+207	222	0	0	0	5	hydratation	15
+208	223	0	0	0	0	pansement	10
+209	224	0	0	0	1	sondes	11
+210	225	0	0	0	2	soins	12
+211	226	0	0	0	3	changementComportement	13
+212	227	0	0	0	4	activites	14
+213	228	0	0	0	5	deficit	15
+214	229	0	0	0	0	pbRespiratoires	10
+215	230	0	0	0	1	plaintes	11
+216	231	0	0	0	2	objTherapeutiques	12
+217	232	0	0	0	3	service	13
+218	233	0	0	0	4	lieuHospitalisation	14
+219	234	0	0	0	5	dateEntreeService	15
+220	235	0	0	0	0	personneOrigineHospitalisation	10
+221	236	0	0	0	1	dareFinPriseChargeService	11
+222	237	0	0	0	2	resumeCompteRendu	12
+223	238	0	0	0	3	lieu	13
+224	239	0	0	0	4	participants	14
+225	240	0	0	0	5	conclusion	15
+226	241	0	0	0	0	commentaires	10
+227	242	0	0	0	1	obsCoherence	11
+228	243	0	0	0	2	obsOrientation	12
+229	244	0	0	0	3	obsToilette	13
+230	245	0	0	0	4	obsHabillage	14
+231	246	0	0	0	5	obsAlimentation	15
+232	247	0	0	0	0	obsElimination	10
+233	248	0	0	0	1	obsTransfert	11
+234	249	0	0	0	2	obsDeplacementInt	12
+235	250	0	0	0	3	obsDeplacementExt	13
+236	251	0	0	0	4	obsCommunication	14
+237	252	0	0	0	5	symptPsycho	15
+238	253	0	0	0	0	precisionsDouleursRhumato	10
+239	254	0	0	0	1	horaires	11
+240	255	0	0	0	2	localisationImpoFonct	12
+241	256	0	0	0	3	autreOrigine	13
+242	257	0	0	0	4	autreMotif	14
+243	258	0	0	0	5	autreNatureIntervention	15
+244	259	0	0	0	0	libelle	10
+245	260	0	0	0	1	typeAtcd	11
+246	261	0	0	0	2	atcd	12
+247	262	0	0	0	3	traitement	13
+248	263	0	0	0	4	quantite	14
+249	264	0	0	0	5	formeGalenique	15
+250	265	0	0	0	0	fois	10
+251	266	0	0	0	1	frequence	11
+252	267	0	0	0	2	observations	12
+253	268	0	0	0	3	duree	13
+254	269	0	0	0	4	nom	14
+255	270	0	0	0	5	nomJF	15
+256	271	0	0	0	0	prenom	10
+257	272	0	0	0	1	sexe	11
+258	273	0	0	0	2	profession	12
+259	274	0	0	0	3	codeINSEE	13
+260	275	0	0	0	4	jourDateNaissance	14
+261	276	0	0	0	5	moisDateNaissance	15
+262	277	0	0	0	0	anneeDateNaissance	10
+263	278	0	0	0	1	communeNaissance	11
+264	279	0	0	0	2	departementNaissance	12
+265	280	0	0	0	3	paysNaissance	13
+266	281	0	0	0	4	adresse	14
+267	282	0	0	0	5	complementAdresse	15
+268	283	0	0	0	0	telephone	10
+269	284	0	0	0	1	cp	11
+270	285	0	0	0	2	ville	12
+271	286	0	0	0	3	immeuble	13
+272	287	0	0	0	4	acces	14
+273	288	0	0	0	5	code	15
+274	289	0	0	0	0	etage	10
+275	290	0	0	0	1	ascenseur	11
+276	291	0	0	0	2	porte	12
+277	292	0	0	0	3	couverture	13
+278	293	0	0	0	4	regime	14
+279	294	0	0	0	5	numeroSecu	15
+280	295	0	0	0	0	mutuelle	10
+281	296	0	0	0	1	numAdherent	11
+282	297	0	0	0	2	caisseRetraite	12
+283	298	0	0	0	3	numImmat	13
+284	299	0	0	0	4	ALD	14
+285	300	0	0	0	5	protectionJuridique	15
+286	301	0	0	0	0	groupeSanguin	10
+287	302	0	0	0	1	rhesus	11
+288	303	0	0	0	2	situationFamiliale	12
+289	304	0	0	0	3	dateProchainBilan	13
+290	305	0	0	0	4	autreOrigine	14
+291	306	0	0	0	5	autreMotif	15
+292	307	0	0	0	0	autreNature	10
+293	308	0	0	0	1	motifPlan	11
+294	309	0	0	0	2	DouleursOuiNon	12
+295	310	0	0	0	3	effectuePar	13
+296	311	0	0	0	4	motif	14
+297	312	0	0	0	5	commentaire	15
+298	313	0	0	0	0	poids	10
+299	314	0	0	0	1	temperature	11
+300	315	0	0	0	2	anorexie	12
+301	316	0	0	0	3	amaigrissement	13
+302	317	0	0	0	4	asthenie	14
+303	318	0	0	0	5	cachexie	15
+304	319	0	0	0	0	denutrition	10
+305	320	0	0	0	1	deshydratation	11
+306	321	0	0	0	2	oedeme	12
+307	322	0	0	0	3	adenopathie	13
+308	323	0	0	0	4	localisationAdenopathie	14
+309	324	0	0	0	5	douleurs	15
+reach EndOfFile
+
+== FORMULAIRE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	325	0	0	0	Examen clinique
+2	326	0	0	0	Examen cardiovasculaire
+3	327	0	0	0	Examen gastroenterologique
+4	328	0	0	0	Examen gynecologique
+5	329	0	0	0	Examen neurosensoriel
+6	330	0	0	0	Examen pneumologique
+7	331	0	0	0	Examen psychocomportemental
+8	332	0	0	0	Examen rhumatologique
+9	333	0	0	0	Examen urologique
+10	334	0	0	0	Examen buccodentaire
+11	335	0	0	0	Bilan Infirmier
+12	336	0	0	0	Bilan kinesitherapeute
+13	337	0	0	0	Bilan medical du reseau
+14	338	0	0	0	Bilan psychologique
+15	339	0	0	0	Consultation memoire
+16	340	0	0	0	Fiche synthese sociale
+17	341	0	0	0	Grille AGGIR
+18	342	0	0	0	Hospitalisation
+19	343	0	0	0	form
+20	344	0	0	0	Observations gerontologiques
+reach EndOfFile
+
+== EPISODE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	345	0	0	0	nonEpisode
+reach EndOfFile
+
+== EVENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	346	0	0	0	325	1	345	2005-11-16
+2	347	0	0	0	326	2	345	2006-12-17
+3	348	0	0	0	327	3	345	2007-01-18
+4	349	0	0	0	328	4	345	2008-02-19
+5	350	0	0	0	329	5	345	2009-03-20
+6	351	0	0	0	330	1	345	2000-04-21
+7	352	0	0	0	331	2	345	2001-05-22
+8	353	0	0	0	332	3	345	2002-06-01
+9	354	0	0	0	333	4	345	2003-07-02
+10	355	0	0	0	334	5	345	2004-08-03
+reach EndOfFile
+
+== COMMENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	356	0	0	0	Presence d escarres
+2	357	0	0	0	Deficit
+3	358	0	0	0	Principales plaintes du patient
+4	359	0	0	0	Activites
+5	360	0	0	0	a suivre
+6	361	0	0	0	noComment
+7	362	0	0	0	Problemes respiratoires bronchiques
+8	363	0	0	0	Douleur
+9	364	0	0	0	Objectifs therapeutiques
+10	365	0	0	0	Commentaires
+11	366	0	0	0	Presence d escarres
+12	367	0	0	0	Deficit
+13	368	0	0	0	Principales plaintes du patient
+14	369	0	0	0	Activites
+15	370	0	0	0	a suivre
+16	371	0	0	0	Problemes respiratoires bronchiques
+17	372	0	0	0	Problemes respiratoires bronchiques
+18	373	0	0	0	Douleur
+19	374	0	0	0	Objectifs therapeutiques
+20	375	0	0	0	Commentaires
+21	376	0	0	0	Presence d escarres
+22	377	0	0	0	Deficit
+23	378	0	0	0	Principales plaintes du patient
+24	379	0	0	0	Activites
+25	380	0	0	0	a suivre
+26	381	0	0	0	Problemes respiratoires bronchiques
+27	382	0	0	0	Problemes respiratoires bronchiques
+28	383	0	0	0	Douleur
+29	384	0	0	0	Objectifs therapeutiques
+30	385	0	0	0	Commentaires
+31	386	0	0	0	Presence d escarres
+32	387	0	0	0	Deficit
+33	388	0	0	0	Principales plaintes du patient
+34	389	0	0	0	Activites
+35	390	0	0	0	a suivre
+36	391	0	0	0	Problemes respiratoires bronchiques
+37	392	0	0	0	Problemes respiratoires bronchiques
+38	393	0	0	0	Douleur
+39	394	0	0	0	Objectifs therapeutiques
+40	395	0	0	0	Commentaires
+41	396	0	0	0	Presence d escarres
+42	397	0	0	0	Deficit
+43	398	0	0	0	Principales plaintes du patient
+44	399	0	0	0	Activites
+45	400	0	0	0	a suivre
+46	401	0	0	0	Problemes respiratoires bronchiques
+47	402	0	0	0	Problemes respiratoires bronchiques
+48	403	0	0	0	Douleur
+49	404	0	0	0	Objectifs therapeutiques
+50	405	0	0	0	Commentaires
+reach EndOfFile
+
+== INFO NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	406	0	0	0	346	16	356	Arras	99	199
+2	407	0	0	0	347	17	357	France	65	165
+3	408	0	0	0	348	18	358	Mal de dos	23	123
+4	409	0	0	0	349	19	359	NumeroUn	0	10
+5	410	0	0	0	350	20	360	Patient	23	123
+6	411	0	0	0	351	21	361	lecture	123	1123
+7	412	0	0	0	352	22	362	Arras	99	199
+8	413	0	0	0	353	23	363	France	65	165
+9	414	0	0	0	354	24	364	Mal de dos	23	123
+10	415	0	0	0	355	25	365	NumeroUn	0	10
+11	416	0	0	0	346	26	366	Patient	23	123
+12	417	0	0	0	347	27	367	lecture	123	1123
+13	418	0	0	0	348	28	368	Arras	99	199
+14	419	0	0	0	349	29	369	France	65	165
+15	420	0	0	0	350	30	370	Mal de dos	23	123
+16	421	0	0	0	351	31	371	NumeroUn	0	10
+17	422	0	0	0	352	32	372	Patient	23	123
+18	423	0	0	0	353	33	373	lecture	123	1123
+19	424	0	0	0	354	34	374	Arras	99	199
+20	425	0	0	0	355	35	375	France	65	165
+21	426	0	0	0	346	36	376	Mal de dos	23	123
+22	427	0	0	0	347	37	377	NumeroUn	0	10
+23	428	0	0	0	348	38	378	Patient	23	123
+24	429	0	0	0	349	39	379	lecture	123	1123
+25	430	0	0	0	350	40	380	Arras	99	199
+26	431	0	0	0	351	41	381	France	65	165
+27	432	0	0	0	352	42	382	Mal de dos	23	123
+28	433	0	0	0	353	43	383	NumeroUn	0	10
+29	434	0	0	0	354	44	384	Patient	23	123
+30	435	0	0	0	355	45	385	lecture	123	1123
+31	436	0	0	0	346	46	386	Arras	99	199
+32	437	0	0	0	347	47	387	France	65	165
+33	438	0	0	0	348	48	388	Mal de dos	23	123
+34	439	0	0	0	349	49	389	NumeroUn	0	10
+35	440	0	0	0	350	50	390	Patient	23	123
+36	441	0	0	0	351	51	391	lecture	123	1123
+37	442	0	0	0	352	52	392	Arras	99	199
+38	443	0	0	0	353	53	393	France	65	165
+39	444	0	0	0	354	54	394	Mal de dos	23	123
+40	445	0	0	0	355	55	395	NumeroUn	0	10
+41	446	0	0	0	346	56	396	Patient	23	123
+42	447	0	0	0	347	57	397	lecture	123	1123
+43	448	0	0	0	348	58	398	Arras	99	199
+44	449	0	0	0	349	59	399	France	65	165
+45	450	0	0	0	350	60	400	Mal de dos	23	123
+46	451	0	0	0	351	61	401	NumeroUn	0	10
+47	452	0	0	0	352	62	402	Patient	23	123
+48	453	0	0	0	353	63	403	lecture	123	1123
+49	454	0	0	0	354	64	404	Arras	99	199
+50	455	0	0	0	355	65	405	France	65	165
+51	456	0	0	0	346	66	356	Mal de dos	23	123
+52	457	0	0	0	347	67	357	NumeroUn	0	10
+53	458	0	0	0	348	68	358	Patient	23	123
+54	459	0	0	0	349	69	359	lecture	123	1123
+55	460	0	0	0	350	70	360	Arras	99	199
+56	461	0	0	0	351	71	361	France	65	165
+57	462	0	0	0	352	72	362	Mal de dos	23	123
+58	463	0	0	0	353	73	363	NumeroUn	0	10
+59	464	0	0	0	354	74	364	Patient	23	123
+60	465	0	0	0	355	75	365	lecture	123	1123
+61	466	0	0	0	346	76	366	Arras	99	199
+62	467	0	0	0	347	77	367	France	65	165
+63	468	0	0	0	348	78	368	Mal de dos	23	123
+64	469	0	0	0	349	79	369	NumeroUn	0	10
+65	470	0	0	0	350	80	370	Patient	23	123
+66	471	0	0	0	351	81	371	lecture	123	1123
+67	472	0	0	0	352	82	372	Arras	99	199
+68	473	0	0	0	353	83	373	France	65	165
+69	474	0	0	0	354	84	374	Mal de dos	23	123
+70	475	0	0	0	355	85	375	NumeroUn	0	10
+71	476	0	0	0	346	86	376	Patient	23	123
+72	477	0	0	0	347	87	377	lecture	123	1123
+73	478	0	0	0	348	88	378	Arras	99	199
+74	479	0	0	0	349	89	379	France	65	165
+75	480	0	0	0	350	90	380	Mal de dos	23	123
+76	481	0	0	0	351	91	381	NumeroUn	0	10
+77	482	0	0	0	352	92	382	Patient	23	123
+78	483	0	0	0	353	93	383	lecture	123	1123
+79	484	0	0	0	354	94	384	Arras	99	199
+80	485	0	0	0	355	95	385	France	65	165
+81	486	0	0	0	346	96	386	Mal de dos	23	123
+82	487	0	0	0	347	97	387	NumeroUn	0	10
+83	488	0	0	0	348	98	388	Patient	23	123
+84	489	0	0	0	349	99	389	lecture	123	1123
+85	490	0	0	0	350	100	390	Arras	99	199
+86	491	0	0	0	351	101	391	France	65	165
+87	492	0	0	0	352	102	392	Mal de dos	23	123
+88	493	0	0	0	353	103	393	NumeroUn	0	10
+89	494	0	0	0	354	104	394	Patient	23	123
+90	495	0	0	0	355	105	395	lecture	123	1123
+91	496	0	0	0	346	106	396	Arras	99	199
+92	497	0	0	0	347	107	397	France	65	165
+93	498	0	0	0	348	108	398	Mal de dos	23	123
+94	499	0	0	0	349	109	399	NumeroUn	0	10
+95	500	0	0	0	350	110	400	Patient	23	123
+96	501	0	0	0	351	111	401	lecture	123	1123
+97	502	0	0	0	352	112	402	Arras	99	199
+98	503	0	0	0	353	113	403	France	65	165
+99	504	0	0	0	354	114	404	Mal de dos	23	123
+100	505	0	0	0	355	115	405	NumeroUn	0	10
+reach EndOfFile
+
+== MATRICEDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdRole	Autorisations	
+reach EndOfFile
+
+== MATRICEPATIENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	505	0	0	0	325	1	6	1	0
+2	506	0	0	0	326	1	6	1	85
+3	507	0	0	0	327	1	6	1	170
+4	508	0	0	0	328	1	6	1	0
+5	509	0	0	0	329	1	6	1	85
+6	510	0	0	0	330	1	6	1	170
+7	511	0	0	0	331	1	6	1	0
+8	512	0	0	0	332	1	6	1	85
+9	513	0	0	0	333	1	6	1	170
+10	514	0	0	0	334	1	6	1	0
+11	515	0	0	0	335	1	6	1	85
+12	516	0	0	0	336	1	6	1	170
+13	517	0	0	0	337	1	6	1	0
+14	518	0	0	0	338	1	6	1	85
+15	519	0	0	0	339	1	6	1	170
+16	520	0	0	0	340	1	6	1	0
+17	521	0	0	0	341	1	6	1	85
+18	522	0	0	0	342	1	6	1	170
+19	523	0	0	0	343	1	6	1	0
+20	524	0	0	0	344	1	6	1	85
+21	525	0	0	0	325	1	7	1	0
+22	526	0	0	0	326	1	7	1	85
+23	527	0	0	0	327	1	7	1	170
+24	528	0	0	0	328	1	7	1	0
+25	529	0	0	0	329	1	7	1	85
+26	530	0	0	0	330	1	7	1	170
+27	531	0	0	0	331	1	7	1	0
+28	532	0	0	0	332	1	7	1	85
+29	533	0	0	0	333	1	7	1	170
+30	534	0	0	0	334	1	7	1	0
+31	535	0	0	0	335	1	7	1	85
+32	536	0	0	0	336	1	7	1	170
+33	537	0	0	0	337	1	7	1	0
+34	538	0	0	0	338	1	7	1	85
+35	539	0	0	0	339	1	7	1	170
+36	540	0	0	0	340	1	7	1	0
+37	541	0	0	0	341	1	7	1	85
+38	542	0	0	0	342	1	7	1	170
+39	543	0	0	0	343	1	7	1	0
+40	544	0	0	0	344	1	7	1	85
+41	545	0	0	0	325	1	8	1	0
+42	546	0	0	0	326	1	8	1	85
+43	547	0	0	0	327	1	8	1	170
+44	548	0	0	0	328	1	8	1	0
+45	549	0	0	0	329	1	8	1	85
+46	550	0	0	0	330	1	8	1	170
+47	551	0	0	0	331	1	8	1	0
+48	552	0	0	0	332	1	8	1	85
+49	553	0	0	0	333	1	8	1	170
+50	554	0	0	0	334	1	8	1	0
+51	555	0	0	0	335	1	8	1	85
+52	556	0	0	0	336	1	8	1	170
+53	557	0	0	0	337	1	8	1	0
+54	558	0	0	0	338	1	8	1	85
+55	559	0	0	0	339	1	8	1	170
+56	560	0	0	0	340	1	8	1	0
+57	561	0	0	0	341	1	8	1	85
+58	562	0	0	0	342	1	8	1	170
+59	563	0	0	0	343	1	8	1	0
+60	564	0	0	0	344	1	8	1	85
+61	565	0	0	0	0	0	6	1	170
+62	566	0	0	0	0	2	6	1	170
+63	567	0	0	0	0	1	6	1	170
+64	568	0	0	0	0	0	7	1	0
+65	569	0	0	0	0	2	7	1	0
+66	570	0	0	0	0	1	7	1	0
+67	571	0	0	0	0	0	8	1	85
+68	572	0	0	0	0	2	8	1	85
+69	573	0	0	0	0	1	8	1	85
+reach EndOfFile
+
+Retrieving the total number of NAND packets to backup
+101 NAND packets to backup after inserting data in the database
+Computing the number of NOR packets to backup
+116 NOR packets to backup after inserting data in the database
+Computing the number of RamP packets to backup
+2 RamP packets to backup after inserting data in the database
+Computing the number of FTL packets to backup
+6 FTL packets to backup after inserting data in the database
+SECOND backup -> database is filled (state 1)
+Initializing backup
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next RamP packet
+Backup next RamP packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Finalizing backup
+SECOND backup completed
+FIRST recovery -> to empty state 0
+Initializing restore
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next RamP packet
+Restore next RamP packet
+Finalizing restore
+Loading schema... 
+Schema loaded, size: 2750
+== USERDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+reach EndOfFile
+
+== ROLE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+== HABILITATION NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+reach EndOfFile
+
+== CONCEPT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+reach EndOfFile
+
+== FORMULAIRE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+== EPISODE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+== EVENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+reach EndOfFile
+
+== COMMENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+reach EndOfFile
+
+== INFO NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+reach EndOfFile
+
+== MATRICEDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdRole	Autorisations	
+reach EndOfFile
+
+== MATRICEPATIENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+reach EndOfFile
+
+Desinstall the MetaData of the DBMS embedded in the card
+Loading schema... 
+Schema loaded, size: 2912
+Data generated
+// Insertion dans la table ROLE 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+reach EndOfFile
+
+-----/////// EP_EVENT_SELECT_STAR /////////---------
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+2	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+3	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+4	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+5	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+6	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+7	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+8	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+9	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+10	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+11	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+12	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+13	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+14	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+15	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+16	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+17	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+18	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+19	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+20	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+21	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+22	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+23	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+24	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+25	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+26	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+27	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+28	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+29	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+30	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+31	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+32	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+33	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+36	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+37	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+38	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+39	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+40	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+41	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+42	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+43	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+44	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+45	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+46	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+47	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+48	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+49	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+50	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+reach EndOfFile
+
+Save DBMS
+Retrieving the total number of NAND packets to backup
+68 NAND packets to backup after inserting data in the database
+Computing the number of NOR packets to backup
+116 NOR packets to backup after inserting data in the database
+Computing the number of RamP packets to backup
+2 RamP packets to backup after inserting data in the database
+Computing the number of FTL packets to backup
+11 FTL packets to backup after inserting data in the database
+THIRD backup -> database is filled (state 2a)
+Initializing backup
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next RamP packet
+Backup next RamP packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Finalizing backup
+THIRD backup completed
+Data generated
+// Insertion dans la table ROLE 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+14	112	0	0	0	96	111	bb	1	2001-03-02	1	1	1
+15	113	0	0	0	103	111	cc	2	2000-04-03	2	0	2
+16	114	0	0	0	103	111	dd	3	2001-05-04	0	1	3
+17	115	0	0	0	91	111	ee	4	2000-06-05	1	0	4
+18	116	0	0	0	100	111	ff	5	2001-07-06	2	1	5
+19	117	0	0	0	87	111	gg	6	2000-08-07	0	0	6
+20	118	0	0	0	109	111	hh	7	2001-09-08	1	1	7
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+14	14	4	4	2	61	4
+15	15	4	4	2	68	4
+16	16	4	4	2	68	4
+17	17	4	4	2	56	4
+18	18	4	4	3	65	4
+19	19	4	4	3	52	4
+20	20	4	4	2	74	4
+reach EndOfFile
+
+-----/////// EP_EVENT_SELECT_STAR /////////---------
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+2	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+3	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+4	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+5	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+6	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+7	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+8	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+9	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+10	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+11	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+12	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+13	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+14	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+15	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+16	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+17	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+18	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+19	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+20	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+21	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+22	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+23	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+24	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+25	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+26	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+27	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+28	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+29	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+30	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+31	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+32	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+33	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+36	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+37	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+38	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+39	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+40	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+41	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+42	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+43	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+44	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+45	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+46	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+47	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+48	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+49	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+50	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+51	86	0	0	0	83	81	84	2000-01-01	2000-01-01	12
+52	87	0	0	0	83	81	85	2001-02-02	2001-02-02	12
+53	88	0	0	0	83	81	84	2002-03-03	2002-03-03	12
+54	89	0	0	0	83	81	85	2003-04-04	2003-04-04	12
+55	90	0	0	0	83	81	84	2004-05-05	2004-05-05	12
+56	91	0	0	0	83	81	84	2005-06-06	2005-06-06	12
+57	92	0	0	0	83	81	84	2006-07-07	2006-07-07	12
+58	93	0	0	0	83	81	84	2007-08-08	2007-08-08	12
+59	94	0	0	0	83	81	84	2008-09-09	2008-09-09	12
+60	95	0	0	0	83	81	84	2009-10-10	2009-10-10	12
+61	96	0	0	0	83	81	84	2000-11-11	2000-11-11	12
+62	97	0	0	0	83	81	85	2001-12-12	2001-12-12	12
+63	98	0	0	0	83	81	85	2002-01-13	2002-01-13	12
+64	99	0	0	0	83	81	85	2003-02-14	2003-02-14	12
+65	100	0	0	0	83	81	85	2004-03-15	2004-03-15	12
+66	101	0	0	0	83	81	85	2005-04-16	2005-04-16	12
+67	102	0	0	0	83	81	85	2006-05-17	2006-05-17	12
+68	103	0	0	0	83	81	84	2007-06-18	2007-06-18	12
+69	104	0	0	0	83	81	84	2008-07-19	2008-07-19	12
+70	105	0	0	0	83	81	85	2009-08-20	2009-08-20	12
+71	106	0	0	0	83	81	84	2000-09-21	2000-09-21	12
+72	107	0	0	0	83	81	84	2001-10-22	2001-10-22	12
+73	108	0	0	0	83	81	85	2002-11-23	2002-11-23	12
+74	109	0	0	0	83	81	84	2003-12-24	2003-12-24	12
+75	110	0	0	0	83	81	85	2004-01-25	2004-01-25	12
+reach EndOfFile
+
+Save DBMS
+Retrieving the total number of NAND packets to backup
+2 NAND packets to backup after inserting data in the database
+Computing the number of NOR packets to backup
+116 NOR packets to backup after inserting data in the database
+Computing the number of RamP packets to backup
+2 RamP packets to backup after inserting data in the database
+Computing the number of FTL packets to backup
+11 FTL packets to backup after inserting data in the database
+FOURTH backup -> database is filled (state 2b)
+Initializing backup
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NOR packet
+Backup next NAND packet
+Backup next NAND packet
+Backup next RamP packet
+Backup next RamP packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Backup next FTL packet
+Finalizing backup
+FOURTH backup completed
+SECOND recovery -> to filled state 1
+Initializing restore
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next RamP packet
+Restore next RamP packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Finalizing restore
+== USERDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+2	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+3	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+4	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+5	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+reach EndOfFile
+
+== ROLE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	6	0	0	0	referentSocial
+2	7	0	0	0	patient
+3	8	0	0	0	medecin
+reach EndOfFile
+
+== HABILITATION NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	6	1
+2	10	0	0	0	7	2
+3	11	0	0	0	8	3
+4	12	0	0	0	6	4
+5	13	0	0	0	7	5
+6	14	0	0	0	8	1
+7	15	0	0	0	6	2
+reach EndOfFile
+
+== CONCEPT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	16	0	0	0	3	escarres	13
+2	17	0	0	0	4	autresSymptGen	14
+3	18	0	0	0	5	examCardVasc	15
+4	19	0	0	0	0	examNeuro	10
+5	20	0	0	0	1	examPsycho	11
+6	21	0	0	0	2	examPneumo	12
+7	22	0	0	0	3	examUro	13
+8	23	0	0	0	4	examGastro	14
+9	24	0	0	0	5	examGyneco	15
+10	25	0	0	0	0	examBucco	10
+11	26	0	0	0	1	examRhumato	11
+12	27	0	0	0	2	freqCardCouche	12
+13	28	0	0	0	3	paSystoAssis	13
+14	29	0	0	0	4	paDiastoAssis	14
+15	30	0	0	0	5	paSystoDebout	15
+16	31	0	0	0	0	paDiastoDebout	10
+17	32	0	0	0	1	paSystoCouche	11
+18	33	0	0	0	2	paDiastoCouche	12
+19	34	0	0	0	3	symptCardVasc	13
+20	35	0	0	0	4	bruitsCoeur	14
+21	36	0	0	0	5	douleurThoracique	15
+22	37	0	0	0	0	dyspnee	10
+23	38	0	0	0	1	signesInsuffCard	11
+24	39	0	0	0	2	oedemeMembresInf	12
+25	40	0	0	0	3	locOedemeMembresInf	13
+26	41	0	0	0	4	poulsMembresInf	14
+27	42	0	0	0	5	poulsFemG	15
+28	43	0	0	0	0	poulsFemD	10
+29	44	0	0	0	1	poulsPopG	11
+30	45	0	0	0	2	poulsPopD	12
+31	46	0	0	0	3	poulsTibPostG	13
+32	47	0	0	0	4	poulsTibPostD	14
+33	48	0	0	0	5	poulsPedG	15
+34	49	0	0	0	0	poulsPedD	10
+35	50	0	0	0	1	signesInsuffVeineuse	11
+36	51	0	0	0	2	sueurs	12
+37	52	0	0	0	3	symptNeuro	13
+38	53	0	0	0	4	etatConscience	14
+39	54	0	0	0	5	motricite	15
+40	55	0	0	0	0	rot	10
+41	56	0	0	0	1	rotAchilG	11
+42	57	0	0	0	2	rotAchilD	12
+43	58	0	0	0	3	rotRotulG	13
+44	59	0	0	0	4	rotRotulD	14
+45	60	0	0	0	5	rotTriG	15
+46	61	0	0	0	0	rotTriD	10
+47	62	0	0	0	1	rotBiG	11
+48	63	0	0	0	2	rotBiD	12
+49	64	0	0	0	3	ideesDelirantes	13
+50	65	0	0	0	4	hallucinations	14
+51	66	0	0	0	5	agitation	15
+52	67	0	0	0	0	agressivite	10
+53	68	0	0	0	1	depression	11
+54	69	0	0	0	2	anxiete	12
+55	70	0	0	0	3	apathie	13
+56	71	0	0	0	4	somnolence	14
+57	72	0	0	0	5	deambulation	15
+58	73	0	0	0	0	insomnie	10
+59	74	0	0	0	1	symptPneumo	11
+60	75	0	0	0	2	encombrement	12
+61	76	0	0	0	3	hemoptysie	13
+62	77	0	0	0	4	toux	14
+63	78	0	0	0	5	symptUro	15
+64	79	0	0	0	0	dysurie	10
+65	80	0	0	0	1	retention	11
+66	81	0	0	0	2	pollakiurie	12
+67	82	0	0	0	3	hematurie	13
+68	83	0	0	0	4	incontinenceUro	14
+69	84	0	0	0	5	precisionsIncontinenceUro	15
+70	85	0	0	0	0	SymptGastro	10
+71	86	0	0	0	1	ascite	11
+72	87	0	0	0	2	constipation	12
+73	88	0	0	0	3	diarrhee	13
+74	89	0	0	0	4	dysphagie	14
+75	90	0	0	0	5	ictere	15
+76	91	0	0	0	0	nausees	10
+77	92	0	0	0	1	vomissements	11
+78	93	0	0	0	2	occlusion	12
+79	94	0	0	0	3	hepatomegalie	13
+80	95	0	0	0	4	splenomegalie	14
+81	96	0	0	0	5	douleursAbdo	15
+82	97	0	0	0	0	incontinenceAnale	10
+83	98	0	0	0	1	fecalome	11
+84	99	0	0	0	2	toucherRectal	12
+85	100	0	0	0	3	alimentation	13
+86	101	0	0	0	4	symptomesGyneco	14
+87	102	0	0	0	5	metrorragies	15
+88	103	0	0	0	0	pertes	10
+89	104	0	0	0	1	examSeins	11
+90	105	0	0	0	2	dateMammographie	12
+91	106	0	0	0	3	preventionOsteoporose	13
+92	107	0	0	0	4	protheses	14
+93	108	0	0	0	5	symptRhumato	15
+94	109	0	0	0	0	douleursRhumato	10
+95	110	0	0	0	1	impotenceFonctionnelle	11
+96	111	0	0	0	2	raideur	12
+97	112	0	0	0	3	dateVisiteDomicile	13
+98	113	0	0	0	4	travailleurSocial	14
+99	114	0	0	0	5	gir	15
+100	115	0	0	0	0	montantMaxPlanAide	10
+101	116	0	0	0	1	servicePrestaAgree	11
+102	117	0	0	0	2	qteParMois	12
+103	118	0	0	0	3	servicePrestaNonAgree	13
+104	119	0	0	0	4	assoMandataire	14
+105	120	0	0	0	5	salarieDirect	15
+106	121	0	0	0	0	forfaitFoyerLogement	10
+107	122	0	0	0	1	forfaitAccueilFamilial	11
+108	123	0	0	0	2	teleassistance	12
+109	124	0	0	0	3	produitsHygiene	13
+110	125	0	0	0	4	divers	14
+111	126	0	0	0	5	autre	15
+112	127	0	0	0	0	montantPlanAide	10
+113	128	0	0	0	1	dateDossierComplet	11
+114	129	0	0	0	2	dateMiseOeuvre	12
+115	130	0	0	0	3	txMaParticipation	13
+116	131	0	0	0	4	modCoherence	14
+117	132	0	0	0	5	modOrientation	15
+118	133	0	0	0	0	modToilette	10
+119	134	0	0	0	1	modHabillage	11
+120	135	0	0	0	2	modAlimentation	12
+121	136	0	0	0	3	modElimination	13
+122	137	0	0	0	4	modTransfert	14
+123	138	0	0	0	5	modDeplacementInt	15
+124	139	0	0	0	0	modDeplacementExt	10
+125	140	0	0	0	1	modCommunicationADistance	11
+126	141	0	0	0	2	incapacitePhy	12
+127	142	0	0	0	3	incapacitePsy	13
+128	143	0	0	0	4	datePlan	14
+129	144	0	0	0	5	origineSignalement	15
+130	145	0	0	0	0	natureIntervention	10
+131	146	0	0	0	1	vision	11
+132	147	0	0	0	2	audition	12
+133	148	0	0	0	3	nutrition	13
+134	149	0	0	0	4	memoire	14
+135	150	0	0	0	5	tristeDeprime	15
+136	151	0	0	0	0	dateDerniereChute	10
+137	152	0	0	0	1	circonstancesDerniereChute	11
+138	153	0	0	0	2	nbChute	12
+139	154	0	0	0	3	dateDerniereAnnee	13
+140	155	0	0	0	4	nbHospitalisationDerniereAnnee	14
+141	156	0	0	0	5	geneRespiratoire	15
+142	157	0	0	0	0	troubleSommeil	10
+143	158	0	0	0	1	score	11
+144	159	0	0	0	2	typeBilan	12
+145	160	0	0	0	3	conditionVie	13
+146	161	0	0	0	4	contactExt	14
+147	162	0	0	0	5	presenceAnimaux	15
+148	163	0	0	0	0	statut	10
+149	164	0	0	0	1	typeLogement	11
+150	165	0	0	0	2	milieu	12
+151	166	0	0	0	3	faciliteAcces	13
+152	167	0	0	0	4	salubriteSanitaire	14
+153	168	0	0	0	5	precisionsSalubriteSanitaire	15
+154	169	0	0	0	0	salubriteChambre	10
+155	170	0	0	0	1	precisionsSalubriteChambre	11
+156	171	0	0	0	2	salubriteSalonSalleAManger	12
+157	172	0	0	0	3	precisionsSalubriteSalonSalleAManger	13
+158	173	0	0	0	4	salubriteCuisine	14
+159	174	0	0	0	5	precisionsSalubriteCuisine	15
+160	175	0	0	0	0	salubriteEscalier	10
+161	176	0	0	0	1	precisionsSalubriteEscalier	11
+162	177	0	0	0	2	salubriteAutre	12
+163	178	0	0	0	3	precisionSalubriteautre	13
+164	179	0	0	0	4	salubriteReseaux	14
+165	180	0	0	0	5	precisionsSalubriteReseaux	15
+166	181	0	0	0	0	dossierReputeCompletLe	10
+167	182	0	0	0	1	txParticipationFinanciere	11
+168	183	0	0	0	2	natureDemande	12
+169	184	0	0	0	3	nomDemandeur	13
+170	185	0	0	0	4	prenomDemandeur	14
+171	186	0	0	0	5	situationFamiliale	15
+172	187	0	0	0	0	numSecu	10
+173	188	0	0	0	1	caisseRetraite	11
+174	189	0	0	0	2	domicileSecours	12
+175	190	0	0	0	3	adresseLieuVie	13
+176	191	0	0	0	4	departementDomicileSecours	14
+177	192	0	0	0	5	nomRepresentant	15
+178	193	0	0	0	0	nomReferent	10
+179	194	0	0	0	1	nomMedecin	11
+180	195	0	0	0	2	aides	12
+181	196	0	0	0	3	ressources	13
+182	197	0	0	0	4	certificatMedical	14
+183	198	0	0	0	5	observations	15
+184	199	0	0	0	0	nom	10
+185	200	0	0	0	1	specialite	11
+186	201	0	0	0	2	recommandations	12
+187	202	0	0	0	3	orientations	13
+188	203	0	0	0	4	precisionsOrientation	14
+189	204	0	0	0	5	nouveauTraitement	15
+190	205	0	0	0	0	date	10
+191	206	0	0	0	1	orientationSpecialisteRef	11
+192	207	0	0	0	2	precisionsSpecialisteRef	12
+193	208	0	0	0	3	mms	13
+194	209	0	0	0	4	comportement	14
+195	210	0	0	0	5	traitement	15
+196	211	0	0	0	0	suiteCadreMaintienDomicile	10
+197	212	0	0	0	1	prochaineConsultMemoire	11
+198	213	0	0	0	2	alerte	12
+199	214	0	0	0	3	crSuiviReseau	13
+200	215	0	0	0	4	bilanInclusion	14
+201	216	0	0	0	5	rapport	15
+202	217	0	0	0	0	drains	10
+203	218	0	0	0	1	urines	11
+204	219	0	0	0	2	transit	12
+205	220	0	0	0	3	glycemieDextro	13
+206	221	0	0	0	4	tpInr	14
+207	222	0	0	0	5	hydratation	15
+208	223	0	0	0	0	pansement	10
+209	224	0	0	0	1	sondes	11
+210	225	0	0	0	2	soins	12
+211	226	0	0	0	3	changementComportement	13
+212	227	0	0	0	4	activites	14
+213	228	0	0	0	5	deficit	15
+214	229	0	0	0	0	pbRespiratoires	10
+215	230	0	0	0	1	plaintes	11
+216	231	0	0	0	2	objTherapeutiques	12
+217	232	0	0	0	3	service	13
+218	233	0	0	0	4	lieuHospitalisation	14
+219	234	0	0	0	5	dateEntreeService	15
+220	235	0	0	0	0	personneOrigineHospitalisation	10
+221	236	0	0	0	1	dareFinPriseChargeService	11
+222	237	0	0	0	2	resumeCompteRendu	12
+223	238	0	0	0	3	lieu	13
+224	239	0	0	0	4	participants	14
+225	240	0	0	0	5	conclusion	15
+226	241	0	0	0	0	commentaires	10
+227	242	0	0	0	1	obsCoherence	11
+228	243	0	0	0	2	obsOrientation	12
+229	244	0	0	0	3	obsToilette	13
+230	245	0	0	0	4	obsHabillage	14
+231	246	0	0	0	5	obsAlimentation	15
+232	247	0	0	0	0	obsElimination	10
+233	248	0	0	0	1	obsTransfert	11
+234	249	0	0	0	2	obsDeplacementInt	12
+235	250	0	0	0	3	obsDeplacementExt	13
+236	251	0	0	0	4	obsCommunication	14
+237	252	0	0	0	5	symptPsycho	15
+238	253	0	0	0	0	precisionsDouleursRhumato	10
+239	254	0	0	0	1	horaires	11
+240	255	0	0	0	2	localisationImpoFonct	12
+241	256	0	0	0	3	autreOrigine	13
+242	257	0	0	0	4	autreMotif	14
+243	258	0	0	0	5	autreNatureIntervention	15
+244	259	0	0	0	0	libelle	10
+245	260	0	0	0	1	typeAtcd	11
+246	261	0	0	0	2	atcd	12
+247	262	0	0	0	3	traitement	13
+248	263	0	0	0	4	quantite	14
+249	264	0	0	0	5	formeGalenique	15
+250	265	0	0	0	0	fois	10
+251	266	0	0	0	1	frequence	11
+252	267	0	0	0	2	observations	12
+253	268	0	0	0	3	duree	13
+254	269	0	0	0	4	nom	14
+255	270	0	0	0	5	nomJF	15
+256	271	0	0	0	0	prenom	10
+257	272	0	0	0	1	sexe	11
+258	273	0	0	0	2	profession	12
+259	274	0	0	0	3	codeINSEE	13
+260	275	0	0	0	4	jourDateNaissance	14
+261	276	0	0	0	5	moisDateNaissance	15
+262	277	0	0	0	0	anneeDateNaissance	10
+263	278	0	0	0	1	communeNaissance	11
+264	279	0	0	0	2	departementNaissance	12
+265	280	0	0	0	3	paysNaissance	13
+266	281	0	0	0	4	adresse	14
+267	282	0	0	0	5	complementAdresse	15
+268	283	0	0	0	0	telephone	10
+269	284	0	0	0	1	cp	11
+270	285	0	0	0	2	ville	12
+271	286	0	0	0	3	immeuble	13
+272	287	0	0	0	4	acces	14
+273	288	0	0	0	5	code	15
+274	289	0	0	0	0	etage	10
+275	290	0	0	0	1	ascenseur	11
+276	291	0	0	0	2	porte	12
+277	292	0	0	0	3	couverture	13
+278	293	0	0	0	4	regime	14
+279	294	0	0	0	5	numeroSecu	15
+280	295	0	0	0	0	mutuelle	10
+281	296	0	0	0	1	numAdherent	11
+282	297	0	0	0	2	caisseRetraite	12
+283	298	0	0	0	3	numImmat	13
+284	299	0	0	0	4	ALD	14
+285	300	0	0	0	5	protectionJuridique	15
+286	301	0	0	0	0	groupeSanguin	10
+287	302	0	0	0	1	rhesus	11
+288	303	0	0	0	2	situationFamiliale	12
+289	304	0	0	0	3	dateProchainBilan	13
+290	305	0	0	0	4	autreOrigine	14
+291	306	0	0	0	5	autreMotif	15
+292	307	0	0	0	0	autreNature	10
+293	308	0	0	0	1	motifPlan	11
+294	309	0	0	0	2	DouleursOuiNon	12
+295	310	0	0	0	3	effectuePar	13
+296	311	0	0	0	4	motif	14
+297	312	0	0	0	5	commentaire	15
+298	313	0	0	0	0	poids	10
+299	314	0	0	0	1	temperature	11
+300	315	0	0	0	2	anorexie	12
+301	316	0	0	0	3	amaigrissement	13
+302	317	0	0	0	4	asthenie	14
+303	318	0	0	0	5	cachexie	15
+304	319	0	0	0	0	denutrition	10
+305	320	0	0	0	1	deshydratation	11
+306	321	0	0	0	2	oedeme	12
+307	322	0	0	0	3	adenopathie	13
+308	323	0	0	0	4	localisationAdenopathie	14
+309	324	0	0	0	5	douleurs	15
+reach EndOfFile
+
+== FORMULAIRE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	325	0	0	0	Examen clinique
+2	326	0	0	0	Examen cardiovasculaire
+3	327	0	0	0	Examen gastroenterologique
+4	328	0	0	0	Examen gynecologique
+5	329	0	0	0	Examen neurosensoriel
+6	330	0	0	0	Examen pneumologique
+7	331	0	0	0	Examen psychocomportemental
+8	332	0	0	0	Examen rhumatologique
+9	333	0	0	0	Examen urologique
+10	334	0	0	0	Examen buccodentaire
+11	335	0	0	0	Bilan Infirmier
+12	336	0	0	0	Bilan kinesitherapeute
+13	337	0	0	0	Bilan medical du reseau
+14	338	0	0	0	Bilan psychologique
+15	339	0	0	0	Consultation memoire
+16	340	0	0	0	Fiche synthese sociale
+17	341	0	0	0	Grille AGGIR
+18	342	0	0	0	Hospitalisation
+19	343	0	0	0	form
+20	344	0	0	0	Observations gerontologiques
+reach EndOfFile
+
+== EPISODE NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	345	0	0	0	nonEpisode
+reach EndOfFile
+
+== EVENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	346	0	0	0	325	1	345	2005-11-16
+2	347	0	0	0	326	2	345	2006-12-17
+3	348	0	0	0	327	3	345	2007-01-18
+4	349	0	0	0	328	4	345	2008-02-19
+5	350	0	0	0	329	5	345	2009-03-20
+6	351	0	0	0	330	1	345	2000-04-21
+7	352	0	0	0	331	2	345	2001-05-22
+8	353	0	0	0	332	3	345	2002-06-01
+9	354	0	0	0	333	4	345	2003-07-02
+10	355	0	0	0	334	5	345	2004-08-03
+reach EndOfFile
+
+== COMMENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	356	0	0	0	Presence d escarres
+2	357	0	0	0	Deficit
+3	358	0	0	0	Principales plaintes du patient
+4	359	0	0	0	Activites
+5	360	0	0	0	a suivre
+6	361	0	0	0	noComment
+7	362	0	0	0	Problemes respiratoires bronchiques
+8	363	0	0	0	Douleur
+9	364	0	0	0	Objectifs therapeutiques
+10	365	0	0	0	Commentaires
+11	366	0	0	0	Presence d escarres
+12	367	0	0	0	Deficit
+13	368	0	0	0	Principales plaintes du patient
+14	369	0	0	0	Activites
+15	370	0	0	0	a suivre
+16	371	0	0	0	Problemes respiratoires bronchiques
+17	372	0	0	0	Problemes respiratoires bronchiques
+18	373	0	0	0	Douleur
+19	374	0	0	0	Objectifs therapeutiques
+20	375	0	0	0	Commentaires
+21	376	0	0	0	Presence d escarres
+22	377	0	0	0	Deficit
+23	378	0	0	0	Principales plaintes du patient
+24	379	0	0	0	Activites
+25	380	0	0	0	a suivre
+26	381	0	0	0	Problemes respiratoires bronchiques
+27	382	0	0	0	Problemes respiratoires bronchiques
+28	383	0	0	0	Douleur
+29	384	0	0	0	Objectifs therapeutiques
+30	385	0	0	0	Commentaires
+31	386	0	0	0	Presence d escarres
+32	387	0	0	0	Deficit
+33	388	0	0	0	Principales plaintes du patient
+34	389	0	0	0	Activites
+35	390	0	0	0	a suivre
+36	391	0	0	0	Problemes respiratoires bronchiques
+37	392	0	0	0	Problemes respiratoires bronchiques
+38	393	0	0	0	Douleur
+39	394	0	0	0	Objectifs therapeutiques
+40	395	0	0	0	Commentaires
+41	396	0	0	0	Presence d escarres
+42	397	0	0	0	Deficit
+43	398	0	0	0	Principales plaintes du patient
+44	399	0	0	0	Activites
+45	400	0	0	0	a suivre
+46	401	0	0	0	Problemes respiratoires bronchiques
+47	402	0	0	0	Problemes respiratoires bronchiques
+48	403	0	0	0	Douleur
+49	404	0	0	0	Objectifs therapeutiques
+50	405	0	0	0	Commentaires
+reach EndOfFile
+
+== INFO NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	406	0	0	0	346	16	356	Arras	99	199
+2	407	0	0	0	347	17	357	France	65	165
+3	408	0	0	0	348	18	358	Mal de dos	23	123
+4	409	0	0	0	349	19	359	NumeroUn	0	10
+5	410	0	0	0	350	20	360	Patient	23	123
+6	411	0	0	0	351	21	361	lecture	123	1123
+7	412	0	0	0	352	22	362	Arras	99	199
+8	413	0	0	0	353	23	363	France	65	165
+9	414	0	0	0	354	24	364	Mal de dos	23	123
+10	415	0	0	0	355	25	365	NumeroUn	0	10
+11	416	0	0	0	346	26	366	Patient	23	123
+12	417	0	0	0	347	27	367	lecture	123	1123
+13	418	0	0	0	348	28	368	Arras	99	199
+14	419	0	0	0	349	29	369	France	65	165
+15	420	0	0	0	350	30	370	Mal de dos	23	123
+16	421	0	0	0	351	31	371	NumeroUn	0	10
+17	422	0	0	0	352	32	372	Patient	23	123
+18	423	0	0	0	353	33	373	lecture	123	1123
+19	424	0	0	0	354	34	374	Arras	99	199
+20	425	0	0	0	355	35	375	France	65	165
+21	426	0	0	0	346	36	376	Mal de dos	23	123
+22	427	0	0	0	347	37	377	NumeroUn	0	10
+23	428	0	0	0	348	38	378	Patient	23	123
+24	429	0	0	0	349	39	379	lecture	123	1123
+25	430	0	0	0	350	40	380	Arras	99	199
+26	431	0	0	0	351	41	381	France	65	165
+27	432	0	0	0	352	42	382	Mal de dos	23	123
+28	433	0	0	0	353	43	383	NumeroUn	0	10
+29	434	0	0	0	354	44	384	Patient	23	123
+30	435	0	0	0	355	45	385	lecture	123	1123
+31	436	0	0	0	346	46	386	Arras	99	199
+32	437	0	0	0	347	47	387	France	65	165
+33	438	0	0	0	348	48	388	Mal de dos	23	123
+34	439	0	0	0	349	49	389	NumeroUn	0	10
+35	440	0	0	0	350	50	390	Patient	23	123
+36	441	0	0	0	351	51	391	lecture	123	1123
+37	442	0	0	0	352	52	392	Arras	99	199
+38	443	0	0	0	353	53	393	France	65	165
+39	444	0	0	0	354	54	394	Mal de dos	23	123
+40	445	0	0	0	355	55	395	NumeroUn	0	10
+41	446	0	0	0	346	56	396	Patient	23	123
+42	447	0	0	0	347	57	397	lecture	123	1123
+43	448	0	0	0	348	58	398	Arras	99	199
+44	449	0	0	0	349	59	399	France	65	165
+45	450	0	0	0	350	60	400	Mal de dos	23	123
+46	451	0	0	0	351	61	401	NumeroUn	0	10
+47	452	0	0	0	352	62	402	Patient	23	123
+48	453	0	0	0	353	63	403	lecture	123	1123
+49	454	0	0	0	354	64	404	Arras	99	199
+50	455	0	0	0	355	65	405	France	65	165
+51	456	0	0	0	346	66	356	Mal de dos	23	123
+52	457	0	0	0	347	67	357	NumeroUn	0	10
+53	458	0	0	0	348	68	358	Patient	23	123
+54	459	0	0	0	349	69	359	lecture	123	1123
+55	460	0	0	0	350	70	360	Arras	99	199
+56	461	0	0	0	351	71	361	France	65	165
+57	462	0	0	0	352	72	362	Mal de dos	23	123
+58	463	0	0	0	353	73	363	NumeroUn	0	10
+59	464	0	0	0	354	74	364	Patient	23	123
+60	465	0	0	0	355	75	365	lecture	123	1123
+61	466	0	0	0	346	76	366	Arras	99	199
+62	467	0	0	0	347	77	367	France	65	165
+63	468	0	0	0	348	78	368	Mal de dos	23	123
+64	469	0	0	0	349	79	369	NumeroUn	0	10
+65	470	0	0	0	350	80	370	Patient	23	123
+66	471	0	0	0	351	81	371	lecture	123	1123
+67	472	0	0	0	352	82	372	Arras	99	199
+68	473	0	0	0	353	83	373	France	65	165
+69	474	0	0	0	354	84	374	Mal de dos	23	123
+70	475	0	0	0	355	85	375	NumeroUn	0	10
+71	476	0	0	0	346	86	376	Patient	23	123
+72	477	0	0	0	347	87	377	lecture	123	1123
+73	478	0	0	0	348	88	378	Arras	99	199
+74	479	0	0	0	349	89	379	France	65	165
+75	480	0	0	0	350	90	380	Mal de dos	23	123
+76	481	0	0	0	351	91	381	NumeroUn	0	10
+77	482	0	0	0	352	92	382	Patient	23	123
+78	483	0	0	0	353	93	383	lecture	123	1123
+79	484	0	0	0	354	94	384	Arras	99	199
+80	485	0	0	0	355	95	385	France	65	165
+81	486	0	0	0	346	96	386	Mal de dos	23	123
+82	487	0	0	0	347	97	387	NumeroUn	0	10
+83	488	0	0	0	348	98	388	Patient	23	123
+84	489	0	0	0	349	99	389	lecture	123	1123
+85	490	0	0	0	350	100	390	Arras	99	199
+86	491	0	0	0	351	101	391	France	65	165
+87	492	0	0	0	352	102	392	Mal de dos	23	123
+88	493	0	0	0	353	103	393	NumeroUn	0	10
+89	494	0	0	0	354	104	394	Patient	23	123
+90	495	0	0	0	355	105	395	lecture	123	1123
+91	496	0	0	0	346	106	396	Arras	99	199
+92	497	0	0	0	347	107	397	France	65	165
+93	498	0	0	0	348	108	398	Mal de dos	23	123
+94	499	0	0	0	349	109	399	NumeroUn	0	10
+95	500	0	0	0	350	110	400	Patient	23	123
+96	501	0	0	0	351	111	401	lecture	123	1123
+97	502	0	0	0	352	112	402	Arras	99	199
+98	503	0	0	0	353	113	403	France	65	165
+99	504	0	0	0	354	114	404	Mal de dos	23	123
+100	505	0	0	0	355	115	405	NumeroUn	0	10
+reach EndOfFile
+
+== MATRICEDMSP NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdRole	Autorisations	
+reach EndOfFile
+
+== MATRICEPATIENT NOAC TESTS ==
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	505	0	0	0	325	1	6	1	0
+2	506	0	0	0	326	1	6	1	85
+3	507	0	0	0	327	1	6	1	170
+4	508	0	0	0	328	1	6	1	0
+5	509	0	0	0	329	1	6	1	85
+6	510	0	0	0	330	1	6	1	170
+7	511	0	0	0	331	1	6	1	0
+8	512	0	0	0	332	1	6	1	85
+9	513	0	0	0	333	1	6	1	170
+10	514	0	0	0	334	1	6	1	0
+11	515	0	0	0	335	1	6	1	85
+12	516	0	0	0	336	1	6	1	170
+13	517	0	0	0	337	1	6	1	0
+14	518	0	0	0	338	1	6	1	85
+15	519	0	0	0	339	1	6	1	170
+16	520	0	0	0	340	1	6	1	0
+17	521	0	0	0	341	1	6	1	85
+18	522	0	0	0	342	1	6	1	170
+19	523	0	0	0	343	1	6	1	0
+20	524	0	0	0	344	1	6	1	85
+21	525	0	0	0	325	1	7	1	0
+22	526	0	0	0	326	1	7	1	85
+23	527	0	0	0	327	1	7	1	170
+24	528	0	0	0	328	1	7	1	0
+25	529	0	0	0	329	1	7	1	85
+26	530	0	0	0	330	1	7	1	170
+27	531	0	0	0	331	1	7	1	0
+28	532	0	0	0	332	1	7	1	85
+29	533	0	0	0	333	1	7	1	170
+30	534	0	0	0	334	1	7	1	0
+31	535	0	0	0	335	1	7	1	85
+32	536	0	0	0	336	1	7	1	170
+33	537	0	0	0	337	1	7	1	0
+34	538	0	0	0	338	1	7	1	85
+35	539	0	0	0	339	1	7	1	170
+36	540	0	0	0	340	1	7	1	0
+37	541	0	0	0	341	1	7	1	85
+38	542	0	0	0	342	1	7	1	170
+39	543	0	0	0	343	1	7	1	0
+40	544	0	0	0	344	1	7	1	85
+41	545	0	0	0	325	1	8	1	0
+42	546	0	0	0	326	1	8	1	85
+43	547	0	0	0	327	1	8	1	170
+44	548	0	0	0	328	1	8	1	0
+45	549	0	0	0	329	1	8	1	85
+46	550	0	0	0	330	1	8	1	170
+47	551	0	0	0	331	1	8	1	0
+48	552	0	0	0	332	1	8	1	85
+49	553	0	0	0	333	1	8	1	170
+50	554	0	0	0	334	1	8	1	0
+51	555	0	0	0	335	1	8	1	85
+52	556	0	0	0	336	1	8	1	170
+53	557	0	0	0	337	1	8	1	0
+54	558	0	0	0	338	1	8	1	85
+55	559	0	0	0	339	1	8	1	170
+56	560	0	0	0	340	1	8	1	0
+57	561	0	0	0	341	1	8	1	85
+58	562	0	0	0	342	1	8	1	170
+59	563	0	0	0	343	1	8	1	0
+60	564	0	0	0	344	1	8	1	85
+61	565	0	0	0	0	0	6	1	170
+62	566	0	0	0	0	2	6	1	170
+63	567	0	0	0	0	1	6	1	170
+64	568	0	0	0	0	0	7	1	0
+65	569	0	0	0	0	2	7	1	0
+66	570	0	0	0	0	1	7	1	0
+67	571	0	0	0	0	0	8	1	85
+68	572	0	0	0	0	2	8	1	85
+69	573	0	0	0	0	1	8	1	85
+reach EndOfFile
+
+THIRD recovery -> to filled state 2b
+Initializing restore
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next RamP packet
+Restore next RamP packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Finalizing restore
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+14	112	0	0	0	96	111	bb	1	2001-03-02	1	1	1
+15	113	0	0	0	103	111	cc	2	2000-04-03	2	0	2
+16	114	0	0	0	103	111	dd	3	2001-05-04	0	1	3
+17	115	0	0	0	91	111	ee	4	2000-06-05	1	0	4
+18	116	0	0	0	100	111	ff	5	2001-07-06	2	1	5
+19	117	0	0	0	87	111	gg	6	2000-08-07	0	0	6
+20	118	0	0	0	109	111	hh	7	2001-09-08	1	1	7
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+14	14	4	4	2	61	4
+15	15	4	4	2	68	4
+16	16	4	4	2	68	4
+17	17	4	4	2	56	4
+18	18	4	4	3	65	4
+19	19	4	4	3	52	4
+20	20	4	4	2	74	4
+reach EndOfFile
+
+-----/////// EP_EVENT_SELECT_STAR /////////---------
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+2	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+3	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+4	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+5	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+6	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+7	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+8	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+9	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+10	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+11	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+12	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+13	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+14	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+15	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+16	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+17	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+18	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+19	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+20	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+21	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+22	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+23	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+24	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+25	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+26	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+27	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+28	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+29	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+30	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+31	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+32	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+33	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+36	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+37	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+38	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+39	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+40	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+41	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+42	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+43	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+44	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+45	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+46	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+47	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+48	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+49	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+50	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+51	86	0	0	0	83	81	84	2000-01-01	2000-01-01	12
+52	87	0	0	0	83	81	85	2001-02-02	2001-02-02	12
+53	88	0	0	0	83	81	84	2002-03-03	2002-03-03	12
+54	89	0	0	0	83	81	85	2003-04-04	2003-04-04	12
+55	90	0	0	0	83	81	84	2004-05-05	2004-05-05	12
+56	91	0	0	0	83	81	84	2005-06-06	2005-06-06	12
+57	92	0	0	0	83	81	84	2006-07-07	2006-07-07	12
+58	93	0	0	0	83	81	84	2007-08-08	2007-08-08	12
+59	94	0	0	0	83	81	84	2008-09-09	2008-09-09	12
+60	95	0	0	0	83	81	84	2009-10-10	2009-10-10	12
+61	96	0	0	0	83	81	84	2000-11-11	2000-11-11	12
+62	97	0	0	0	83	81	85	2001-12-12	2001-12-12	12
+63	98	0	0	0	83	81	85	2002-01-13	2002-01-13	12
+64	99	0	0	0	83	81	85	2003-02-14	2003-02-14	12
+65	100	0	0	0	83	81	85	2004-03-15	2004-03-15	12
+66	101	0	0	0	83	81	85	2005-04-16	2005-04-16	12
+67	102	0	0	0	83	81	85	2006-05-17	2006-05-17	12
+68	103	0	0	0	83	81	84	2007-06-18	2007-06-18	12
+69	104	0	0	0	83	81	84	2008-07-19	2008-07-19	12
+70	105	0	0	0	83	81	85	2009-08-20	2009-08-20	12
+71	106	0	0	0	83	81	84	2000-09-21	2000-09-21	12
+72	107	0	0	0	83	81	84	2001-10-22	2001-10-22	12
+73	108	0	0	0	83	81	85	2002-11-23	2002-11-23	12
+74	109	0	0	0	83	81	84	2003-12-24	2003-12-24	12
+75	110	0	0	0	83	81	85	2004-01-25	2004-01-25	12
+reach EndOfFile
+
+FOURTH recovery -> to filled state 2a
+Initializing restore
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next NOR packet
+Restore next RamP packet
+Restore next RamP packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next FTL packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Restore next NAND packet
+Finalizing restore
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+reach EndOfFile
+
+-----/////// EP_EVENT_SELECT_STAR /////////---------
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+2	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+3	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+4	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+5	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+6	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+7	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+8	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+9	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+10	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+11	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+12	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+13	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+14	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+15	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+16	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+17	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+18	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+19	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+20	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+21	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+22	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+23	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+24	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+25	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+26	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+27	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+28	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+29	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+30	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+31	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+32	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+33	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+36	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+37	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+38	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+39	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+40	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+41	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+42	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+43	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+44	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+45	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+46	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+47	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+48	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+49	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+50	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+reach EndOfFile
+
+Detach driver from communication device
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

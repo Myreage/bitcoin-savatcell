@@ -1,0 +1,210 @@
+#JAVA package org.inria.dmsp;
+
+
+
+#JAVA public class EP_Synchro {
+
+#JAVA   /*
+#JAVA    * PLANS FOR SYNCHRO:
+#JAVA    *   EP_*_INSERT
+#JAVA    *   EP_*_SELECT_BY_ID : used only to process delta from SANTEOS to SPT.
+#JAVA    *   EP_*_SELECT_ON_TSSPT : used to generate delta from SPT to SANTEOS (Secret data is avoided). 
+#JAVA    *   EP_*_UPDATE
+#JAVA    */
+
+#JAVA public static String EP_INFO_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Info WHERE IdGlobal = ?;
+
+#JAVA public static String EP_USER_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM UserDMSP WHERE IdGlobal = ?;
+
+#JAVA public static String EP_EPISODE_SELECT_BY_ID =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Episode WHERE IdGlobal = ?;
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Formulaire WHERE IdGlobal = ?;
+
+#JAVA public static String EP_ROLE_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Role WHERE IdGlobal = ?;
+
+#JAVA public static String EP_EVENT_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Event WHERE IdGlobal = ?;
+
+#JAVA public static String EP_HABILITATION_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Habilitation WHERE IdGlobal = ?;
+
+#JAVA public static String EP_PATIENT_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST ???
+SELECT * FROM MatricePatient WHERE IdGlobal = ?;
+
+#JAVA public static String EP_COMMENT_SELECT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT * FROM Comment WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_INFO_SELECT_ON_TSSPT =
+SELECT i.IdGlobal, i.Author, i.TSSPT, i.TSSanteos, i.IdEvent, i.IdComment, i.ValChar, i.ValNum, i.ValDate, i.Position, i.Filtre, i.IdConcept FROM info i, event e WHERE i.IdEvent=e.IdGlobal AND e.TSSPT > 0 AND i.TSSPT > ?
+
+#JAVA public static final String EP_COMMENT_SELECT_ON_TSSPT =
+SELECT c.IdGlobal, c.Author, c.TSSPT, c.TSSanteos, c.ValComment FROM Comment c, Info i, Event e WHERE i.IdEvent=e.IdGlobal AND i.IdComment=c.IdGlobal AND e.TSSPT > 0 AND c.TSSPT > ?
+
+#JAVA public static final String EP_EVENT_UPDATE =
+NO_CI UPDATE Event SET Author = ?, TSSPT = ?, TSSANTEOS = ? ,  DateEvent = ?, DateFin = ?, Filtre = ? WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_INFO_UPDATE =
+NO_CI UPDATE Info SET Author = ?, TSSPT = ?, TSSanteos = ?, ValChar = ?, ValNum = ?, ValDate = ?, Position = ?, Filtre = ?, IdConcept = ? WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_COMMENT_UPDATE =
+NO_CI UPDATE Comment SET Author = ?, TSSPT = ?, TSSanteos = ?, ValComment = ? WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_USER_UPDATE =
+NO_CI UPDATE UserDMSP SET Author = ?, TSSPT = ?, TSSanteos = ?, Nom = ?, Type = ?, Responsable = ?, Identifiant = ?, Civilite = ?, Prenom = ?, Adresse = ?, Ville = ?, CodePost = ?, Tel = ?, Mobile = ?, Courriel = ?, InfoLegale = ?, Certificate = ?, IdRole = ? WHERE IdGlobal = ?
+
+#JAVA public static final String EP_EPISODE_UPDATE =
+NO_CI UPDATE Episode SET Author = ?, TSSPT = ?, TSSanteos = ?, Nom = ? WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_FORMULAIRE_UPDATE =
+NO_CI UPDATE Formulaire SET Author = ?, TSSPT = ?, TSSanteos = ?, Nom = ?, Filtre = ? WHERE IdGlobal = ?
+
+#JAVA public static final String EP_ROLE_UPDATE =
+NO_CI UPDATE Role SET Author = ?, TSSPT = ?, TSSanteos = ?, Nom = ? WHERE IdGlobal = ?
+
+#JAVA public static String EP_EPISODE_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Episode (IdGlobal, Author, TSSPT, TSSanteos, Nom) VALUES (?, ?, ?, ?, ?);
+
+#JAVA public static String EP_FORMULAIRE_INSERT =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Formulaire (IdGlobal, Author, TSSPT, TSSanteos, Nom, Filtre) VALUES (?, ?, ?, ?, ?, ?);
+
+#JAVA public static String EP_USER_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO UserDMSP (IdGlobal, Author, TSSPT, TSSanteos, Nom, Type, Responsable, Identifiant, Civilite, Prenom, Adresse, Ville, CodePost, Tel, Mobile, Courriel, InfoLegale, Certificate, IdRole) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+#JAVA public static final String EP_PATIENT_SELECT_ON_TSSPT =
+SELECT * FROM MatricePatient WHERE TSSPT > ?;
+
+#JAVA public static final String EP_EPISODE_SELECT_ON_TSSPT =
+SELECT * FROM Episode WHERE TSSPT > ?;
+
+#JAVA public static final String EP_HABILITATION_SELECT_ON_TSSPT =
+SELECT * FROM Habilitation WHERE TSSPT > ?;
+
+#JAVA public static String EP_EVENT_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Event (IdGlobal, Author, TSSPT, TSSanteos, IdForm, IdUser, IdEpisode, DateEvent, DateFin, Filtre) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+#JAVA public static String EP_INFO_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Info (IdGlobal, Author, TSSPT, TSSanteos, IdEvent, IdComment, ValChar, ValNum, ValDate, Position, Filtre, IdConcept) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+#JAVA public static String EP_COMMENT_INSERT 	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Comment (IdGlobal, Author, TSSPT, TSSanteos, ValComment) VALUES (?, ?, ?, ?, ?);
+
+#JAVA public static final String EP_EVENT_SELECT_ON_TSSPT =
+Select * from event where TSSPT > ?;
+
+#JAVA public static final String EP_USER_SELECT_ON_TSSPT =	  
+Select * from userdmsp where TSSPT > ?;
+
+#JAVA public static String EP_ROLE_INSERT  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Role (IdGlobal, Author, TSSPT, TSSanteos, Nom) VALUES (?, ?, ?, ?, ?);
+
+#JAVA public static String EP_HABILITATION_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK	  
+INSERT INTO Habilitation (IdGlobal, Author, TSSPT, TSSanteos, IdRole, IdUser) VALUES (?, ?, ?, ?, ?, ?);
+
+#JAVA public static final String EP_FORMULAIRE_SELECT_ON_TSSPT =
+Select * from formulaire where TSSPT > ?;
+
+#JAVA public static final String EP_HABILITATION_DELETE =
+NO_CI DELETE FROM Habilitation WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_INFO_DELETE =
+NO_CI DELETE FROM Info WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_COMMENT_DELETE =
+NO_CI DELETE FROM Comment WHERE IdGlobal = ?;
+
+#JAVA //TODO: secret data should never be inserted into TupleDeleted when deleted (for now secret data is never deleted)
+#JAVA public static final String EP_DELETED_SELECT_ON_TSSPT =
+NO_CI SELECT * from TupleDeleted where TSSPT > ?
+
+#JAVA   // there are multiple insert EPs, selection is done in tupleInsert below
+#JAVA   //---- Multiple INSERTS ----
+#JAVA   // CATEGORIE AUTRE:
+
+#JAVA   public static String EP_PATIENT_INSERT_AUTRE_USER	=  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 10 2 4 0 5 v10 52 r11 # 4 10 10 11 10 0 r6 r10 # 1 11 11 12 r11 1 2 1 10 # 0 12 12 2 # \u0000*/"; 
+
+#JAVA   public static String EP_PATIENT_INSERT_AUTRE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 10 2 4 0 5 v10 52 r11 # 4 10 10 11 52 0 r6 r10 # 1 11 11 12 r11 1 6 1 52 # 0 12 12 6 # \u0000*/"; 
+
+#JAVA   // CATEGORIE USER:
+#JAVA   public static String EP_PATIENT_INSERT_USER_USER	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 10 0 r4 r9 # 1 5 5 6 r10 1 2 1 10 # 0 6 6 2 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/"; 
+
+#JAVA   public static String EP_PATIENT_INSERT_USER_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 10 0 r4 r9 # 1 5 5 6 r10 1 2 1 10 # 0 6 6 2 # 4 10 10 11 52 0 r6 r11 # 1 11 11 12 r12 1 6 1 52 # 0 12 12 6 # \u0000*/"; 
+
+#JAVA   // CATEGORIE FORMULAIRE:
+#JAVA   public static String EP_PATIENT_INSERT_FORMULAIRE_USER	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 5 0 r4 r9 # 1 5 5 6 r10 1 1 1 5 # 0 6 6 1 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/"; 
+
+#JAVA   public static String EP_PATIENT_INSERT_FORMULAIRE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 5 0 r4 r9 # 1 5 5 6 r10 1 1 1 5 # 0 6 6 1 # 4 10 10 11 52 0 r6 r11 # 1 11 11 12 r12 1 6 1 52 # 0 12 12 6 # \u0000*/"; 
+
+#JAVA   // CATEGORIE EPISODE:
+#JAVA   public static String EP_PATIENT_INSERT_EPISODE_USER	=  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 0 0 r4 r9 # 1 5 5 6 r10 1 0 1 0 # 0 6 6 0 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/"; 
+
+#JAVA   public static String EP_PATIENT_INSERT_EPISODE_ROLE	= // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into matricepatient values (?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 52 r12 # 7 2 2 10 4 # 4 4 4 5 0 0 r4 r9 # 1 5 5 6 r10 1 0 1 0 # 0 6 6 0 # 4 10 10 11 52 0 r6 r11 # 1 11 11 12 r12 1 6 1 52 # 0 12 12 6 # \u0000*/"; 
+
+#JAVA   //---- end of INSERTS ----
+
+#JAVA public static final String EP_ROLE_SELECT_ON_TSSPT =
+SELECT * FROM role WHERE TSSPT > ?
+
+#JAVA public static final String EP_HABILITATION_UPDATE =
+UPDATE Habilitation SET Author = ?, TSSPT = ?, TSSanteos = ?, IdRole = ?, IdUser = ? WHERE IdGlobal = ?;
+
+# ===============================================================================================
+# BELOW THIS LINE, PORTING STATUS UNKNOWN: NOBODY CHECKED IF THEY STILL WORK WITH THE NEW INDEXES
+# ===============================================================================================
+
+#JAVA   public static String EP_EVENT_INSERT_SIGMOD = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA 	  //Insert into event values (?,?,?,?,?,?,?,?,?,?)
+#JAVA 	  "/*EP \n 2 6 6 -1 1 5 ?5 # 2 7 7 -1 2 10 ?6 # 7 5 5 6 7 # 2 8 8 -1 0 0 ?7 # 7 4 4 5 8 # 6 3 3 4 3 3 28 ?1 t3 # 6 2 2 3 3 1 5 r0 r7 # 5 1 1 2 3 0 0 0 r1 1 r3 2 r5 # 5 0 0 1 10 3 1 28 r6 29 ?2 30 ?3 31 ?4 32 ?5 33 ?6 34 ?7 35 ?8 95 ?9 96 ?10 # \u0000*/";
+
+#JAVA   public static String EP_INFO_INSERT_SIGMOD = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA     //Insert into info values (?,?,?,?,?, ?,?,?,?,?,?,?) 
+#JAVA 	  "/*EP \u000C 2 6 6 -1 3 28 ?5 # 1 5 5 6 r1 3 0 0 0 1 2 # 2 7 7 -1 5 47 ?6 # 7 4 4 5 7 # 1 3 3 4 r2 1 1 1 5 # 6 2 2 3 4 1 5 r7 t4 # 5 1 1 2 5 1 0 0 r2 1 r3 2 r4 3 r1 4 r6 # 5 0 0 1 12 4 1 36 ?1 37 ?2 38 ?3 39 ?4 40 ?5 41 ?6 42 ?7 43 ?8 44 ?9 45 ?10 46 ?11 92 ?12 # \u0000*/";
+#JAVA   public static String EP_INFO_INSERT_OLD = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA 	//Insert into info values (?,?,?,?,?, ?,?,?,?,?, ?)
+#JAVA 	  "/*EP \u000C 5 0 0 1 12 4 1 36 ?1 37 ?2 38 ?3 39 ?4 40 ?5 41 ?6 42 ?7 43 ?8 44 ?9 45 ?10 46 ?11 92 ?12 # 5 1 1 2 5 1 0 0 r12 1 r13 2 r14 3 r16 4 r18 # 7 2 2 3 7 # 1 3 3 4 r16 3 0 0 0 1 2 # 4 4 4 5 28 0 r4 r15 # 1 5 5 6 r16 1 3 1 28 # 0 6 6 3 # 4 7 7 8 47 0 r5 r17 # 1 8 8 9 r18 1 5 1 47 # 0 9 9 5 # \u0000*/"; 
+
+#JAVA   public static final String EP_DMSP_INSERT = null;				//Probably not useful in this version
+#JAVA   public static final String EP_DMSP_SELECT_BY_ID = null;		//Probably not useful in this version
+#JAVA   public static final String EP_DMSP_SELECT_ON_TSSPT = null;	//Probably not useful in this version
+#JAVA   public static final String EP_DMSP_UPDATE = null;				//Probably not useful in this version
+#JAVA   public static final String EP_PATIENT_UPDATE = null;  	//Probably not useful in this version
+
+#JAVA   public final static String EP_EVENT_DELETE =
+#JAVA 	  /* SQL : 	DELETE FROM Event WHERE IdGlobal=? */
+#JAVA 	  "/*EP \u0001 0 4 4 3 # 1 3 3 4 r0 1 3 1 28 # 4 2 2 3 28 0 ?1 r1 # 5 1 1 2 3 12 1 85 v13 86 r0 87 v10 # 9 0 0 1 3 r0 # \u0000*/";
+
+
+#JAVA   // TupleDeleted TABLE
+#JAVA   public static final String EP_DELETED_INSERT =
+#JAVA     // INSERT into TupeDeleted values (?1,?5,?2,?3,?4)
+#JAVA     null;  	//Probably not useful in this version
+
+#JAVA   public static final String EP_DELETED_SELECT_BY_ID =
+#JAVA     // SELECT from TupeDeleted where IdGlobal = ?
+#JAVA     null;  	//Probably not useful in this version
+
+#JAVA   public static final String EP_DELETED_DELETE =
+#JAVA     // DELETE FROM TupeDeleted WHERE IdGlobal = ?
+#JAVA     null;  	//Probably not useful in this version
+
+#JAVA }

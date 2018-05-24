@@ -1,0 +1,47 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+BLOB create...OK
+BLOB id(h,s,hash) : 0, 0, 0x000000000000000000000000000000 []
+BLOB write...OK
+BLOB id(h,s,hash) : 0, 4, 0x303132333435363738396162636465 [0123456789abcde]
+BLOB read...OK
+BLOB read OK
+BLOB id(h,s,hash) : 0, 4, 0x303132333435363738396162636465 [0123456789abcde]
+BLOB free...OK
+BLOB id(h,s,hash) : 1, 4, 0x303132333435363738396162636465 [0123456789abcde]
+BLOB create/load...OK
+BLOB id(h,s,hash) : 1, 20266, 0x303132333435363738396162636465 [0123456789abcde]
+BLOB read/compare...BLOB read OK
+BLOB free...OK
+BLOB id(h,s,hash) : 41, 20266, 0x303132333435363738396162636465 [0123456789abcde]
+insert BLOB...OK 1
+select BLOB...
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Image	
+1	10	11	22	33	test	[41,20266] 0x474946383961e300fa00f7ff006a4c52463990261417f7eeee524294fef7f7cf
+reach EndOfFile
+
+select BLOB OK
+update BLOB...OK 1
+select BLOB...
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Image	
+1	10	111	222	333	test1	[81,19882] 0xffd8ffe000104a46494600010100000100010000fffe003e43524541544f523a
+reach EndOfFile
+
+select BLOB OK
+delete BLOB...OK 1
+select BLOB...
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Image	
+reach EndOfFile
+
+select BLOB OK
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

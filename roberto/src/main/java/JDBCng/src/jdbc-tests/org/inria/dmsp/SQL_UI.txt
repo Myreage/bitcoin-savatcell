@@ -1,0 +1,737 @@
+
+#JAVA package org.inria.dmsp;
+
+#JAVA public class EP_UI {
+
+#JAVA   /*
+#JAVA    * 
+#JAVA    * 
+#JAVA    *  LEGENDE:
+#JAVA    *  x --> à supprimer
+#JAVA    *  ? --> à supprimer ?
+#JAVA    *  v --> utilisée
+#JAVA    *  o --> à faire
+#JAVA    *  
+#JAVA    * 
+#JAVA    *  FIRST PLANS FOR UI: 
+#JAVA    *
+#JAVA    *  TODO (FOR OPTIM):
+#JAVA    *  o	EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT_BETWEEN_DATE
+#JAVA    *  o	EP_QUERY_AC_SELECT_ INFOnoc_BY_FORM
+#JAVA    *  o	EP_QUERY_AC_SELECT_ INFO_pos_num_BY_FORM // done by lionel, 19/11/09
+#JAVA    *  o	EP_QUERY_NOAC_SELECT_nom_prenom_type_tel_idglobal_USER // done by lionel, 19/11/09
+#JAVA    *  o	EP_QUERY_NOAC_SELECT_USER_civilite_nom_prenom_BY_IDGLOBAL // done by shaoyi, 18/09/09
+#JAVA    *  TODO (REQUIRED):
+#JAVA    *  o EP_QUERY_AC_SELECT_INFO_BY_EVENT_AND_FILTRE // done by shaoyi, 18/09/09
+#JAVA    *  o EP_QUERY_AC_SELECT_INFO_valnum_BY_EVENT_AND_POSITION // done by shaoyi, 17/09/09
+#JAVA    *  
+#JAVA    *  LOGIN:
+#JAVA    *  v  EP_QUERY_NOAC_SELECT_USER_BY_CERTIF				--> selection du user selon son certificat
+#JAVA    *  v  EP_QUERY_NOAC_SELECT_HABILITATION_BY_IDUSER		--> role pour lequel user est habilité
+#JAVA    *  v  EP_QUERY_AC_SELECT_AUTHORIZED_INSERT_FORM			--> formulaires autorisés en insert
+#JAVA    *  SELECT PLANS:
+#JAVA    *  v EP_QUERY_AC_SELECT_INFO_BY_FORM						--> OPTIM for tableau de bord + optim for plan d'acc
+#JAVA    *  v	EP_QUERY_NOAC_SELECT_EVENT_FORM_USER_BY_FILTRE		--> vue chronologique
+#JAVA    *  ?	EP_QUERY_AC_SELECT_EVENT_FORM_USER_BY_FILTRE		--> vue chronologique
+#JAVA    *  ?	EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM 	--> fiche patient [+ plan d'acc.] + liste passages/ev. importants)
+#JAVA    *  v	EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM 		--> fiche patient [+ plan d'acc.] + liste passages/ev. importants)
+#JAVA    *  v	EP_QUERY_NOAC_SELECT_USER_BY_ID						--> détail d'un intervenant
+#JAVA    *  v	EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT		--> ouverture d'un formulaire
+#JAVA    *  v	EP_QUERY_AC_SELECT_INFO_BY_FILTRE					--> listes à base d'infos (entourage, etc.)
+#JAVA    *  x	EP_QUERY_NOAC_SELECT_USER_BY_INFOLEGALE				--> liste des intervenants
+#JAVA    *  v	EP_QUERY_NOAC_SELECT_USER
+#JAVA    *  v	EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE --> calendrier
+#JAVA    *  v EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE_FROM_EVENT
+#JAVA    *  v	EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_DATE  	--> traitements en cours
+#JAVA    *  v	EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT_AND_CONCEPT --> list of comments to fill in a given cell of a form
+#JAVA    *  ?  EP_QUERY_AC_SELECT_EVENT_BY_ID 
+#JAVA    *  v	EP_QUERY_NOAC_SELECT_HABILITATION					--> liste des user habilités à jouer leur role
+#JAVA    *  ?	EP_QUERY_SELECT_NOAC_INFO_BY_EVENT
+#JAVA    *  v  EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM
+#JAVA    *  v  EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_POSITION
+#JAVA    *  x  EP_QUERY_SELECT_USER_HABILITATION
+#JAVA    *  INSERT PLANS:
+#JAVA    *  v	OEP_EVENT_AC_INSERT
+#JAVA    *  v	OEP_INFO_AC_INSERT
+#JAVA    *  v	OEP_COMMENT_NOAC_INSERT
+#JAVA    *  v	EP_HABILITATION_NOAC_INSERT
+#JAVA    *  v	EP_DELETED_NOAC_INSERT
+#JAVA    *  UPDATE PLANS:
+#JAVA    *  v	INFO_AC_UPDATE_BY_ID
+#JAVA    *  v	COMMENT_AC_UPDATE_BY_ID
+#JAVA    *  v	EVENT_AC_UPDATE_BY_ID
+#JAVA    *  DELETE PLANS:
+#JAVA    *  v EP_HABILITATION_NOAC_DELETE_BY_USER
+#JAVA    *  ? EP_EVENT_AC_DELETE_BY_ID
+#JAVA    *  ?	EP_INFO_AC_DELETE_BY_EVENT
+#JAVA    *  ?	EP_INFO_AC_DELETE_BY_ID
+#JAVA    *	
+#JAVA    */
+
+#liste de l'entourage (Info.Filtre=? pour récupérer les infos nom, prénom, lien => pas de comment)
+#NB: identique à EP_QUERY_AC_SELECT_INFO_BY_FILTRE avec en + le champs IdUser
+#JAVA public static String EP_QUERY_AC_SELECT_USER_EVENT_INFO_BY_FILTRE = 
+AC SELECT i.Position, i.ValChar, i.ValNum, i.IdEvent, i.ValDate, i.IdComment, i.TSSPT, e.IdUser FROM Event e, Info i WHERE i.Idevent=e.IdGlobal AND i.Filtre=?;
+
+#liste des fiches de liaison (Info.Filtre=? pour récupérer les infos Date, Type, Origine, Cat. Prof., Obs. => un comment)
+#NB: identique à EP_QUERY_AC_SELECT_USER_EVENT_INFO_COMMENT_BY_FILTRE avec en + un critère d'intervalle sur la date de l'event
+#JAVA public static String EP_QUERY_AC_SELECT_USER_EVENT_INFO_COMMENT_BY_FILTRE_BETWEEN_DATEEVENT = 
+AC SELECT i.Position, i.ValChar, i.ValNum, i.IdEvent, i.ValDate, i.TSSPT, e.IdUser, c.ValComment FROM Event e, Info i, Comment c WHERE i.Idevent=e.IdGlobal AND i.IdComment=c.IdGlobal AND i.Filtre=? AND e.DateEvent>? AND e.DateEvent<?;
+
+#JAVA /*
+#JAVA  *  Produce the list of Planning d’interventions given the idglobal of the 
+#JAVA  *  form Planning d’intervention and keep only position and valnum 
+#JAVA  *
+#JAVA  *
+#JAVA  *  OUT: 	Position:=Info.Position, ValNum:=Info.ValNum
+#JAVA  *  IN:  	?1:=Formulaire.IdGlobal
+#JAVA  */
+#Optimization query for the "Plan d'aide"==> OK
+#Special version of EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM projecting only position and valnum
+#We add the form table for optimization ...
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_pos_num_BY_FORM =  
+AC NO_CI SELECT I.Position, I.ValNum FROM info I, event E, formulaire F WHERE I.IdEvent = E.IdGlobal and E.IdForm = F.IdGlobal AND F.IdGlobal = ?
+
+#JAVA /* to get only the useful attributes of table UserDMSP
+#JAVA  *  
+#JAVA  *
+#JAVA  *  OUT: 	Nom, Prenom, Type, Tel, IdGlobal
+#JAVA  *  IN:  
+#JAVA  */
+#Optimization query for the "Liste des Intervenants" ==> OK
+#Version of EP_QUERY_NOAC_SELECT_USER projecting only useful fields
+#JAVA public static String EP_QUERY_NOAC_SELECT_nom_prenom_type_tel_idglobal_USER =  
+AC NO_CI SELECT Nom, Prenom, Type, Tel, IdGlobal FROM UserDMSP
+
+#JAVA /* to get only the useful attributes of table UserDMSP by IdGlobal
+#JAVA  *  
+#JAVA  *
+#JAVA  *  OUT: 	Civilite, Nom, Prenom
+#JAVA  *  IN:  ?1:=UserDMSP.IdGlobal
+#JAVA  *     		-->
+#JAVA  */
+#Optimization query for the "Fiche de synthèse - référent user" ==> OK
+#Version of EP_QUERY_NOAC_SELECT_USER_BY_ID  projecting only useful fields
+#JAVA public static String EP_QUERY_NOAC_SELECT_USER_civilite_nom_prenom_BY_IDGLOBAL =  
+AC SELECT Civilite, Nom, Prenom FROM UserDMSP u WHERE u.IdGlobal = ?
+
+#JAVA /* to get only the useful attributes of table info by event id and filtre
+#JAVA  *  
+#JAVA  *
+#JAVA  *  OUT: 	Position:=Info.Position, ValChar:=Info.ValChar, ValNum:=Info.ValNum
+#JAVA  *  IN:  ?1:=Event.IdGlobal
+#JAVA  *     		-->
+#JAVA  *     	?2:=Info.Filtre
+#JAVA  *     		--> 
+#JAVA  */
+#Optimization query for the "Fiche de synthèse - référent entourage"==> OK
+#Special version of EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT projecting only useful fields
+#The filter (Filtre) should indicate the useful fields for the query (civilite, nom, prenom)
+#Valnum for civilité ????
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_BY_EVENT_AND_FILTRE =  
+AC NO_CI SELECT i.Position, i.ValChar, i.ValNum FROM Event e, Info i WHERE i.IdEvent=e.IdGlobal and e.IdGlobal=? and i.Filtre = ?
+
+#JAVA /* to get only the valnum attribute of table info by event id and position
+#JAVA  *  
+#JAVA  *
+#JAVA  *  OUT: 	ValNum:=Info.ValNum
+#JAVA  *  IN:  ?1:=Event.IdGlobal
+#JAVA  *     		-->
+#JAVA  *     	?2:=Info.Position
+#JAVA  *     		--> 
+#JAVA  */
+#Optimization query for the "Fiche de synthèse - GIR" ==> OK
+#We add the event table for optimization ...
+#JAVA public static final String EP_QUERY_AC_SELECT_INFO_valnum_BY_EVENT_AND_POSITION =  
+AC NO_CI SELECT i.ValNum FROM Event e, Info i WHERE i.IdEvent=e.IdGlobal and e.IdGlobal=? and i.Position = ?
+
+#JAVA public static String EP_QUERY_AC_SELECT_INFO_BY_FORM =
+AC NO_CI SELECT i.IdGlobal, i.Position, i.IdEvent, i.IdConcept, i.ValChar, i.ValDate, i.ValNum, i.IdComment FROM Event e, Info i WHERE i.IdEvent = e.IdGlobal AND e.IdForm = ?
+
+#JAVA /*
+#JAVA  *  selection du UserDMSP selon un certificat donné
+#JAVA  *
+#JAVA  *  OUT: 	IdGlobal:=UserDMSP.IdGlobal, IdRole:=UserDMSP.IdRole,
+#JAVA  *  		Nom:=UserDMSP.Nom, Prenom:=UserDMSP.Prenom
+#JAVA  *  IN:  	?1:=UserDMSP.Certificate
+#JAVA  */
+#selection du user ayant un certificat donné
+#JAVA public static String EP_QUERY_NOAC_SELECT_USER_BY_CERTIF = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST ???
+SELECT IdGlobal, IdRole, Nom, Prenom FROM UserDMSP WHERE Certificate = ?;
+
+#JAVA /*
+#JAVA  *  selection du rôle pour lequel le UserDMSP d’IdGlobal donné est habilité
+#JAVA  *  OUT: 	Habilitation.IdRole
+#JAVA  *  IN:  	?1:=Habilitation.IdUser
+#JAVA  */
+#selection du role pour lequel le user est habilité
+#JAVA public static String EP_QUERY_NOAC_SELECT_HABILITATION_BY_IDUSER = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST ???
+NO_CI SELECT IdRole FROM Habilitation WHERE IdUser = ?;
+
+#JAVA /*
+#JAVA  *  selection des formulaires autorisés en insertion pour l'utilisateur (user/role) connecté
+#JAVA  *  OUT: 	IdGlobal:=Formulaire.IdGlobal
+#JAVA  *  IN:  	?1:=Episode.IdIntern (attribut système)-->affecter arbitrairement la valeur 1 (integer)
+#JAVA  *  		?2:=UserDMSP.IdIntern (attribut système)-->affecter arbitrairement la valeur 1 (integer)
+#JAVA  */
+#selection des formulaires autorisés en insert
+#JAVA public static final String EP_QUERY_AC_SELECT_AUTHORIZED_INSERT_FORM =
+#JAVA //SELECT F.IdGlobal
+#JAVA //FROM Form F, UserDMSP U, Episode E
+#JAVA //WHERE U.Idintern = ? AND E.IdIntern = ?; 
+#ATTENTION: Special EP checking access rights in INSERT mode
+#NB: 1rst epis. and user (id_intern=0) are always autorized in INSERT
+#==> params ?1=1 & ?2=1
+#JAVA "/*EP \u0002 0 8 8 0 # 4 7 7 8 0 0 ?1 r0 # 0 6 6 2 # 4 5 5 6 10 0 ?2 r2 # 0 3 3 1 # 7 4 4 5 7 # 7 2 2 3 4 # 8 1 1 2 3 r2 r4 r0 # 1 0 0 1 r4 1 1 1 5 # \u0000 1 1 5 IdGlobal # \u0000*/"; 
+
+
+#JAVA /*
+#JAVA  *  construction de la vue chronologique
+#JAVA  *  OUT: 	Nom:=UserDMSP.Nom, DateEvent:=Event.DateEvent,
+#JAVA  *  		eIdGlobal:=Event.IdGlobal, fIdGlobal:=Form.IdGlobal,
+#JAVA  *  		uIdGlobal:=User.IdGlobal, TSSPT:=Event.TSSPT
+#JAVA  *  IN:  	?1:=Formulaire.Filtre
+#JAVA  *  			-->	affecter la valeur du filtre correspondant aux formulaires
+#JAVA  *  				devant apparaitre dans la vue chronologique ==> valeur 1
+#JAVA  *  				pour la version n°379 de fromSanteos.xml. Cette valeur est
+#JAVA  *  				fixée par Santeos (delta initial).
+#JAVA  */
+#vue chronologique (Formulaire.Filtre=? /*1*/):
+#JAVA public static final String EP_QUERY_NOAC_SELECT_EVENT_FORM_USER_BY_FILTRE  =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA /* SQL : 	SELECT u.Nom, u.IdGlobal, e.DateEvent, e.IdGlobal, f.IdGlobal, e.TSSPT, u.IdGlobal FROM UserDMSP u, Event e, Formulaire f WHERE f.idGlobal = e.idForm AND u.idGlobal = e.idUser AND f.Filtre = ?; */
+#JAVA "/*EP \u0001 0 5 5 3 # 1 4 4 5 r0 2 0 0 0 1 # 1 3 3 4 r1 2 1 1 5 94 # 4 2 2 3 94 0 ?1 r4 # 1 1 1 2 r2 2 2 1 14 10 # 1 0 0 1 r0 3 3 1 35 28 30 # \u0000 6 0 6 Nom 2 8 DateEvent 1 9 eIdGlobal 1 3 fIdGlobal 1 7 uIdGlobal 1 10 TSSPT # \u0000*/"; 
+
+
+#JAVA /*
+#JAVA  *  construction de la vue chronologique avec controle d'access
+#JAVA  *  OUT: 	Nom:=UserDMSP.Nom, DateEvent:=Event.DateEvent,
+#JAVA  *  		eIdGlobal:=Event.IdGlobal, fIdGlobal:=Form.IdGlobal,
+#JAVA  *  		uIdGlobal:=User.IdGlobal, TSSPT:=Event.TSSPT
+#JAVA  *  IN:  	?1:=Formulaire.Filtre
+#JAVA  *  			-->	affecter la valeur du filtre correspondant aux formulaires
+#JAVA  *  				devant apparaitre dans la vue chronologique ==> valeur 1
+#JAVA  *  				pour la version n°379 de fromSanteos.xml. Cette valeur est
+#JAVA  *  				fixée par Santeos (delta initial).
+#JAVA  */
+#vue chronologique (Formulaire.Filtre=? /*1*/):
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_FORM_USER_BY_FILTRE  =  // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA /* SQL : 	SELECT u.Nom, u.IdGlobal, e.DateEvent, e.IdGlobal, f.IdGlobal, e.TSSPT, u.IdGlobal FROM UserDMSP u, Event e, Formulaire f WHERE f.idGlobal = e.idForm AND u.idGlobal = e.idUser AND f.Filtre = ?; */
+#JAVA "/*EP \u0001 0 6 6 3 # 1 5 5 6 r0 3 0 0 0 1 2 # 8 4 4 5 0 r2 r1 r3 # 1 3 3 4 r1 2 1 1 5 94 # 4 2 2 3 94 0 ?1 r5 # 1 1 1 2 r2 2 2 1 14 10 # 1 0 0 1 r0 3 3 1 35 28 30 # \u0000 6 0 7 Nom 2 9 DateEvent 1 10 eIdGlobal 1 4 fIdGlobal 1 8 uIdGlobal 1 11 TSSPT # \u0000*/"; 
+
+
+#JAVA /*
+#JAVA  *  accès à la fiche patient selon son Formulaire.IdGlobal
+#JAVA  *  OUT: 	IdGlobal:=Info.IdGlobal, Position:=Info.Position, ValChar:=Info.ValChar,
+#JAVA  *  		ValDate:=Info.ValDate, ValNum:=Info.ValNum,
+#JAVA  *  		ValComment:=Comment.ValComment
+#JAVA  *     		-->	il se peut qu'un meme comment UI soit stocké dans plusieurs
+#JAVA  *     			ValComment du SGBD (Info.Positions consécutives).
+#JAVA  *     			Il faut alors "recoller les morceaux" dans l'UI.
+#JAVA  *  IN:  	?1:=Formulaire.IdGlobal
+#JAVA  *  			-->	affecter la valeur de l'IdGlobal de la fiche patient, telle
+#JAVA  *  				que Formulaire.Nom = "Identite du patient" =>
+#JAVA  *  				Formulaire.IdGlobal=1001 (version n°379 de fromSanteos.xml)
+#JAVA  *  				valeurs fixés par Santeos dans le delta initial. Pour
+#JAVA  *  				ce formulaire particulier, il n'y a qu'un seul event associé.
+#JAVA  */
+#fiche patient (Formulaire.IdGlobal=? /*1001*/):
+#JAVA public static final String EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+NO_CI SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm=?;
+
+#JAVA /*
+#JAVA  *  accès à la fiche patient selon son Formulaire.IdGlobal
+#JAVA  *  OUT:  IdGlobal:=Info.IdGlobal, Position:=Info.Position, ValChar:=Info.ValChar,
+#JAVA  *        ValDate:=Info.ValDate, ValNum:=Info.ValNum,
+#JAVA  *        ValComment:=Comment.ValComment
+#JAVA  *            --> il se peut qu'un meme comment UI soit stocké dans plusieurs
+#JAVA  *                ValComment du SGBD (Info.Positions consécutives).
+#JAVA  *                Il faut alors "recoller les morceaux" dans l'UI.
+#JAVA  *  IN:   ?1:=Formulaire.IdGlobal
+#JAVA  *            --> affecter la valeur de l'IdGlobal de la fiche patient, telle
+#JAVA  *                que Formulaire.Nom = "Identite du patient" =>
+#JAVA  *                Formulaire.IdGlobal=1001 (version n°379 de fromSanteos.xml)
+#JAVA  *                valeurs fixés par Santeos dans le delta initial. Pour
+#JAVA  *                ce formulaire particulier, il n'y a qu'un seul event associé.
+#JAVA  */
+#fiche patient (Formulaire.IdGlobal=? /*1001*/):
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+AC NO_CI SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm=?;
+
+#JAVA /*
+#JAVA  *  Open a form given its Event.IdGlobal (from the chronological view)
+#JAVA  *  NB: Event.DateFin is only required for the form treatment 
+#JAVA  *  OUT: 	IdGlobal:=Info.IdGlobal, Position:=Info.Position, ValChar:=Info.ValChar,
+#JAVA  *  		ValDate:=Info.ValDate, ValNum:=Info.ValNum,
+#JAVA  *  		ValComment:=Comment.ValComment, DateFin:=Event.DateFin
+#JAVA  *     		-->	a single comment cell can be stored in several ValComment 
+#JAVA  *     			in table Comment (each corresponding to 1 Info with 
+#JAVA  *     			successive Info.Positions).
+#JAVA  *  IN:  ?1:=Event.IdGlobal
+#JAVA  */
+#ouverture d'un formulaire (Event.IdGlobal=?)
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+AC NO_CI SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment, e.DateFin FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdGlobal=?;
+
+#JAVA /*
+#JAVA  *  accès aux champs de UserDMSP selon UserDMSP.idglobal, pour accéder au détail
+#JAVA  *  des informations correspondant à un intervenant
+#JAVA  *  OUT: 	IdGlobal:=UserDMSP.IdGlobal, Nom:=UserDMSP.Nom, Type:=UserDMSP.Type,
+#JAVA  *  		Responsable:=UserDMSP.Responsable, Identifiant:=UserDMSP.Identifiant,
+#JAVA  *  		Civilite:=UserDMSP.Civilite, Prenom:=UserDMSP.Prenom,
+#JAVA  *  		Adresse:=UserDMSP.Adresse, CodePost:=UserDMSP.CodePost,
+#JAVA  *  		Ville:=UserDMSP.Ville, Tel:=UserDMSP.Tel, Mobile:=UserDMSP.Mobile,
+#JAVA  *  		Courriel:=UserDMSP.Courriel, InfoLegale:=UserDMSP.InfoLegale,
+#JAVA  *  		IdRole:=UserDMSP.IdRole
+#JAVA  *  IN:  ?1:=UserDMSP.IdGlobal
+#JAVA  */
+#détail d'un intervenant (User.IdGlobal=?):
+#JAVA public static final String EP_QUERY_NOAC_SELECT_USER_BY_ID  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT Nom, Type, Responsable, Identifiant, Civilite, Prenom, Adresse, CodePost, Ville, Tel, Mobile, Courriel, InfoLegale, IdRole FROM UserDMSP WHERE IdGlobal = ?;
+
+#JAVA /*
+#JAVA  *  Accès aux Infos constituant la liste 
+#JAVA  *  (ex: des personnes de l'entourage, des fiches de liaison)
+#JAVA  *  selon la valeur d'Info.Filtre identifiant cette liste
+#JAVA  *  OUT: 	Position:=Info.Position, ValChar:=Info.ValChar,
+#JAVA  *  		ValNum:=Info.ValChar, IdEvent:=Event.IdGlobal,
+#JAVA  *  		ValDate:=Info.ValDate, IdComment:=Info.IdComment,
+#JAVA  *  		TSSPT:=Info.TSSPT
+#JAVA  *     		-->	A chaque ligne de la liste correspond un meme IdEvent
+#JAVA  *  IN:  ?1:=Info.Filtre
+#JAVA  *     		-->	A chaque liste correspond une valeur particulière de Filtre.
+#JAVA  *     			Les valeurs identifiant chaque liste sont décidées avec
+#JAVA  *     			Santeos.
+#JAVA  */
+#listes (entourage, fiche liaison, etc.) (Info.Filtre=?)
+#JAVA public static final String EP_QUERY_AC_SELECT_INFO_BY_FILTRE  = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST NOK
+AC SELECT Position, ValChar, ValNum, IdEvent, ValDate, IdComment, TSSPT FROM Info WHERE Filtre=?;
+
+#JAVA /*
+#JAVA  *  Accès à la liste des intervenants ayant été informés que les informations
+#JAVA  *  les concernant pourraient etre produites (selon la valeur de
+#JAVA  *  User.InfoLegale).
+#JAVA  *  OUT: 	IdGlobal:=UserDMSP.IdGlobal, Nom:=UserDMSP.Nom, Type:=UserDMSP.Type,
+#JAVA  *  		Identifiant:=UserDMSP.Identifiant, Civilite:=UserDMSP.Civilite,
+#JAVA  *  		Prenom:=UserDMSP.Prenom, Tel:=UserDMSP.Tel, Mobile:=UserDMSP.Mobile
+#JAVA  *  		IdRole:=UserDMSP.IdRole, Ville:=UserDMSP.Ville
+#JAVA  *  IN:  ?1:=UserDMSP.InfoLegale
+#JAVA  * 			-->	une valeur particulière de InfoLegale est attribuée aux users
+#JAVA  *     			ayant été informés du partage d'information. Cette valeur est
+#JAVA  *     			à définir avec Santeos. (v. n°379 de fromSanteos.xml ==> est
+#JAVA  *     			à NULL pour tous les UserDMSP)
+#JAVA  */
+#liste des intervenants "informés" (User.InfoLegale=? /*1*/)
+#JAVA public static final String EP_QUERY_NOAC_SELECT_USER_BY_INFOLEGALE /*EP_QUERY_NOAC_SELECT_USER_BY_INFOLEGALE*/ = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT IdGlobal, Nom, Type, Identifiant, Civilite, Prenom, Tel, Mobile, IdRole, Ville FROM UserDMSP WHERE infolegale=?;
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_USER = 
+SELECT IdGlobal, Nom, Type, Identifiant, Civilite, Prenom, Tel, Mobile, IdRole, Ville FROM UserDMSP;
+
+#JAVA /*
+#JAVA  *  Accès à la liste des rendez-vous du calendrier selon une valeur
+#JAVA  *  donnée de Formulaire.IdGlobal et de Info.Filtre.
+#JAVA  *
+#JAVA  *  Contenu du calendrier (version alpha):
+#JAVA  *  on met dans le tableau (semaine type) les passages réguliers, au minimum
+#JAVA  *  hebdomadaire. Cela correspond aux informations renseignées dans les
+#JAVA  *  formulaires "Passage d un intervenant" (v. n°379 de fromSanteos.xml) dont:
+#JAVA  *   - la première case est cochée (passages journaliers),
+#JAVA  *   - la deuxième case est cochée (passages 1 ou plusieurs fois par semaine).
+#JAVA  *  Dans ces deux cas, il est convenu avec Santeos que la valeur Info.Filtre
+#JAVA  *  correspondantes est 0 (dans les autres cas, Info.Filtre=1 pour l'extension
+#JAVA  *  prévue à la version suivante)
+#JAVA  *
+#JAVA  *  OUT: 	IdGlobal:=Event.IdGlobal,
+#JAVA  *     		-->	un meme IdGlobal identifie un meme passage d'intervenant.
+#JAVA  *  		Position:=Info.Position, ValChar:=Info.ValChar,
+#JAVA  *  		ValDate:=Info.ValDate, ValNum:=Info.ValNum,
+#JAVA  *  		ValComment:=Comment.ValComment
+#JAVA  *  IN:  ?1:=Formulaire.IdGlobal
+#JAVA  *     		-->	IdGlobal of Formulaire.Nom="Passage d un intervenant"
+#JAVA  *     			(1010 in v. n°379 de fromSanteos.xml).
+#JAVA  *     	?2:=Info.Filtre
+#JAVA  *     		--> value 0 (see explanation above)
+#JAVA  */
+#liste des rendez-vous du calendrier
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE =
+#JAVA /* SQL : 	SELECT e.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM event e, info i, comment c WHERE i.Idevent=e.IdGlobal and i.IdComment=c.IdGlobal and e.IdForm=? and i.Filtre = ?; */
+#JAVA "/*EP \u0002 0 7 7 4 # " +
+#scan of table info(4) --> r0
+#JAVA "1 6 6 7 r0 4 1 0 0 1 2 4 # " +
+#TABLE LOOKUP pos r0, 4 cols, SKTinfo(1), is SKT(0), 0 (formPos->5), 1 (userPos->10), 2 (episodePos->0), 4(commentPos->47) --> r1-r4
+#JAVA "8 5 5 6 0 r2 r1 r3 # " +
+#access_type(0:read), in_res_UserDMSP(r2), in_res_Formulaire(r1), in_res_Episode(r3)
+#JAVA "1 4 4 5 r1 1 1 1 5 # " +
+#TABLE LOOKUP pos r1,  1 col, table form(1), is table(1), 5(IDG) -->  r5(Form.IdG)
+#JAVA "4 3 3 4 5 0 ?1 r5 # " +
+#SELECT Form.IdG(5), equal(0), compare param 1, with value in r3 --> r6(param1: Form.IdG)
+#JAVA "1 2 2 3 r0 7 4 1 40 36 42 43 45 44 46 # " +
+#TABLE LOOKUP at pos r0,  7 cols, table info(4), is table (1),
+#40(IdEvent), 36(IDG), 42(ValChar), 43(ValNum), 45(Pos), 44(ValDate), 46(Filtre) -->  r7-r13
+#JAVA "4 1 1 2 46 0 ?2 r13 # " +
+#SELECT Col Info.Filtre (46), equal (0), compare param 2, with value in r13 --> r14(param2: info.filtre)
+#JAVA "1 0 0 1 r4 1 5 1 51 # " +
+#TABLE LOOKUP pos r2,  1 cols, table Comment(5), is table(1), 51(ValComment)--> r15
+#JAVA "\u0000 6 1 7 IdEvent 1 11 Position 0 9 ValChar 2 12 ValDate 1 10 ValNum  0 15 ValComment # \u0000*/";
+#6 cols, Type_i(0 String, 1 Num, 2 Date), Ri , Name_i
+
+
+#JAVA /*
+#JAVA  *  cf. EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE (i.Filtre= ? remplacé par e.Filtre = ?)
+#JAVA  */
+#liste des rendez-vous du calendrier
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_FORM_AND_FILTRE_FROM_EVENT =
+AC NO_CI SELECT e.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c  WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm=? AND e.Filtre = ?;
+
+#JAVA /*
+#JAVA  *  Produce the list of (non terminated) treatments given the idglobal of the 
+#JAVA  *  form treatment and the current date (day). 
+#JAVA  *  NB: Event.DateFin is the date the treatment is terminated. 
+#JAVA  *
+#JAVA  *  Attention: the end date must be initialized at year 9999 and not at NULL: 
+#JAVA  *  the database do support NULL values for dates but a comparaison with a NULL 
+#JAVA  *  value is always false.
+#JAVA  *
+#JAVA  *  OUT: 	ValChar:=Info.ValChar, ValNum:=Info.ValNum,
+#JAVA  *  		ValDate:=Info.ValDate, Position:=Info.Position,
+#JAVA  *  		TSSPT:=Info.TSSPT, DateFin:=Event.DateFin,
+#JAVA  *  		IdEvent:=Event.IdGlobal, IdUser:=Event.IdUser
+#JAVA  *  IN:  	?1:=Formulaire.IdGlobal
+#JAVA  *     		-->	IdGlobal of Formulaire.Nom="Traitement"
+#JAVA  *     			(1013 in v. n°379 de fromSanteos.xml).
+#JAVA  *       	?2:=Event.DateFin
+#JAVA  *     		--> current date
+#JAVA  */
+#list of (non terminated) treatments
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_DATE =
+#JAVA /* SQL : 	SELECT I.ValChar, I.ValNum, I.ValDate, I.Position, I.TSSPT, E.DateFin, E.IdGlobal, E.IdUser FROM Info I, Event E WHERE I.IdEvent = E.IdGlobal AND E.IdForm = ? AND E.DateFin > ?; */
+#JAVA "/*EP \u0002 0 6 6 4 # " +       // scan of table info(4) --> r0 (infoPos)
+#JAVA "1 5 5 6 r0 4 1 0 0 1 2 3 # " +  // TABLE LOOKUP pos r0, 4 cols, SKTinfo(1), is SKT(0), 0 (formPos->5), 1 (userPos->10), 2 (episodePos->0), 3 (EventPos->28) --> r1-r4
+#JAVA "8 4 4 5 0 r2 r1 r3 # " +        // access_type(0:read), in_res_UserDMSP(r2), in_res_Formulaire(r1), in_res_Episode(r3)
+#JAVA "1 3 3 4 r4 4 3 1 32 95 28 33 # " +    // TABLE LOOKUP pos r4, 3 col, table EVENT(3), is table(1), 32(IDForm), 95(DateFin), 28(IdGlobal), 33(IdUser) -->  r5-r8
+#JAVA "4 2 2 3 32 0 ?1 r5 # " +        // SELECT IdForm(32), equal(0), compare param 1, with value in r2 --> r8 (param1: IdForm)
+#JAVA "4 1 1 2 95 1 ?2 r6 # " +        // SELECT DateFin(95), greater(1), compare param 2, with value in r3 --> r9 (param2: Date)
+#JAVA "1 0 0 1 r0 5 4 1 42 43 44 45 38 # " +  // TABLE LOOKUP pos r0, 5 cols, table info(4), is table(1), 42(ValChar), 43(ValNum), 44(ValDate), 45(Pos), 38(TSSPT) -->  r10-r14
+#JAVA "\u0000 8 0 11 ValChar 1 12 ValNum 2 13 ValDate 1 14 Position 1 15 TSSPT 2 6 DateFin 1 7 IdEvent 1 8 IdUser # \u0000*/";
+#8 cols, Type_i(0 String, 1 Num, 2 Date), Ri , Name_i
+
+
+#JAVA /*
+#JAVA  *  Produce the list of Plan d'aide or Plan d'accompagnement given the idglobal 
+#JAVA  *  of the form Plan d'aide or Plan d'accompagnement. 
+#JAVA  *
+#JAVA  *
+#JAVA  *  OUT: 	ValChar:=Info.ValChar, ValNum:=Info.ValNum,
+#JAVA  *  		ValDate:=Info.ValDate, Position:=Info.Position,
+#JAVA  *  IN:  	?1:=Formulaire.IdGlobal
+#JAVA  *     		-->	IdGlobal of Formulaire.Nom="Plan d'accompagnement"
+#JAVA  *     			(1016 in v. n°379 de fromSanteos.xml).
+#JAVA  */
+#list of Planning d’intervention
+#JAVA public static String EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_SINGLEEVENT =
+AC NO_CI SELECT I.ValChar, I.ValNum, I.ValDate, I.Position FROM Info I, Event E WHERE I.IdEvent = E.IdGlobal AND E.IdForm=?;
+
+#JAVA /*
+#JAVA  *  List of the comments corresponding to a given cell in a form in UI.
+#JAVA  *  The cell is identified by its IdConcept and IdEvent.
+#JAVA  *
+#JAVA  *  OUT: 	Position:=Info.Position, ValComment:=Comment.ValComment 
+#JAVA  *  IN:  ?1:=Info.IdConcept
+#JAVA  *     		--> idglobal of the concept of the cell
+#JAVA  *       ?2:=Event.IdGlobal
+#JAVA  *     		--> idglobal of the event corresponding to the form
+#JAVA  */
+#list of comments corresponding to a given cell in a form
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_COMMENT_BY_EVENT_AND_CONCEPT =
+AC NO_CI SELECT i.Position, c.ValComment FROM Info i, Comment c, Event e WHERE e.IdGlobal = i.IdEvent AND i.IdComment = c.IdGlobal AND e.Idglobal=? AND i.IdConcept=?;
+
+#JAVA /*
+#JAVA  *  Access Event.DateFin given Event.IdGlobal.
+#JAVA  *  Used to fill DateFin cell in form treatment. 
+#JAVA  *  OUT: DateFin:=Event.DateFin 
+#JAVA  *  IN:  ?1:=Event.IdGlobal
+#JAVA  */
+#Access DateFin of the given event
+#JAVA public static String EP_QUERY_AC_SELECT_EVENT_BY_ID = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+AC SELECT DateFin FROM Event WHERE IdGlobal = ?;
+
+#JAVA /*
+#JAVA  *  Access Habilitation.IdGlobal.
+#JAVA  *  Used to identifiy the set of habilited users. 
+#JAVA  *  OUT: IdUser:=Habilitation.IdUser 
+#JAVA  *  IN:  
+#JAVA  */
+#Access Habilitation.IdGlobal
+#JAVA public static String EP_QUERY_NOAC_SELECT_HABILITATION = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+SELECT IdUser,IdGlobal FROM habilitation;
+
+#JAVA /*
+#JAVA  *  Produce the list of Planning d’interventions given the idglobal of the 
+#JAVA  *  form Planning d’intervention. 
+#JAVA  *
+#JAVA  *
+#JAVA  *  OUT: 	ValChar:=Info.ValChar, ValNum:=Info.ValNum,
+#JAVA  *  		ValDate:=Info.ValDate, Position:=Info.Position,
+#JAVA  *  		IdEvent:=Event.IdGlobal
+#JAVA  *  IN:  	?1:=Formulaire.IdGlobal
+#JAVA  *     		-->	IdGlobal of Formulaire.Nom="Planning d’intervention"
+#JAVA  *     			(1010 in v. n°379 de fromSanteos.xml).
+#JAVA  */
+#list of Planning d’intervention
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM =
+AC NO_CI SELECT I.ValChar, I.ValNum, I.ValDate, I.Position, E.IdGlobal IdEvent FROM Info I, Event E WHERE I.IdEvent = E.IdGlobal AND E.IdForm=?;
+
+#JAVA /* to get only the names of each current treatments from the form Certificat Medical
+#JAVA  *  
+#JAVA  *
+#JAVA  *  OUT: 	ValChar:=Info.ValChar
+#JAVA  *  IN:  ?1:=Formulaire.IdGlobal
+#JAVA  *     		-->	IdGlobal of Formulaire.Nom="Certificat Medical"
+#JAVA  *     			(1015 in v. n°379 de fromSanteos.xml).
+#JAVA  *     	?2:=Info.Position
+#JAVA  *     		--> 
+#JAVA  */
+#the names of each current treatments
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_BY_FORM_AND_POSITION =
+AC NO_CI SELECT i.ValChar FROM Event e, Info i WHERE i.IdEvent = e.IdGlobal AND e.IdForm=? AND i.Position = ?;
+
+#To get all the habilitated users
+#JAVA //public static final String EP_QUERY_SELECT_USER_HABILITATION =
+#JAVA /* SQL : 	SELECT u.Nom, u.Prenom, u.Type, u.Tel, u.IdGlobal, h.IdRole FROM UserDMSP u, Habilitation h WHERE u.IdGlobal = h.IdUser; */
+#JAVA //"/*EP \u0000 0 3 3 8 # 1 2 2 3 r0 1 2 0 1 # 1 1 1 2 r1 5 2 1 14 19 15 23 10 # 1 0 0 1 r0 1 8 1 62 # \u0000 6 0 2 Nom 0 3 Prenom 1 4 Type 0 5 Tel 1 6 IdGlobal 1 7 IdRole # \u0000*/";
+
+#JAVA public static final String EP_QUERY_SELECT_USER_HABILITATION =
+VERBOSE SELECT u.Nom, u.Prenom, u.Type, u.Tel, u.IdGlobal, h.IdRole FROM UserDMSP u, Habilitation h WHERE u.IdGlobal = h.IdUser;
+
+#JAVA /*
+#JAVA  *  Insertion dans la table event. Fait référence à un Formulaire.IdGlobal,
+#JAVA  *  UserDMSP.IdGlobal, Episode.IdGlobal existants.
+#JAVA  *
+#JAVA  *  Attention: c'est l'Episode.IdGLobal du premier épisode inséré qui
+#JAVA  *  correspond à l'épisode null
+#JAVA  *  Dans v. n°379 de fromSanteos.xml ==> Nom = "noEpisode", IdGlobal=2
+#JAVA  *
+#JAVA  *  Droit d'accès: l'utilisateur connecté doit avoir le privilège en insertion
+#JAVA  *  pour le Formulaire.IdGlobal spécifié.
+#JAVA  *
+#JAVA  *  OUT: 	idGlobal du tuple inséré
+#JAVA  *  IN:	?1:=Event.Author
+#JAVA  *     		-->	SPT_ID (java.sql.Connection.getSptIdPatient)
+#JAVA  *     	?2:=Event.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?3:=Event.IdForm
+#JAVA  *     		--> Formulaire.IdGLobal (must exist)
+#JAVA  *     	?4:=Event.IdUser
+#JAVA  *     		--> UserDMSP.IdGLobal (must exist)
+#JAVA  *     	?5:=Event.IdEpisode
+#JAVA  *     		--> Episode.IdGLobal (must exist)
+#JAVA  *     	?6:=Event.DateEvent
+#JAVA  *     		--> current date
+#JAVA  *     	?7:=Event.DateFin
+#JAVA  *     		--> Formulaire.Nom="traitement" ==> specified date (UI)
+#JAVA  *     			or 3000-01-01 if not specified
+#JAVA  *     		--> else ==> NULL
+#JAVA  *     	?8:=Event.Filtre
+#JAVA  *     		--> NULL
+#JAVA  */
+#JAVA public static final String OEP_EVENT_AC_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+AC INSERT INTO Event (Author, TSSPT, TSSanteos, IdForm, IdUser, IdEpisode, DateEvent, DateFin, Filtre) VALUES (?, ?, 0, ?, ?, ?, ?, ?, ?);
+
+#JAVA /*
+#JAVA  *  Insertion dans la table info, référence à un Comment.IdGlobal,
+#JAVA  *  Event.IdGlobal existant.
+#JAVA  *  Attention: le champ Info.IdConcept n'est pas considérée comme une
+#JAVA  *  référence dans la BD mais comme un champ classique (pas de
+#JAVA  *  vérification d'intégrité)
+#JAVA  *  Droit d'accès: l'utilisateur connecté doit avoir le privilège en insertion
+#JAVA  *  pour le Formulaire.IdGlobal correspondant à spécifié.
+#JAVA  *
+#JAVA  *  OUT: 	idGlobal du tuple inséré
+#JAVA  *  IN:	?1:=Info.Author
+#JAVA  *     		-->	SPT_ID (java.sql.Connection.getSptIdPatient)
+#JAVA  *     	?2:=Info.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?3:=Info.IdEvent
+#JAVA  *     		--> Event.IdGLobal (must exist)
+#JAVA  *     	?4:=Info.IdComment
+#JAVA  *     		--> Comment.IdGLobal (must exist)
+#JAVA  *     	?5:=Info.ValChar
+#JAVA  *     		--> CHAR value inserted by UI (or NULL)
+#JAVA  *     	?6:=Info.ValNum
+#JAVA  *     		--> INTEGER value inserted by UI (or NULL)
+#JAVA  *     	?7:=Info.ValDate
+#JAVA  *     		--> DATE value inserted by UI (or NULL)
+#JAVA  *     	?8:=Info.Position
+#JAVA  *     		--> position of the cell in the form, decided in hard with
+#JAVA  *     			Santeos (gaps are let for potentially long free text)
+#JAVA  *     	?9:=Info.Filtre
+#JAVA  *     		--> Formulaires.Nom="Passage d un intervenant" ==> 0 or 1
+#JAVA  *     			Formulaires.Nom"Entourage" & Info.Position IN {...} ==> xx
+#JAVA  *     			else default value dd
+#JAVA  *     			[xx and dd are defined with Santeos]
+#JAVA  *     	?10:=Info.IdConcept
+#JAVA  *     		--> concept id of the value, decided in hard with Santeos
+#JAVA  */
+#JAVA public static final String OEP_INFO_AC_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+AC INSERT INTO Info (Author, TSSPT, TSSanteos, IdEvent, IdComment, ValChar, ValNum, ValDate, Position, Filtre, IdConcept) VALUES (?, ?, 0, ?, ?, ?, ?, ?, ?, ?, ?);
+
+#JAVA /*
+#JAVA  *  Insertion dans la table comment. Le comment inséré doit ensuite etre
+#JAVA  *  couplé à un Info. Si l'info correpsondant n'est pas inséré, le comment ne
+#JAVA  *  sera pas accessible, pas meme pour la synchro.
+#JAVA  *
+#JAVA  *  OUT: 	idGlobal du tuple inséré
+#JAVA  *  IN:	?1:=Comment.Author
+#JAVA  *     		-->	SPT_ID (java.sql.Connection.getSptIdPatient)
+#JAVA  *     	?2:=Comment.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?3:=Comment.ValComment
+#JAVA  *     		--> value filled in UI, max 540 Bytes
+#JAVA  */
+#JAVA public static final String OEP_COMMENT_NOAC_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO Comment (Author, TSSPT, TSSanteos, ValComment) VALUES (?, ?, 0, ?);
+
+#JAVA /*
+#JAVA  *  Insertion dans la table habilitation, référence à un UserDMSP.IdGlobal,
+#JAVA  *  Role.IdGlobal existant.
+#JAVA  *  Droit d'accès: rien de prévu pour l'instant.
+#JAVA  *
+#JAVA  *  OUT: 	idGlobal du tuple inséré
+#JAVA  *  IN:	?1:=Info.Author
+#JAVA  *     		-->	SPT_ID (java.sql.Connection.getSptIdPatient)
+#JAVA  *     	?2:=Info.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?3:=Info.TSSanteos
+#JAVA  *     		--> 0
+#JAVA  *     	?4:=Info.IdRole
+#JAVA  *     		--> Role.IdGLobal (must exist)
+#JAVA  *     	?5:=Info.IdUser
+#JAVA  *     		--> UserDMSP.IdGLobal (must exist)
+#JAVA  */
+#JAVA public static String EP_HABILITATION_NOAC_INSERT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+INSERT INTO habilitation (Author, TSSPT, TSSanteos, IdRole, IdUSer) VALUES (?, ?, ?, ?, ?);
+
+#JAVA public static String EP_DELETED_NOAC_INSERT =
+INSERT INTO TupleDeleted (IdGlobal, TabId, Author, TSSPT, TSSanteos) VALUES (?, ?, ?, ?, ?);
+
+#JAVA /*
+#JAVA  *  Update dans la table info.
+#JAVA  *  Droit d'accès: l'utilisateur connecté doit avoir le privilège en modification
+#JAVA  *  pour le Formulaire.IdGlobal correspondant.
+#JAVA  *
+#JAVA  *  OUT: 	number of updated tuples
+#JAVA  *  IN:	?1:=Info.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?2:=Info.ValChar
+#JAVA  *     		--> CHAR value modified by UI (or old value)
+#JAVA  *     	?3:=Info.ValNum
+#JAVA  *     		--> INTEGER value modified by UI (or old value)
+#JAVA  *     	?4:=Info.ValDate
+#JAVA  *     		--> DATE value modified by UI (or old value)
+#JAVA  *     	?5:=Info.IdGLobal
+#JAVA  *     		--> IdGLobal of the tuple to update
+#JAVA  */
+#JAVA public static final String INFO_AC_UPDATE_BY_ID =
+AC NO_CI UPDATE Info SET TSSPT=?, ValChar=?, ValNum=?, ValDate=?, Filtre=? WHERE IdGlobal=?;
+
+#JAVA /*
+#JAVA  *  Update dans la table comment.
+#JAVA  *  Droit d'accès: l'utilisateur connecté doit avoir le privilège en modification
+#JAVA  *  pour le Formulaire.IdGlobal correspondant à l'Info référencant ce Comment.
+#JAVA  *
+#JAVA  *  OUT: number of updated tuples
+#JAVA  *  IN:	?1:=Comment.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?2:=Comment.ValComment
+#JAVA  *     		--> new value if updated in UI, otherwise old value
+#JAVA  *     	?3:=Comment.IdGLobal
+#JAVA  *     		--> IdGLobal of the tuple to update
+#JAVA  */
+#JAVA public static final String COMMENT_AC_UPDATE_BY_ID =
+#JAVA // AC UPDATE Comment SET TSSPT = ?, ValComment = ? WHERE IdGlobal = ?;
+#JAVA "/*EP \u0003 0 5 5 4 # 1 4 4 5 r0 4 1 0 0 1 2 4 # 8 3 3 4 1 r2 r1 r3 # 1 2 2 3 r4 3 5 1 47 48 50 # 4 1 1 2 47 0 ?3 r5 # a 0 0 1 5 5 r4 47 r5 48 r6 49 ?1 50 r7 51 ?2 # \u0000*/";
+
+
+#JAVA /*
+#JAVA  *  Modification dans la table event.
+#JAVA  *
+#JAVA  *  Droit d'accès: l'utilisateur connecté doit avoir le privilège en modification
+#JAVA  *  pour le Formulaire.IdGlobal référencé.
+#JAVA  *
+#JAVA  *  OUT: 	idGlobal du tuple inséré
+#JAVA  *  IN:	?1:=Event.TSSPT
+#JAVA  *     		--> TSSPT (java.sql.Connection.getGlobalTimestamp)
+#JAVA  *     	?2:=Event.DateEvent
+#JAVA  *     		--> new value if updated in UI, otherwise old value
+#JAVA  *     	?3:=Event.DateFin
+#JAVA  *     		--> new value if updated in UI, otherwise old value
+#JAVA  *     	?4:=Event.Filtre
+#JAVA  *     		--> new value if updated in UI, otherwise old value
+#JAVA  *     	?5:=Event.IdGLobal
+#JAVA  *     		--> IdGLobal of the tuple to update
+#JAVA  */
+#JAVA public static final String EVENT_AC_UPDATE_BY_ID =
+AC NO_CI UPDATE Event SET TSSPT = ?, DateEvent = ?, DateFin = ?, Filtre = ? WHERE IdGlobal = ?;
+
+#JAVA /*
+#JAVA  *  Remove habilitation(s) given the IdGlobal of a UserDMSP.
+#JAVA  *  NB: authorizations for running this query ?
+#JAVA  *  OUT: 	Number of deleted tuples
+#JAVA  *  IN:	?1:=UserDMSP.IdGlobal
+#JAVA  *     		--> user for which habilitation is removed
+#JAVA  */
+#JAVA public static final String EP_HABILITATION_NOAC_DELETE_BY_USER = 
+NO_CI DELETE FROM Habilitation WHERE IdUser=?;
+
+#JAVA public static String EP_EVENT_AC_DELETE_BY_ID =
+AC NO_CI DELETE FROM Event WHERE idGlobal = ?;
+
+#JAVA public static final String EP_INFO_AC_DELETE_BY_EVENT =
+AC NO_CI DELETE FROM Info WHERE IdEvent = ?;
+
+#JAVA public static String EP_INFO_AC_DELETE_BY_ID =
+AC NO_CI DELETE FROM Info WHERE IdGlobal = ?;
+
+#JAVA public static final String EP_QUERY_SELECT_NOAC_INFO_BY_EVENT = 
+NO_CI SELECT IdGlobal FROM Info WHERE IdEvent = ?;
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_BY_ID =
+SELECT Nom, Prenom FROM UserDMSP u WHERE u.idGlobal = ?;
+
+#JAVA public static final String EP_QUERY_SELECT_EVENT_INFO_BY_EVENT_AND_FILTRE =
+NO_CI SELECT ValChar, Position FROM Info WHERE IdEvent = ? AND Filtre = ?;
+
+#JAVA public static final String EP_QUERY_AC_SELECT_EVENT_INFO_BY_EVENT_AND_POSITION =
+AC NO_CI SELECT ValNum FROM Info WHERE IdEvent = ? AND Position = ?;
+
+# ===============================================================================================
+# BELOW THIS LINE, PORTING STATUS UNKNOWN: NOBODY CHECKED IF THEY STILL WORK WITH THE NEW INDEXES
+# ===============================================================================================
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM_SIGMOD = 
+#JAVA /* SQL : 	SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm=?; */
+#JAVA "/*EP \u0001 2 3 3 -1 4 5 ?1 # 1 2 2 3 r1 1 1 0 4 # 1 1 1 2 r1 5 4 1 36 45 42 44 43 # 1 0 0 1 r2 1 5 1 51 # \u0000 6 1 3 IdGlobal 1 4 Dosage 0 5 Label 2 6 Datebegin 1 7 Quantity 0 8 Name # \u0000*/";
+
+
+#JAVA public static final String EP_QUERY_NOAC_SELECT_EVENT_INFO_COMMENT_BY_FORM_OPT = // NEWSCHEMA OK // COMMENT OK // CHECK OK // TEST OK
+#JAVA /* SQL :     SELECT i.IdGlobal, i.Position, i.ValChar, i.ValDate, i.ValNum, c.ValComment FROM Event e, Info i, Comment c WHERE i.IdEvent = e.IdGlobal AND i.IdComment = c.IdGlobal AND e.IdForm=?; */
+#JAVA "/*EP \u0001 " +
+#JAVA "0 8 8 1 # " +                 // Scan Form (1) --> R0
+#JAVA "1 7 7 8 r0 1 1 1 5 # " +         // Lookup in (R0), one column (1), table form (1), a table (1), column IdGlobal (5) --> R1
+#JAVA "4 6 6 7 5 0 ?1 r1 # " +         // Select IdGlobal (5)  = (0)  param 1 (?1)  with (R1) --> R2
+#JAVA "0 5 5 4 # " +                 // Scan Info (4) --> R3
+#JAVA "7 4 4 6 5 # " +                 // Flow child 1 (6) child 2 (5)
+#JAVA "1 3 3 4 r3 2 1 0 0 4 # " +     // Lookup in (R3), 2 cols (2), SKT INFO (1), a SKT (0), columns FormID (0) --> R4, CommentID (4)--> R5
+#JAVA "4 2 2 3 5 0 r4 r0 # " +       // Select FormId (5 (Attention, normally should be an internal ID)) = (0) with (R0)
+#JAVA "1 1 1 2 r3 5 4 1 36 45 42 44 43 # " + // Lookup in (R3), 5 cols (5), Table INFO (4), a table (1), columns  36 45 42 44 43 --> R6-R10
+#JAVA "1 0 0 1 r5 1 5 1 51 # " +     // Lookup in (R5), 1 cols (1), table Comment (5), a table (1), coms 51 --> R11
+#JAVA "\u0000 6 1 6 IdGlobal 1 7 Dosage 0 8 Label 2 9 Datebegin 1 10 Quantity 0 11 Name # \u0000*/";
+
+
+#liste des fiches de liaison (Info.Filtre=? pour récupérer les infos Date, Type, Origine, Cat. Prof., Obs. => un comment)
+#NB: identique à EP_QUERY_AC_SELECT_INFO_BY_FILTRE avec en + le champs IdUser, et l'accès au comment (=> valcomment à la place de IdComment)
+#JAVA public static String EP_QUERY_AC_SELECT_USER_EVENT_INFO_COMMENT_BY_FILTRE = 
+#JAVA /* SQL : 	SELECT i.Position, i.ValChar, i.ValNum, i.IdEvent, i.ValDate, i.TSSPT, e.IdUser, c.ValComment FROM Event e, Info i, Comment c WHERE i.Idevent=e.IdGlobal AND i.IdComment=c.IdGlobal AND i.Filtre=?;	 */
+#JAVA "/*EP \u0001 0 6 6 4 # 1 5 5 6 r0 6 4 1 45 42 43 44 38 46 # 4 4 4 5 46 0 ?1 r6 # 1 3 3 4 r0 5 1 0 1 0 2 3 4 # 8 2 2 3 0 r8 r9 r10 # 1 1 1 2 r11 2 3 1 28 33 # 1 0 0 1 r12 1 5 1 51 # \u0000 8 1 1 Position 0 2 ValChar 1 3 ValNum 1 13 IdEvent 2 4 ValDate 1 5 TSSPT 1 14 IdUser 0 15 ValComment # \u0000*/";
+
+#JAVA } 

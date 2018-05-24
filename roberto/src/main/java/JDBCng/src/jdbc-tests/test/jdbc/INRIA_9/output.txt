@@ -1,0 +1,129 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Save DBMS
+
+SELECT * FROM EVENT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	51	0	0	0	41	1	50	2000-04-07
+2	52	0	0	0	42	2	50	2001-05-08
+3	53	0	0	0	43	3	50	2002-06-09
+4	54	0	0	0	44	4	50	2003-07-10
+reach EndOfFile
+
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	65	0	0	0	51	13	55	France	65	165
+2	66	0	0	0	52	14	56	Mal de dos	23	123
+3	67	0	0	0	53	15	57	NumeroUn	0	10
+4	68	0	0	0	54	16	58	Patient	23	123
+5	69	0	0	0	51	17	59	lecture	123	1123
+6	70	0	0	0	52	18	60	Arras	99	199
+7	71	0	0	0	53	19	61	France	65	165
+8	72	0	0	0	54	20	62	Mal de dos	23	123
+9	73	0	0	0	51	21	63	NumeroUn	0	10
+10	74	0	0	0	52	22	64	Patient	23	123
+11	75	0	0	0	53	23	55	lecture	123	1123
+12	76	0	0	0	54	24	56	Arras	99	199
+13	77	0	0	0	51	25	57	France	65	165
+14	78	0	0	0	52	26	58	Mal de dos	23	123
+15	79	0	0	0	53	27	59	NumeroUn	0	10
+16	80	0	0	0	54	28	60	Patient	23	123
+17	81	0	0	0	51	29	61	lecture	123	1123
+18	82	0	0	0	52	30	62	Arras	99	199
+19	83	0	0	0	53	31	63	France	65	165
+20	84	0	0	0	54	32	64	Mal de dos	23	123
+21	85	0	0	0	51	33	55	NumeroUn	0	10
+22	86	0	0	0	52	34	56	Patient	23	123
+23	87	0	0	0	53	35	57	lecture	123	1123
+24	88	0	0	0	54	36	58	Arras	99	199
+25	89	0	0	0	51	37	59	France	65	165
+26	90	0	0	0	52	38	60	Mal de dos	23	123
+reach EndOfFile
+
+Delete from info where IdEvent = 53
+Number of deleted tuples : 6
+
+SELECT * FROM TupleDeleted :
+Row	IdGlobal	TabId	Author	TSSPT	TSSanteos	
+1	87	5	404	1	0
+2	83	5	404	1	0
+3	79	5	404	1	0
+4	75	5	404	1	0
+5	71	5	404	1	0
+6	67	5	404	1	0
+reach EndOfFile
+
+
+SELECT * FROM LogDeleted :
+Row	TabId	TuplePos	Flag	
+1	5	23	0
+2	5	19	0
+3	5	15	0
+4	5	11	0
+5	5	7	0
+6	5	3	0
+reach EndOfFile
+
+
+SELECT * FROM EVENT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	51	0	0	0	41	1	50	2000-04-07
+2	52	0	0	0	42	2	50	2001-05-08
+3	53	0	0	0	43	3	50	2002-06-09
+4	54	0	0	0	44	4	50	2003-07-10
+reach EndOfFile
+
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	65	0	0	0	51	13	55	France	65	165
+2	66	0	0	0	52	14	56	Mal de dos	23	123
+3	68	0	0	0	54	16	58	Patient	23	123
+4	69	0	0	0	51	17	59	lecture	123	1123
+5	70	0	0	0	52	18	60	Arras	99	199
+6	72	0	0	0	54	20	62	Mal de dos	23	123
+7	73	0	0	0	51	21	63	NumeroUn	0	10
+8	74	0	0	0	52	22	64	Patient	23	123
+9	76	0	0	0	54	24	56	Arras	99	199
+10	77	0	0	0	51	25	57	France	65	165
+11	78	0	0	0	52	26	58	Mal de dos	23	123
+12	80	0	0	0	54	28	60	Patient	23	123
+13	81	0	0	0	51	29	61	lecture	123	1123
+14	82	0	0	0	52	30	62	Arras	99	199
+15	84	0	0	0	54	32	64	Mal de dos	23	123
+16	85	0	0	0	51	33	55	NumeroUn	0	10
+17	86	0	0	0	52	34	56	Patient	23	123
+18	88	0	0	0	54	36	58	Arras	99	199
+19	89	0	0	0	51	37	59	France	65	165
+20	90	0	0	0	52	38	60	Mal de dos	23	123
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

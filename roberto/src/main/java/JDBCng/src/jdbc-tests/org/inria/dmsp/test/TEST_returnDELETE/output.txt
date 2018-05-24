@@ -1,0 +1,50 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+// ---------- TEST : DELETE INFO ------------ 
+// NON-EXISTING TUPLE IdG=1234567, only rows
+-- TRY TO DELETE INFO with idG=1234567
+--> delete return: row(s) deleted = 0.
+// NON-EXISTING TUPLE IdG=2345678, rows + keys
+-- TRY TO DELETE INFO with idG=2345678
+--> delete return: row(s) deleted = 0; generated key = 0.
+// EXISTING TUPLE IdG=1126, only rows
+-- TRY TO DELETE INFO with idG=1126
+--> delete return: row(s) deleted = 1.
+// EXISTING TUPLE IdG=1127, rows + keys
+-- TRY TO DELETE INFO with idG=1127
+--> delete return: row(s) deleted = 1; generated key = 0.
+// SEVERAL NON-EXISTING TUPLES IdEvent=3456789, only rows
+-- TRY TO DELETE INFO with idEvent=3456789
+--> delete return: row(s) deleted = 0.
+// SEVERAL NON-EXISTING TUPLES IdEvent=4567890, rows + keys
+-- TRY TO DELETE INFO with idEvent=4567890
+--> delete return: row(s) deleted = 0; generated key = 0.
+// SEVERAL EXISTING TUPLES IdEvent=1115, only rows
+-- TRY TO DELETE INFO with idEvent=1115
+--> delete return: row(s) deleted = 17.
+// SEVERAL EXISTING TUPLES IdEvent=1116, rows + keys
+-- TRY TO DELETE INFO with idEvent=1116
+--> delete return: row(s) deleted = 45; generated key = 0.
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

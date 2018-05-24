@@ -1,0 +1,1932 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+// TS_SPT currently = 1
+// Patient id = 404
+Data generated
+// Insertion dans la table ROLE 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+EP_EPISODE_SELECT_BY_ID -> ID=13
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	13	0	2	0	bb
+reach EndOfFile
+
+EP_EPISODE_SELECT_BY_ID -> ID=14
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=10
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	10	0	2	0	bb	0
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=11
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	11	0	2	0	cc	1
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=12
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	12	0	2	0	dd	0
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_BY_ID -> ID=13
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=4
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=5
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	5	0	2	0	bb	1	bb	bb	1	bb	bb	bb	bb	bb	bb	bb	1	aaaaaaaaaaaaaaaaaaab	2
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=6
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	6	0	2	0	cc	1	cc	cc	1	cc	cc	cc	cc	cc	cc	cc	1	aaaaaaaaaaaaaaaaaaac	2
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID -> ID=7
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=14
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=15
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=16
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=17
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=18
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=19
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=20
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=21
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=22
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=23
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=24
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=25
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=26
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=27
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=28
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=29
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=30
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=31
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=32
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=33
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=34
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=35
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=36
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=37
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=38
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=39
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=40
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=41
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=42
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=43
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=44
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=45
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=46
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=47
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=48
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=49
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=50
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=51
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=52
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=53
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=54
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=55
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=56
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=57
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=58
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=59
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=60
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=61
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=62
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=63
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=64
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	64	0	0	0	10	6	13	2000-03-21	2000-03-21	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=65
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	65	0	0	0	10	6	13	2001-04-22	2001-04-22	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=66
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	66	0	0	0	12	6	13	2002-05-23	2002-05-23	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=67
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	67	0	0	0	12	5	13	2003-06-24	2003-06-24	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=68
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	68	0	0	0	11	6	13	2004-07-25	2004-07-25	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=69
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	69	0	0	0	11	5	13	2005-08-26	2005-08-26	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=70
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	70	0	0	0	11	4	13	2006-09-27	2006-09-27	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=71
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	71	0	0	0	12	4	13	2007-10-28	2007-10-28	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=72
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	72	0	0	0	12	5	13	2008-11-29	2008-11-29	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=73
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	73	0	0	0	11	6	13	2009-12-30	2009-12-30	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=74
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	74	0	0	0	11	4	13	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=75
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	75	0	0	0	11	6	13	2001-02-02	2001-02-02	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=76
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	76	0	0	0	12	6	13	2002-03-03	2002-03-03	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=77
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	77	0	0	0	10	5	13	2003-04-04	2003-04-04	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=78
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	78	0	0	0	12	4	13	2004-05-05	2004-05-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=79
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	79	0	0	0	10	4	13	2005-06-06	2005-06-06	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=80
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	80	0	0	0	11	6	13	2006-07-07	2006-07-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=81
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	81	0	0	0	10	6	13	2007-08-08	2007-08-08	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=82
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	82	0	0	0	10	4	13	2008-09-09	2008-09-09	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=83
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	83	0	0	0	10	5	13	2009-10-10	2009-10-10	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=84
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	84	0	0	0	12	5	13	2000-11-11	2000-11-11	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=85
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	85	0	0	0	11	5	13	2001-12-12	2001-12-12	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=86
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	86	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=87
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	87	0	0	0	11	6	13	2003-02-14	2003-02-14	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=88
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	88	0	0	0	11	4	13	2004-03-15	2004-03-15	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=89
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	89	0	0	0	10	6	13	2005-04-16	2005-04-16	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=90
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	90	0	0	0	10	6	13	2006-05-17	2006-05-17	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=91
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	91	0	0	0	11	6	13	2007-06-18	2007-06-18	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=92
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	92	0	0	0	12	4	13	2008-07-19	2008-07-19	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=93
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	93	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=94
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	94	0	0	0	12	5	13	2000-09-21	2000-09-21	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=95
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	95	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=96
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	96	0	0	0	12	5	13	2002-11-23	2002-11-23	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=97
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	97	0	0	0	11	4	13	2003-12-24	2003-12-24	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=98
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	98	0	0	0	10	5	13	2004-01-25	2004-01-25	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=99
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	99	0	0	0	10	5	13	2005-02-26	2005-02-26	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=100
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	100	0	0	0	10	4	13	2006-03-27	2006-03-27	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=101
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	101	0	0	0	11	6	13	2007-04-28	2007-04-28	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=102
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	102	0	0	0	12	5	13	2008-05-29	2008-05-29	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=103
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	103	0	0	0	11	6	13	2009-06-30	2009-06-30	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=104
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	104	0	0	0	11	4	13	2000-07-01	2000-07-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=105
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	105	0	0	0	11	5	13	2001-08-02	2001-08-02	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=106
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	106	0	0	0	11	6	13	2002-09-03	2002-09-03	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=107
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	107	0	0	0	12	4	13	2003-10-04	2003-10-04	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=108
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	108	0	0	0	12	4	13	2004-11-05	2004-11-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=109
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	109	0	0	0	11	6	13	2005-12-06	2005-12-06	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=110
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	110	0	0	0	11	5	13	2006-01-07	2006-01-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=111
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	111	0	0	0	11	4	13	2007-02-08	2007-02-08	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=112
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	112	0	0	0	12	6	13	2008-03-09	2008-03-09	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=113
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	113	0	0	0	10	5	13	2009-04-10	2009-04-10	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=114
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	114	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=115
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	115	0	0	0	12	4	13	2001-06-12	2001-06-12	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=116
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	116	0	0	0	10	6	13	2002-07-13	2002-07-13	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=117
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	117	0	0	0	10	6	13	2003-08-14	2003-08-14	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=118
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	118	0	0	0	11	5	13	2004-09-15	2004-09-15	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=119
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	119	0	0	0	12	6	13	2005-10-16	2005-10-16	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=120
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	120	0	0	0	11	4	13	2006-11-17	2006-11-17	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=121
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	121	0	0	0	11	4	13	2007-12-18	2007-12-18	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=122
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	122	0	0	0	12	4	13	2008-01-19	2008-01-19	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=123
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	123	0	0	0	10	5	13	2009-02-20	2009-02-20	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=124
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	124	0	0	0	10	5	13	2000-03-21	2000-03-21	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=125
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	125	0	0	0	11	6	13	2001-04-22	2001-04-22	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=126
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	126	0	0	0	10	4	13	2002-05-23	2002-05-23	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=127
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	127	0	0	0	10	6	13	2003-06-24	2003-06-24	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=128
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	128	0	0	0	11	4	13	2004-07-25	2004-07-25	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=129
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	129	0	0	0	10	4	13	2005-08-26	2005-08-26	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=130
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	130	0	0	0	11	6	13	2006-09-27	2006-09-27	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=131
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	131	0	0	0	10	4	13	2007-10-28	2007-10-28	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=132
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	132	0	0	0	10	5	13	2008-11-29	2008-11-29	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=133
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	133	0	0	0	10	4	13	2009-12-30	2009-12-30	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=134
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	134	0	0	0	12	4	13	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=135
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	135	0	0	0	10	4	13	2001-02-02	2001-02-02	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=136
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	136	0	0	0	10	6	13	2002-03-03	2002-03-03	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=137
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	137	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=138
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	138	0	0	0	10	4	13	2004-05-05	2004-05-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=139
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	139	0	0	0	10	6	13	2005-06-06	2005-06-06	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=140
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	140	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=141
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	141	0	0	0	10	5	13	2007-08-08	2007-08-08	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID -> ID=142
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_IDFORM -> ID=10
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	141	0	0	0	10	5	13	2007-08-08	2007-08-08	12
+2	139	0	0	0	10	6	13	2005-06-06	2005-06-06	12
+3	138	0	0	0	10	4	13	2004-05-05	2004-05-05	12
+4	136	0	0	0	10	6	13	2002-03-03	2002-03-03	12
+5	135	0	0	0	10	4	13	2001-02-02	2001-02-02	12
+6	133	0	0	0	10	4	13	2009-12-30	2009-12-30	12
+7	132	0	0	0	10	5	13	2008-11-29	2008-11-29	12
+8	131	0	0	0	10	4	13	2007-10-28	2007-10-28	12
+9	129	0	0	0	10	4	13	2005-08-26	2005-08-26	12
+10	127	0	0	0	10	6	13	2003-06-24	2003-06-24	12
+11	126	0	0	0	10	4	13	2002-05-23	2002-05-23	12
+12	124	0	0	0	10	5	13	2000-03-21	2000-03-21	12
+13	123	0	0	0	10	5	13	2009-02-20	2009-02-20	12
+14	117	0	0	0	10	6	13	2003-08-14	2003-08-14	12
+15	116	0	0	0	10	6	13	2002-07-13	2002-07-13	12
+16	114	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+17	113	0	0	0	10	5	13	2009-04-10	2009-04-10	12
+18	100	0	0	0	10	4	13	2006-03-27	2006-03-27	12
+19	99	0	0	0	10	5	13	2005-02-26	2005-02-26	12
+20	98	0	0	0	10	5	13	2004-01-25	2004-01-25	12
+21	90	0	0	0	10	6	13	2006-05-17	2006-05-17	12
+22	89	0	0	0	10	6	13	2005-04-16	2005-04-16	12
+23	86	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+24	83	0	0	0	10	5	13	2009-10-10	2009-10-10	12
+25	82	0	0	0	10	4	13	2008-09-09	2008-09-09	12
+26	81	0	0	0	10	6	13	2007-08-08	2007-08-08	12
+27	79	0	0	0	10	4	13	2005-06-06	2005-06-06	12
+28	77	0	0	0	10	5	13	2003-04-04	2003-04-04	12
+29	65	0	0	0	10	6	13	2001-04-22	2001-04-22	12
+30	64	0	0	0	10	6	13	2000-03-21	2000-03-21	12
+31	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+32	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+33	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+36	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+37	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+38	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+39	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+40	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+41	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+42	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+43	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+44	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+45	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+46	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+47	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+48	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+49	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_IDFORM -> ID=11
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	140	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+2	130	0	0	0	11	6	13	2006-09-27	2006-09-27	12
+3	128	0	0	0	11	4	13	2004-07-25	2004-07-25	12
+4	125	0	0	0	11	6	13	2001-04-22	2001-04-22	12
+5	121	0	0	0	11	4	13	2007-12-18	2007-12-18	12
+6	120	0	0	0	11	4	13	2006-11-17	2006-11-17	12
+7	118	0	0	0	11	5	13	2004-09-15	2004-09-15	12
+8	111	0	0	0	11	4	13	2007-02-08	2007-02-08	12
+9	110	0	0	0	11	5	13	2006-01-07	2006-01-07	12
+10	109	0	0	0	11	6	13	2005-12-06	2005-12-06	12
+11	106	0	0	0	11	6	13	2002-09-03	2002-09-03	12
+12	105	0	0	0	11	5	13	2001-08-02	2001-08-02	12
+13	104	0	0	0	11	4	13	2000-07-01	2000-07-01	12
+14	103	0	0	0	11	6	13	2009-06-30	2009-06-30	12
+15	101	0	0	0	11	6	13	2007-04-28	2007-04-28	12
+16	97	0	0	0	11	4	13	2003-12-24	2003-12-24	12
+17	93	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+18	91	0	0	0	11	6	13	2007-06-18	2007-06-18	12
+19	88	0	0	0	11	4	13	2004-03-15	2004-03-15	12
+20	87	0	0	0	11	6	13	2003-02-14	2003-02-14	12
+21	85	0	0	0	11	5	13	2001-12-12	2001-12-12	12
+22	80	0	0	0	11	6	13	2006-07-07	2006-07-07	12
+23	75	0	0	0	11	6	13	2001-02-02	2001-02-02	12
+24	74	0	0	0	11	4	13	2000-01-01	2000-01-01	12
+25	73	0	0	0	11	6	13	2009-12-30	2009-12-30	12
+26	70	0	0	0	11	4	13	2006-09-27	2006-09-27	12
+27	69	0	0	0	11	5	13	2005-08-26	2005-08-26	12
+28	68	0	0	0	11	6	13	2004-07-25	2004-07-25	12
+29	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+30	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+31	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+32	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+33	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+34	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+35	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+36	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+37	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+38	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+39	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+40	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+41	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+42	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+43	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_IDFORM -> ID=12
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	137	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+2	134	0	0	0	12	4	13	2000-01-01	2000-01-01	12
+3	122	0	0	0	12	4	13	2008-01-19	2008-01-19	12
+4	119	0	0	0	12	6	13	2005-10-16	2005-10-16	12
+5	115	0	0	0	12	4	13	2001-06-12	2001-06-12	12
+6	112	0	0	0	12	6	13	2008-03-09	2008-03-09	12
+7	108	0	0	0	12	4	13	2004-11-05	2004-11-05	12
+8	107	0	0	0	12	4	13	2003-10-04	2003-10-04	12
+9	102	0	0	0	12	5	13	2008-05-29	2008-05-29	12
+10	96	0	0	0	12	5	13	2002-11-23	2002-11-23	12
+11	95	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+12	94	0	0	0	12	5	13	2000-09-21	2000-09-21	12
+13	92	0	0	0	12	4	13	2008-07-19	2008-07-19	12
+14	84	0	0	0	12	5	13	2000-11-11	2000-11-11	12
+15	78	0	0	0	12	4	13	2004-05-05	2004-05-05	12
+16	76	0	0	0	12	6	13	2002-03-03	2002-03-03	12
+17	72	0	0	0	12	5	13	2008-11-29	2008-11-29	12
+18	71	0	0	0	12	4	13	2007-10-28	2007-10-28	12
+19	67	0	0	0	12	5	13	2003-06-24	2003-06-24	12
+20	66	0	0	0	12	6	13	2002-05-23	2002-05-23	12
+21	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+22	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+23	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+24	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+25	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+26	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+27	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+28	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+29	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+30	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+31	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+32	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+33	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+34	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+35	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+36	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_IDFORM -> ID=13
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=145
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	145	0	0	0	72	144	bb	1	2001-03-02	1	1	1
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=146
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	146	0	0	0	107	142	cc	2	2000-04-03	2	0	2
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=147
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	147	0	0	0	85	143	dd	3	2001-05-04	0	1	3
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=148
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	148	0	0	0	135	143	ee	4	2000-06-05	1	0	4
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=149
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	149	0	0	0	16	143	ff	5	2001-07-06	2	1	5
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=150
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	150	0	0	0	104	143	gg	6	2000-08-07	0	0	6
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=151
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	151	0	0	0	41	144	hh	7	2001-09-08	1	1	7
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=152
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	152	0	0	0	49	142	ii	8	2000-10-09	2	0	8
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=153
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	153	0	0	0	74	142	jj	9	2001-11-10	0	1	9
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=154
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	154	0	0	0	39	143	kk	10	2000-12-11	1	0	10
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=155
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	155	0	0	0	44	142	ll	11	2002-01-12	2	1	11
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=156
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	156	0	0	0	116	143	mm	12	2000-02-13	0	0	12
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=157
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	157	0	0	0	33	144	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=158
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	158	0	0	0	131	144	oo	14	2000-04-15	2	0	14
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=159
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	159	0	0	0	66	142	pp	15	2001-05-16	0	1	15
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=160
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	160	0	0	0	20	143	qq	16	2000-06-17	1	0	16
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=161
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	161	0	0	0	109	142	rr	17	2001-07-18	2	1	17
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=162
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	162	0	0	0	51	142	ss	18	2000-08-19	0	0	18
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=163
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	163	0	0	0	45	143	tt	19	2001-09-20	1	1	19
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=164
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	164	0	0	0	70	143	uu	20	2000-10-01	2	0	20
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=165
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	165	0	0	0	38	144	vv	21	2001-11-02	0	1	21
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=166
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	166	0	0	0	91	142	ww	22	2000-12-03	1	0	22
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=167
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	167	0	0	0	125	142	xx	23	2002-01-04	2	1	23
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=168
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	168	0	0	0	30	143	bb	24	2000-02-05	0	0	24
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=169
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	169	0	0	0	103	144	cc	25	2001-03-06	1	1	25
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=170
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	170	0	0	0	90	143	dd	26	2000-04-07	2	0	26
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=171
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	171	0	0	0	138	142	ee	27	2001-05-08	0	1	27
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=172
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	172	0	0	0	33	144	ff	28	2000-06-09	1	0	28
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=173
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	173	0	0	0	137	143	gg	29	2001-07-10	2	1	29
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=174
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	174	0	0	0	117	142	hh	30	2000-08-11	0	0	30
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=175
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	175	0	0	0	124	143	ii	31	2001-09-12	1	1	31
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=176
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	176	0	0	0	136	143	jj	32	2000-10-13	2	0	32
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=177
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	177	0	0	0	84	144	kk	33	2001-11-14	0	1	33
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=178
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	178	0	0	0	99	144	ll	34	2000-12-15	1	0	34
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=179
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	179	0	0	0	114	142	mm	35	2002-01-16	2	1	35
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=180
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	180	0	0	0	52	142	nn	36	2000-02-17	0	0	36
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=181
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	181	0	0	0	116	144	oo	37	2001-03-18	1	1	37
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=182
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	182	0	0	0	50	143	pp	38	2000-04-19	2	0	38
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=183
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	183	0	0	0	60	142	qq	39	2001-05-20	0	1	39
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=184
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	184	0	0	0	139	142	rr	40	2000-06-01	1	0	40
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=185
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	185	0	0	0	14	144	ss	41	2001-07-02	2	1	41
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=186
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	186	0	0	0	92	142	tt	42	2000-08-03	0	0	42
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=187
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	187	0	0	0	40	142	uu	43	2001-09-04	1	1	43
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=188
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	188	0	0	0	90	144	vv	44	2000-10-05	2	0	44
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=189
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	189	0	0	0	31	143	ww	45	2001-11-06	0	1	45
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=190
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	190	0	0	0	44	142	xx	46	2000-12-07	1	0	46
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=191
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	191	0	0	0	25	144	yy	47	2002-01-08	2	1	47
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=192
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	192	0	0	0	120	144	bb	48	2000-02-09	0	0	48
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=193
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	193	0	0	0	42	142	cc	49	2001-03-10	1	1	49
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=194
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	194	0	0	0	110	144	dd	50	2000-04-11	2	0	50
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=195
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	195	0	0	0	76	143	ee	51	2001-05-12	0	1	51
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=196
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	196	0	0	0	63	142	ff	52	2000-06-13	1	0	52
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=197
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	197	0	0	0	53	143	gg	53	2001-07-14	2	1	53
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=198
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	198	0	0	0	129	143	hh	54	2000-08-15	0	0	54
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=199
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	199	0	0	0	119	144	ii	55	2001-09-16	1	1	55
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=200
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	200	0	0	0	89	143	jj	56	2000-10-17	2	0	56
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=201
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	201	0	0	0	127	143	kk	57	2001-11-18	0	1	57
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=202
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	202	0	0	0	49	142	ll	58	2000-12-19	1	0	58
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=203
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	203	0	0	0	83	144	mm	59	2002-01-20	2	1	59
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=204
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	204	0	0	0	72	144	nn	60	2000-02-01	0	0	60
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=205
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	205	0	0	0	32	142	oo	61	2001-03-02	1	1	61
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=206
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	206	0	0	0	72	144	pp	62	2000-04-03	2	0	62
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=207
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	207	0	0	0	19	144	qq	63	2001-05-04	0	1	63
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=208
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	208	0	0	0	61	143	rr	64	2000-06-05	1	0	64
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=209
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	209	0	0	0	59	142	ss	65	2001-07-06	2	1	65
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=210
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	210	0	0	0	113	144	tt	66	2000-08-07	0	0	66
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=211
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	211	0	0	0	94	143	uu	67	2001-09-08	1	1	67
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=212
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	212	0	0	0	51	142	vv	68	2000-10-09	2	0	68
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=213
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	213	0	0	0	109	142	ww	69	2001-11-10	0	1	69
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=214
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	214	0	0	0	123	143	xx	70	2000-12-11	1	0	70
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=215
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	215	0	0	0	90	142	yy	71	2002-01-12	2	1	71
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=216
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	216	0	0	0	110	142	bb	72	2000-02-13	0	0	72
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=217
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	217	0	0	0	38	144	cc	73	2001-03-14	1	1	73
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=218
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	218	0	0	0	33	143	dd	74	2000-04-15	2	0	74
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=219
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	219	0	0	0	61	143	ee	75	2001-05-16	0	1	75
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=220
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	220	0	0	0	129	144	ff	76	2000-06-17	1	0	76
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=221
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	221	0	0	0	96	144	gg	77	2001-07-18	2	1	77
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=222
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	222	0	0	0	89	143	hh	78	2000-08-19	0	0	78
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=223
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	223	0	0	0	103	142	ii	79	2001-09-20	1	1	79
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=224
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	224	0	0	0	118	142	jj	80	2000-10-01	2	0	80
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=225
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	225	0	0	0	86	143	kk	81	2001-11-02	0	1	81
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=226
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	226	0	0	0	44	143	ll	82	2000-12-03	1	0	82
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=227
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	227	0	0	0	127	144	mm	83	2002-01-04	2	1	83
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=228
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	228	0	0	0	72	144	nn	84	2000-02-05	0	0	84
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=229
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	229	0	0	0	36	144	oo	85	2001-03-06	1	1	85
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=230
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	230	0	0	0	75	142	pp	86	2000-04-07	2	0	86
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=231
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	231	0	0	0	113	143	qq	87	2001-05-08	0	1	87
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=232
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	232	0	0	0	98	142	rr	88	2000-06-09	1	0	88
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=233
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	233	0	0	0	58	142	ss	89	2001-07-10	2	1	89
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=234
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	234	0	0	0	32	142	tt	90	2000-08-11	0	0	90
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=235
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	235	0	0	0	39	144	uu	91	2001-09-12	1	1	91
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=236
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	236	0	0	0	88	142	vv	92	2000-10-13	2	0	92
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=237
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	237	0	0	0	107	144	ww	93	2001-11-14	0	1	93
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=238
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	238	0	0	0	16	142	xx	94	2000-12-15	1	0	94
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=239
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	239	0	0	0	110	144	yy	95	2002-01-16	2	1	95
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=240
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	240	0	0	0	112	142	bb	96	2000-02-17	0	0	96
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=241
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	241	0	0	0	123	144	cc	97	2001-03-18	1	1	97
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=242
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	242	0	0	0	43	144	dd	98	2000-04-19	2	0	98
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=243
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	243	0	0	0	36	142	ee	99	2001-05-20	0	1	99
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=244
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	244	0	0	0	128	144	ff	100	2000-06-01	1	0	100
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID -> ID=245
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=142
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	142	0	0	0	bb
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=143
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	143	0	0	0	cc
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=144
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	144	0	0	0	dd
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID -> ID=145
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=1
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	2	0	bb
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=2
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	2	0	2	0	cc
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=3
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	3	0	2	0	dd
+reach EndOfFile
+
+EP_ROLE_SELECT_BY_ID -> ID=4
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=7
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	7	0	0	0	3	6
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=8
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	8	0	0	0	3	6
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=9
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	9	0	0	0	1	4
+reach EndOfFile
+
+EP_HABILITATION_SELECT_BY_ID -> ID=10
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+reach EndOfFile
+
+EP_EPISODE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	13	0	2	0	bb
+reach EndOfFile
+
+EP_FORMULAIRE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Filtre	
+1	10	0	2	0	bb	0
+2	11	0	2	0	cc	1
+3	12	0	2	0	dd	0
+reach EndOfFile
+
+EP_USER_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	4	0	2	0	aa	1	aa	aa	1	aa	aa	aa	aa	aa	aa	aa	1	aaaaaaaaaaaaaaaaaaaa	1
+2	5	0	2	0	bb	1	bb	bb	1	bb	bb	bb	bb	bb	bb	bb	1	aaaaaaaaaaaaaaaaaaab	2
+3	6	0	2	0	cc	1	cc	cc	1	cc	cc	cc	cc	cc	cc	cc	1	aaaaaaaaaaaaaaaaaaac	2
+reach EndOfFile
+
+EP_EVENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	14	0	0	0	12	6	13	2000-01-01	2000-01-01	12
+2	15	0	0	0	12	5	13	2001-02-02	2001-02-02	12
+3	16	0	0	0	12	5	13	2002-03-03	2002-03-03	12
+4	17	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+5	18	0	0	0	10	6	13	2004-05-05	2004-05-05	12
+6	19	0	0	0	12	5	13	2005-06-06	2005-06-06	12
+7	20	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+8	21	0	0	0	12	6	13	2007-08-08	2007-08-08	12
+9	22	0	0	0	12	6	13	2008-09-09	2008-09-09	12
+10	23	0	0	0	10	6	13	2009-10-10	2009-10-10	12
+11	24	0	0	0	10	6	13	2000-11-11	2000-11-11	12
+12	25	0	0	0	12	6	13	2001-12-12	2001-12-12	12
+13	26	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+14	27	0	0	0	11	4	13	2003-02-14	2003-02-14	12
+15	28	0	0	0	10	6	13	2004-03-15	2004-03-15	12
+16	29	0	0	0	10	5	13	2005-04-16	2005-04-16	12
+17	30	0	0	0	12	4	13	2006-05-17	2006-05-17	12
+18	31	0	0	0	12	5	13	2007-06-18	2007-06-18	12
+19	32	0	0	0	10	4	13	2008-07-19	2008-07-19	12
+20	33	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+21	34	0	0	0	10	6	13	2000-09-21	2000-09-21	12
+22	35	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+23	36	0	0	0	10	6	13	2002-11-23	2002-11-23	12
+24	37	0	0	0	11	5	13	2003-12-24	2003-12-24	12
+25	38	0	0	0	10	4	13	2004-01-25	2004-01-25	12
+26	39	0	0	0	10	4	13	2005-02-26	2005-02-26	12
+27	40	0	0	0	11	4	13	2006-03-27	2006-03-27	12
+28	41	0	0	0	10	5	13	2007-04-28	2007-04-28	12
+29	42	0	0	0	10	6	13	2008-05-29	2008-05-29	12
+30	43	0	0	0	10	4	13	2009-06-30	2009-06-30	12
+31	44	0	0	0	10	6	13	2000-07-01	2000-07-01	12
+32	45	0	0	0	12	6	13	2001-08-02	2001-08-02	12
+33	46	0	0	0	11	4	13	2002-09-03	2002-09-03	12
+34	47	0	0	0	10	5	13	2003-10-04	2003-10-04	12
+35	48	0	0	0	12	5	13	2004-11-05	2004-11-05	12
+36	49	0	0	0	11	5	13	2005-12-06	2005-12-06	12
+37	50	0	0	0	11	4	13	2006-01-07	2006-01-07	12
+38	51	0	0	0	10	6	13	2007-02-08	2007-02-08	12
+39	52	0	0	0	11	5	13	2008-03-09	2008-03-09	12
+40	53	0	0	0	11	6	13	2009-04-10	2009-04-10	12
+41	54	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+42	55	0	0	0	10	6	13	2001-06-12	2001-06-12	12
+43	56	0	0	0	11	6	13	2002-07-13	2002-07-13	12
+44	57	0	0	0	11	4	13	2003-08-14	2003-08-14	12
+45	58	0	0	0	12	6	13	2004-09-15	2004-09-15	12
+46	59	0	0	0	11	5	13	2005-10-16	2005-10-16	12
+47	60	0	0	0	12	6	13	2006-11-17	2006-11-17	12
+48	61	0	0	0	11	5	13	2007-12-18	2007-12-18	12
+49	62	0	0	0	12	6	13	2008-01-19	2008-01-19	12
+50	63	0	0	0	11	6	13	2009-02-20	2009-02-20	12
+51	64	0	0	0	10	6	13	2000-03-21	2000-03-21	12
+52	65	0	0	0	10	6	13	2001-04-22	2001-04-22	12
+53	66	0	0	0	12	6	13	2002-05-23	2002-05-23	12
+54	67	0	0	0	12	5	13	2003-06-24	2003-06-24	12
+55	68	0	0	0	11	6	13	2004-07-25	2004-07-25	12
+56	69	0	0	0	11	5	13	2005-08-26	2005-08-26	12
+57	70	0	0	0	11	4	13	2006-09-27	2006-09-27	12
+58	71	0	0	0	12	4	13	2007-10-28	2007-10-28	12
+59	72	0	0	0	12	5	13	2008-11-29	2008-11-29	12
+60	73	0	0	0	11	6	13	2009-12-30	2009-12-30	12
+61	74	0	0	0	11	4	13	2000-01-01	2000-01-01	12
+62	75	0	0	0	11	6	13	2001-02-02	2001-02-02	12
+63	76	0	0	0	12	6	13	2002-03-03	2002-03-03	12
+64	77	0	0	0	10	5	13	2003-04-04	2003-04-04	12
+65	78	0	0	0	12	4	13	2004-05-05	2004-05-05	12
+66	79	0	0	0	10	4	13	2005-06-06	2005-06-06	12
+67	80	0	0	0	11	6	13	2006-07-07	2006-07-07	12
+68	81	0	0	0	10	6	13	2007-08-08	2007-08-08	12
+69	82	0	0	0	10	4	13	2008-09-09	2008-09-09	12
+70	83	0	0	0	10	5	13	2009-10-10	2009-10-10	12
+71	84	0	0	0	12	5	13	2000-11-11	2000-11-11	12
+72	85	0	0	0	11	5	13	2001-12-12	2001-12-12	12
+73	86	0	0	0	10	5	13	2002-01-13	2002-01-13	12
+74	87	0	0	0	11	6	13	2003-02-14	2003-02-14	12
+75	88	0	0	0	11	4	13	2004-03-15	2004-03-15	12
+76	89	0	0	0	10	6	13	2005-04-16	2005-04-16	12
+77	90	0	0	0	10	6	13	2006-05-17	2006-05-17	12
+78	91	0	0	0	11	6	13	2007-06-18	2007-06-18	12
+79	92	0	0	0	12	4	13	2008-07-19	2008-07-19	12
+80	93	0	0	0	11	6	13	2009-08-20	2009-08-20	12
+81	94	0	0	0	12	5	13	2000-09-21	2000-09-21	12
+82	95	0	0	0	12	6	13	2001-10-22	2001-10-22	12
+83	96	0	0	0	12	5	13	2002-11-23	2002-11-23	12
+84	97	0	0	0	11	4	13	2003-12-24	2003-12-24	12
+85	98	0	0	0	10	5	13	2004-01-25	2004-01-25	12
+86	99	0	0	0	10	5	13	2005-02-26	2005-02-26	12
+87	100	0	0	0	10	4	13	2006-03-27	2006-03-27	12
+88	101	0	0	0	11	6	13	2007-04-28	2007-04-28	12
+89	102	0	0	0	12	5	13	2008-05-29	2008-05-29	12
+90	103	0	0	0	11	6	13	2009-06-30	2009-06-30	12
+91	104	0	0	0	11	4	13	2000-07-01	2000-07-01	12
+92	105	0	0	0	11	5	13	2001-08-02	2001-08-02	12
+93	106	0	0	0	11	6	13	2002-09-03	2002-09-03	12
+94	107	0	0	0	12	4	13	2003-10-04	2003-10-04	12
+95	108	0	0	0	12	4	13	2004-11-05	2004-11-05	12
+96	109	0	0	0	11	6	13	2005-12-06	2005-12-06	12
+97	110	0	0	0	11	5	13	2006-01-07	2006-01-07	12
+98	111	0	0	0	11	4	13	2007-02-08	2007-02-08	12
+99	112	0	0	0	12	6	13	2008-03-09	2008-03-09	12
+100	113	0	0	0	10	5	13	2009-04-10	2009-04-10	12
+101	114	0	0	0	10	4	13	2000-05-11	2000-05-11	12
+102	115	0	0	0	12	4	13	2001-06-12	2001-06-12	12
+103	116	0	0	0	10	6	13	2002-07-13	2002-07-13	12
+104	117	0	0	0	10	6	13	2003-08-14	2003-08-14	12
+105	118	0	0	0	11	5	13	2004-09-15	2004-09-15	12
+106	119	0	0	0	12	6	13	2005-10-16	2005-10-16	12
+107	120	0	0	0	11	4	13	2006-11-17	2006-11-17	12
+108	121	0	0	0	11	4	13	2007-12-18	2007-12-18	12
+109	122	0	0	0	12	4	13	2008-01-19	2008-01-19	12
+110	123	0	0	0	10	5	13	2009-02-20	2009-02-20	12
+111	124	0	0	0	10	5	13	2000-03-21	2000-03-21	12
+112	125	0	0	0	11	6	13	2001-04-22	2001-04-22	12
+113	126	0	0	0	10	4	13	2002-05-23	2002-05-23	12
+114	127	0	0	0	10	6	13	2003-06-24	2003-06-24	12
+115	128	0	0	0	11	4	13	2004-07-25	2004-07-25	12
+116	129	0	0	0	10	4	13	2005-08-26	2005-08-26	12
+117	130	0	0	0	11	6	13	2006-09-27	2006-09-27	12
+118	131	0	0	0	10	4	13	2007-10-28	2007-10-28	12
+119	132	0	0	0	10	5	13	2008-11-29	2008-11-29	12
+120	133	0	0	0	10	4	13	2009-12-30	2009-12-30	12
+121	134	0	0	0	12	4	13	2000-01-01	2000-01-01	12
+122	135	0	0	0	10	4	13	2001-02-02	2001-02-02	12
+123	136	0	0	0	10	6	13	2002-03-03	2002-03-03	12
+124	137	0	0	0	12	6	13	2003-04-04	2003-04-04	12
+125	138	0	0	0	10	4	13	2004-05-05	2004-05-05	12
+126	139	0	0	0	10	6	13	2005-06-06	2005-06-06	12
+127	140	0	0	0	11	4	13	2006-07-07	2006-07-07	12
+128	141	0	0	0	10	5	13	2007-08-08	2007-08-08	12
+reach EndOfFile
+
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	145	0	0	0	72	144	bb	1	2001-03-02	1	1	1
+2	146	0	0	0	107	142	cc	2	2000-04-03	2	0	2
+3	147	0	0	0	85	143	dd	3	2001-05-04	0	1	3
+4	148	0	0	0	135	143	ee	4	2000-06-05	1	0	4
+5	149	0	0	0	16	143	ff	5	2001-07-06	2	1	5
+6	150	0	0	0	104	143	gg	6	2000-08-07	0	0	6
+7	151	0	0	0	41	144	hh	7	2001-09-08	1	1	7
+8	152	0	0	0	49	142	ii	8	2000-10-09	2	0	8
+9	153	0	0	0	74	142	jj	9	2001-11-10	0	1	9
+10	154	0	0	0	39	143	kk	10	2000-12-11	1	0	10
+11	155	0	0	0	44	142	ll	11	2002-01-12	2	1	11
+12	156	0	0	0	116	143	mm	12	2000-02-13	0	0	12
+13	157	0	0	0	33	144	nn	13	2001-03-14	1	1	13
+14	158	0	0	0	131	144	oo	14	2000-04-15	2	0	14
+15	159	0	0	0	66	142	pp	15	2001-05-16	0	1	15
+16	160	0	0	0	20	143	qq	16	2000-06-17	1	0	16
+17	161	0	0	0	109	142	rr	17	2001-07-18	2	1	17
+18	162	0	0	0	51	142	ss	18	2000-08-19	0	0	18
+19	163	0	0	0	45	143	tt	19	2001-09-20	1	1	19
+20	164	0	0	0	70	143	uu	20	2000-10-01	2	0	20
+21	165	0	0	0	38	144	vv	21	2001-11-02	0	1	21
+22	166	0	0	0	91	142	ww	22	2000-12-03	1	0	22
+23	167	0	0	0	125	142	xx	23	2002-01-04	2	1	23
+24	168	0	0	0	30	143	bb	24	2000-02-05	0	0	24
+25	169	0	0	0	103	144	cc	25	2001-03-06	1	1	25
+26	170	0	0	0	90	143	dd	26	2000-04-07	2	0	26
+27	171	0	0	0	138	142	ee	27	2001-05-08	0	1	27
+28	172	0	0	0	33	144	ff	28	2000-06-09	1	0	28
+29	173	0	0	0	137	143	gg	29	2001-07-10	2	1	29
+30	174	0	0	0	117	142	hh	30	2000-08-11	0	0	30
+31	175	0	0	0	124	143	ii	31	2001-09-12	1	1	31
+32	176	0	0	0	136	143	jj	32	2000-10-13	2	0	32
+33	177	0	0	0	84	144	kk	33	2001-11-14	0	1	33
+34	178	0	0	0	99	144	ll	34	2000-12-15	1	0	34
+35	179	0	0	0	114	142	mm	35	2002-01-16	2	1	35
+36	180	0	0	0	52	142	nn	36	2000-02-17	0	0	36
+37	181	0	0	0	116	144	oo	37	2001-03-18	1	1	37
+38	182	0	0	0	50	143	pp	38	2000-04-19	2	0	38
+39	183	0	0	0	60	142	qq	39	2001-05-20	0	1	39
+40	184	0	0	0	139	142	rr	40	2000-06-01	1	0	40
+41	185	0	0	0	14	144	ss	41	2001-07-02	2	1	41
+42	186	0	0	0	92	142	tt	42	2000-08-03	0	0	42
+43	187	0	0	0	40	142	uu	43	2001-09-04	1	1	43
+44	188	0	0	0	90	144	vv	44	2000-10-05	2	0	44
+45	189	0	0	0	31	143	ww	45	2001-11-06	0	1	45
+46	190	0	0	0	44	142	xx	46	2000-12-07	1	0	46
+47	191	0	0	0	25	144	yy	47	2002-01-08	2	1	47
+48	192	0	0	0	120	144	bb	48	2000-02-09	0	0	48
+49	193	0	0	0	42	142	cc	49	2001-03-10	1	1	49
+50	194	0	0	0	110	144	dd	50	2000-04-11	2	0	50
+51	195	0	0	0	76	143	ee	51	2001-05-12	0	1	51
+52	196	0	0	0	63	142	ff	52	2000-06-13	1	0	52
+53	197	0	0	0	53	143	gg	53	2001-07-14	2	1	53
+54	198	0	0	0	129	143	hh	54	2000-08-15	0	0	54
+55	199	0	0	0	119	144	ii	55	2001-09-16	1	1	55
+56	200	0	0	0	89	143	jj	56	2000-10-17	2	0	56
+57	201	0	0	0	127	143	kk	57	2001-11-18	0	1	57
+58	202	0	0	0	49	142	ll	58	2000-12-19	1	0	58
+59	203	0	0	0	83	144	mm	59	2002-01-20	2	1	59
+60	204	0	0	0	72	144	nn	60	2000-02-01	0	0	60
+61	205	0	0	0	32	142	oo	61	2001-03-02	1	1	61
+62	206	0	0	0	72	144	pp	62	2000-04-03	2	0	62
+63	207	0	0	0	19	144	qq	63	2001-05-04	0	1	63
+64	208	0	0	0	61	143	rr	64	2000-06-05	1	0	64
+65	209	0	0	0	59	142	ss	65	2001-07-06	2	1	65
+66	210	0	0	0	113	144	tt	66	2000-08-07	0	0	66
+67	211	0	0	0	94	143	uu	67	2001-09-08	1	1	67
+68	212	0	0	0	51	142	vv	68	2000-10-09	2	0	68
+69	213	0	0	0	109	142	ww	69	2001-11-10	0	1	69
+70	214	0	0	0	123	143	xx	70	2000-12-11	1	0	70
+71	215	0	0	0	90	142	yy	71	2002-01-12	2	1	71
+72	216	0	0	0	110	142	bb	72	2000-02-13	0	0	72
+73	217	0	0	0	38	144	cc	73	2001-03-14	1	1	73
+74	218	0	0	0	33	143	dd	74	2000-04-15	2	0	74
+75	219	0	0	0	61	143	ee	75	2001-05-16	0	1	75
+76	220	0	0	0	129	144	ff	76	2000-06-17	1	0	76
+77	221	0	0	0	96	144	gg	77	2001-07-18	2	1	77
+78	222	0	0	0	89	143	hh	78	2000-08-19	0	0	78
+79	223	0	0	0	103	142	ii	79	2001-09-20	1	1	79
+80	224	0	0	0	118	142	jj	80	2000-10-01	2	0	80
+81	225	0	0	0	86	143	kk	81	2001-11-02	0	1	81
+82	226	0	0	0	44	143	ll	82	2000-12-03	1	0	82
+83	227	0	0	0	127	144	mm	83	2002-01-04	2	1	83
+84	228	0	0	0	72	144	nn	84	2000-02-05	0	0	84
+85	229	0	0	0	36	144	oo	85	2001-03-06	1	1	85
+86	230	0	0	0	75	142	pp	86	2000-04-07	2	0	86
+87	231	0	0	0	113	143	qq	87	2001-05-08	0	1	87
+88	232	0	0	0	98	142	rr	88	2000-06-09	1	0	88
+89	233	0	0	0	58	142	ss	89	2001-07-10	2	1	89
+90	234	0	0	0	32	142	tt	90	2000-08-11	0	0	90
+91	235	0	0	0	39	144	uu	91	2001-09-12	1	1	91
+92	236	0	0	0	88	142	vv	92	2000-10-13	2	0	92
+93	237	0	0	0	107	144	ww	93	2001-11-14	0	1	93
+94	238	0	0	0	16	142	xx	94	2000-12-15	1	0	94
+95	239	0	0	0	110	144	yy	95	2002-01-16	2	1	95
+96	240	0	0	0	112	142	bb	96	2000-02-17	0	0	96
+97	241	0	0	0	123	144	cc	97	2001-03-18	1	1	97
+98	242	0	0	0	43	144	dd	98	2000-04-19	2	0	98
+99	243	0	0	0	36	142	ee	99	2001-05-20	0	1	99
+100	244	0	0	0	128	144	ff	100	2000-06-01	1	0	100
+reach EndOfFile
+
+EP_COMMENT_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	142	0	0	0	bb
+2	143	0	0	0	cc
+3	144	0	0	0	dd
+reach EndOfFile
+
+EP_ROLE_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	1	0	2	0	bb
+2	2	0	2	0	cc
+3	3	0	2	0	dd
+reach EndOfFile
+
+EP_HABILITATION_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	7	0	0	0	3	6
+2	8	0	0	0	3	6
+3	9	0	0	0	1	4
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	3	2	1	59	3
+2	2	3	1	1	94	1
+3	3	2	2	1	72	2
+4	4	1	1	1	122	2
+5	5	3	2	1	3	2
+6	6	2	1	1	91	2
+7	7	1	2	1	28	3
+8	8	2	2	1	36	1
+9	9	2	1	1	61	1
+10	10	1	1	1	26	2
+11	11	1	3	1	31	1
+12	12	1	3	1	103	2
+13	13	2	3	1	20	3
+14	14	1	1	1	118	3
+15	15	3	3	1	53	1
+16	16	2	1	1	7	2
+17	17	2	3	1	96	1
+18	18	1	3	1	38	1
+19	19	3	3	1	32	2
+20	20	2	1	1	57	2
+21	21	1	1	1	25	3
+22	22	2	3	1	78	1
+23	23	2	3	1	112	1
+24	24	3	1	1	17	2
+25	25	2	3	1	90	3
+26	26	1	3	1	77	2
+27	27	1	1	1	125	1
+28	28	2	3	1	20	3
+29	29	3	3	1	124	2
+30	30	1	3	1	104	1
+31	31	1	2	1	111	2
+32	32	1	3	1	123	2
+33	33	3	2	1	71	3
+34	34	1	2	1	86	3
+35	35	1	1	1	101	1
+36	36	2	2	1	39	1
+37	37	1	3	1	103	3
+38	38	2	1	1	37	2
+39	39	3	3	1	47	1
+40	40	1	3	1	126	1
+41	41	3	3	1	1	3
+42	42	3	1	1	79	1
+43	43	2	1	1	27	1
+44	44	1	3	1	77	3
+45	45	3	2	1	18	2
+46	46	1	3	1	31	1
+47	47	3	3	1	12	3
+48	48	2	1	1	107	3
+49	49	1	3	1	29	1
+50	50	2	2	1	97	3
+51	51	3	3	1	63	2
+52	52	2	3	1	50	1
+53	53	2	3	1	40	2
+54	54	1	1	1	116	2
+55	55	3	3	1	106	3
+56	56	1	3	1	76	2
+57	57	1	3	1	114	2
+58	58	2	2	1	36	1
+59	59	1	2	1	70	3
+60	60	3	2	1	59	3
+61	61	1	1	1	19	1
+62	62	3	2	1	59	3
+63	63	3	2	1	6	3
+64	64	2	2	1	48	2
+65	65	2	2	1	46	1
+66	66	1	2	1	100	3
+67	67	3	2	1	81	2
+68	68	1	3	1	38	1
+69	69	2	3	1	96	1
+70	70	1	2	1	110	2
+71	71	1	3	1	77	1
+72	72	2	2	1	97	1
+73	73	1	1	1	25	3
+74	74	2	3	1	20	2
+75	75	2	2	1	48	2
+76	76	1	1	1	116	3
+77	77	3	2	1	83	3
+78	78	1	3	1	76	2
+79	79	2	3	1	90	1
+80	80	2	2	1	105	1
+81	81	1	2	1	73	2
+82	82	1	3	1	31	2
+83	83	1	3	1	114	3
+84	84	3	2	1	59	3
+85	85	1	3	1	23	3
+86	86	2	3	1	62	1
+87	87	1	2	1	100	2
+88	88	1	2	1	85	1
+89	89	3	3	1	45	1
+90	90	1	1	1	19	1
+91	91	1	1	1	26	3
+92	92	2	1	1	75	1
+93	93	3	1	1	94	3
+94	94	3	2	1	3	1
+95	95	2	2	1	97	3
+96	96	3	3	1	99	1
+97	97	1	2	1	110	3
+98	98	1	1	1	30	3
+99	99	1	3	1	23	1
+100	100	2	1	1	115	3
+reach EndOfFile
+
+-----/////// EP_SKTEVENT_SELECT_STAR /////////---------
+Row	PosEvent	PosForm	PosUser	PosEpisode	
+1	1	3	3	1
+2	2	3	2	1
+3	3	3	2	1
+4	4	3	3	1
+5	5	1	3	1
+6	6	3	2	1
+7	7	2	1	1
+8	8	3	3	1
+9	9	3	3	1
+10	10	1	3	1
+11	11	1	3	1
+12	12	3	3	1
+13	13	1	2	1
+14	14	2	1	1
+15	15	1	3	1
+16	16	1	2	1
+17	17	3	1	1
+18	18	3	2	1
+19	19	1	1	1
+20	20	2	3	1
+21	21	1	3	1
+22	22	3	3	1
+23	23	1	3	1
+24	24	2	2	1
+25	25	1	1	1
+26	26	1	1	1
+27	27	2	1	1
+28	28	1	2	1
+29	29	1	3	1
+30	30	1	1	1
+31	31	1	3	1
+32	32	3	3	1
+33	33	2	1	1
+34	34	1	2	1
+35	35	3	2	1
+36	36	2	2	1
+37	37	2	1	1
+38	38	1	3	1
+39	39	2	2	1
+40	40	2	3	1
+41	41	1	1	1
+42	42	1	3	1
+43	43	2	3	1
+44	44	2	1	1
+45	45	3	3	1
+46	46	2	2	1
+47	47	3	3	1
+48	48	2	2	1
+49	49	3	3	1
+50	50	2	3	1
+51	51	1	3	1
+52	52	1	3	1
+53	53	3	3	1
+54	54	3	2	1
+55	55	2	3	1
+56	56	2	2	1
+57	57	2	1	1
+58	58	3	1	1
+59	59	3	2	1
+60	60	2	3	1
+61	61	2	1	1
+62	62	2	3	1
+63	63	3	3	1
+64	64	1	2	1
+65	65	3	1	1
+66	66	1	1	1
+67	67	2	3	1
+68	68	1	3	1
+69	69	1	1	1
+70	70	1	2	1
+71	71	3	2	1
+72	72	2	2	1
+73	73	1	2	1
+74	74	2	3	1
+75	75	2	1	1
+76	76	1	3	1
+77	77	1	3	1
+78	78	2	3	1
+79	79	3	1	1
+80	80	2	3	1
+81	81	3	2	1
+82	82	3	3	1
+83	83	3	2	1
+84	84	2	1	1
+85	85	1	2	1
+86	86	1	2	1
+87	87	1	1	1
+88	88	2	3	1
+89	89	3	2	1
+90	90	2	3	1
+91	91	2	1	1
+92	92	2	2	1
+93	93	2	3	1
+94	94	3	1	1
+95	95	3	1	1
+96	96	2	3	1
+97	97	2	2	1
+98	98	2	1	1
+99	99	3	3	1
+100	100	1	2	1
+101	101	1	1	1
+102	102	3	1	1
+103	103	1	3	1
+104	104	1	3	1
+105	105	2	2	1
+106	106	3	3	1
+107	107	2	1	1
+108	108	2	1	1
+109	109	3	1	1
+110	110	1	2	1
+111	111	1	2	1
+112	112	2	3	1
+113	113	1	1	1
+114	114	1	3	1
+115	115	2	1	1
+116	116	1	1	1
+117	117	2	3	1
+118	118	1	1	1
+119	119	1	2	1
+120	120	1	1	1
+121	121	3	1	1
+122	122	1	1	1
+123	123	1	3	1
+124	124	3	3	1
+125	125	1	1	1
+126	126	1	3	1
+127	127	2	1	1
+128	128	1	2	1
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

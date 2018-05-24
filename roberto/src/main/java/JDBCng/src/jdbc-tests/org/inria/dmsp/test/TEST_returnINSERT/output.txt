@@ -1,0 +1,38 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+// ---------- TEST : INSERT COMMENT ------------ 
+// SHOULD FAIL 
+-- Insertion in table INFO, only rows
+--> update return: row(s) inserted = 0.
+// SHOULD FAIL 
+-- Insertion in table INFO, rows + keys
+--> update return: row(s) inserted = 0; generated key = 0.
+// SHOULD SUCCEED 
+-- TRY TO INSERT COMMENT, only rows
+--> update return: row(s) inserted = 1.
+// SHOULD SUCCEED 
+-- TRY TO INSERT COMMENT, rows + keys
+--> update return: row(s) inserted = 1; generated key = 1694498820.
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

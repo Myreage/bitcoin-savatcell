@@ -1,0 +1,38 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+EP_COMMENT_SELECT_BY_ID (non existing)
+
+EP_COMMENT_SELECT_BY_ID (non existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID (existing)
+Result produced - first line is:	1204	0	0	486	ygffgyt
+EP_COMMENT_SELECT_BY_ID (existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1204	0	0	486	ygffgyt
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

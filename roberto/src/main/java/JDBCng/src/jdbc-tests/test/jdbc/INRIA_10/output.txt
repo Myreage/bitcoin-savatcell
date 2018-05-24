@@ -1,0 +1,61 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Select * from info where IdEvent = 53
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	87	0	0	0	53	35	57	lecture	123	1123
+2	83	0	0	0	53	31	63	France	65	165
+3	79	0	0	0	53	27	59	NumeroUn	0	10
+4	75	0	0	0	53	23	55	lecture	123	1123
+5	71	0	0	0	53	19	61	France	65	165
+6	67	0	0	0	53	15	57	NumeroUn	0	10
+reach EndOfFile
+
+Save DBMS
+Select * from info where IdEvent = 53
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	464	0	0	464	53	40	63	NULL	0	0
+2	463	0	0	463	53	37	56	NULL	20080312	5
+3	462	0	0	462	53	36	61	NULL	1	10
+4	460	0	0	460	53	38	58	NULL	0	14
+5	459	0	0	459	53	29	60	NULL	0	1
+6	87	0	0	0	53	35	57	lecture	123	1123
+7	83	0	0	0	53	31	63	France	65	165
+8	79	0	0	0	53	27	59	NumeroUn	0	10
+9	75	0	0	0	53	23	55	lecture	123	1123
+10	71	0	0	0	53	19	61	France	65	165
+11	67	0	0	0	53	15	57	NumeroUn	0	10
+reach EndOfFile
+
+Rolling back transaction...
+Done. 
+Select * from info where IdEvent = 53
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	87	0	0	0	53	35	57	lecture	123	1123
+2	83	0	0	0	53	31	63	France	65	165
+3	79	0	0	0	53	27	59	NumeroUn	0	10
+4	75	0	0	0	53	23	55	lecture	123	1123
+5	71	0	0	0	53	19	61	France	65	165
+6	67	0	0	0	53	15	57	NumeroUn	0	10
+reach EndOfFile
+
+Detach driver from communication device
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

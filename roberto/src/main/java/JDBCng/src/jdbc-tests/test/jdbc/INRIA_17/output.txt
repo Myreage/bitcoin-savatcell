@@ -1,0 +1,40 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+Save DBMS
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis?user=2&role=12
+Access Granted for UserDMSP = 2 with the Role = 12
+Done
+Rolling back transaction...
+Done. 
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

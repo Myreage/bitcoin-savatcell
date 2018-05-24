@@ -1,0 +1,32 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+set 1234567890123456789012345678901234567890123456789012
+insert long value...OK 1
+OK 1
+select long value...
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	10	11	22	33	12345678901234567890123456789012345678901234567890
+2	11	12	23	34	test
+reach EndOfFile
+
+select long value OK
+upd 123456789012345678901234567890123456789012qwertyuiop
+update long value...OK 1
+select long value...
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	10	111	222	333	123456789012345678901234567890123456789012qwertyui
+2	11	12	23	34	test
+reach EndOfFile
+
+select long value OK
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

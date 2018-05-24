@@ -1,0 +1,238 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Inserting Failure Point...
+Done. 
+
+Inserting one tuple into USERDMSP.
+Tuple inserted.
+
+Inserting one tuple into CONCEPT.
+Tuple inserted.
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+reach EndOfFile
+
+Removing Failure Point...
+Done. 
+
+Inserting one tuple into USERDMSP.
+Tuple inserted.
+
+Inserting one tuple into CONCEPT.
+Tuple inserted.
+Save DBMS
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+2	1694498818	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+2	36	0	0	36	0	effectuePar	2
+reach EndOfFile
+
+Inserting Failure Point...
+Done. 
+
+Inserting data by synchronization
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+
+Hardware Failure: NAND_WRITE_FAIL!
+Restart DBMS and recover database.
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+2	1694498818	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+2	36	0	0	36	0	effectuePar	2
+reach EndOfFile
+
+Removing Failure Point...
+Done. 
+
+Inserting data by synchronization
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Data inserted.
+Save DBMS
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+2	1694498818	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+3	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+4	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+5	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+6	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+7	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+8	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+2	36	0	0	36	0	effectuePar	2
+3	14	0	0	0	1	localisationAdenopathie	11
+4	15	0	0	0	2	douleurs	12
+5	16	0	0	0	3	escarres	13
+6	17	0	0	0	4	autresSymptGen	14
+7	18	0	0	0	5	examCardVasc	15
+reach EndOfFile
+
+Inserting Failure Point...
+Done. 
+
+Inserting data by synchronization
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Data inserted.
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+2	1694498818	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+3	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+4	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+5	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+6	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+7	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+8	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+9	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+10	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+11	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+12	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+13	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+14	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+2	36	0	0	36	0	effectuePar	2
+3	14	0	0	0	1	localisationAdenopathie	11
+4	15	0	0	0	2	douleurs	12
+5	16	0	0	0	3	escarres	13
+6	17	0	0	0	4	autresSymptGen	14
+7	18	0	0	0	5	examCardVasc	15
+8	14	0	0	0	1	localisationAdenopathie	11
+9	15	0	0	0	2	douleurs	12
+10	16	0	0	0	3	escarres	13
+11	17	0	0	0	4	autresSymptGen	14
+12	18	0	0	0	5	examCardVasc	15
+reach EndOfFile
+
+Removing Failure Point...
+Done. 
+
+Inserting data by synchronization
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Data inserted.
+
+SELECT * FROM USERDMSP :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Prenom	Sexe	Adresse	Ville	CodePost	Tel1	Tel2	UserType	
+1	1694498817	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+2	1694498818	0	0	0	all	all	0	1 rue du general Leclerc	Paris	75000	0123456789	0123456789	4
+3	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+4	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+5	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+6	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+7	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+8	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+9	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+10	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+11	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+12	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+13	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+14	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+15	1	0	0	0	all	all	0	1 rue du marechal Joffre	Paris	75000	0123456789	0000000000	0
+16	2	0	0	0	Dupont	Pierre	1	1 rue du general Leclerc	Metz	57000	0987654321	1111111111	1
+17	3	0	0	0	Martin	Roger	0	1 rue du général Leclerc	Grenoble	38000	0231456789	2222222222	2
+18	4	0	0	0	Lefebvre	Julien	1	1 rue du marechal Joffre	Marseille	13000	0123456789	0000000000	3
+19	5	0	0	0	NumeroUn	Patient	0	1 rue du general Leclerc	Bordeaux	33000	0987654321	1111111111	0
+20	6	0	0	0	all	all	1	1 rue du général Leclerc	Paris	75000	0231456789	2222222222	1
+reach EndOfFile
+
+
+SELECT * FROM CONCEPT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	Unit	Nom	DataType	
+1	36	0	0	36	0	effectuePar	2
+2	36	0	0	36	0	effectuePar	2
+3	14	0	0	0	1	localisationAdenopathie	11
+4	15	0	0	0	2	douleurs	12
+5	16	0	0	0	3	escarres	13
+6	17	0	0	0	4	autresSymptGen	14
+7	18	0	0	0	5	examCardVasc	15
+8	14	0	0	0	1	localisationAdenopathie	11
+9	15	0	0	0	2	douleurs	12
+10	16	0	0	0	3	escarres	13
+11	17	0	0	0	4	autresSymptGen	14
+12	18	0	0	0	5	examCardVasc	15
+13	14	0	0	0	1	localisationAdenopathie	11
+14	15	0	0	0	2	douleurs	12
+15	16	0	0	0	3	escarres	13
+16	17	0	0	0	4	autresSymptGen	14
+17	18	0	0	0	5	examCardVasc	15
+reach EndOfFile
+
+Detach driver from communication device
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

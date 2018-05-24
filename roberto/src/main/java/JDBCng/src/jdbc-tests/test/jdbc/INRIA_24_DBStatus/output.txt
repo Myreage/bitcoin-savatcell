@@ -1,0 +1,25 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Loading schema... 
+Schema loaded, size: 2912
+========== FIRST BANK FILLED (1st 16kB for DbStatus) ======== 
+========== Check last bytes written at 0x08007FFE in NOR ======== 
+========== FIRST BANK ERASED (1st 16kB for DbStatus) ======== 
+========== Check first bytes at 0x08004000 in NOR ======== 
+========== SECOND BANK WRITTEN (2nd 16kB for DbStatus) ======== 
+========== Check first bytes at 0x08008000 in NOR ======== 
+========== SECOND BANK FILLED (2nd 16kB for DbStatus) ======== 
+========== Check last bytes written at 0x0800BFFE in NOR ======== 
+========== SECOND BANK ERASED (2nd 16kB for DbStatus) ======== 
+========== Check first bytes at 0x08008000 in NOR ======== 
+========== FIRST BANK WRITTEN (1st 16kB for DbStatus) ======== 
+========== Check first bytes at 0x08004000 in NOR ======== 
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="JDBCng">
+    <property environment="env"/>
+    <property name="DMSP.location" value="../DMSP"/>
+    <property name="DMSP_COM_Port_Test.location" value="../../../../eclipse-workspaces/test/DMSP_COM_Port_Test"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="JDBCng.classpath">
+        <pathelement location="classes"/>
+        <pathelement location="extra/jssc.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="classes"/>
+        <copy includeemptydirs="false" todir="classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.txt"/>
+                <exclude name="**/.svn"/>
+                <exclude name="jdbc-tests/"/>
+                <exclude name="jdbc-tests/"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="classes">
+            <fileset dir="src/jdbc-tests">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.txt"/>
+                <exclude name="**/.svn"/>
+                <exclude name="test/runner/ServletRunner.java"/>
+                <exclude name="org/inria/dmsp/test/TEST_EP_UI/"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="classes" includeantruntime="false" source="${source}" target="${target}" encoding="Cp1252">
+			<compilerarg value="-Xmaxerrs"/>
+			<compilerarg value="1000"/>
+            <src path="src"/>
+            <exclude name="**/*.txt"/>
+            <exclude name="**/.svn"/>
+            <src path="src/jdbc-tests"/>
+            <exclude name="**/*.txt"/>
+            <exclude name="**/.svn"/>
+            <exclude name="jdbc-tests/"/>
+            <classpath refid="JDBCng.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="test">
+        <java classname="test.runner.MainRunner" failonerror="true" fork="yes">
+            <arg line="${TSTCASE} localhost"/>
+            <classpath refid="JDBCng.classpath"/>
+        </java>
+    </target>
+</project>

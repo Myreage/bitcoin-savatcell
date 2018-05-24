@@ -1,0 +1,33 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
+
+apply plugin: 'java'
+apply plugin: 'jetty'
+
+group = 'org.roberto.API'
+version = '1.0-SNAPSHOT'
+
+description = """messenger"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version:'2.25.1'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-moxy', version:'2.25.1'
+    
+    compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version:'1.5.0'
+
+    // https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api
+	compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0'
+	compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
+	compile 'org.bitcoinj:bitcoinj-core:0.14.7'
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+}

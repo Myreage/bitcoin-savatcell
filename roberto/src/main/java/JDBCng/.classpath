@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="jdbc-tests/|jdbc-tests/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/jdbc-tests"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="extra/jssc.jar" sourcepath="extra/jssc-2.8.0-src.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/JDBCng/extra/jssc-2.8.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

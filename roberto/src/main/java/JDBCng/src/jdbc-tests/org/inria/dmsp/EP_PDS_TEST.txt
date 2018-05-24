@@ -1,0 +1,42 @@
+#JAVA package org.inria.dmsp;
+
+
+#JAVA public class EP_PDS_TEST {
+
+
+#JAVA  /*
+
+#JAVA   * PLANS TO TEST THE NEW PDS CODE
+
+#JAVA   */
+
+
+#JAVA public static String EP_FORMULAIRE_INSERT =
+VERBOSE INSERT INTO Formulaire VALUES (?, ?, ?, ?, ?, ?)
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID =
+VERBOSE SELECT * FROM Formulaire WHERE IdGlobal = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID_NO_CI =
+VERBOSE NO_CI SELECT * FROM Formulaire WHERE IdGlobal = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID_FIS =
+VERBOSE NO_BF SELECT * FROM Formulaire WHERE IdGlobal = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID_SS =
+VERBOSE NO_PTR SELECT * FROM Formulaire WHERE IdGlobal = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_FILTRE =
+VERBOSE SELECT * FROM Formulaire WHERE Filtre = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_FILTRE_NO_CI =
+VERBOSE NO_CI SELECT * FROM Formulaire WHERE Filtre = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_FILTRE_FIS =
+VERBOSE NO_BF SELECT * FROM Formulaire WHERE Filtre = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_FILTRE_SS =
+VERBOSE NO_PTR SELECT * FROM Formulaire WHERE Filtre = ?
+
+
+#JAVA }

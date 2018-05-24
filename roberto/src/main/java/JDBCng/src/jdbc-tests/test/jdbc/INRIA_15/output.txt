@@ -1,0 +1,12 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device

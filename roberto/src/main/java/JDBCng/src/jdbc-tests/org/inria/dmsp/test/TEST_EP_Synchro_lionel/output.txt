@@ -1,0 +1,103 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+Loading Delta.
+// Insertion dans la table USERDMSP 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Skip la table MATRICE_DMSP 
+// Insertion dans la table MATRICE_PATIENT 
+EP_INFO_SELECT_BY_ID (existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1344	0	0	634	1317	1345	NULL	NULL	NULL	33	0	61
+reach EndOfFile
+
+EP_INFO_SELECT_BY_ID (missing id)
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID (existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+1	1067	0	0	348	SAGE-CH0162	0	NULL	NULL	NULL	CELINE	NULL	NULL	NULL	NULL	NULL	NULL	0	HBWfB829llY6ffVpdKad	1075
+reach EndOfFile
+
+EP_USER_SELECT_BY_ID (missing id)
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	Type	Responsable	Identifiant	Civilite	Prenom	Adresse	Ville	CodePost	Tel	Mobile	Courriel	InfoLegale	Certificate	IdRole	
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID (existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+1	1307	0	0	592	1002	1064	2	2009-09-08	NULL	NULL
+reach EndOfFile
+
+EP_EVENT_SELECT_BY_ID (missing id)
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	DateFin	Filtre	
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID (existing)
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1204	0	0	486	ygffgyt
+reach EndOfFile
+
+EP_COMMENT_SELECT_BY_ID (missing id)
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+reach EndOfFile
+
+EP_INFO_UPDATE
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	1344	1	42	712	1317	1345	bli	1	1970-01-01	34	1	62
+reach EndOfFile
+
+EP_COMMENT_UPDATE
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1059	0	0	339	comp1
+reach EndOfFile
+
+Row	IdGlobal	Author	TSSPT	TSSanteos	ValComment	
+1	1059	1	513	1025	bli
+reach EndOfFile
+
+EP_EPISODE_UPDATE
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	2	0	0	341	noEpisode
+reach EndOfFile
+
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	2	2	1025	2049	bli
+reach EndOfFile
+
+EP_PATIENT_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdCategorie	TypeCategorie	IdActeur	TypeActeur	Autorisations	
+1	1093	0	756	375	0	0	1075	1	170
+2	1101	0	1025	383	0	2	1	1	170
+3	1114	0	19	396	1009	1	1075	1	0
+reach EndOfFile
+
+EP_EPISODE_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	Nom	
+1	2	2	1025	2049	bli
+reach EndOfFile
+
+EP_HABILITATION_SELECT_ON_TSSPT
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdRole	IdUser	
+1	1077	0	513	359	1075	1062
+2	1080	0	1721	362	1075	1063
+3	1088	0	1337	370	1076	1070
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

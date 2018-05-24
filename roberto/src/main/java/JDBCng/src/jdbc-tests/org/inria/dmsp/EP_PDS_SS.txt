@@ -1,0 +1,53 @@
+#JAVA package org.inria.dmsp;
+
+
+#JAVA public class EP_PDS_SS {
+
+
+#JAVA  /*
+
+#JAVA   * PLANS TO TEST THE NEW PDS CODE
+
+#JAVA   */
+
+
+#JAVA public static String EP_EPISODE_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Episode WHERE IdGlobal = ?
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Formulaire WHERE IdGlobal = ?
+
+#JAVA public static String EP_USER_SELECT_BY_ID =
+VERBOSE NO_PTR Select * from userdmsp where IdGlobal = ?
+
+#JAVA public static String EP_EVENT_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Event WHERE IdGlobal = ?
+
+#JAVA public static String EP_EVENT_SELECT_BY_IDFORM =
+VERBOSE NO_PTR SELECT * FROM Event WHERE IdForm = ?
+
+#JAVA public static String EP_INFO_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Info WHERE IdGlobal = ?
+
+#JAVA public static String EP_COMMENT_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Comment WHERE IdGlobal = ?
+
+#JAVA public static String EP_ROLE_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Role WHERE IdGlobal = ?
+
+#JAVA public static String EP_HABILITATION_SELECT_BY_ID =
+VERBOSE NO_PTR SELECT * FROM Habilitation WHERE IdGlobal = ?
+
+#JAVA public static String EP_EVENT_UPDATE =
+VERBOSE NO_PTR UPDATE Event SET Author = ?, TSSPT = ?, TSSANTEOS = ? ,  DateEvent = ?, DateFin = ?, Filtre = ? WHERE IdGlobal = ?
+
+#JAVA public static String EP_COMMENT_UPDATE =
+VERBOSE NO_PTR UPDATE Comment SET Author = ?, TSSPT = ?, TSSanteos = ?, ValComment = ? WHERE IdGlobal = ?
+
+#JAVA public static final String EP_INFO_DELETE =
+VERBOSE NO_PTR DELETE FROM Info WHERE IdGlobal = ?
+
+#JAVA public final static String EP_EVENT_DELETE =
+VERBOSE NO_PTR DELETE FROM Event WHERE IdGlobal=?
+	  
+#JAVA }

@@ -1,0 +1,164 @@
+#JAVA package org.inria.dmsp;
+
+
+#JAVA public class EP_IDX {
+
+
+#JAVA  /*
+
+#JAVA   * PLANS TO BENCHMARK SEQUENTIAL INDEXES
+
+#JAVA   * EP_<attribute>_<index type>
+
+#JAVA   */
+
+# Populate MyTable
+
+#JAVA public static String EP_POPULATE =
+INSERT INTO MyTable VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+# Select IdGlobal
+
+#JAVA public static String EP_IDGLOBAL_NO =
+NO_CI SELECT Something FROM MyTable WHERE IdGlobal = ?;
+
+#JAVA public static String EP_IDGLOBAL_FIS =
+NO_BF SELECT Something FROM MyTable WHERE IdGlobal = ?;
+
+#JAVA public static String EP_IDGLOBAL_SS =
+NO_PTR SELECT Something FROM MyTable WHERE IdGlobal = ?;
+
+#JAVA public static String EP_IDGLOBAL_HS =
+SELECT Something FROM MyTable WHERE IdGlobal = ?;
+
+# Select NumDup100
+
+#JAVA public static String EP_NUMDUP100_NO =
+NO_CI SELECT Something FROM MyTable WHERE NumDup100 = ?;
+
+#JAVA public static String EP_NUMDUP100_FIS =
+NO_BF SELECT Something FROM MyTable WHERE NumDup100 = ?;
+
+#JAVA public static String EP_NUMDUP100_SS =
+NO_PTR SELECT Something FROM MyTable WHERE NumDup100 = ?;
+
+#JAVA public static String EP_NUMDUP100_HS =
+SELECT Something FROM MyTable WHERE NumDup100 = ?;
+
+# Select NumDup10
+
+#JAVA public static String EP_NUMDUP10_NO =
+NO_CI SELECT Something FROM MyTable WHERE NumDup10 = ?;
+
+#JAVA public static String EP_NUMDUP10_FIS =
+NO_BF SELECT Something FROM MyTable WHERE NumDup10 = ?;
+
+#JAVA public static String EP_NUMDUP10_SS =
+NO_PTR SELECT Something FROM MyTable WHERE NumDup10 = ?;
+
+#JAVA public static String EP_NUMDUP10_HS =
+SELECT Something FROM MyTable WHERE NumDup10 = ?;
+
+# Select NumMs1
+
+#JAVA public static String EP_NUMMS1_NO =
+NO_CI SELECT Something FROM MyTable WHERE NumMs1 = ?;
+
+#JAVA public static String EP_NUMMS1_FIS =
+NO_BF SELECT Something FROM MyTable WHERE NumMs1 = ?;
+
+#JAVA public static String EP_NUMMS1_SS =
+NO_PTR SELECT Something FROM MyTable WHERE NumMs1 = ?;
+
+#JAVA public static String EP_NUMMS1_HS =
+SELECT Something FROM MyTable WHERE NumMs1 = ?;
+
+# Select NumMs10
+
+#JAVA public static String EP_NUMMS10_NO =
+NO_CI SELECT Something FROM MyTable WHERE NumMs10 = ?;
+
+#JAVA public static String EP_NUMMS10_FIS =
+NO_BF SELECT Something FROM MyTable WHERE NumMs10 = ?;
+
+#JAVA public static String EP_NUMMS10_SS =
+NO_PTR SELECT Something FROM MyTable WHERE NumMs10 = ?;
+
+#JAVA public static String EP_NUMMS10_HS =
+SELECT Something FROM MyTable WHERE NumMs10 = ?;
+
+# Select ChDup100
+
+#JAVA public static String EP_CHDUP100_NO =
+NO_CI SELECT Something FROM MyTable WHERE ChDup100 = ?;
+
+#JAVA public static String EP_CHDUP100_FIS =
+NO_BF SELECT Something FROM MyTable WHERE ChDup100 = ?;
+
+#JAVA public static String EP_CHDUP100_SS =
+NO_PTR SELECT Something FROM MyTable WHERE ChDup100 = ?;
+
+#JAVA public static String EP_CHDUP100_HS =
+SELECT Something FROM MyTable WHERE ChDup100 = ?;
+
+# Select ChDup10
+
+#JAVA public static String EP_CHDUP10_NO =
+NO_CI SELECT Something FROM MyTable WHERE ChDup10 = ?;
+
+#JAVA public static String EP_CHDUP10_FIS =
+NO_BF SELECT Something FROM MyTable WHERE ChDup10 = ?;
+
+#JAVA public static String EP_CHDUP10_SS =
+NO_PTR SELECT Something FROM MyTable WHERE ChDup10 = ?;
+
+#JAVA public static String EP_CHDUP10_HS =
+SELECT Something FROM MyTable WHERE ChDup10 = ?;
+
+# Select ChMs1
+
+#JAVA public static String EP_CHMS1_NO =
+NO_CI SELECT Something FROM MyTable WHERE ChMs1 = ?;
+
+#JAVA public static String EP_CHMS1_FIS =
+NO_BF SELECT Something FROM MyTable WHERE ChMs1 = ?;
+
+#JAVA public static String EP_CHMS1_SS =
+NO_PTR SELECT Something FROM MyTable WHERE ChMs1 = ?;
+
+#JAVA public static String EP_CHMS1_HS =
+SELECT Something FROM MyTable WHERE ChMs1 = ?;
+
+# Select ChMs10
+
+#JAVA public static String EP_CHMS10_NO =
+NO_CI SELECT Something FROM MyTable WHERE ChMs10 = ?;
+
+#JAVA public static String EP_CHMS10_FIS =
+NO_BF SELECT Something FROM MyTable WHERE ChMs10 = ?;
+
+#JAVA public static String EP_CHMS10_SS =
+NO_PTR SELECT Something FROM MyTable WHERE ChMs10 = ?;
+
+#JAVA public static String EP_CHMS10_HS =
+SELECT Something FROM MyTable WHERE ChMs10 = ?;
+
+# Fake
+
+#JAVA public static String EP_FAKE =
+#JAVA "/*EP \u0001 " + 
+#JAVA "z 1 1 -1 4 ?1 # " + /* FAKE_LOOKUP ref_tab:MyTable(0) key_col_id:4 ka_id:4	 key:?1(R0) -->R1 */
+#JAVA "1 0 0 1 r1 1 0 1 9 # " + /* TABLE_LOOKUP pos:R1, 1 cols, table MyTable(0), is_table: 1	-->R2 - R2 */
+#JAVA "\u0000 1 0 2 Something # " + /* META_RESULT, 1 cols, type(0-char 1-num 2-date) [out_result name] */
+#JAVA "\u0000*/";
+
+#JAVA public static String EP_FAKE_DUMMY =
+#JAVA "/*EP \u0001 " + 
+#JAVA "z 2 2 -1 4 ?1 # " + /* FAKE_LOOKUP ref_tab:MyTable(0) key_col_id:4 ka_id:4	 key:?1(R0) -->R1 */
+#JAVA "q 1 1 2 # " + /* DUMMY */
+#JAVA "1 0 0 1 r1 1 0 1 9 # " + /* TABLE_LOOKUP pos:R1, 1 cols, table MyTable(0), is_table: 1	-->R2 - R2 */
+#JAVA "\u0000 1 0 2 Something # " + /* META_RESULT, 1 cols, type(0-char 1-num 2-date) [out_result name] */
+#JAVA "\u0000*/";
+
+
+#JAVA }

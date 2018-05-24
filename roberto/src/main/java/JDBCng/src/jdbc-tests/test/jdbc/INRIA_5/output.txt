@@ -1,0 +1,457 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Save DBMS
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	101	0	0	0	51	13	91	France	65	165
+2	102	0	0	0	52	14	92	Mal de dos	23	123
+3	103	0	0	0	53	15	93	NumeroUn	0	10
+4	104	0	0	0	54	16	94	Patient	23	123
+5	105	0	0	0	55	17	95	lecture	123	1123
+6	106	0	0	0	56	18	96	Arras	99	199
+7	107	0	0	0	57	19	97	France	65	165
+8	108	0	0	0	58	20	98	Mal de dos	23	123
+9	109	0	0	0	59	21	99	NumeroUn	0	10
+10	110	0	0	0	60	22	100	Patient	23	123
+11	111	0	0	0	61	23	91	lecture	123	1123
+12	112	0	0	0	62	24	92	Arras	99	199
+13	113	0	0	0	63	25	93	France	65	165
+14	114	0	0	0	64	26	94	Mal de dos	23	123
+15	115	0	0	0	65	27	95	NumeroUn	0	10
+16	116	0	0	0	66	28	96	Patient	23	123
+17	117	0	0	0	67	29	97	lecture	123	1123
+18	118	0	0	0	68	30	98	Arras	99	199
+19	119	0	0	0	69	31	99	France	65	165
+20	120	0	0	0	70	32	100	Mal de dos	23	123
+21	121	0	0	0	71	33	91	NumeroUn	0	10
+22	122	0	0	0	72	34	92	Patient	23	123
+23	123	0	0	0	73	35	93	lecture	123	1123
+24	124	0	0	0	74	36	94	Arras	99	199
+25	125	0	0	0	75	37	95	France	65	165
+26	126	0	0	0	76	38	96	Mal de dos	23	123
+27	127	0	0	0	77	39	97	NumeroUn	0	10
+28	128	0	0	0	78	40	98	Patient	23	123
+29	129	0	0	0	79	13	99	lecture	123	1123
+30	130	0	0	0	80	14	100	Arras	99	199
+31	131	0	0	0	81	15	91	France	65	165
+32	132	0	0	0	82	16	92	Mal de dos	23	123
+33	133	0	0	0	83	17	93	NumeroUn	0	10
+34	134	0	0	0	84	18	94	Patient	23	123
+35	135	0	0	0	85	19	95	lecture	123	1123
+36	136	0	0	0	86	20	96	Arras	99	199
+37	137	0	0	0	87	21	97	France	65	165
+38	138	0	0	0	88	22	98	Mal de dos	23	123
+39	139	0	0	0	89	23	99	NumeroUn	0	10
+40	140	0	0	0	90	24	100	Patient	23	123
+41	141	0	0	0	51	25	91	lecture	123	1123
+42	142	0	0	0	52	26	92	Arras	99	199
+43	143	0	0	0	53	27	93	France	65	165
+44	144	0	0	0	54	28	94	Mal de dos	23	123
+45	145	0	0	0	55	29	95	NumeroUn	0	10
+46	146	0	0	0	56	30	96	Patient	23	123
+47	147	0	0	0	57	31	97	lecture	123	1123
+48	148	0	0	0	58	32	98	Arras	99	199
+49	149	0	0	0	59	33	99	France	65	165
+50	150	0	0	0	60	34	100	Mal de dos	23	123
+51	151	0	0	0	61	35	91	NumeroUn	0	10
+52	152	0	0	0	62	36	92	Patient	23	123
+53	153	0	0	0	63	37	93	lecture	123	1123
+54	154	0	0	0	64	38	94	Arras	99	199
+55	155	0	0	0	65	39	95	France	65	165
+56	156	0	0	0	66	40	96	Mal de dos	23	123
+57	157	0	0	0	67	13	97	NumeroUn	0	10
+58	158	0	0	0	68	14	98	Patient	23	123
+59	159	0	0	0	69	15	99	lecture	123	1123
+60	160	0	0	0	70	16	100	Arras	99	199
+61	161	0	0	0	71	17	91	France	65	165
+62	162	0	0	0	72	18	92	Mal de dos	23	123
+63	163	0	0	0	73	19	93	NumeroUn	0	10
+64	164	0	0	0	74	20	94	Patient	23	123
+65	165	0	0	0	75	21	95	lecture	123	1123
+66	166	0	0	0	76	22	96	Arras	99	199
+67	167	0	0	0	77	23	97	France	65	165
+68	168	0	0	0	78	24	98	Mal de dos	23	123
+69	169	0	0	0	79	25	99	NumeroUn	0	10
+70	170	0	0	0	80	26	100	Patient	23	123
+71	171	0	0	0	81	27	91	lecture	123	1123
+72	172	0	0	0	82	28	92	Arras	99	199
+73	173	0	0	0	83	29	93	France	65	165
+74	174	0	0	0	84	30	94	Mal de dos	23	123
+75	175	0	0	0	85	31	95	NumeroUn	0	10
+76	176	0	0	0	86	32	96	Patient	23	123
+77	177	0	0	0	87	33	97	lecture	123	1123
+78	178	0	0	0	88	34	98	Arras	99	199
+79	179	0	0	0	89	35	99	France	65	165
+80	180	0	0	0	90	36	100	Mal de dos	23	123
+81	181	0	0	0	51	37	91	NumeroUn	0	10
+82	182	0	0	0	52	38	92	Patient	23	123
+83	183	0	0	0	53	39	93	lecture	123	1123
+84	184	0	0	0	54	40	94	Arras	99	199
+85	185	0	0	0	55	13	95	France	65	165
+86	186	0	0	0	56	14	96	Mal de dos	23	123
+87	187	0	0	0	57	15	97	NumeroUn	0	10
+88	188	0	0	0	58	16	98	Patient	23	123
+89	189	0	0	0	59	17	99	lecture	123	1123
+90	190	0	0	0	60	18	100	Arras	99	199
+91	191	0	0	0	61	19	91	France	65	165
+92	192	0	0	0	62	20	92	Mal de dos	23	123
+93	193	0	0	0	63	21	93	NumeroUn	0	10
+94	194	0	0	0	64	22	94	Patient	23	123
+95	195	0	0	0	65	23	95	lecture	123	1123
+96	196	0	0	0	66	24	96	Arras	99	199
+97	197	0	0	0	67	25	97	France	65	165
+98	198	0	0	0	68	26	98	Mal de dos	23	123
+99	199	0	0	0	69	27	99	NumeroUn	0	10
+100	200	0	0	0	70	28	100	Patient	23	123
+reach EndOfFile
+
+update Info set ValChar = new value where Info.IdGlobal = 160
+Number of updated tuples : 1
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	101	0	0	0	51	13	91	France	65	165
+2	102	0	0	0	52	14	92	Mal de dos	23	123
+3	103	0	0	0	53	15	93	NumeroUn	0	10
+4	104	0	0	0	54	16	94	Patient	23	123
+5	105	0	0	0	55	17	95	lecture	123	1123
+6	106	0	0	0	56	18	96	Arras	99	199
+7	107	0	0	0	57	19	97	France	65	165
+8	108	0	0	0	58	20	98	Mal de dos	23	123
+9	109	0	0	0	59	21	99	NumeroUn	0	10
+10	110	0	0	0	60	22	100	Patient	23	123
+11	111	0	0	0	61	23	91	lecture	123	1123
+12	112	0	0	0	62	24	92	Arras	99	199
+13	113	0	0	0	63	25	93	France	65	165
+14	114	0	0	0	64	26	94	Mal de dos	23	123
+15	115	0	0	0	65	27	95	NumeroUn	0	10
+16	116	0	0	0	66	28	96	Patient	23	123
+17	117	0	0	0	67	29	97	lecture	123	1123
+18	118	0	0	0	68	30	98	Arras	99	199
+19	119	0	0	0	69	31	99	France	65	165
+20	120	0	0	0	70	32	100	Mal de dos	23	123
+21	121	0	0	0	71	33	91	NumeroUn	0	10
+22	122	0	0	0	72	34	92	Patient	23	123
+23	123	0	0	0	73	35	93	lecture	123	1123
+24	124	0	0	0	74	36	94	Arras	99	199
+25	125	0	0	0	75	37	95	France	65	165
+26	126	0	0	0	76	38	96	Mal de dos	23	123
+27	127	0	0	0	77	39	97	NumeroUn	0	10
+28	128	0	0	0	78	40	98	Patient	23	123
+29	129	0	0	0	79	13	99	lecture	123	1123
+30	130	0	0	0	80	14	100	Arras	99	199
+31	131	0	0	0	81	15	91	France	65	165
+32	132	0	0	0	82	16	92	Mal de dos	23	123
+33	133	0	0	0	83	17	93	NumeroUn	0	10
+34	134	0	0	0	84	18	94	Patient	23	123
+35	135	0	0	0	85	19	95	lecture	123	1123
+36	136	0	0	0	86	20	96	Arras	99	199
+37	137	0	0	0	87	21	97	France	65	165
+38	138	0	0	0	88	22	98	Mal de dos	23	123
+39	139	0	0	0	89	23	99	NumeroUn	0	10
+40	140	0	0	0	90	24	100	Patient	23	123
+41	141	0	0	0	51	25	91	lecture	123	1123
+42	142	0	0	0	52	26	92	Arras	99	199
+43	143	0	0	0	53	27	93	France	65	165
+44	144	0	0	0	54	28	94	Mal de dos	23	123
+45	145	0	0	0	55	29	95	NumeroUn	0	10
+46	146	0	0	0	56	30	96	Patient	23	123
+47	147	0	0	0	57	31	97	lecture	123	1123
+48	148	0	0	0	58	32	98	Arras	99	199
+49	149	0	0	0	59	33	99	France	65	165
+50	150	0	0	0	60	34	100	Mal de dos	23	123
+51	151	0	0	0	61	35	91	NumeroUn	0	10
+52	152	0	0	0	62	36	92	Patient	23	123
+53	153	0	0	0	63	37	93	lecture	123	1123
+54	154	0	0	0	64	38	94	Arras	99	199
+55	155	0	0	0	65	39	95	France	65	165
+56	156	0	0	0	66	40	96	Mal de dos	23	123
+57	157	0	0	0	67	13	97	NumeroUn	0	10
+58	158	0	0	0	68	14	98	Patient	23	123
+59	159	0	0	0	69	15	99	lecture	123	1123
+60	160	0	0	0	70	16	100	new value	99	199
+61	161	0	0	0	71	17	91	France	65	165
+62	162	0	0	0	72	18	92	Mal de dos	23	123
+63	163	0	0	0	73	19	93	NumeroUn	0	10
+64	164	0	0	0	74	20	94	Patient	23	123
+65	165	0	0	0	75	21	95	lecture	123	1123
+66	166	0	0	0	76	22	96	Arras	99	199
+67	167	0	0	0	77	23	97	France	65	165
+68	168	0	0	0	78	24	98	Mal de dos	23	123
+69	169	0	0	0	79	25	99	NumeroUn	0	10
+70	170	0	0	0	80	26	100	Patient	23	123
+71	171	0	0	0	81	27	91	lecture	123	1123
+72	172	0	0	0	82	28	92	Arras	99	199
+73	173	0	0	0	83	29	93	France	65	165
+74	174	0	0	0	84	30	94	Mal de dos	23	123
+75	175	0	0	0	85	31	95	NumeroUn	0	10
+76	176	0	0	0	86	32	96	Patient	23	123
+77	177	0	0	0	87	33	97	lecture	123	1123
+78	178	0	0	0	88	34	98	Arras	99	199
+79	179	0	0	0	89	35	99	France	65	165
+80	180	0	0	0	90	36	100	Mal de dos	23	123
+81	181	0	0	0	51	37	91	NumeroUn	0	10
+82	182	0	0	0	52	38	92	Patient	23	123
+83	183	0	0	0	53	39	93	lecture	123	1123
+84	184	0	0	0	54	40	94	Arras	99	199
+85	185	0	0	0	55	13	95	France	65	165
+86	186	0	0	0	56	14	96	Mal de dos	23	123
+87	187	0	0	0	57	15	97	NumeroUn	0	10
+88	188	0	0	0	58	16	98	Patient	23	123
+89	189	0	0	0	59	17	99	lecture	123	1123
+90	190	0	0	0	60	18	100	Arras	99	199
+91	191	0	0	0	61	19	91	France	65	165
+92	192	0	0	0	62	20	92	Mal de dos	23	123
+93	193	0	0	0	63	21	93	NumeroUn	0	10
+94	194	0	0	0	64	22	94	Patient	23	123
+95	195	0	0	0	65	23	95	lecture	123	1123
+96	196	0	0	0	66	24	96	Arras	99	199
+97	197	0	0	0	67	25	97	France	65	165
+98	198	0	0	0	68	26	98	Mal de dos	23	123
+99	199	0	0	0	69	27	99	NumeroUn	0	10
+100	200	0	0	0	70	28	100	Patient	23	123
+reach EndOfFile
+
+update Info set ValChar = new value 2 where Info.IdGlobal = 126
+Number of updated tuples : 1
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	101	0	0	0	51	13	91	France	65	165
+2	102	0	0	0	52	14	92	Mal de dos	23	123
+3	103	0	0	0	53	15	93	NumeroUn	0	10
+4	104	0	0	0	54	16	94	Patient	23	123
+5	105	0	0	0	55	17	95	lecture	123	1123
+6	106	0	0	0	56	18	96	Arras	99	199
+7	107	0	0	0	57	19	97	France	65	165
+8	108	0	0	0	58	20	98	Mal de dos	23	123
+9	109	0	0	0	59	21	99	NumeroUn	0	10
+10	110	0	0	0	60	22	100	Patient	23	123
+11	111	0	0	0	61	23	91	lecture	123	1123
+12	112	0	0	0	62	24	92	Arras	99	199
+13	113	0	0	0	63	25	93	France	65	165
+14	114	0	0	0	64	26	94	Mal de dos	23	123
+15	115	0	0	0	65	27	95	NumeroUn	0	10
+16	116	0	0	0	66	28	96	Patient	23	123
+17	117	0	0	0	67	29	97	lecture	123	1123
+18	118	0	0	0	68	30	98	Arras	99	199
+19	119	0	0	0	69	31	99	France	65	165
+20	120	0	0	0	70	32	100	Mal de dos	23	123
+21	121	0	0	0	71	33	91	NumeroUn	0	10
+22	122	0	0	0	72	34	92	Patient	23	123
+23	123	0	0	0	73	35	93	lecture	123	1123
+24	124	0	0	0	74	36	94	Arras	99	199
+25	125	0	0	0	75	37	95	France	65	165
+26	126	0	0	0	76	38	96	new value 2	23	123
+27	127	0	0	0	77	39	97	NumeroUn	0	10
+28	128	0	0	0	78	40	98	Patient	23	123
+29	129	0	0	0	79	13	99	lecture	123	1123
+30	130	0	0	0	80	14	100	Arras	99	199
+31	131	0	0	0	81	15	91	France	65	165
+32	132	0	0	0	82	16	92	Mal de dos	23	123
+33	133	0	0	0	83	17	93	NumeroUn	0	10
+34	134	0	0	0	84	18	94	Patient	23	123
+35	135	0	0	0	85	19	95	lecture	123	1123
+36	136	0	0	0	86	20	96	Arras	99	199
+37	137	0	0	0	87	21	97	France	65	165
+38	138	0	0	0	88	22	98	Mal de dos	23	123
+39	139	0	0	0	89	23	99	NumeroUn	0	10
+40	140	0	0	0	90	24	100	Patient	23	123
+41	141	0	0	0	51	25	91	lecture	123	1123
+42	142	0	0	0	52	26	92	Arras	99	199
+43	143	0	0	0	53	27	93	France	65	165
+44	144	0	0	0	54	28	94	Mal de dos	23	123
+45	145	0	0	0	55	29	95	NumeroUn	0	10
+46	146	0	0	0	56	30	96	Patient	23	123
+47	147	0	0	0	57	31	97	lecture	123	1123
+48	148	0	0	0	58	32	98	Arras	99	199
+49	149	0	0	0	59	33	99	France	65	165
+50	150	0	0	0	60	34	100	Mal de dos	23	123
+51	151	0	0	0	61	35	91	NumeroUn	0	10
+52	152	0	0	0	62	36	92	Patient	23	123
+53	153	0	0	0	63	37	93	lecture	123	1123
+54	154	0	0	0	64	38	94	Arras	99	199
+55	155	0	0	0	65	39	95	France	65	165
+56	156	0	0	0	66	40	96	Mal de dos	23	123
+57	157	0	0	0	67	13	97	NumeroUn	0	10
+58	158	0	0	0	68	14	98	Patient	23	123
+59	159	0	0	0	69	15	99	lecture	123	1123
+60	160	0	0	0	70	16	100	new value	99	199
+61	161	0	0	0	71	17	91	France	65	165
+62	162	0	0	0	72	18	92	Mal de dos	23	123
+63	163	0	0	0	73	19	93	NumeroUn	0	10
+64	164	0	0	0	74	20	94	Patient	23	123
+65	165	0	0	0	75	21	95	lecture	123	1123
+66	166	0	0	0	76	22	96	Arras	99	199
+67	167	0	0	0	77	23	97	France	65	165
+68	168	0	0	0	78	24	98	Mal de dos	23	123
+69	169	0	0	0	79	25	99	NumeroUn	0	10
+70	170	0	0	0	80	26	100	Patient	23	123
+71	171	0	0	0	81	27	91	lecture	123	1123
+72	172	0	0	0	82	28	92	Arras	99	199
+73	173	0	0	0	83	29	93	France	65	165
+74	174	0	0	0	84	30	94	Mal de dos	23	123
+75	175	0	0	0	85	31	95	NumeroUn	0	10
+76	176	0	0	0	86	32	96	Patient	23	123
+77	177	0	0	0	87	33	97	lecture	123	1123
+78	178	0	0	0	88	34	98	Arras	99	199
+79	179	0	0	0	89	35	99	France	65	165
+80	180	0	0	0	90	36	100	Mal de dos	23	123
+81	181	0	0	0	51	37	91	NumeroUn	0	10
+82	182	0	0	0	52	38	92	Patient	23	123
+83	183	0	0	0	53	39	93	lecture	123	1123
+84	184	0	0	0	54	40	94	Arras	99	199
+85	185	0	0	0	55	13	95	France	65	165
+86	186	0	0	0	56	14	96	Mal de dos	23	123
+87	187	0	0	0	57	15	97	NumeroUn	0	10
+88	188	0	0	0	58	16	98	Patient	23	123
+89	189	0	0	0	59	17	99	lecture	123	1123
+90	190	0	0	0	60	18	100	Arras	99	199
+91	191	0	0	0	61	19	91	France	65	165
+92	192	0	0	0	62	20	92	Mal de dos	23	123
+93	193	0	0	0	63	21	93	NumeroUn	0	10
+94	194	0	0	0	64	22	94	Patient	23	123
+95	195	0	0	0	65	23	95	lecture	123	1123
+96	196	0	0	0	66	24	96	Arras	99	199
+97	197	0	0	0	67	25	97	France	65	165
+98	198	0	0	0	68	26	98	Mal de dos	23	123
+99	199	0	0	0	69	27	99	NumeroUn	0	10
+100	200	0	0	0	70	28	100	Patient	23	123
+reach EndOfFile
+
+update Info set ValChar = new value 2 where Info.IdGlobal = 160
+Number of updated tuples : 1
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	101	0	0	0	51	13	91	France	65	165
+2	102	0	0	0	52	14	92	Mal de dos	23	123
+3	103	0	0	0	53	15	93	NumeroUn	0	10
+4	104	0	0	0	54	16	94	Patient	23	123
+5	105	0	0	0	55	17	95	lecture	123	1123
+6	106	0	0	0	56	18	96	Arras	99	199
+7	107	0	0	0	57	19	97	France	65	165
+8	108	0	0	0	58	20	98	Mal de dos	23	123
+9	109	0	0	0	59	21	99	NumeroUn	0	10
+10	110	0	0	0	60	22	100	Patient	23	123
+11	111	0	0	0	61	23	91	lecture	123	1123
+12	112	0	0	0	62	24	92	Arras	99	199
+13	113	0	0	0	63	25	93	France	65	165
+14	114	0	0	0	64	26	94	Mal de dos	23	123
+15	115	0	0	0	65	27	95	NumeroUn	0	10
+16	116	0	0	0	66	28	96	Patient	23	123
+17	117	0	0	0	67	29	97	lecture	123	1123
+18	118	0	0	0	68	30	98	Arras	99	199
+19	119	0	0	0	69	31	99	France	65	165
+20	120	0	0	0	70	32	100	Mal de dos	23	123
+21	121	0	0	0	71	33	91	NumeroUn	0	10
+22	122	0	0	0	72	34	92	Patient	23	123
+23	123	0	0	0	73	35	93	lecture	123	1123
+24	124	0	0	0	74	36	94	Arras	99	199
+25	125	0	0	0	75	37	95	France	65	165
+26	126	0	0	0	76	38	96	new value 2	23	123
+27	127	0	0	0	77	39	97	NumeroUn	0	10
+28	128	0	0	0	78	40	98	Patient	23	123
+29	129	0	0	0	79	13	99	lecture	123	1123
+30	130	0	0	0	80	14	100	Arras	99	199
+31	131	0	0	0	81	15	91	France	65	165
+32	132	0	0	0	82	16	92	Mal de dos	23	123
+33	133	0	0	0	83	17	93	NumeroUn	0	10
+34	134	0	0	0	84	18	94	Patient	23	123
+35	135	0	0	0	85	19	95	lecture	123	1123
+36	136	0	0	0	86	20	96	Arras	99	199
+37	137	0	0	0	87	21	97	France	65	165
+38	138	0	0	0	88	22	98	Mal de dos	23	123
+39	139	0	0	0	89	23	99	NumeroUn	0	10
+40	140	0	0	0	90	24	100	Patient	23	123
+41	141	0	0	0	51	25	91	lecture	123	1123
+42	142	0	0	0	52	26	92	Arras	99	199
+43	143	0	0	0	53	27	93	France	65	165
+44	144	0	0	0	54	28	94	Mal de dos	23	123
+45	145	0	0	0	55	29	95	NumeroUn	0	10
+46	146	0	0	0	56	30	96	Patient	23	123
+47	147	0	0	0	57	31	97	lecture	123	1123
+48	148	0	0	0	58	32	98	Arras	99	199
+49	149	0	0	0	59	33	99	France	65	165
+50	150	0	0	0	60	34	100	Mal de dos	23	123
+51	151	0	0	0	61	35	91	NumeroUn	0	10
+52	152	0	0	0	62	36	92	Patient	23	123
+53	153	0	0	0	63	37	93	lecture	123	1123
+54	154	0	0	0	64	38	94	Arras	99	199
+55	155	0	0	0	65	39	95	France	65	165
+56	156	0	0	0	66	40	96	Mal de dos	23	123
+57	157	0	0	0	67	13	97	NumeroUn	0	10
+58	158	0	0	0	68	14	98	Patient	23	123
+59	159	0	0	0	69	15	99	lecture	123	1123
+60	160	0	0	0	70	16	100	new value 2	99	199
+61	161	0	0	0	71	17	91	France	65	165
+62	162	0	0	0	72	18	92	Mal de dos	23	123
+63	163	0	0	0	73	19	93	NumeroUn	0	10
+64	164	0	0	0	74	20	94	Patient	23	123
+65	165	0	0	0	75	21	95	lecture	123	1123
+66	166	0	0	0	76	22	96	Arras	99	199
+67	167	0	0	0	77	23	97	France	65	165
+68	168	0	0	0	78	24	98	Mal de dos	23	123
+69	169	0	0	0	79	25	99	NumeroUn	0	10
+70	170	0	0	0	80	26	100	Patient	23	123
+71	171	0	0	0	81	27	91	lecture	123	1123
+72	172	0	0	0	82	28	92	Arras	99	199
+73	173	0	0	0	83	29	93	France	65	165
+74	174	0	0	0	84	30	94	Mal de dos	23	123
+75	175	0	0	0	85	31	95	NumeroUn	0	10
+76	176	0	0	0	86	32	96	Patient	23	123
+77	177	0	0	0	87	33	97	lecture	123	1123
+78	178	0	0	0	88	34	98	Arras	99	199
+79	179	0	0	0	89	35	99	France	65	165
+80	180	0	0	0	90	36	100	Mal de dos	23	123
+81	181	0	0	0	51	37	91	NumeroUn	0	10
+82	182	0	0	0	52	38	92	Patient	23	123
+83	183	0	0	0	53	39	93	lecture	123	1123
+84	184	0	0	0	54	40	94	Arras	99	199
+85	185	0	0	0	55	13	95	France	65	165
+86	186	0	0	0	56	14	96	Mal de dos	23	123
+87	187	0	0	0	57	15	97	NumeroUn	0	10
+88	188	0	0	0	58	16	98	Patient	23	123
+89	189	0	0	0	59	17	99	lecture	123	1123
+90	190	0	0	0	60	18	100	Arras	99	199
+91	191	0	0	0	61	19	91	France	65	165
+92	192	0	0	0	62	20	92	Mal de dos	23	123
+93	193	0	0	0	63	21	93	NumeroUn	0	10
+94	194	0	0	0	64	22	94	Patient	23	123
+95	195	0	0	0	65	23	95	lecture	123	1123
+96	196	0	0	0	66	24	96	Arras	99	199
+97	197	0	0	0	67	25	97	France	65	165
+98	198	0	0	0	68	26	98	Mal de dos	23	123
+99	199	0	0	0	69	27	99	NumeroUn	0	10
+100	200	0	0	0	70	28	100	Patient	23	123
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

@@ -1,0 +1,26 @@
+#JAVA package org.inria.dmsp;
+
+
+#JAVA public class EP_PDS {
+
+
+#JAVA  /*
+
+#JAVA   * PLANS TO TEST THE NEW PDS CODE
+
+#JAVA   */
+
+
+#JAVA public static String EP_EPISODE_INSERT =
+Insert into episode values (?,?,?,?,?,?)
+
+#JAVA public static String EP_EPISODE_SELECT_BY_ID =
+SELECT * FROM Episode WHERE IdGlobal = ?
+  
+#JAVA public static String EP_EPISODE_UPDATE =
+UPDATE Episode SET Author = ?, TSSPT = ?, TSSanteos = ?, Nom = ?, Image = ? WHERE IdGlobal = ?
+
+#JAVA public static String EP_EPISODE_DELETE =
+DELETE FROM Episode WHERE IdGlobal = ?
+	  
+#JAVA }

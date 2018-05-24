@@ -1,0 +1,252 @@
+#JAVA /*
+#JAVA  * List of Execution Plans
+#JAVA  * Last modified : 20-11-2008 12h
+#JAVA  *
+#JAVA  * */
+
+#JAVA package test.jdbc.schemaIndexInfo;
+
+#JAVA public class Execution_Plan {
+
+#JAVA   /*
+#JAVA    * ** use '#' to indicate the end of a line (one line contains one operator) **
+#JAVA    *
+#JAVA    * SCAN 		:	0 pos id    table_id
+#JAVA    *
+#JAVA    * TABLE_LOOKUP : 	1 pos id    child   id_intern		nb_columns    {table_id| SKT_id} {0:SKT| 1:TABLE}     column_id1 ...
+#JAVA    *
+#JAVA    * CI_LOOKUP 	:	2 pos id    child   ref_tab_id  key_column_id key
+#JAVA    *
+#JAVA    * MERGE		:	3 pos id    child1  child2	in_result1	in_result2
+#JAVA    *
+#JAVA    * SELECT 		:	4 pos id    child   column_id   comparator      value       in_res
+#JAVA    * ** comparators : "=" is 0, ">" 1, "<" 2, ">=" 3, "<=" 4, "!=" 5
+#JAVA    *
+#JAVA    * ** For TABLE_INSERT, values are expressed like it is described in plan_loader.c **
+#JAVA    * TABLE_INSERT : 	5 pos id    child   nb_columns    {table_id| SKT_id} {0:SKT| 1:TABLE}   column_id1    value1      ...
+#JAVA    *
+#JAVA    * CI_INSERT 	:	6 pos id    child   ref_tab_id		key_tab_id		key_column_id	key		tuple_pos
+#JAVA    *
+#JAVA    * FLOW_X		: 	7 pos id	child1  child2
+#JAVA    *
+#JAVA    * ACCESS_RIGHTS:   8 pos id    child   access_type		in_res_UserDMSP		in_res_Formulaire	in_res_Episode
+#JAVA    * 							 access_type in {0=read, 1=update, 2=delete, 3=insert}
+#JAVA    * TABLE_DELETE:   9  pos id    child   table_id res
+#JAVA    * 
+#JAVA    * TABLE_UPDATE:   a  pos id    child   nb_col tab_id id_intern col1 value1 col2 value2
+#JAVA    *
+#JAVA    * CONST_LOOKUP:  e pos id child nb_cst cst_id1  cst_id2 ...
+#JAVA    *
+#JAVA    * META_RESULT 	:  	*     nb_columns    type_col1     out_result1 name_col1   ...
+#JAVA    *
+#JAVA   */
+
+
+#JAVA // COMMENT
+#JAVA static public final String COMMENT_NOAC_INSERT_WITH_IDS	=
+Insert into comment values (?,?,?,?,?)
+
+#JAVA static public final String COMMENT_NOAC_INSERT	=
+Insert into comment values (?,?,?,?)
+
+#JAVA static public final String COMMENT_NOAC_SELECT_STAR =
+select * from comment
+
+#JAVA // CONCEPT
+#JAVA static public final String CONCEPT_NOAC_INSERT_WITH_IDS	=
+Insert into concept values (?,?,?,?,?,?,?)
+
+#JAVA static public final String CONCEPT_NOAC_SELECT_STAR =
+select * from concept
+
+#JAVA // EPISODE
+#JAVA static public final String EPISODE_NOAC_INSERT_WITH_IDS	=
+Insert into episode values (?,?,?,?,?)
+
+#JAVA static public final String EPISODE_NOAC_SELECT_STAR =
+select * from episode
+
+
+#JAVA // EVENT
+#JAVA static public final String EVENT_AC_INSERT	=
+AC Insert into event values (?,?,?,?,?,?,?)
+
+#JAVA static public final String EVENT_NOAC_INSERT_WITH_IDS =
+Insert into event values (?,?,?,?,?,?,?,?)
+
+#JAVA static public final String EVENT_NOAC_SELECT_STAR =
+select * from event
+
+#JAVA // FORMULAIRE
+#JAVA static public final String FORMULAIRE_NOAC_INSERT_WITH_IDS	=
+Insert into formulaire values (?,?,?,?,?)
+
+#JAVA static public final String FORMULAIRE_NOAC_SELECT_STAR =
+select * from formulaire
+
+#JAVA public static final String SELECT_NOAC_FORM = 
+SELECT nom, IdGlobal FROM formulaire
+
+
+#JAVA // HABILITATION
+#JAVA static public final String HABILITATION_NOAC_INSERT_WITH_IDS	=
+Insert into habilitation values (?,?,?,?,?,?)
+
+#JAVA static public final String HABILITATION_NOAC_SELECT_STAR =
+select * from habilitation
+
+#JAVA // INFO
+#JAVA static public final String INFO_AC_SELECT_STAR =
+AC select * from info
+
+#JAVA static public final String INFO_NOAC_INSERT =
+Insert into info values (?,?,?,?,?,?,?,?,?)
+
+#JAVA static public final String INFO_AC_INSERT	=
+AC Insert into info values (?,?,?,?,?,?,?,?,?)
+
+#JAVA static public final String INFO_NOAC_INSERT_WITH_IDS =
+Insert into info values (?,?,?,?,?,?,?,?,?,?)
+
+#JAVA static public final String INFO_NOAC_SELECT_STAR =
+select * from info
+
+#old schemaV3, with TupleDeleted, but QEPGenerator doesn't use this table, it's only for synchros
+#JAVA static public final String INFO_NOAC_DELETE_BY_EVENT_ID =
+#JAVA /* SQL : 	DELETE from INFO where IdEvent = ? */
+#JAVA "/*EP \u0001 9 0 0 1 5 r7 # " + //
+#JAVA "5 1 1 2 3 12 1 85 v15 86 r7 87 v10 # " + //r0, r1 Insert Log Delete
+#JAVA "5 2 2 3 5 11 1 80 r5 81 r0 82 r3 83 r4 84 v10 # " + // r2
+#JAVA "e 3 3 4 2 1 2 # " + //const lookup r3 r4
+#JAVA "1 4 4 5 r7 1 5 1 38 # " + //r5
+#JAVA "2 5 5 -1 1 ?1 # \u0000*/"; // r6 r7
+
+
+#JAVA static public final String INFO_NOAC_UPDATE_Valchar_BY_ID =
+VERBOSE update Info set ValChar = ? where Info.IdGlobal = ?
+
+#JAVA // MATRICEDMSP
+#JAVA static public final String MATRICEDMSP_NOAC_INSERT_WITH_IDS	=
+Insert into matriceDMSP values (?,?,?,?,?,?,?)
+
+#JAVA static public final String MATRICEDMSP_NOAC_SELECT_STAR =
+select * from matriceDMSP
+
+#JAVA // MATRICEPATIENT
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_EPISODE_USER_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 0 0 r4 r9 # 1 5 5 6 r10 1 0 1 0 # 0 6 6 0 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_EPISODE_ROLE_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 0 0 r4 r9 # 1 5 5 6 r10 1 0 1 0 # 0 6 6 0 # 4 10 10 11 53 0 r6 r11 # 1 11 11 12 r12 1 7 1 53 # 0 12 12 7 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_FORM_USER_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 5 0 r4 r9 # 1 5 5 6 r10 1 1 1 5 # 0 6 6 1 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_FORM_ROLE_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 5 0 r4 r9 # 1 5 5 6 r10 1 1 1 5 # 0 6 6 1 # 4 10 10 11 53 0 r6 r11 # 1 11 11 12 r12 1 7 1 53 # 0 12 12 7 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_USER_USER_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 10 0 r4 r9 # 1 5 5 6 r10 1 2 1 10 # 0 6 6 2 # 4 10 10 11 10 0 r6 r11 # 1 11 11 12 r12 1 2 1 10 # 0 12 12 2 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_USER_ROLE_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 2 2 4 0 5 r10 53 r12 # 7 2 2 10 4 # 4 4 4 5 10 0 r4 r9 # 1 5 5 6 r10 1 2 1 10 # 0 6 6 2 # 4 10 10 11 53 0 r6 r11 # 1 11 11 12 r12 1 7 1 53 # 0 12 12 7 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_OTHER_USER_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 10 2 4 0 5 v10 53 r11 # 4 10 10 11 10 0 r6 r10 # 1 11 11 12 r11 1 2 1 10 # 0 12 12 2 # \u0000*/";
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_INSERT_OTHER_ROLE_WITH_IDS	=
+#JAVA /* SQL : 	Insert into matricepatient values (?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \u0009 5 0 0 1 9 10 1 71 ?1 72 ?2 73 ?3 74 ?4 75 ?5 76 ?6 77 ?7 78 ?8 79 ?9 # 5 1 1 10 2 4 0 5 v10 53 r11 # 4 10 10 11 53 0 r6 r10 # 1 11 11 12 r11 1 7 1 53 # 0 12 12 7 # \u0000*/";
+
+
+
+#JAVA static public final String MATRICEPATIENT_NOAC_SELECT_STAR =
+select * from matricepatient
+
+#JAVA // QUERY
+#JAVA static public final String QUERY_AC_SELECT_EVENT_BY_FORM   =
+AC select e.DateEvent, e.IdGlobal, e.IdForm, e.IdUser, f.Nom from event e, formulaire f where f.IdGlobal = e.IdForm
+
+#JAVA static public final String QUERY_NOAC_SELECT_INFO_BY_EVENT   =
+select * from info where IdEvent = ?
+
+#JAVA static public final String SELECT_NOAC_FORM_EVENT_USER = 
+SELECT formulaire.nom, event.dateEvent, userdmsp.nom FROM formulaire, userdmsp, event WHERE event.idUser=userdmsp.IdGlobal and event.idform=formulaire.IdGlobal
+
+#JAVA public static final String SELECT_NOAC_EVENT_USER_BY_FORM = 
+SELECT event.dateEvent, userdmsp.nom FROM userdmsp, event WHERE event.idUser=userdmsp.IdGlobal and event.idform=?
+
+#JAVA public static final String SELECT_NOAC_EVENT_USER_BY_FORM_2 = 
+SELECT event.dateEvent, userdmsp.nom FROM userdmsp, event, formulaire WHERE event.idUser=userdmsp.IdGlobal and event.IdForm=formulaire.idglobal and formulaire.idglobal=?
+
+#JAVA public static final String SELECT_AC_EVENT_USER_BY_EVENT = 
+AC SELECT userdmsp.nom, event.dateEvent FROM userdmsp, event, formulaire WHERE userdmsp.IdGlobal=event.IdUser and event.idform=formulaire.IdGlobal and event.IdGlobal=?
+
+#JAVA public static final String SELECT_AC_INFO_COMMENT_CONCEPT_BY_EVENT = 
+AC VERBOSE SELECT i.IdGlobal, i.IdEvent, i.IdConcept, i.IdComment, i.Valchar, i.Valnum, i.Position, c.IdGlobal, c.ValComment, co.IdGlobal, co.Unit, co.Nom, co.dataType FROM info i, comment c, concept co WHERE i.IdConcept=co.IdGlobal and i.IdComment=c.IdGlobal and i.IdEvent=?
+
+#buggy when generated by QEPGenerator (fetch idcomment instead of idconcept, wtf?)
+#JAVA public static final String SELECT_AC_EVENT_INFO_COMMENT_CONCEPT_BY_EVENT = 
+#JAVA /* SQL : 	SELECT e.IdGlobal, e.IdForm, e.IdUser, e.IdEpisode, e.DateEvent, i.IdGlobal, i.IdEvent, i.IdConcept, i.IdComment, i.Valchar, i.Valnum, i.Position, c.IdGlobal, c.ValComment, co.IdGlobal, co.Unit, co.Nom, co.dataType FROM event e, info i, comment c, concept co WHERE i.Idevent=e.IdGlobal and i.IdConcept=co.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=? */
+#JAVA "/*EP \u0001 0 7 7 5 # " + //r0
+#JAVA "1 6 6 7 r0 6 1 0 0 1 2 3 4 5 # " + //r1-r6
+#JAVA "8 5 5 6 0 r3 r2 r4 # " +
+#JAVA "1 4 4 5 r1 6 4 1 30 34 35 36 37 30 # " + // r7-r12
+#JAVA "4 3 3 4 30 0 ?1 r12 # " + // r13
+#JAVA "1 2 2 3 r0 7 5 1 38 42 43 44 45 46 47 # " + // r14-r20
+#JAVA "1 1 1 2 r6 2 6 1 48 52 # " + // r21 r22
+#JAVA "1 0 0 1 r5 4 3 1 23 27 28 29 # " + // r23-r26
+#JAVA "\u0000 18 1 7 IdGlobal 1 8 IdForm 1 9 IdUser 1 10 IdEpisode 2 11 DateEvent 1 14 IdGlobal 1 15 IdEvent 1 16 IdConcept 1 17 IdComment 0 18 Valchar 1 19 Valnum 1 20 Position 1 21 IdGlobal 0 22 ValComment 1 23 IdGlobal 1 24 Unit 0 25 Nom 1 26 dataType # \u0000*/";
+
+
+#JAVA public static final String SELECT_AC_USER_EVENT_INFO_COMMENT_CONCEPT_BY_EVENT = 
+AC VERBOSE SELECT u.IdGlobal, u.nom, u.Prenom, u.sexe, u.adresse, u.ville, u.codepost, u.tel1, u.tel2, u.usertype, e.IdGlobal, e.IdForm, e.IdUser, e.IdEpisode, e.DateEvent, i.IdGlobal, i.IdEvent, i.IdConcept, i.IdComment, i.Valchar, i.Valnum, i.Position, c.IdGlobal, c.ValComment, co.IdGlobal, co.Unit, co.Nom, co.dataType FROM userdmsp u, event e, info i, comment c, concept co WHERE u.IdGlobal=e.IdUser and i.Idevent=e.IdGlobal and i.IdConcept=co.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=?
+
+#JAVA public static final String SELECT_AC_USER_EVENT_INFO_COMMENT_CONCEPT_BY_EVENT_DATE = 
+AC VERBOSE SELECT u.IdGlobal, u.nom, u.Prenom, u.sexe, u.adresse, u.ville, u.codepost, u.tel1, u.tel2, u.usertype, e.IdGlobal, e.IdForm, e.IdUser, e.IdEpisode, e.DateEvent, i.IdGlobal, i.IdEvent, i.IdConcept, i.IdComment, i.Valchar, i.Valnum, i.Position, c.IdGlobal, c.ValComment, co.IdGlobal, co.Unit, co.Nom, co.dataType FROM userdmsp u, event e, info i, comment c, concept co WHERE u.idGlobal=e.Iduser and i.Idevent=e.IdGlobal and i.IdConcept=co.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=? AND e.dateEvent=?
+
+#JAVA public static final String SELECT_AC_USER_EVENT_INFO_COMMENT_CONCEPT_BY_EVENT_DATE_FORM = 
+AC VERBOSE SELECT f.IdGlobal, f.nom, u.IdGlobal, u.nom, u.Prenom, u.sexe, u.adresse, u.ville, u.codepost, u.tel1, u.tel2, u.usertype, e.IdGlobal, e.IdForm, e.IdUser, e.IdEpisode, e.DateEvent, i.IdGlobal, i.IdEvent, i.IdConcept, i.IdComment, i.Valchar, i.Valnum, i.Position, c.IdGlobal, c.ValComment, co.IdGlobal, co.Unit, co.Nom, co.dataType FROM formulaire f, userdmsp u, event e, info i, comment c, concept co WHERE f.IdGlobal=e.IdForm and u.idGlobal=e.Iduser and i.Idevent=e.IdGlobal and i.IdConcept=co.IdGlobal and i.IdComment=c.IdGlobal and e.IdGlobal=? AND e.dateEvent=? and f.nom=?
+
+#JAVA // ROLE
+#JAVA static public final String ROLE_NOAC_INSERT_WITH_IDS	=
+Insert into role values (?,?,?,?,?)
+
+#JAVA static public final String ROLE_NOAC_SELECT_STAR =
+select * from role
+
+#JAVA // USERDMSP
+#JAVA static public final String USERDMSP_NOAC_INSERT	=
+Insert into userdmsp values (?,?,?,?,?,?,?,?,?,?,?,?)
+
+#This one is manually written because QEPGen generates \xd that obviously will break the string. Replaced by \r
+#JAVA static public final String USERDMSP_NOAC_INSERT_WITH_IDS =
+#JAVA /* SQL : 	Insert into userdmsp values (?,?,?,?,?,?,?,?,?,?,?,?,?) */
+#JAVA "/*EP \r 5 0 0 -1 13 2 1 10 ?1 11 ?2 12 ?3 13 ?4 14 ?5 15 ?6 16 ?7 17 ?8 18 ?9 19 ?10 20 ?11 21 ?12 22 ?13 # \u0000*/";
+
+
+#JAVA static public final String USERDMSP_NOAC_SELECT_STAR =
+select * from userdmsp
+
+#JAVA // TupleDeleted
+#JAVA static public final String TupleDeleted_NOAC_SELECT_STAR	=
+VERBOSE Select * from TupleDeleted
+
+#JAVA static public final String LogDeleted_NOAC_SELECT_STAR	=
+VERBOSE Select * from LogDeleted
+
+#JAVA }

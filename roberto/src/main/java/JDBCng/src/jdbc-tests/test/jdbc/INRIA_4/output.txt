@@ -1,0 +1,77 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Data generated
+// Insertion dans la table USERDMSP 
+// Insertion dans la table ROLE 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table CONCEPT 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+// Insertion dans la table MATRICE_PATIENT 
+Save DBMS
+
+SELECT * FROM EVENT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	29	0	0	0	20	1	28	2008-06-07
+2	30	0	0	0	21	2	28	2009-07-08
+3	31	0	0	0	22	3	28	2000-08-09
+4	32	0	0	0	23	4	28	2001-09-10
+reach EndOfFile
+
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	36	0	0	0	29	13	33	Mal de dos	23	123
+2	37	0	0	0	30	14	34	NumeroUn	0	10
+3	38	0	0	0	31	15	35	Patient	23	123
+4	39	0	0	0	32	16	33	lecture	123	1123
+5	40	0	0	0	29	17	34	Arras	99	199
+6	41	0	0	0	30	18	35	France	65	165
+7	42	0	0	0	31	19	33	Mal de dos	23	123
+8	43	0	0	0	32	13	34	NumeroUn	0	10
+9	44	0	0	0	29	14	35	Patient	23	123
+reach EndOfFile
+
+Delete from info where IdEvent = 30
+Number of deleted tuples : 2
+
+SELECT * FROM EVENT :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdForm	IdUser	IdEpisode	DateEvent	
+1	29	0	0	0	20	1	28	2008-06-07
+2	30	0	0	0	21	2	28	2009-07-08
+3	31	0	0	0	22	3	28	2000-08-09
+4	32	0	0	0	23	4	28	2001-09-10
+reach EndOfFile
+
+
+SELECT * FROM INFO :
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdConcept	IdComment	ValChar	ValNum	Position	
+1	36	0	0	0	29	13	33	Mal de dos	23	123
+2	38	0	0	0	31	15	35	Patient	23	123
+3	39	0	0	0	32	16	33	lecture	123	1123
+4	40	0	0	0	29	17	34	Arras	99	199
+5	42	0	0	0	31	19	33	Mal de dos	23	123
+6	43	0	0	0	32	13	34	NumeroUn	0	10
+7	44	0	0	0	29	14	35	Patient	23	123
+reach EndOfFile
+
+Detach driver from communication device
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Closing DB connection... Done.
+Connecting to DB: jdbc:inria:smis
+Done
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

@@ -1,0 +1,37 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Retrieving the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 5.
+Retrieving the first recorded message
+Message n° 0 has size : 10000 bytes.
+Deleting the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 4.
+Retrieving the first recorded message
+Message n° 1 has size : 20000 bytes.
+Deleting the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 3.
+Retrieving the first recorded message
+Message n° 2 has size : 50000 bytes.
+Deleting the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 2.
+Retrieving the first recorded message
+Message n° 3 has size : 1000000 bytes.
+Deleting the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 1.
+Retrieving the first recorded message
+Message n° 4 has size : 2112000 bytes.
+Deleting the first recorded message
+Asking number of recorded messages
+Number of recorded messages : 0.
+Closing DB connection... Done.

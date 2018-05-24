@@ -1,0 +1,77 @@
+#JAVA package org.inria.dmsp;
+
+
+#JAVA public class EP_PDS {
+
+
+#JAVA  /*
+
+#JAVA   * PLANS TO TEST THE NEW PDS CODE
+
+#JAVA   */
+
+
+#JAVA public static String EP_EPISODE_INSERT =
+VERBOSE Insert into episode values (?,?,?,?,?)
+
+#JAVA public static String EP_EPISODE_SELECT_BY_ID =
+VERBOSE SELECT * FROM Episode WHERE IdGlobal = ?
+  
+#JAVA public static String EP_FORMULAIRE_INSERT =
+VERBOSE INSERT INTO Formulaire VALUES (?, ?, ?, ?, ?, ?)
+
+#JAVA public static String EP_FORMULAIRE_SELECT_BY_ID =
+VERBOSE SELECT * FROM Formulaire WHERE IdGlobal = ?
+	   
+#JAVA public static String EP_USER_INSERT =
+VERBOSE Insert into userdmsp values (?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?, ?, ?)
+
+#JAVA public static String EP_USER_SELECT_BY_ID =
+VERBOSE Select * from userdmsp where IdGlobal = ?
+
+#JAVA public static String EP_EVENT_INSERT =
+VERBOSE Insert into event values (?,?,?,?,?,?,?,?,?,?)
+
+#JAVA public static String EP_EVENT_SELECT_BY_ID =
+VERBOSE SELECT * FROM Event WHERE IdGlobal = ?
+
+#JAVA public static String EP_EVENT_SELECT_BY_IDFORM =
+VERBOSE SELECT * FROM Event WHERE IdForm = ?
+
+#JAVA public static String EP_INFO_INSERT =
+VERBOSE Insert into info values (?,?,?,?,?, ?,?,?,?,?,?,?)
+
+#JAVA public static String EP_INFO_SELECT_BY_ID =
+VERBOSE SELECT * FROM Info WHERE IdGlobal = ?
+
+#JAVA public static String EP_COMMENT_INSERT 	=
+VERBOSE Insert into comment values (?,?,?,?,?)
+
+#JAVA public static String EP_COMMENT_SELECT_BY_ID =
+VERBOSE SELECT * FROM Comment WHERE IdGlobal = ?
+
+#JAVA public static String EP_ROLE_INSERT  =
+VERBOSE Insert into role values (?,?,?,?,?)
+
+#JAVA public static String EP_ROLE_SELECT_BY_ID =
+VERBOSE SELECT * FROM Role WHERE IdGlobal = ?
+
+#JAVA public static String EP_HABILITATION_INSERT =	  
+VERBOSE INSERT INTO Habilitation VALUES (?, ?, ?, ?, ?, ?)
+
+#JAVA public static String EP_HABILITATION_SELECT_BY_ID =
+VERBOSE SELECT * FROM Habilitation WHERE IdGlobal = ?
+
+#JAVA public static String EP_EVENT_UPDATE =
+VERBOSE UPDATE Event SET Author = ?, TSSPT = ?, TSSANTEOS = ? ,  DateEvent = ?, DateFin = ?, Filtre = ? WHERE IdGlobal = ?
+
+#JAVA public static String EP_COMMENT_UPDATE =
+VERBOSE UPDATE Comment SET Author = ?, TSSPT = ?, TSSanteos = ?, ValComment = ? WHERE IdGlobal = ?
+
+#JAVA public static final String EP_INFO_DELETE =
+VERBOSE DELETE FROM Info WHERE IdGlobal = ?
+
+#JAVA public final static String EP_EVENT_DELETE =
+VERBOSE DELETE FROM Event WHERE IdGlobal=?
+	  
+#JAVA }

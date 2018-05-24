@@ -1,0 +1,12 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Detach driver from communication device
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2750
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.

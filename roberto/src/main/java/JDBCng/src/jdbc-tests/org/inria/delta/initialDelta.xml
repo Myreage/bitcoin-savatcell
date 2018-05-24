@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Delta>
+  <Patient ID="1" />
+  <Routing>
+    <Source Serveur="0" />
+    <Dest Serveur="1" />
+  </Routing>
+  <ACK>0</ACK>
+  <MAJ>
+    <Table name="UserDMSP">
+      <Tuple IdGlobal="1020" Author="0" TS_SPT="0" TS_Santeos="1020">
+        <Attribute>all</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0781078001</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>all</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1021" Author="0" TS_SPT="0" TS_Santeos="1021">
+        <Attribute>Dupont</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Pierre</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>170912</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1022" Author="0" TS_SPT="0" TS_Santeos="1022">
+        <Attribute>Martin</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Roger</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1023" Author="0" TS_SPT="0" TS_Santeos="1023">
+        <Attribute>Lefebvre</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Julien</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>1018</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="0" Author="0" TS_SPT="0" TS_Santeos="0">
+        <Attribute>Willemant</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Amaury</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1024" Author="0" TS_SPT="0" TS_Santeos="1024">
+        <Attribute>KINE-CH0224 </Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>NORBERT</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>170b28</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1025" Author="0" TS_SPT="0" TS_Santeos="1025">
+        <Attribute>SAGE-CH0162</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>CELINE</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>170aef</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1026" Author="0" TS_SPT="0" TS_Santeos="1026">
+        <Attribute>MANIP-CH0111 </Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>PATRICK</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>170b35</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1030" Author="0" TS_SPT="0" TS_Santeos="1030">
+        <Attribute>AGENT-4500002</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Denise</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>7ba44</Attribute>
+        <Attribute>1018</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1032" Author="0" TS_SPT="0" TS_Santeos="1032">
+        <Attribute>MAITRE-4500001</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Patrice</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>7ba40</Attribute>
+        <Attribute>1018</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="4" Author="0" TS_SPT="0" TS_Santeos="4">
+        <Attribute>Quidam</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Quidam</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>5</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1033" Author="0" TS_SPT="0" TS_Santeos="1033">
+        <Attribute>Valideur</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>Gir</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>6</Attribute>
+        <Attribute>1019</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1034" Author="0" TS_SPT="0" TS_Santeos="1034">
+        <Attribute>Kesmarszky</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0781078001</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>Philippe</Attribute>
+        <Attribute>32 rue Aristide Briand</Attribute>
+        <Attribute>Les Mureaux</Attribute>
+        <Attribute>78130</Attribute>
+        <Attribute>01 34 74 01 44</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>philippe.kesmarszky@ardoc.info</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>2deb9c</Attribute>
+        <Attribute>1017</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Role">
+      <Tuple IdGlobal="1017" Author="0" TS_SPT="0" TS_Santeos="1017">
+        <Attribute>medecin</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1018" Author="0" TS_SPT="0" TS_Santeos="1018">
+        <Attribute>referentSocial</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1" Author="0" TS_SPT="0" TS_Santeos="1">
+        <Attribute>patient</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="5" Author="0" TS_SPT="0" TS_Santeos="5">
+        <Attribute>quidam</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1019" Author="0" TS_SPT="0" TS_Santeos="1019">
+        <Attribute>medecinValideurGIR</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Habilitation">
+      <Tuple IdGlobal="1035" Author="0" TS_SPT="0" TS_Santeos="1035">
+        <Attribute>1017</Attribute>
+        <Attribute>1020</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1036" Author="0" TS_SPT="0" TS_Santeos="1036">
+        <Attribute>1018</Attribute>
+        <Attribute>1020</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1037" Author="0" TS_SPT="0" TS_Santeos="1037">
+        <Attribute>1</Attribute>
+        <Attribute>1020</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1038" Author="0" TS_SPT="0" TS_Santeos="1038">
+        <Attribute>1017</Attribute>
+        <Attribute>1021</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1039" Author="0" TS_SPT="0" TS_Santeos="1039">
+        <Attribute>1017</Attribute>
+        <Attribute>1022</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1040" Author="0" TS_SPT="0" TS_Santeos="1040">
+        <Attribute>1018</Attribute>
+        <Attribute>1023</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1041" Author="0" TS_SPT="0" TS_Santeos="1041">
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1042" Author="0" TS_SPT="0" TS_Santeos="1042">
+        <Attribute>1017</Attribute>
+        <Attribute>1024</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1043" Author="0" TS_SPT="0" TS_Santeos="1043">
+        <Attribute>1017</Attribute>
+        <Attribute>1025</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1044" Author="0" TS_SPT="0" TS_Santeos="1044">
+        <Attribute>1017</Attribute>
+        <Attribute>1026</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1048" Author="0" TS_SPT="0" TS_Santeos="1048">
+        <Attribute>1018</Attribute>
+        <Attribute>1030</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1050" Author="0" TS_SPT="0" TS_Santeos="1050">
+        <Attribute>1018</Attribute>
+        <Attribute>1032</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1051" Author="0" TS_SPT="0" TS_Santeos="1051">
+        <Attribute>5</Attribute>
+        <Attribute>4</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1052" Author="0" TS_SPT="0" TS_Santeos="1052">
+        <Attribute>1019</Attribute>
+        <Attribute>1033</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1053" Author="0" TS_SPT="0" TS_Santeos="1053">
+        <Attribute>1018</Attribute>
+        <Attribute>1034</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Formulaire">
+      <Tuple IdGlobal="1001" Author="0" TS_SPT="0" TS_Santeos="1001">
+        <Attribute>Identit\u00E9 du patient</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1002" Author="0" TS_SPT="0" TS_Santeos="1002">
+        <Attribute>Entourage</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1003" Author="0" TS_SPT="0" TS_Santeos="1003">
+        <Attribute>Intervenant</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1004" Author="0" TS_SPT="0" TS_Santeos="1004">
+        <Attribute>Intervenant habilit\u00E9</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1005" Author="0" TS_SPT="0" TS_Santeos="1005">
+        <Attribute>GIR social</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1006" Author="0" TS_SPT="0" TS_Santeos="1006">
+        <Attribute>GIR m\u00E9dical</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1007" Author="0" TS_SPT="0" TS_Santeos="1007">
+        <Attribute>GIR harmonis\u00E9</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1008" Author="0" TS_SPT="0" TS_Santeos="1008">
+        <Attribute>Plan d\'aide</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1009" Author="0" TS_SPT="0" TS_Santeos="1009">
+        <Attribute>Suivi annuel APA</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1010" Author="0" TS_SPT="0" TS_Santeos="1010">
+        <Attribute>Passage d\'un intervenant</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1011" Author="0" TS_SPT="0" TS_Santeos="1011">
+        <Attribute>Nature de l\'aide</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1012" Author="0" TS_SPT="0" TS_Santeos="1012">
+        <Attribute>Fiche de liaison</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1013" Author="0" TS_SPT="0" TS_Santeos="1013">
+        <Attribute>Traitements</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1014" Author="0" TS_SPT="0" TS_Santeos="1014">
+        <Attribute>R\u00E9sum\u00E9 d\'observation</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1015" Author="0" TS_SPT="0" TS_Santeos="1015">
+        <Attribute>Certificat m\u00E9dical APA</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1016" Author="0" TS_SPT="0" TS_Santeos="1016">
+        <Attribute>Plan d\'accompagnement</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Episode">
+      <Tuple IdGlobal="2" Author="0" TS_SPT="0" TS_Santeos="2">
+        <Attribute>noEpisode</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Event">
+      <Tuple IdGlobal="1100" Author="0" TS_SPT="0" TS_Santeos="1100">
+        <Attribute>1001</Attribute>
+        <Attribute>1020</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-05-26</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1101" Author="0" TS_SPT="0" TS_Santeos="1101">
+        <Attribute>1010</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1102" Author="0" TS_SPT="0" TS_Santeos="1102">
+        <Attribute>1010</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1103" Author="0" TS_SPT="0" TS_Santeos="1103">
+        <Attribute>1010</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1104" Author="0" TS_SPT="0" TS_Santeos="1104">
+        <Attribute>1016</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1105" Author="0" TS_SPT="0" TS_Santeos="1105">
+        <Attribute>1011</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1106" Author="0" TS_SPT="0" TS_Santeos="1106">
+        <Attribute>1011</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1107" Author="0" TS_SPT="0" TS_Santeos="1107">
+        <Attribute>1011</Attribute>
+        <Attribute>1021</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>9999-12-31</Attribute>
+        <Attribute>1104</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Comment">
+      <Tuple IdGlobal="3" Author="0" TS_SPT="0" TS_Santeos="3">
+        <Attribute></Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1224" Author="0" TS_SPT="0" TS_Santeos="1224">
+        <Attribute>comp1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1225" Author="0" TS_SPT="0" TS_Santeos="1225">
+        <Attribute>comp2</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1226" Author="0" TS_SPT="0" TS_Santeos="1226">
+        <Attribute>Objet du plan d\'aide</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1227" Author="0" TS_SPT="0" TS_Santeos="1227">
+        <Attribute>R\u00E9\u00E9valuation apr\u00E8s fin du plan</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1228" Author="0" TS_SPT="0" TS_Santeos="1228">
+        <Attribute>Fin du plan d\'accompagnement</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1229" Author="0" TS_SPT="0" TS_Santeos="1229">
+        <Attribute>Nature de l\'aide 1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1230" Author="0" TS_SPT="0" TS_Santeos="1230">
+        <Attribute>Nature de l\'aide 2</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1231" Author="0" TS_SPT="0" TS_Santeos="1231">
+        <Attribute>Nature de l\'aide 3</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Info">
+      <Tuple IdGlobal="1108" Author="0" TS_SPT="0" TS_Santeos="1108">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>17</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1109" Author="0" TS_SPT="0" TS_Santeos="1109">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Willemant</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>18</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1110" Author="0" TS_SPT="0" TS_Santeos="1110">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Maerten</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>19</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1111" Author="0" TS_SPT="0" TS_Santeos="1111">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Amaury</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>4</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>20</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1112" Author="0" TS_SPT="0" TS_Santeos="1112">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>21</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1113" Author="0" TS_SPT="0" TS_Santeos="1113">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1983-06-12</Attribute>
+        <Attribute>6</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>22</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1114" Author="0" TS_SPT="0" TS_Santeos="1114">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>B\u00E9thune</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>7</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>23</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1115" Author="0" TS_SPT="0" TS_Santeos="1115">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>62</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>8</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>24</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1116" Author="0" TS_SPT="0" TS_Santeos="1116">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>France</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>9</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>25</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1117" Author="0" TS_SPT="0" TS_Santeos="1117">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>F</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>10</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>26</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1118" Author="0" TS_SPT="0" TS_Santeos="1118">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>11</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>27</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1119" Author="0" TS_SPT="0" TS_Santeos="1119">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>10</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>12</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>28</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1120" Author="0" TS_SPT="0" TS_Santeos="1120">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>13</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>29</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1121" Author="0" TS_SPT="0" TS_Santeos="1121">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>du quai</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>14</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>30</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1122" Author="0" TS_SPT="0" TS_Santeos="1122">
+        <Attribute>1100</Attribute>
+        <Attribute>1224</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>15</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>31</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1123" Author="0" TS_SPT="0" TS_Santeos="1123">
+        <Attribute>1100</Attribute>
+        <Attribute>1225</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>16</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>32</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1124" Author="0" TS_SPT="0" TS_Santeos="1124">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>59000</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>17</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>33</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1125" Author="0" TS_SPT="0" TS_Santeos="1125">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Lille</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>18</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>34</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1126" Author="0" TS_SPT="0" TS_Santeos="1126">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>19</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>35</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1127" Author="0" TS_SPT="0" TS_Santeos="1127">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>20</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>36</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1128" Author="0" TS_SPT="0" TS_Santeos="1128">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>21</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>37</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1129" Author="0" TS_SPT="0" TS_Santeos="1129">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>22</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>38</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1130" Author="0" TS_SPT="0" TS_Santeos="1130">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>rdc</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>23</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>39</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1131" Author="0" TS_SPT="0" TS_Santeos="1131">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>24</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>40</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1132" Author="0" TS_SPT="0" TS_Santeos="1132">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>25</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>41</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1133" Author="0" TS_SPT="0" TS_Santeos="1133">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>26</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>42</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1134" Author="0" TS_SPT="0" TS_Santeos="1134">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0320304050</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>27</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>43</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1135" Author="0" TS_SPT="0" TS_Santeos="1135">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0686861811</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>28</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>44</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1136" Author="0" TS_SPT="0" TS_Santeos="1136">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>truc</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>29</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>45</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1137" Author="0" TS_SPT="0" TS_Santeos="1137">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>30</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>46</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1138" Author="0" TS_SPT="0" TS_Santeos="1138">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>31</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>47</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1139" Author="0" TS_SPT="0" TS_Santeos="1139">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>32</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>48</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1140" Author="0" TS_SPT="0" TS_Santeos="1140">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>1830662119072</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>33</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>49</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1141" Author="0" TS_SPT="0" TS_Santeos="1141">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>34</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>50</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1142" Author="0" TS_SPT="0" TS_Santeos="1142">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>35</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>51</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1143" Author="0" TS_SPT="0" TS_Santeos="1143">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>36</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>52</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1144" Author="0" TS_SPT="0" TS_Santeos="1144">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>37</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>53</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1145" Author="0" TS_SPT="0" TS_Santeos="1145">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>38</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>54</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1146" Author="0" TS_SPT="0" TS_Santeos="1146">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute></Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>39</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>55</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1147" Author="0" TS_SPT="0" TS_Santeos="1147">
+        <Attribute>1100</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>40</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>56</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1148" Author="0" TS_SPT="0" TS_Santeos="1148">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Julien Lefebvre</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>177</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1149" Author="0" TS_SPT="0" TS_Santeos="1149">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>178</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1150" Author="0" TS_SPT="0" TS_Santeos="1150">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>6</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>179</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1151" Author="0" TS_SPT="0" TS_Santeos="1151">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>10</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>4</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>180</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1152" Author="0" TS_SPT="0" TS_Santeos="1152">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>181</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1153" Author="0" TS_SPT="0" TS_Santeos="1153">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>8</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>184</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1154" Author="0" TS_SPT="0" TS_Santeos="1154">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>11</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>187</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1155" Author="0" TS_SPT="0" TS_Santeos="1155">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>14</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>190</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1156" Author="0" TS_SPT="0" TS_Santeos="1156">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>17</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>193</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1157" Author="0" TS_SPT="0" TS_Santeos="1157">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>20</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>196</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1158" Author="0" TS_SPT="0" TS_Santeos="1158">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>23</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>199</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1159" Author="0" TS_SPT="0" TS_Santeos="1159">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>27</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>298</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1160" Author="0" TS_SPT="0" TS_Santeos="1160">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>28</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>202</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1161" Author="0" TS_SPT="0" TS_Santeos="1161">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>31</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>205</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1162" Author="0" TS_SPT="0" TS_Santeos="1162">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>34</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>208</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1163" Author="0" TS_SPT="0" TS_Santeos="1163">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>37</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>211</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1164" Author="0" TS_SPT="0" TS_Santeos="1164">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>40</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>214</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1165" Author="0" TS_SPT="0" TS_Santeos="1165">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>43</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>217</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1166" Author="0" TS_SPT="0" TS_Santeos="1166">
+        <Attribute>1101</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>46</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>220</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1167" Author="0" TS_SPT="0" TS_Santeos="1167">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Roger Martin</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>177</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1168" Author="0" TS_SPT="0" TS_Santeos="1168">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>178</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1169" Author="0" TS_SPT="0" TS_Santeos="1169">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>181</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1170" Author="0" TS_SPT="0" TS_Santeos="1170">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>8</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>184</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1171" Author="0" TS_SPT="0" TS_Santeos="1171">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>8</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>9</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>185</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1172" Author="0" TS_SPT="0" TS_Santeos="1172">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>15</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>10</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>186</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1173" Author="0" TS_SPT="0" TS_Santeos="1173">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>11</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>187</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1174" Author="0" TS_SPT="0" TS_Santeos="1174">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>14</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>190</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1175" Author="0" TS_SPT="0" TS_Santeos="1175">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>17</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>193</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1176" Author="0" TS_SPT="0" TS_Santeos="1176">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>17</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>18</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>194</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1177" Author="0" TS_SPT="0" TS_Santeos="1177">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>19</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>19</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>195</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1178" Author="0" TS_SPT="0" TS_Santeos="1178">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>20</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>196</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1179" Author="0" TS_SPT="0" TS_Santeos="1179">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>23</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>199</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1180" Author="0" TS_SPT="0" TS_Santeos="1180">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>27</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>298</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1181" Author="0" TS_SPT="0" TS_Santeos="1181">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>28</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>202</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1182" Author="0" TS_SPT="0" TS_Santeos="1182">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>31</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>205</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1183" Author="0" TS_SPT="0" TS_Santeos="1183">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>34</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>208</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1184" Author="0" TS_SPT="0" TS_Santeos="1184">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>37</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>211</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1185" Author="0" TS_SPT="0" TS_Santeos="1185">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>40</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>214</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1186" Author="0" TS_SPT="0" TS_Santeos="1186">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>43</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>217</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1187" Author="0" TS_SPT="0" TS_Santeos="1187">
+        <Attribute>1102</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>46</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>220</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1188" Author="0" TS_SPT="0" TS_Santeos="1188">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>Pierre Dupont</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>177</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1189" Author="0" TS_SPT="0" TS_Santeos="1189">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>178</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1190" Author="0" TS_SPT="0" TS_Santeos="1190">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>181</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1191" Author="0" TS_SPT="0" TS_Santeos="1191">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>8</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>184</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1192" Author="0" TS_SPT="0" TS_Santeos="1192">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>11</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>187</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1193" Author="0" TS_SPT="0" TS_Santeos="1193">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>14</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>190</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1194" Author="0" TS_SPT="0" TS_Santeos="1194">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>17</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>193</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1195" Author="0" TS_SPT="0" TS_Santeos="1195">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>20</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>196</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1196" Author="0" TS_SPT="0" TS_Santeos="1196">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>23</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>199</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1197" Author="0" TS_SPT="0" TS_Santeos="1197">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>26</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>297</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1198" Author="0" TS_SPT="0" TS_Santeos="1198">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>27</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>298</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1199" Author="0" TS_SPT="0" TS_Santeos="1199">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>28</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>202</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1200" Author="0" TS_SPT="0" TS_Santeos="1200">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>31</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>205</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1201" Author="0" TS_SPT="0" TS_Santeos="1201">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>15</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>32</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>206</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1202" Author="0" TS_SPT="0" TS_Santeos="1202">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>16</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>33</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>207</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1203" Author="0" TS_SPT="0" TS_Santeos="1203">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>34</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>208</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1204" Author="0" TS_SPT="0" TS_Santeos="1204">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>37</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>211</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1205" Author="0" TS_SPT="0" TS_Santeos="1205">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>40</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>214</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1206" Author="0" TS_SPT="0" TS_Santeos="1206">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>43</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>217</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1207" Author="0" TS_SPT="0" TS_Santeos="1207">
+        <Attribute>1103</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>46</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>220</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1208" Author="0" TS_SPT="0" TS_Santeos="1208">
+        <Attribute>1104</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2009-09-14</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>299</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1209" Author="0" TS_SPT="0" TS_Santeos="1209">
+        <Attribute>1104</Attribute>
+        <Attribute>1226</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>300</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1210" Author="0" TS_SPT="0" TS_Santeos="1210">
+        <Attribute>1104</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2009-12-14</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>301</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1211" Author="0" TS_SPT="0" TS_Santeos="1211">
+        <Attribute>1104</Attribute>
+        <Attribute>1227</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>4</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>302</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1212" Author="0" TS_SPT="0" TS_Santeos="1212">
+        <Attribute>1104</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2009-12-14</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>288</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1213" Author="0" TS_SPT="0" TS_Santeos="1213">
+        <Attribute>1104</Attribute>
+        <Attribute>1228</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>6</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>303</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1214" Author="0" TS_SPT="0" TS_Santeos="1214">
+        <Attribute>1104</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>7</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>304</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1215" Author="0" TS_SPT="0" TS_Santeos="1215">
+        <Attribute>1105</Attribute>
+        <Attribute>1229</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>305</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1216" Author="0" TS_SPT="0" TS_Santeos="1216">
+        <Attribute>1105</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>304</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1217" Author="0" TS_SPT="0" TS_Santeos="1217">
+        <Attribute>1105</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>306</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1218" Author="0" TS_SPT="0" TS_Santeos="1218">
+        <Attribute>1106</Attribute>
+        <Attribute>1230</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>305</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1219" Author="0" TS_SPT="0" TS_Santeos="1219">
+        <Attribute>1106</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>304</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1220" Author="0" TS_SPT="0" TS_Santeos="1220">
+        <Attribute>1106</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>306</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1221" Author="0" TS_SPT="0" TS_Santeos="1221">
+        <Attribute>1107</Attribute>
+        <Attribute>1231</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>305</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1222" Author="0" TS_SPT="0" TS_Santeos="1222">
+        <Attribute>1107</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>304</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1223" Author="0" TS_SPT="0" TS_Santeos="1223">
+        <Attribute>1107</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>[NULL]</Attribute>
+        <Attribute>3</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>306</Attribute>
+      </Tuple>
+    </Table>
+    <Table name="Matrice_DMSP" />
+    <Table name="Matrice_Patient">
+      <Tuple IdGlobal="1054" Author="0" TS_SPT="0" TS_Santeos="1054">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1055" Author="0" TS_SPT="0" TS_Santeos="1055">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1056" Author="0" TS_SPT="0" TS_Santeos="1056">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1057" Author="0" TS_SPT="0" TS_Santeos="1057">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>85</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1058" Author="0" TS_SPT="0" TS_Santeos="1058">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>85</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1059" Author="0" TS_SPT="0" TS_Santeos="1059">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>85</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1060" Author="0" TS_SPT="0" TS_Santeos="1060">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1061" Author="0" TS_SPT="0" TS_Santeos="1061">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1062" Author="0" TS_SPT="0" TS_Santeos="1062">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1063" Author="0" TS_SPT="0" TS_Santeos="1063">
+        <Attribute>1006</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1064" Author="0" TS_SPT="0" TS_Santeos="1064">
+        <Attribute>1015</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1065" Author="0" TS_SPT="0" TS_Santeos="1065">
+        <Attribute>1015</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1066" Author="0" TS_SPT="0" TS_Santeos="1066">
+        <Attribute>1014</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1068" Author="0" TS_SPT="0" TS_Santeos="1068">
+        <Attribute>1013</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1018</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1070" Author="0" TS_SPT="0" TS_Santeos="1070">
+        <Attribute>1005</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1072" Author="0" TS_SPT="0" TS_Santeos="1072">
+        <Attribute>1008</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1074" Author="0" TS_SPT="0" TS_Santeos="1074">
+        <Attribute>1009</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1017</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1076" Author="0" TS_SPT="0" TS_Santeos="1076">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1077" Author="0" TS_SPT="0" TS_Santeos="1077">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1078" Author="0" TS_SPT="0" TS_Santeos="1078">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1079" Author="0" TS_SPT="0" TS_Santeos="1079">
+        <Attribute>1001</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1080" Author="0" TS_SPT="0" TS_Santeos="1080">
+        <Attribute>1002</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1081" Author="0" TS_SPT="0" TS_Santeos="1081">
+        <Attribute>1003</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1082" Author="0" TS_SPT="0" TS_Santeos="1082">
+        <Attribute>1004</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1083" Author="0" TS_SPT="0" TS_Santeos="1083">
+        <Attribute>1005</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1084" Author="0" TS_SPT="0" TS_Santeos="1084">
+        <Attribute>1006</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1085" Author="0" TS_SPT="0" TS_Santeos="1085">
+        <Attribute>1007</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1086" Author="0" TS_SPT="0" TS_Santeos="1086">
+        <Attribute>1008</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1087" Author="0" TS_SPT="0" TS_Santeos="1087">
+        <Attribute>1009</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1088" Author="0" TS_SPT="0" TS_Santeos="1088">
+        <Attribute>1010</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1089" Author="0" TS_SPT="0" TS_Santeos="1089">
+        <Attribute>1011</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1090" Author="0" TS_SPT="0" TS_Santeos="1090">
+        <Attribute>1013</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1091" Author="0" TS_SPT="0" TS_Santeos="1091">
+        <Attribute>1014</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1092" Author="0" TS_SPT="0" TS_Santeos="1092">
+        <Attribute>1015</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1093" Author="0" TS_SPT="0" TS_Santeos="1093">
+        <Attribute>1016</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>5</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1094" Author="0" TS_SPT="0" TS_Santeos="1094">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>0</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1095" Author="0" TS_SPT="0" TS_Santeos="1095">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>85</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1096" Author="0" TS_SPT="0" TS_Santeos="1096">
+        <Attribute>[NULL]</Attribute>
+        <Attribute>2</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>170</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1097" Author="0" TS_SPT="0" TS_Santeos="1097">
+        <Attribute>1005</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>64</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1098" Author="0" TS_SPT="0" TS_Santeos="1098">
+        <Attribute>1008</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+      <Tuple IdGlobal="1099" Author="0" TS_SPT="0" TS_Santeos="1099">
+        <Attribute>1009</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>1019</Attribute>
+        <Attribute>1</Attribute>
+        <Attribute>0</Attribute>
+      </Tuple>
+    </Table>
+  </MAJ>
+  <DELETE />
+</Delta>

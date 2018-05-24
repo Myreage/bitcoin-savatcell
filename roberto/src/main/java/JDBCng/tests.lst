@@ -1,0 +1,89 @@
+test.jdbc.INRIA_0
+test.jdbc.INRIA_22_Recovery
+test.jdbc.INRIA_24_DBStatus
+test.jdbc.INRIA_1
+test.jdbc.INRIA_2
+test.jdbc.INRIA_3
+test.jdbc.INRIA_4
+test.jdbc.INRIA_5
+test.jdbc.INRIA_6
+test.jdbc.INRIA_7
+test.jdbc.INRIA_8
+test.jdbc.INRIA_9
+test.jdbc.INRIA_10
+test.jdbc.INRIA_11
+test.jdbc.INRIA_12
+# TODO: performance test - have to modify diff to detect the real failure when it occurs
+#	test.jdbc.INRIA_13
+test.jdbc.INRIA_14
+test.jdbc.INRIA_15
+test.jdbc.INRIA_16
+test.jdbc.INRIA_17
+test.jdbc.INRIA_18
+test.jdbc.INRIA_19
+org.inria.dmsp.test.TEST_1
+org.inria.dmsp.test.TEST_string_column
+org.inria.dmsp.test.TEST_blob
+org.inria.dmsp.test.TEST_1auto
+org.inria.dmsp.test.TEST_2
+org.inria.dmsp.test.TEST_3
+org.inria.dmsp.test.TEST_4
+org.inria.dmsp.test.TEST_4auto
+# TODO: performance tests - have to modify diff to detect the real failure when it occurs
+#	org.inria.dmsp.test.TEST_5
+org.inria.dmsp.test.TEST_BenchGenerator_shaoyi
+org.inria.dmsp.test.TEST_BUGAC
+org.inria.dmsp.test.TEST_BUGCI
+org.inria.dmsp.test.TEST_BUGdelete
+org.inria.dmsp.test.TEST_BUGrollback
+org.inria.dmsp.test.TEST_BUGrollbackdelete
+org.inria.dmsp.test.TEST_BUGrollbackupdate
+org.inria.dmsp.test.TEST_BUGupdate
+org.inria.dmsp.test.TEST_checktimestamp
+org.inria.dmsp.test.TEST_DeltaInitial
+org.inria.dmsp.test.TEST_EMPTY
+org.inria.dmsp.test.TEST_EP_Synchro_BUG_OP
+org.inria.dmsp.test.TEST_EP_Synchro_lionel
+org.inria.dmsp.test.TEST_EP_Synchro_lionelauto
+org.inria.dmsp.test.TEST_EP_Synchro_shaoyi
+org.inria.dmsp.test.TEST_EP_Synchro_shaoyiauto
+org.inria.dmsp.test.TEST_EP_Synchro_yanli
+org.inria.dmsp.test.TEST_EP_Synchro_yanliauto
+org.inria.dmsp.test.TEST_EP_UI_
+org.inria.dmsp.test.TEST_EP_UI_auto
+org.inria.dmsp.test.TEST_EP_UI_lionel
+org.inria.dmsp.test.TEST_EP_UI_lionelauto
+org.inria.dmsp.test.TEST_EP_UI_luc
+org.inria.dmsp.test.TEST_EP_UI_lucauto
+org.inria.dmsp.test.TEST_EP_UI_marcel
+org.inria.dmsp.test.TEST_EP_UI_marcelauto
+org.inria.dmsp.test.TEST_EP_UI_nicolas
+org.inria.dmsp.test.TEST_EP_UI_nicolasauto
+org.inria.dmsp.test.TEST_EP_UI_shaoyi
+org.inria.dmsp.test.TEST_EP_UI_shaoyiauto
+org.inria.dmsp.test.TEST_EP_UI_tristan
+org.inria.dmsp.test.TEST_EP_UI_tristanauto
+org.inria.dmsp.test.TEST_EP_UI_yanli
+org.inria.dmsp.test.TEST_EP_UI_yanliauto
+org.inria.dmsp.test.TEST_FicheLiaisonEntourage
+org.inria.dmsp.test.TEST_FicheLiaisonEntourageauto
+org.inria.dmsp.test.TEST_LoadBigDB
+org.inria.dmsp.test.TEST_LookupDeltaInitial
+org.inria.dmsp.test.TEST_modifytimestamp
+# TODO: performance tests - have to modify diff to detect the real failure when it occurs
+#	org.inria.dmsp.test.TEST_new_performance
+#	org.inria.dmsp.test.TEST_performance
+#	org.inria.dmsp.test.TEST_performanceauto
+#	org.inria.dmsp.test.TEST_opnostacknorunstack
+#	org.inria.dmsp.test.TEST_opstackunstack
+#	org.inria.dmsp.test.TEST_perf_dummy
+org.inria.dmsp.test.TEST_returnDELETE
+org.inria.dmsp.test.TEST_returnINSERT
+org.inria.dmsp.test.TEST_returnUPDATE
+org.inria.dmsp.test.TEST_corruptUPDATE
+org.inria.dmsp.test.TEST_BUGnandlogs
+org.inria.dmsp.test.TEST_BUGplanacc
+org.inria.dmsp.test.TEST_UpdateHabilitations
+org.inria.dmsp.test.TEST_rollback
+org.inria.dmsp.test.TEST_NAND_Bug_Rollback
+org.inria.dmsp.test.TEST_EP_Synchro_BUG_OPauto

@@ -1,0 +1,217 @@
+Attach driver to communication device
+Communication device opened.
+Communication device set up.
+Initializing DBMS... 
+Done. 
+Connecting to DB: jdbc:inria:smis
+Done
+Loading schema... 
+Schema loaded, size: 2912
+// TS_SPT currently = 1
+// Patient id = 404
+Data generated
+// Insertion dans la table ROLE 
+// Insertion dans la table USERDMSP 
+// Insertion dans la table HABILITATION 
+// Insertion dans la table FORMULAIRE 
+// Insertion dans la table EPISODE 
+// Insertion dans la table EVENT 
+// Insertion dans la table COMMENT 
+// Insertion dans la table INFO 
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+reach EndOfFile
+
+========== ALL INFOS END AFTER COMMIT======== 
+========== FIRST UPDATE / DELETE BEGIN ======== 
+Deleting some data in the DBMS
+-- TRY TO DELETE INFO with idG=67
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=69
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=71
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=73
+--> delete return: row(s) deleted = 1.
+Updating some data in the DBMS
+-- TRY TO UPDATE INFO with idG=75
+--> update return: row(s) updated = 1.
+-- TRY TO UPDATE INFO with idG=77
+--> update return: row(s) updated = 1.
+-- TRY TO UPDATE INFO with idG=79
+--> update return: row(s) updated = 1.
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+2	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+3	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+4	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+5	75	0	1	0	43	64	NEW INFO1	1010101	1111-11-01	0	888	9
+6	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+7	77	0	1	0	45	66	NEW INFO2	2020202	1212-12-02	2	889	11
+8	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+9	79	0	1	0	15	65	NEW INFO3	1212121	1313-03-03	1	890	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	2	2	2	1	46	1
+2	4	1	1	1	26	3
+3	6	2	1	1	7	1
+4	8	1	3	1	42	2
+5	9	1	1	1	30	1
+6	10	1	3	1	42	1
+7	11	3	3	1	32	3
+8	12	3	3	1	32	2
+9	13	3	2	1	2	2
+reach EndOfFile
+
+========== ALL INFOS END BEFORE ROLLBACK======== 
+=========== ROLLBACK DONE. 
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+reach EndOfFile
+
+========== SECOND UPDATE / DELETE BEGIN ======== 
+Deleting again the same data in the DBMS
+-- TRY TO DELETE INFO with idG=67
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=69
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=71
+--> delete return: row(s) deleted = 1.
+-- TRY TO DELETE INFO with idG=73
+--> delete return: row(s) deleted = 1.
+Updating again the same data in the DBMS
+-- TRY TO UPDATE INFO with idG=75
+--> update return: row(s) updated = 1.
+-- TRY TO UPDATE INFO with idG=77
+--> update return: row(s) updated = 1.
+-- TRY TO UPDATE INFO with idG=79
+--> update return: row(s) updated = 1.
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+2	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+3	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+4	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+5	75	0	1	0	43	64	NEW INFO1	1010101	1111-11-01	0	888	9
+6	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+7	77	0	1	0	45	66	NEW INFO2	2020202	1212-12-02	2	889	11
+8	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+9	79	0	1	0	15	65	NEW INFO3	1212121	1313-03-03	1	890	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	2	2	2	1	46	1
+2	4	1	1	1	26	3
+3	6	2	1	1	7	1
+4	8	1	3	1	42	2
+5	9	1	1	1	30	1
+6	10	1	3	1	42	1
+7	11	3	3	1	32	3
+8	12	3	3	1	32	2
+9	13	3	2	1	2	2
+reach EndOfFile
+
+========== ALL INFOS END BEFORE ROLLBACK======== 
+=========== ROLLBACK DONE. 
+EP_INFO_SELECT_STAR
+Row	IdGlobal	Author	TSSPT	TSSanteos	IdEvent	IdComment	ValChar	ValNum	ValDate	Position	Filtre	IdConcept	
+1	67	0	0	0	39	66	bb	1	2001-03-02	1	1	1
+2	68	0	0	0	59	64	cc	2	2000-04-03	2	0	2
+3	69	0	0	0	43	66	dd	3	2001-05-04	0	1	3
+4	70	0	0	0	39	66	ee	4	2000-06-05	1	0	4
+5	71	0	0	0	54	66	ff	5	2001-07-06	2	1	5
+6	72	0	0	0	20	64	gg	6	2000-08-07	0	0	6
+7	73	0	0	0	46	66	hh	7	2001-09-08	1	1	7
+8	74	0	0	0	55	65	ii	8	2000-10-09	2	0	8
+9	75	0	0	0	43	64	jj	9	2001-11-10	0	1	9
+10	76	0	0	0	55	64	kk	10	2000-12-11	1	0	10
+11	77	0	0	0	45	66	ll	11	2002-01-12	2	1	11
+12	78	0	0	0	45	65	mm	12	2000-02-13	0	0	12
+13	79	0	0	0	15	65	nn	13	2001-03-14	1	1	13
+reach EndOfFile
+
+-----/////// EP_SKTINFO_SELECT_STAR /////////---------
+Row	PosInfo	PosForm	PosUser	PosEpisode	PosEvent	PosComment	
+1	1	1	1	1	26	3
+2	2	2	2	1	46	1
+3	3	1	1	1	30	3
+4	4	1	1	1	26	3
+5	5	1	1	1	41	3
+6	6	2	1	1	7	1
+7	7	2	1	1	33	3
+8	8	1	3	1	42	2
+9	9	1	1	1	30	1
+10	10	1	3	1	42	1
+11	11	3	3	1	32	3
+12	12	3	3	1	32	2
+13	13	3	2	1	2	2
+reach EndOfFile
+
+Detach driver from communication device
+Save DBMS
+Desinstall the MetaData of the DBMS embedded in the card
+Closing DB connection... Done.
