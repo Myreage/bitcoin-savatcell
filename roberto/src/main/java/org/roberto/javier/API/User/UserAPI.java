@@ -1,4 +1,4 @@
-package org.roberto.API;
+package org.roberto.API.User;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,10 +10,10 @@ import io.swagger.annotations.*;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("user/myresource")
 @Api(value = "My Sample Resource")
 @Produces(MediaType.APPLICATION_JSON)
-public class MyResource {
+public class UserAPI {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
