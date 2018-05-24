@@ -1,0 +1,30 @@
+<!doctype html>
+<title>Olà Siñor</title>
+
+<h1>BIENVENUE SUR ROBERTO MOÑEWAL</h1>
+
+Balance : {{balance}} B 
+<br>
+Current address : {{current_address}}
+<br>
+<br>
+
+<form action="send" method="post">
+    New transaction
+    <input name="address" type="text" placeholder="address"></input>
+    <input name="amount" type="text" placeholder="amount"></input>
+    <input type="submit"></input>
+</form>
+
+<br>
+<br>
+<form action="getkey" method="post">
+    Get key
+    <input name="address" type="text" placeholder="address"></input>    
+    <input type="submit"></input>
+</form>
+<br>
+<br>
+<a href="/backup">Backup Wallet</a> |
+<a href="/downloadba">Download balance/address table</a>
+

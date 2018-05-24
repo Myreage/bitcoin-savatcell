@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1f1023-ecb5-4828-9b16-9ef77e65baa7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/params.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/params.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,9 +18,10 @@
       <file leaf-file-name="Core.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+            <state relative-caret-position="-363">
+              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#2549#2902#0" expanded="true" />
                 <element signature="e#2901#2902#0" expanded="true" />
                 <element signature="e#2953#3189#0" expanded="true" />
@@ -217,12 +209,20 @@
       <workItem from="1525102757183" duration="242000" />
       <workItem from="1526303699622" duration="6778000" />
       <workItem from="1526916998660" duration="1867000" />
-      <workItem from="1527099626160" duration="9506000" />
+      <workItem from="1527099626160" duration="10349000" />
     </task>
+    <task id="LOCAL-00001" summary="lalala bit">
+      <created>1527112911670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527112911671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18393000" />
+    <option name="totallyTimeSpent" value="19236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -238,7 +238,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8733528" visible="true" weight="0.09354839" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8733528" weight="0.09354839" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -264,12 +264,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lalala bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="lalala bit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="91" lean-forward="true" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="91" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2549#2902#0" expanded="true" />
             <element signature="e#2901#2902#0" expanded="true" />
             <element signature="e#2953#3189#0" expanded="true" />
@@ -289,6 +294,7 @@
         <state relative-caret-position="585">
           <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="89" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2549#2902#0" expanded="true" />
             <element signature="e#2901#2902#0" expanded="true" />
             <element signature="e#2953#3189#0" expanded="true" />
@@ -326,9 +332,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        <state relative-caret-position="-363">
+          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2549#2902#0" expanded="true" />
             <element signature="e#2901#2902#0" expanded="true" />
             <element signature="e#2953#3189#0" expanded="true" />
