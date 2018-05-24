@@ -27,8 +27,12 @@ def getkey():
     #call API        
     return redirect(url_for('roberto'))
 
-@app.route('/')
+@app.route('/roberto')
 def roberto():
     balance = 0.55 #from API
     current_address = "dzeg58ch0xxcd8651fet8145xsxae54fe51ffy65" #from API
     return render_template('roberto.html',balance=balance, current_address=current_address)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
