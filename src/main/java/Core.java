@@ -1,3 +1,4 @@
+import com.sun.xml.internal.bind.v2.TODO;
 import org.bitcoinj.core.*;
 import org.bitcoinj.kits.WalletAppKit;
 import org.bitcoinj.params.RegTestParams;
@@ -57,7 +58,14 @@ public class Core {
             public void onCoinsReceived(Wallet wallet, Transaction tx, Coin prevBalance, Coin newBalance) {
                 System.out.println("-----> coins resceived: " + tx.getHashAsString());
                 System.out.println("received: " + tx.getValue(wallet));
-                System.out.println(wallet.getBalance(Wallet.BalanceType.ESTIMATED).toFriendlyString());
+
+                /* TODO
+                send to api :
+                tx.getHashAsString();
+                tx.getValue(wallet);
+                */
+
+                //System.out.println(wallet.getBalance(Wallet.BalanceType.ESTIMATED).toFriendlyString());
 
             }
         });
@@ -66,6 +74,12 @@ public class Core {
             @Override
             public void onCoinsSent(Wallet wallet, Transaction tx, Coin prevBalance, Coin newBalance) {
                 System.out.println("coins sent");
+
+                /* TODO
+                send to api :
+                tx.getHashAsString();
+                tx.getValue(wallet);
+                */
             }
         });
 
