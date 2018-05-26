@@ -59,8 +59,8 @@ CREATE TABLE Address
 CREATE TABLE Transaction
 (
 	idGlobal numeric PRIMARY KEY,
-	address char(128),
-	to char(128),
+	address char(256),
+	to char(256),
 	amount numeric,
 	d date
 )

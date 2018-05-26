@@ -46,7 +46,7 @@ public class PlugDB extends Tools {
 		java.sql.PreparedStatement ps;
 		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_WALLET_SELECT);
 		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet) ps.executeQuery();
-		while (rs.next()) {
+		while(rs.next()) {
 			int idGlobal= rs.getInt(1);
 			Blob b = rs.getBlob(2);
 			byte[] wallet = b.getBytes(1, (int)b.length());
@@ -57,12 +57,12 @@ public class PlugDB extends Tools {
 		return ret;
 	}
 
-	public void updateWallet(int idGlobal, byte[] wallet) throws Exception {
+	public void updateWallet(Wallet w) throws Exception {
 		java.sql.PreparedStatement ps;
 
 		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_WALLET_UPDATE);
-		ps.setBlob(1, new ByteArrayInputStream(wallet));
-		ps.setInt(2, idGlobal);
+		ps.setBlob(1, new ByteArrayInputStream(w.wallet));
+		ps.setInt(2, w.idGlobal);
 		ps.executeUpdate();
 	}
 
@@ -74,19 +74,19 @@ public class PlugDB extends Tools {
 		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet) ps.executeQuery();
 		while (rs.next()) {
 			int idGlobal= rs.getInt(1);
-			int idAddress = rs.getInt(2);
+			String taddress = rs.getString(2);
 			String to = rs.getString(3);
 			int amount = rs.getInt(4);
 			Date date = rs.getDate(5);
 			
-			Transaction t = new Transaction(idGlobal, idAddress, to, amount, date);
+			Transaction t = new Transaction(idGlobal, taddress, to, amount, date);
 			ret.add(t);
 		}
 
 		return ret;
 	}
 
-	public void addTransaction(String address, String to, int amount, Date date) throws Exception {
+	public void addTransaction(Transaction t) throws Exception {
 		java.sql.PreparedStatement ps;
 
 		/* TODO : meilleure méthode pour l'auto increment de l'id */
@@ -102,14 +102,14 @@ public class PlugDB extends Tools {
 
 		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_TRANSACTION_INSERT);
 		ps.setInt(1, max);
-		ps.setString(2, address);
-		ps.setString(3, to);
-		ps.setInt(4, amount);
-		ps.setDate(5, (java.sql.Date)date);
+		ps.setString(2, t.address);
+		ps.setString(3, t.to);
+		ps.setInt(4, t.amount);
+		ps.setDate(5, (java.sql.Date)t.date);
 		ps.executeUpdate();
 	}
 
-	public void addAddress(String address, int balance, int idWallet) throws Exception {
+	public void addAddress(Address a) throws Exception {
 		java.sql.PreparedStatement ps;
 
 		/* TODO : meilleure méthode pour l'auto increment de l'id */
@@ -125,9 +125,9 @@ public class PlugDB extends Tools {
 
 		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_ADDRESS_INSERT);
 		ps.setInt(1, max);
-		ps.setString(2, address);
-		ps.setInt(3, balance);
-		ps.setInt(4, idWallet);
+		ps.setString(2, a.address);
+		ps.setInt(3, a.balance);
+		ps.setInt(4, a.idWallet);
 		ps.executeUpdate();
 	}
 
