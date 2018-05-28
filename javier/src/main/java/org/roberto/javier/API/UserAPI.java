@@ -13,9 +13,11 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Context;
 import java.util.HashSet;
 import java.util.UUID;
 import java.util.List;
+import javax.servlet.ServletContext;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -25,11 +27,14 @@ import io.swagger.annotations.*;
 @Api(value = "User API")
 @Path("/user")
 public class UserAPI {
+    @Context
+    private ServletContext context;
+
     private HashSet<String> tokens = new HashSet<String>();
     private PlugDB pdb;
 
     public UserAPI() throws Exception {
-        pdb = new PlugDB("ttyACM0");
+        pdb = (PlugDB)context.getAttribute("pdb");
     }
 
     private boolean isAuthenticated(String token) throws Exception {

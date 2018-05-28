@@ -12,6 +12,8 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Context;
+import javax.servlet.ServletContext;
 import java.util.HashSet;
 
 import io.swagger.annotations.*;
@@ -19,11 +21,14 @@ import io.swagger.annotations.*;
 @Api(value = "Walter API")
 @Path("/walter")
 public class WalterAPI {
+    @Context
+    private ServletContext context;
+
     private HashSet<String> tokens = new HashSet<String>();
     private PlugDB pdb;
 
     public WalterAPI() throws Exception {
-        pdb = new PlugDB("ttyACM0");
+        pdb = (PlugDB)context.getAttribute("pdb");
     }
 
     private boolean isAuthenticated(String token) throws Exception {
@@ -78,6 +83,16 @@ public class WalterAPI {
 
         w.idGlobal = id;
         pdb.updateWallet(w);
+
+        return Response.ok().build();
+    }
+
+    @Path("/initdb")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    @GET
+    public Response initDB() throws Exception {
+        pdb.initDB();
 
         return Response.ok().build();
     }

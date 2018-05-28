@@ -31,5 +31,8 @@ dependencies {
 	compile 'org.bitcoinj:bitcoinj-core:0.14.7'
     compile "org.slf4j:slf4j-api:1.6.1"
     compile "org.slf4j:slf4j-simple:1.6.1"
+    compile group: 'javax.ejb', name: 'javax.ejb-api', version: '3.2'
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 }

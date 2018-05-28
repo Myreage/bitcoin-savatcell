@@ -21,9 +21,22 @@ public class PlugDB extends Tools {
 
 		// connect without authentication
 		super.openConnection(dbmsHost, null);
-		// load the DB schema
-		String schema = QEP.META;
+	}
 
+	/* Do not forget to call this once the program terminated */
+	@Override protected void finalize() throws Throwable {
+		// reset the token and shutdown PlugDB:
+		super.Shutdown_DBMS();
+		out.close();
+
+		super.finalize();
+	}
+
+	public void initDB() throws Exception {
+		super.Desinstall_DBMS_MetaData();
+
+		// load the DB schema
+		String schema = Schema.META;
 		// load the DB schema
 		super.Install_DBMS_MetaData(schema.getBytes(), 0);
 					
@@ -31,16 +44,29 @@ public class PlugDB extends Tools {
 		Class<?>[] executionPlans = new Class[] { QEP.class };
 		QEPng.loadExecutionPlans(QEP_IDs.class, executionPlans);
 		QEPng.installExecutionPlans(this.db);
-	}
 
-	/* Do not forget to call this once the program terminated */
-	@Override protected void finalize() throws Throwable {
-		// reset the token and shutdown PlugDB:
-		super.Desinstall_DBMS_MetaData();
-		super.Shutdown_DBMS();
-		out.close();
+		// Ajout d'un wallet
+		java.sql.PreparedStatement ps;
+		/* ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_WALLET_INSERT);
+		ps.setInt(1, 0);
+		ps.setBlob(1, new ByteArrayInputStream("cc sava".getBytes()));
+		ps.executeUpdate(); */
 
-		super.finalize();
+		// Ajout d'un utilisateur
+		MessageDigest md = MessageDigest.getInstance("SHA-256");
+		md.update("ma tÊte quand÷".getBytes());
+		byte[] bytes = md.digest("test".getBytes());
+
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < bytes.length; i++) {
+			sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+		}
+		String generatedPassword = sb.toString();
+
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_USER_INSERT);
+		ps.setString(1, "test");
+		ps.setString(2, generatedPassword);
+		ps.executeUpdate();
 	}
 
 	public List<Wallet> getWallets() throws Exception {

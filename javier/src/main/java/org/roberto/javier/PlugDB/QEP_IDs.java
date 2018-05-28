@@ -10,9 +10,11 @@ public class QEP_IDs {
 	
 	/* Application QEP ids */
 	public static class EP_Javier {
-		public static final int EP_WALLET_SELECT = EP_QEP.FIRST_FREE_QEP_ID + 1; // Application QEP start id 
+		public static final int EP_WALLET_INSERT = EP_QEP.FIRST_FREE_QEP_ID + 1; // Application QEP start id 
+		public static final int EP_WALLET_SELECT = EP_WALLET_INSERT + 1;
 		public static final int EP_WALLET_UPDATE = EP_WALLET_SELECT + 1;
-		public static final int EP_USER_SELECT = EP_WALLET_UPDATE + 1;
+		public static final int EP_USER_INSERT = EP_WALLET_UPDATE + 1;
+		public static final int EP_USER_SELECT = EP_USER_INSERT + 1;
 		public static final int EP_WALTER_SELECT = EP_USER_SELECT + 1;
 		public static final int EP_WALTER_DELETE = EP_WALTER_SELECT + 1;
 		public static final int EP_SESSION_SELECT = EP_WALTER_DELETE + 1;

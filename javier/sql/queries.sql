@@ -1,3 +1,6 @@
+--public static String EP_WALLET_INSERT =
+INSERT INTO Wallet VALUES (?,?)
+/ 
 --public static String EP_WALLET_SELECT =
 SELECT idGlobal, wallet FROM Wallet
 / 
@@ -6,6 +9,9 @@ UPDATE Wallet SET wallet=? WHERE idGlobal=?
 / 
 --public static String EP_USER_SELECT = 
 SELECT idGlobal FROM User WHERE login=? AND passHash=?
+/
+--public static String EP_USER_INSERT = 
+INSERT INTO User VALUES (?,?,?)
 /
 --public static String EP_WALTER_SELECT = 
 SELECT idGlobal, expires FROM Walter WHERE token=?
