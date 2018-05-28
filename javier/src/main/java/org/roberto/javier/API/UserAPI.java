@@ -2,6 +2,7 @@ package org.roberto.javier.API;
 
 import org.roberto.javier.PlugDB.PlugDB;
 import org.roberto.javier.PlugDB.types.*;
+import org.roberto.javier.API.types.*;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -48,8 +49,8 @@ public class UserAPI {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     @POST
-    public Response postLogin(String login, String pass) throws Exception {
-        int id = pdb.userLogin(login, pass);
+    public Response postLogin(LoginContainer lc) throws Exception {
+        int id = pdb.userLogin(lc.login, lc.pass);
 
         if(id < 0) {
             return Response.status(403).build();
