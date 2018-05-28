@@ -1,4 +1,12 @@
+import com.google.common.net.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
 import com.sun.xml.internal.bind.v2.TODO;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.bitcoinj.core.*;
 import org.bitcoinj.kits.WalletAppKit;
 import org.bitcoinj.params.RegTestParams;
@@ -14,10 +22,18 @@ import org.bitcoinj.wallet.listeners.WalletCoinsSentEventListener;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
 import org.bitcoinj.core.listeners.TransactionConfidenceEventListener;
+
+import static com.google.common.base.Predicates.equalTo;
+
 
 /**
  * The following example shows how to use the by bitcoinj provided WalletAppKit.
@@ -26,6 +42,9 @@ import org.bitcoinj.core.listeners.TransactionConfidenceEventListener;
  * In this example we also define a WalletEventListener class with implementors that are called when the wallet changes (for example sending/receiving money)
  */
 public class Core {
+
+
+
 
 
     public static void main(String[] args) {
@@ -53,19 +72,32 @@ public class Core {
         kit.startAsync();
         kit.awaitRunning();
 
+
+
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet wallet, Transaction tx, Coin prevBalance, Coin newBalance) {
-                System.out.println("-----> coins resceived: " + tx.getHashAsString());
+                System.out.println("On address : " + wallet.currentReceiveAddress());
+                System.out.println("-----> coins resceived from: " + tx.getHashAsString());
                 System.out.println("received: " + tx.getValue(wallet));
 
-                /* TODO
-                send to api :
-                tx.getHashAsString();
-                tx.getValue(wallet);
-                */
+                // HTTP POST
+                com.squareup.okhttp.MediaType JSON =
+                        com.squareup.okhttp.MediaType.parse("application/json; charset=utf-8");
+                Date date = new Date();
+                String json = "{\"to\": " + wallet.currentReceiveAddress() +
+                        ", \"address\": " +  tx.getHashAsString() +
+                        ", \"amount\": " + tx.getValue(wallet) +
+                        ", \"date\": " +  date  + " }";
 
-                //System.out.println(wallet.getBalance(Wallet.BalanceType.ESTIMATED).toFriendlyString());
+                RequestBody body = RequestBody.create(JSON, json);
+                OkHttpClient client = new OkHttpClient();
+                Request request  = new Request.Builder()
+                        .url("http://127.0.0.1/javier/api/walter/transaction")
+                        .post(body)
+                        .build();
+
+                System.out.println("Request successfully sent to Javier");
 
             }
         });
