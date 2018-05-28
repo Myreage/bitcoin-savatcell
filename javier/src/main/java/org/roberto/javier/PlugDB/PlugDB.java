@@ -8,7 +8,7 @@ import test.jdbc.Tools;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.ByteArrayInputStream;
-import java.util.Base64;
+import java.security.MessageDigest;
 import java.util.Date;
 
 
@@ -34,11 +34,13 @@ public class PlugDB extends Tools {
 	}
 
 	/* Do not forget to call this once the program terminated */
-	public void close() throws Exception {
+	@Override protected void finalize() throws Throwable {
 		// reset the token and shutdown PlugDB:
 		super.Desinstall_DBMS_MetaData();
 		super.Shutdown_DBMS();
 		out.close();
+
+		super.finalize();
 	}
 
 	public List<Wallet> getWallets() throws Exception {
@@ -131,6 +133,24 @@ public class PlugDB extends Tools {
 		ps.executeUpdate();
 	}
 
+	public List<Address> getAddresses(int idWallet) throws Exception {
+		List<Address> ret = new ArrayList<Address>();
+		java.sql.PreparedStatement ps;
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_ADDRESS_SELECT);
+		ps.setInt(1, idWallet);
+		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet)ps.executeQuery();
+		while (rs.next()) {
+			int idGlobal= rs.getInt(1);
+			String address = rs.getString(2);
+			int balance = rs.getInt(3);
+			
+			Address a = new Address(idGlobal, address, balance, idWallet);
+			ret.add(a);
+		}
+
+		return ret;
+	}
+
 	public void deleteAddress(String address) throws Exception {
 		java.sql.PreparedStatement ps;
 
@@ -139,21 +159,53 @@ public class PlugDB extends Tools {
 		ps.executeUpdate();
 	}
 
-	public boolean loginUser(String login, String pass) throws Exception {
-		String passHash = Base64.getEncoder().encode(pass.getBytes()).toString();
+	public void userSessionInsert(int userId, Date expires, String token) throws Exception {
 		java.sql.PreparedStatement ps;
 
-		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_USER_SELECT);
-		ps.setString(1, login.toLowerCase());
-		ps.setString(2, passHash);
-		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet)ps.executeQuery();
+		/* TODO : meilleure méthode pour l'auto increment de l'id */
+		int max = 0;
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_SESSION_SELECT_ALL);
+		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet) ps.executeQuery();
+		while (rs.next()) {
+			int id = rs.getInt(1);
+			
+			max = (id>max)?id:max;
+		}
+		max++;
 
-		/* TODO : generate session token */
-
-		return rs.next();
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_SESSION_INSERT);
+		ps.setInt(1, max);
+		ps.setString(2, token);
+		ps.setInt(3, userId);
+		ps.setDate(4, (java.sql.Date)expires);
+		ps.executeQuery();
 	}
 
-	public boolean loginUserSession(String token) throws Exception {
+	public int userLogin(String login, String pass) throws Exception {
+		MessageDigest md = MessageDigest.getInstance("SHA-256");
+		md.update("ma tÊte quand÷".getBytes());
+		byte[] bytes = md.digest(pass.getBytes());
+
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < bytes.length; i++) {
+			sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+		}
+		String generatedPassword = sb.toString();
+
+		java.sql.PreparedStatement ps;
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_USER_SELECT);
+		ps.setString(1, login.toLowerCase());
+		ps.setString(2, generatedPassword);
+		org.inria.jdbc.ResultSet rs = (org.inria.jdbc.ResultSet)ps.executeQuery();
+
+		if(!rs.next()) {
+			return -1;
+		}
+
+		return rs.getInt(1);
+	}
+
+	public boolean userLoginSession(String token) throws Exception {
 		java.sql.PreparedStatement ps;
 
 		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_SESSION_SELECT);

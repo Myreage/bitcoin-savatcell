@@ -16,6 +16,9 @@ DELETE FROM Walter WHERE token=?
 --public static String EP_SESSION_SELECT = 
 SELECT idGlobal, expires FROM Session WHERE token=?
 /
+--public static String EP_SESSION_SELECT_ALL = 
+SELECT idGlobal FROM Session
+/
 --public static String EP_SESSION_DELETE = 
 DELETE FROM Session WHERE token=?
 /
@@ -33,6 +36,9 @@ INSERT INTO Transaction VALUES (?,?,?,?,?)
 /
 --public static String EP_TRANSACTION_DELETE = 
 DELETE FROM Transaction WHERE address=?
+/
+--public static String EP_ADDRESS_SELECT = 
+SELECT * FROM Address WHERE idWallet=?
 /
 --public static String EP_ADDRESS_SELECT_ALL = 
 SELECT idGlobal FROM Address

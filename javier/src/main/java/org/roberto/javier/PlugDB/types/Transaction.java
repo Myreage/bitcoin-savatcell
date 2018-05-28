@@ -22,4 +22,14 @@ public class Transaction {
 		this.amount = amount;
 		this.date = date;
 	}
+
+	public String toString() {
+		return "{" +
+		"\"idGlobal\":" + idGlobal +
+		",\"address\":\"" + address + "\"" +
+		",\"to\":\"" + to + "\"" +
+		",\"amount\":" + amount +
+		",\"date\":\"" + date + "\"" +
+		"}";
+	}
 }

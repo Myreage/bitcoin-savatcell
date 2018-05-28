@@ -9,10 +9,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.MediaType;
 import java.util.HashSet;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.swagger.annotations.*;
 
@@ -23,7 +23,7 @@ public class WalterAPI {
     private PlugDB pdb;
 
     public WalterAPI() throws Exception {
-        // pdb = new PlugDB("ttyACM0");
+        pdb = new PlugDB("ttyACM0");
     }
 
     private boolean isAuthenticated(String token) throws Exception {
@@ -53,15 +53,30 @@ public class WalterAPI {
         return Response.ok().build();
     }
 
-    @Path("/wallet")
+    @Path("/address")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     @POST
-    public Response updateWallet(@QueryParam("token") String token, Wallet w) throws Exception {
+    public Response postAddress(@QueryParam("token") String token, Address a) throws Exception {
         if(!isAuthenticated(token)) {
             return Response.status(403).build();
         }
 
+        pdb.addAddress(a);
+
+        return Response.ok().build();
+    }
+
+    @Path("/wallet/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    @POST
+    public Response updateWallet(@QueryParam("token") String token, @PathParam("id") int id, Wallet w) throws Exception {
+        if(!isAuthenticated(token)) {
+            return Response.status(403).build();
+        }
+
+        w.idGlobal = id;
         pdb.updateWallet(w);
 
         return Response.ok().build();

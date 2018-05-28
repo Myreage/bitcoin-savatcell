@@ -10,7 +10,7 @@ public static final String META =
 	"4	Walter	266\n"+
 	"5	Wallet	28\n"+
 	"6	Address	270\n"+
-	"7	Transaction	272\n"+
+	"7	Transaction	528\n"+
 	"8	Session	270\n"+
 	"COL_DESC,32\n"+
 	"0	0	IdGlobal	4	1	0\n"+
@@ -37,10 +37,10 @@ public static final String META =
 	"21	6	balance	4	1	262\n"+
 	"22	6	idWallet	4	1	266\n"+
 	"23	7	idGlobal	4	1	0\n"+
-	"24	7	address	130	0	4\n"+
-	"25	7	to	130	0	134\n"+
-	"26	7	amount	4	1	264\n"+
-	"27	7	d	4	2	268\n"+
+	"24	7	address	258	0	4\n"+
+	"25	7	to	258	0	262\n"+
+	"26	7	amount	4	1	520\n"+
+	"27	7	d	4	2	524\n"+
 	"28	8	idGlobal	4	1	0\n"+
 	"29	8	token	258	0	4\n"+
 	"30	8	idUser	4	1	262\n"+
@@ -82,6 +82,9 @@ public static String EP_WALTER_DELETE =
 public static String EP_SESSION_SELECT =
 	"/*EP \u0001 0 2 2 8 # 1 1 1 2 r0 3 8 1 28 31 29 # 4 0 0 1 29 0 ?1 r3 # \u0000 2 1 1 idGlobal 2 2 expires # \u0000*/";
 
+public static String EP_SESSION_SELECT_ALL =
+	"/*EP \u0000 0 1 1 8 # 1 0 0 1 r0 1 8 1 28 # \u0000 1 1 1 idGlobal # \u0000*/";
+
 public static String EP_SESSION_DELETE =
 	"/*EP \u0001 0 4 4 8 # 1 3 3 4 r0 2 8 1 28 29 # 4 2 2 3 29 0 ?1 r2 # 5 1 1 2 3 1 1 4 v18 5 r0 6 v10 # 9 0 0 1 8 r0 # \u0000*/";
 
@@ -99,6 +102,9 @@ public static String EP_TRANSACTION_INSERT =
 
 public static String EP_TRANSACTION_DELETE =
 	"/*EP \u0001 0 4 4 7 # 1 3 3 4 r0 2 7 1 23 24 # 4 2 2 3 24 0 ?1 r2 # 5 1 1 2 3 1 1 4 v17 5 r0 6 v10 # 9 0 0 1 7 r0 # \u0000*/";
+
+public static String EP_ADDRESS_SELECT =
+	"/*EP \u0001 0 2 2 6 # 1 1 1 2 r0 4 6 1 19 20 21 22 # 4 0 0 1 22 0 ?1 r4 # \u0000 4 1 1 idGlobal 0 2 address 1 3 balance 1 4 idWallet # \u0000*/";
 
 public static String EP_ADDRESS_SELECT_ALL =
 	"/*EP \u0000 0 1 1 6 # 1 0 0 1 r0 1 6 1 19 # \u0000 1 1 1 idGlobal # \u0000*/";
