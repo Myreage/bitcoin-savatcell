@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e1f1023-ecb5-4828-9b16-9ef77e65baa7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/koa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Core.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/params.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +19,8 @@
       <file leaf-file-name="Core.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+            <state relative-caret-position="210">
+              <caret line="102" column="11" lean-forward="true" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2428#3519#0" expanded="true" />
@@ -379,11 +370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527112911671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bon askip on peut post des transa apelé le police sa devien bouillant par isi">
+      <created>1527500078371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527500078371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24912000" />
+    <option name="totallyTimeSpent" value="25522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -391,16 +389,16 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48901904" weight="0.32419354" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.48861912" visible="true" weight="0.3238255" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5007587" side_tool="true" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51138085" side_tool="true" visible="true" weight="0.3238255" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.15174507" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49926794" weight="0.33064517" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6350531" weight="0.44966444" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924126" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924126" weight="0.32885906" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2003035" />
@@ -448,7 +446,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lalala bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="lalala bit" />
+    <MESSAGE value="bon askip on peut post des transa apelé le police sa devien bouillant par isi" />
+    <option name="LAST_COMMIT_MESSAGE" value="bon askip on peut post des transa apelé le police sa devien bouillant par isi" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
@@ -676,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+        <state relative-caret-position="210">
+          <caret line="102" column="11" lean-forward="true" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2428#3519#0" expanded="true" />
@@ -711,7 +710,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -758,7 +757,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: org.slf4j:slf4j-api:1.7.20</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

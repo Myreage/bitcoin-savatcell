@@ -77,7 +77,8 @@ public class Core {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet wallet, Transaction tx, Coin prevBalance, Coin newBalance) {
-                System.out.println("-----> coins resceived: " + tx.getHashAsString());
+                System.out.println("On address : " + wallet.currentReceiveAddress());
+                System.out.println("-----> coins resceived from: " + tx.getHashAsString());
                 System.out.println("received: " + tx.getValue(wallet));
 
                 // HTTP POST
@@ -95,6 +96,8 @@ public class Core {
                         .url("http://127.0.0.1/javier/api/walter/transaction")
                         .post(body)
                         .build();
+
+                System.out.println("Request successfully sent to Javier");
 
             }
         });
