@@ -27,13 +27,10 @@ import io.swagger.annotations.*;
 @Api(value = "User API")
 @Path("/user")
 public class UserAPI {
-    @Context
-    private ServletContext context;
-
     private HashSet<String> tokens = new HashSet<String>();
     private PlugDB pdb;
 
-    public UserAPI() throws Exception {
+    public UserAPI(@Context ServletContext context) throws Exception {
         pdb = (PlugDB)context.getAttribute("pdb");
     }
 

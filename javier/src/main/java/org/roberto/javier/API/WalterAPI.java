@@ -21,13 +21,10 @@ import io.swagger.annotations.*;
 @Api(value = "Walter API")
 @Path("/walter")
 public class WalterAPI {
-    @Context
-    private ServletContext context;
-
     private HashSet<String> tokens = new HashSet<String>();
     private PlugDB pdb;
 
-    public WalterAPI() throws Exception {
+    public WalterAPI(@Context ServletContext context) throws Exception {
         pdb = (PlugDB)context.getAttribute("pdb");
     }
 

@@ -5,9 +5,7 @@ import org.roberto.javier.PlugDB.PlugDB;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 
-@WebListener
 public class LoadConfigurationListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext context = sce.getServletContext();
@@ -19,6 +17,7 @@ public class LoadConfigurationListener implements ServletContextListener {
     }
 
     public void contextDestroyed(ServletContextEvent sce) {
-        // ServletContext context = sce.getServletContext();
+        ServletContext context = sce.getServletContext();
+        context.removeAttribute("pdb");
     }
 }

@@ -47,10 +47,10 @@ public class PlugDB extends Tools {
 
 		// Ajout d'un wallet
 		java.sql.PreparedStatement ps;
-		/* ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_WALLET_INSERT);
+		ps = ((org.inria.jdbc.Connection)super.db).prepareStatement(QEP_IDs.EP_Javier.EP_WALLET_INSERT);
 		ps.setInt(1, 0);
 		ps.setBlob(1, new ByteArrayInputStream("cc sava".getBytes()));
-		ps.executeUpdate(); */
+		ps.executeUpdate();
 
 		// Ajout d'un utilisateur
 		MessageDigest md = MessageDigest.getInstance("SHA-256");
