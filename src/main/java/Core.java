@@ -77,7 +77,7 @@ public class Core {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet wallet, Transaction tx, Coin prevBalance, Coin newBalance) {
-                System.out.println("On address : " + wallet.currentReceiveAddress());
+                System.out.println(wallet.currentReceiveAddress());
                 System.out.println("-----> coins resceived from: " + tx.getHashAsString());
                 System.out.println("received: " + tx.getValue(wallet));
 
